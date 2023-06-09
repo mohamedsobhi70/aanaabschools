@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -243,10 +243,18 @@
                         </div>
                     </div>
 
-                    <div class="p-12 bg-white rounded-3xl flex gap-[30px] col-span-4">
+                    <div class="p-12 bg-white rounded-3xl flex flex-col gap-12 col-span-4">
+                        <div class="grid grid-cols-12 gap-2 border border-[#E9E8E8] rounded-2xl p-4">
+                            <img src="assets/images/rep-1.png" class="col-span-4" width="69" height="48" alt="rep">
+                            <img src="assets/images/rep-2.png" class="col-span-4" width="69" height="48" alt="rep">
+                            <img src="assets/images/rep-3.png" class="col-span-4" width="69" height="48" alt="rep">
+                            <img src="assets/images/rep-4.png" class="col-span-6" width="107" height="48" alt="rep">
+                            <img src="assets/images/rep-5.png" class="col-span-6" width="107" height="48" alt="rep">
+                        </div>
                         <div class="flex flex-col gap-4">
-                            <h3 class="text-[#333745] text-2xl leading-normal font-extrabold">
-                                تقارير مفصلة عن الأداء الوظيفي  </h3>
+                            <h3 class="text-[#333745] text-2xl leading-normal font-extrabold text-center">
+                                تقارير مفصلة عن الأداء الوظيفي
+                            </h3>
 
                             <p class="text-[#5B5F6D] text-base leading-normal ">
                                 تعطي منصة أعناب بيانات وإحصائيات عن الأداء الوظيفي بمدرستك.
@@ -254,9 +262,12 @@
                         </div>
                     </div>
 
-                    <div class="p-12 bg-white rounded-3xl flex gap-[30px] col-span-4">
+                    <div class="p-12 bg-white rounded-3xl flex flex-col gap-12 col-span-4">
+                        <div class="py-2.5">
+                            <img src="assets/images/rep-6.png" width="254" height="115" alt="rep">
+                        </div>
                         <div class="flex flex-col gap-4">
-                            <h3 class="text-[#333745] text-2xl leading-normal font-extrabold">
+                            <h3 class="text-[#333745] text-2xl leading-normal font-extrabold text-center">
                                 اعثر على كوادر مميزة لتطوير مدرستك
                             </h3>
                             <p class="text-[#5B5F6D] text-base leading-normal ">
@@ -265,9 +276,13 @@
                         </div>
                     </div>
 
-                    <div class="p-12 bg-white rounded-3xl flex gap-[30px] col-span-4">
+                    <div class="p-12 bg-white rounded-3xl flex flex-col gap-12 col-span-4">
+                        <div class="flex flex-col gap-2">
+                            <img src="assets/images/rep-7.png" width="254" height="64" alt="rep">
+                            <img src="assets/images/rep-8.png" width="254" height="64" alt="rep">
+                        </div>
                         <div class="flex flex-col gap-4">
-                            <h3 class="text-[#333745] text-2xl leading-normal font-extrabold">
+                            <h3 class="text-[#333745] text-2xl leading-normal font-extrabold text-center">
                                 صنّف المتقدمين بناءًا على مهاراتهم
                             </h3>
                             <p class="text-[#5B5F6D] text-base leading-normal ">
@@ -516,19 +531,24 @@
         <!-- Start Call To action section -->
         <section class="py-16">
             <div
-                class="container bg-gradient-to-r from-[#8447FF] to-[#AE47FF] py-24 px-16 rounded-[32px] flex items-center gap-8">
-                <div class="flex flex-col gap-2 grow">
-                    <h2 class="text-white text-[32px] leading-normal font-bold">
-                        قالوا عن أعناب
-                    </h2>
-                    <p class="text-white text-base leading-normal">
-                        تعمل أعناب مع أكبر المؤسسات التعليمية في تطويرالمؤهلات المهنية في المدارس
-                    </p>
+                class="container bg-gradient-to-r from-[#8447FF] to-[#AE47FF] py-24 px-16 rounded-[32px] relative overflow-hidden">
+                <div class="absolute w-[615px] h-[560px] bg-cta-shap1 opacity-[0.12] bottom-4 left-[-320px] rounded-full"></div>
+                <div class="absolute w-[615px] h-[560px] bg-cta-shap2 opacity-[0.12] top-4 right-[-320px] rounded-full">
                 </div>
-                <a href="#"
-                    class="py-4 px-8 rounded-[32px] bg-white text-[#8447FF] hover:text-[#7841E8] active:text-[#9D6CFF] transition-all duration-300 text-base leading-6 font-bold">
-                    دليل أعناب للمدارس
-                </a>
+                <div class=" flex items-center gap-8 relative z-10">
+                    <div class="flex flex-col gap-2 grow">
+                        <h2 class="text-white text-[32px] leading-normal font-bold">
+                            الأسئلة الشائعة
+                        </h2>
+                        <p class="text-white text-base leading-normal">
+                            تعمل أعناب مع أكبر المؤسسات التعليمية في تطويرالمؤهلات المهنية في المدارس
+                        </p>
+                    </div>
+                    <a href="#"
+                        class="py-4 px-8 rounded-[32px] bg-white text-[#8447FF] hover:text-[#7841E8] active:text-[#9D6CFF] transition-all duration-300 text-base leading-6 font-bold">
+                        دليل أعناب للمدارس
+                    </a>
+                </div>
             </div>
         </section>
         <!-- End Call To action section -->

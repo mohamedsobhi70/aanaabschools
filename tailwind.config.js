@@ -20,6 +20,10 @@ module.exports = {
       fontFamily: {
         'Almarai': ['Almarai', 'sans-serif'],
       },
+      backgroundImage: {
+        'cta-shap1': 'linear-gradient(319.28deg, #FFFFFF 13.81%, rgba(135, 146, 161, 0.16) 49.81%)',
+        'cta-shap2': 'linear-gradient(131.42deg, #FFFFFF 19.24%, #FFFFFF 42.06%, rgba(135, 146, 161, 0.16) 69.61%)'
+      },
     },
   },
   plugins: [],
