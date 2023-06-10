@@ -1,12 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 .hero-img {
   box-shadow: 0px 0px 0px 2px rgba(132, 71, 255, 0.5),
     0px 0px 0px 50px rgba(132, 71, 255, 0.05),
     0px 0px 0px 25px rgba(132, 71, 255, 0.05);
-    @apply transition-all duration-700;
+  @apply transition-all duration-700;
 }
+
 .hero-img.active {
   box-shadow: 0px 0px 0px 2px rgba(132, 71, 255, 0.5),
     0px 0px 0px 300px rgba(132, 71, 255, 0.05),
@@ -16,13 +18,28 @@
     0px 0px 0px 100px rgba(132, 71, 255, 0.05),
     0px 0px 0px 50px rgba(132, 71, 255, 0.05);
 }
+
 .swiper-slide.swiper-slide-active {
   @apply border-[#7841E8];
   box-shadow: 0px 0px 24px 8px rgba(0, 0, 0, 0.1);
 }
+
 .dropdown-list-items {
   @apply absolute opacity-0 invisible transition-all duration-300;
 }
+
 .dropdown-list-items.active {
   @apply opacity-100 visible top-full;
+}
+
+.dropdown-list.colored-act.active > span {
+  @apply text-[#7841E8] font-bold;
+}
+
+.dropdown-list.colored-act.active > svg {
+  @apply rotate-180;
+}
+
+.dropdown-list.colored-act.active > svg path {
+  @apply fill-[#8447FF];
 }

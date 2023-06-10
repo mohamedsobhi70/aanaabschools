@@ -20,12 +20,15 @@ if ($(".slider-testimonials").length > 0) {
 // =================================================
 if ($(".dropdown-list").length) {
     $(".dropdown-list").on("click", function (e) {
+        $(".colored-act").removeClass("active")
         if ($(this).siblings(".dropdown-list-items").hasClass("active")) {
             $(".dropdown-list-items").removeClass("active");
+            $(this).removeClass("active")
         }
         else {
             $(".dropdown-list-items").removeClass("active");
             $(this).siblings(".dropdown-list-items").addClass("active");
+            $(this).addClass("active")
         }
     })
     $("main").on("click", function (e) {
