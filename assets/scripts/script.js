@@ -31,3 +31,14 @@ if ($(".dropdown-list").length) {
         $(".dropdown-list-items").removeClass("active");
     })
 }
+
+
+$(window).on("scroll", function () {
+    let pos = $(".hero-img").position().top - 300;
+    if (window.scrollY > pos) {
+        $(".hero-img").addClass("active")
+    }
+    else {
+        $(".hero-img").removeClass("active")
+    }
+});
