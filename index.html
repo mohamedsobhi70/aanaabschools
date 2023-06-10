@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body class="font-Almarai">
+<body class="font-Almarai overflow-x-hidden">
     <!-- Start Annab Header -->
     <header class="bg-white z-20 sticky top-0">
         <div class="container py-6 flex items-center justify-between">
@@ -27,14 +27,56 @@
                 </a>
 
                 <!-- learning  dropdown-->
-                <div class="py-2.5 px-4 rounded-[32px] border border-[#7841E8] flex items-center gap-2 cursor-pointer">
-                    <span class="text-[#8447FF] text-sm leading-[21px] font-extrabold">تعلم</span>
-                    <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M4.16797 5.21094L0.359375 1.42188C0.183594 1.22656 0.183594 0.933594 0.359375 0.757812L0.808594 0.308594C0.984375 0.132812 1.27734 0.132812 1.47266 0.308594L4.5 3.31641L7.50781 0.308594C7.70312 0.132812 7.99609 0.132812 8.17188 0.308594L8.62109 0.757812C8.79688 0.933594 8.79688 1.22656 8.62109 1.42188L4.8125 5.21094C4.63672 5.38672 4.34375 5.38672 4.16797 5.21094Z"
-                            fill="#8447FF" />
-                    </svg>
-                </div>
+                    <div class="py-2.5 px-4 rounded-[32px] border border-[#7841E8] flex items-center gap-2 dropdown-list cursor-pointer">
+                        <span class="text-[#8447FF] text-sm leading-[21px] font-extrabold">تعلم</span>
+                        <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M4.16797 5.21094L0.359375 1.42188C0.183594 1.22656 0.183594 0.933594 0.359375 0.757812L0.808594 0.308594C0.984375 0.132812 1.27734 0.132812 1.47266 0.308594L4.5 3.31641L7.50781 0.308594C7.70312 0.132812 7.99609 0.132812 8.17188 0.308594L8.62109 0.757812C8.79688 0.933594 8.79688 1.22656 8.62109 1.42188L4.8125 5.21094C4.63672 5.38672 4.34375 5.38672 4.16797 5.21094Z"
+                                fill="#8447FF" />
+                        </svg>
+                    </div>
+                    <div class="dropdown-list-items top-28 right-0 bg-white w-screen py-12">
+                        <div class="container grid grid-cols-3 gap-x-[30px] gap-y-8">
+                            <!-- item  -->
+                            <div class="flex items-start gap-6">
+                                <img src="assets/images/book.svg" width="24" height="24" alt="book">
+                                <div class="flex flex-col gap-2">
+                                    <a href="#" class="text-[#333745] text-xl leading-normal font-bold">الدورات</a>
+                                    <p class="text-[#5B5F6D] text-sm leading-normal">
+                                        دورات عن بعد لتعزيز كفاءة المعلمين والتربويين
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- item  -->
+                            <div class="flex items-start gap-6">
+                                <img src="assets/images/award.svg" width="24" height="24" alt="book">
+                                <div class="flex flex-col gap-2">
+                                    <a href="#" class="text-[#333745] text-xl leading-normal font-bold">المؤهلات</a>
+                                    <p class="text-[#5B5F6D] text-sm leading-normal">
+                                        مؤهّلات مهنيّة وشهادات احترافية بالتعاون مع شركائنا لتكون معلّمًا مؤهّلًا في مختلف المجالات.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- item  -->
+                            <div class="flex items-start gap-6">
+                                <img src="assets/images/teacher.svg" width="24" height="24" alt="book">
+                                <div class="flex flex-col gap-2">
+                                    <a href="#" class="text-[#333745] text-xl leading-normal font-bold">المسارات</a>
+                                    <p class="text-[#5B5F6D] text-sm leading-normal">
+                                        من خلال أداة تقييم الاحتياج التدريبي الذاتي، يستطيع المعلم معرفة أكثر المهارات المطلوبة للمجال.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- item  -->
+                            <div class="flex items-start gap-6">
+                                <img src="assets/images/briefcase.svg" width="24" height="24" alt="book">
+                                <div class="flex flex-col gap-2">
+                                    <a href="#" class="text-[#333745] text-xl leading-normal font-bold">الرخص المهنية</a>
+                                    <p class="text-[#5B5F6D] text-sm leading-normal">دورات مكثفة لاجتياز اختبار الرخصة المهنية بكل جدارة للعاملين في قطاع التعليم في السعودية.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 <!-- search  -->
                 <div class="py-2.5 px-4 rounded-full border border-[#D7D5D5] flex items-center gap-3">
@@ -95,14 +137,16 @@
     <!-- ======================================= -->
 
     <!-- Start Annab  Main Content  -->
-    <main class="">
+    <main class="relative">
 
         <!-- start hero section  -->
-        <section class="py-24 relative bg-[#F6F5F7]">
+        <section class="py-24 bg-[#F6F5F7] relative">
+            <!-- gradient backgrounded shape between two scetion  -->
             <div class="absolute bottom-0 left-0 w-full h-[300px] bg-gradient-to-b from-[#F6F5F700] to-[#FFFFFF]"></div>
-            <div class="container flex flex-col items-center gap-24 relative">
+            <div class="container flex flex-col items-center gap-24 relative ">
                 <!-- hero section  -->
-                <div class="flex flex-col items-center gap-8">
+                <div class="flex flex-col items-center gap-8 sticky top-24">
+
                     <div class="flex flex-col items-center gap-6">
                         <div class="flex flex-col items-center gap-3">
                             <h1
@@ -129,6 +173,7 @@
                             </li>
                         </ul>
                     </div>
+
                     <div class="flex gap-3 justify-center">
                         <a href="#"
                             class="py-3 px-6 rounded-[32px] bg-[#8447FF] hover:bg-[#7841E8] active:bg-[#9D6CFF] transition-all duration-300 text-white text-base leading-6 font-bold">
@@ -143,7 +188,7 @@
                 <!-- ======================================= -->
 
                 <!-- img section  -->
-                <div class="w-[920px] h-[518px] rounded-[32px] border-[10px] border-white overflow-hidden hero-img">
+                <div class="w-[920px] h-[518px] rounded-[32px] border-[10px] border-white overflow-hidden hero-img sticky top-24">
                     <img src="assets/images/hero.jpg" class="w-full h-full object-cover" width="920" height="518"
                         alt="Hero">
                 </div>
@@ -154,8 +199,8 @@
         <!-- ======================================= -->
 
         <!-- Start Platform Products section -->
-        <section class="section bg-white py-32">
-            <div class="container flex items-center justify-between gap-[30px]">
+        <section class="section bg-white sticky top-24">
+            <div class="container flex items-center justify-between gap-[30px] py-32">
                 <div class="basis-1/2 flex flex-col gap-8 items-start">
                     <div class="flex flex-col gap-4">
                         <span class="text-[#8447FF] text-base leading-normal font-extrabold">منتجات المنصة</span>
@@ -171,6 +216,7 @@
                         حلول اعناب
                     </a>
                 </div>
+                <!-- Image -->
                 <div>
                     <img src="assets/images/products.png" class="block" width="444" height="444" alt="products">
                 </div>
@@ -180,130 +226,135 @@
         <!-- ======================================= -->
 
         <!-- Start Platform solutions section -->
-        <section class=" py-32 bg-[#F6F5F7]">
-            <div class="container flex flex-col gap-16">
-                <!-- header section  -->
-                <header class="flex flex-col items-center gap-4">
-                    <span class="text-[#8447FF] text-base leading-normal font-extrabold"> حلول اعناب</span>
-                    <h2 class="text-[#333745] text-[32px] leading-normal font-extrabold">
-                        منصة شاملة لتطوير مهارات المعلمين
-                    </h2>
-                    <p class="text-[#5B5F6D] text-lg leading-normal">
-                        خدمات متكاملة لتدريب المعلمين وتطوير المنظومة التعليمية بالمدارس
-                    </p>
-                </header>
-                <!-- ======================================= -->
+        <section class="bg-white">
+            <div class="py-32 bg-[#F6F5F7] rounded-t-[64px] relative">
+                <div class="container flex flex-col gap-16">
+                    <!-- header section  -->
+                    <header class="flex flex-col items-center gap-4">
+                        <span class="text-[#8447FF] text-base leading-normal font-extrabold"> حلول اعناب</span>
+                        <h2 class="text-[#333745] text-[32px] leading-normal font-extrabold">
+                            منصة شاملة لتطوير مهارات المعلمين
+                        </h2>
+                        <p class="text-[#5B5F6D] text-lg leading-normal">
+                            خدمات متكاملة لتدريب المعلمين وتطوير المنظومة التعليمية بالمدارس
+                        </p>
+                    </header>
+                    <!-- ======================================= -->
 
-                <div class="grid grid-cols-12 gap-[30px]">
+                    <div class="grid grid-cols-12 gap-[30px]">
+                        <!-- item -->
+                        <div class="p-12 bg-white rounded-3xl flex gap-[30px] col-span-6 relative overflow-hidden">
+                            <div class="basis-1/2 flex flex-col gap-4">
+                                <h3 class="text-[#333745] text-2xl leading-normal font-extrabold">
+                                    درِّب أكثر المهارات المطلوبة لتطوير الكوادر التعليمية
+                                </h3>
+                                <p class="text-[#5B5F6D] text-base leading-normal ">
+                                    من خلال لوحة المتابعة المباشرة، تستطيع تقييم وتدريب المهارات المطلوبة لكل معلم .
+                                </p>
+                            </div>
+                            <div class="basis-1/2 flex flex-col gap-4 absolute left-0 top-1/2 -translate-y-1/2">
+                                <img src="assets/images/sol1.png" width="255" height="87" alt="solutions">
+                                <img src="assets/images/sol2.png" width="255" height="121" alt="solutions">
+                                <img src="assets/images/sol3.png" width="255" height="87" alt="solutions">
+                            </div>
 
-                    <div class="p-12 bg-white rounded-3xl flex gap-[30px] col-span-6 relative overflow-hidden">
-                        <div class="basis-1/2 flex flex-col gap-4">
-                            <h3 class="text-[#333745] text-2xl leading-normal font-extrabold">
-                                درِّب أكثر المهارات المطلوبة لتطوير الكوادر التعليمية
-                            </h3>
-                            <p class="text-[#5B5F6D] text-base leading-normal ">
-                                من خلال لوحة المتابعة المباشرة، تستطيع تقييم وتدريب المهارات المطلوبة لكل معلم .
-                            </p>
                         </div>
-                        <div class="basis-1/2 flex flex-col gap-4 absolute left-0 top-1/2 -translate-y-1/2">
-                            <img src="assets/images/sol1.png" width="255" height="87" alt="solutions">
-                            <img src="assets/images/sol2.png" width="255" height="121" alt="solutions">
-                            <img src="assets/images/sol3.png" width="255" height="87" alt="solutions">
-                        </div>
+                        <!-- item -->
+                        <div class="p-12 bg-white rounded-3xl flex flex-col gap-12 col-span-6 row-span-2">
+                            <div class="flex flex-col gap-4">
+                                <h3 class="text-[#333745] text-2xl leading-normal font-extrabold">
+                                    أكثر ١٥٠ دورة لتعزيز مهارات الكوادر التعليمية
+                                </h3>
+                                <p class="text-[#5B5F6D] text-base leading-normal ">
+                                    عزز مهارات معلمين مدرستك بدورات تدريبية في كافة مجالات تطوير المنظومة التعليمية.
+                                </p>
+                            </div>
+                            <div class="flex flex-col items-center py-4">
+                                <img src="assets/images/Desktop.png" width="430" height="300" alt="Desktop">
+                            </div>
 
-                    </div>
+                        </div>
+                        <!-- item -->
+                        <div class="p-12 bg-white rounded-3xl flex gap-[30px] col-span-6 relative overflow-hidden">
+                            <div class="basis-1/2 flex flex-col gap-4">
+                                <h3 class="text-[#333745] text-2xl leading-normal font-extrabold">
+                                    مكتبة متكاملة من المسارات التعليمية للمعلمين
+                                </h3>
+                                <p class="text-[#5B5F6D] text-base leading-normal ">
+                                    من خلال أداة تقييم الاحتياج التدريبي الذاتي، يستطيع المعلم معرفة أكثر المهارات
+                                    المطلوبة.
+                                </p>
+                            </div>
+                            <div class="basis-1/2 flex flex-col gap-4 absolute left-0 top-1/2 -translate-y-1/2">
+                                <img src="assets/images/sol4.png" width="255" height="157" alt="solutions">
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="p-12 bg-white rounded-3xl flex flex-col gap-12 col-span-4">
+                            <div class="grid grid-cols-12 gap-2 border border-[#E9E8E8] rounded-2xl p-4">
+                                <img src="assets/images/rep-1.png" class="col-span-4" width="69" height="48" alt="rep">
+                                <img src="assets/images/rep-2.png" class="col-span-4" width="69" height="48" alt="rep">
+                                <img src="assets/images/rep-3.png" class="col-span-4" width="69" height="48" alt="rep">
+                                <img src="assets/images/rep-4.png" class="col-span-6" width="107" height="48" alt="rep">
+                                <img src="assets/images/rep-5.png" class="col-span-6" width="107" height="48" alt="rep">
+                            </div>
+                            <div class="flex flex-col gap-4">
+                                <h3 class="text-[#333745] text-2xl leading-normal font-extrabold text-center">
+                                    تقارير مفصلة عن الأداء الوظيفي
+                                </h3>
 
-
-                    <div class="p-12 bg-white rounded-3xl flex flex-col gap-12 col-span-6 row-span-2">
-                        <div class="flex flex-col gap-4">
-                            <h3 class="text-[#333745] text-2xl leading-normal font-extrabold">
-                                أكثر ١٥٠ دورة لتعزيز مهارات الكوادر التعليمية
-                            </h3>
-                            <p class="text-[#5B5F6D] text-base leading-normal ">
-                                عزز مهارات معلمين مدرستك بدورات تدريبية في كافة مجالات تطوير المنظومة التعليمية.
-                            </p>
+                                <p class="text-[#5B5F6D] text-base leading-normal ">
+                                    تعطي منصة أعناب بيانات وإحصائيات عن الأداء الوظيفي بمدرستك.
+                                </p>
+                            </div>
                         </div>
-                        <div class="flex flex-col items-center py-4">
-                            <img src="assets/images/Desktop.png" width="430" height="300" alt="Desktop">
+                        <!-- item -->
+                        <div class="p-12 bg-white rounded-3xl flex flex-col gap-12 col-span-4">
+                            <div class="py-2.5">
+                                <img src="assets/images/rep-6.png" width="254" height="115" alt="rep">
+                            </div>
+                            <div class="flex flex-col gap-4">
+                                <h3 class="text-[#333745] text-2xl leading-normal font-extrabold text-center">
+                                    اعثر على كوادر مميزة لتطوير مدرستك
+                                </h3>
+                                <p class="text-[#5B5F6D] text-base leading-normal ">
+                                    يمكنك طرح المناصب الشاغرة بتفاصيلها، مما يتيح الفرصة للمعلمين على منصة أعناب
+                                    بالتقدم.
+                                </p>
+                            </div>
                         </div>
-
-                    </div>
-
-                    <div class="p-12 bg-white rounded-3xl flex gap-[30px] col-span-6 relative overflow-hidden">
-                        <div class="basis-1/2 flex flex-col gap-4">
-                            <h3 class="text-[#333745] text-2xl leading-normal font-extrabold">
-                                مكتبة متكاملة من المسارات التعليمية للمعلمين
-                            </h3>
-                            <p class="text-[#5B5F6D] text-base leading-normal ">
-                                من خلال أداة تقييم الاحتياج التدريبي الذاتي، يستطيع المعلم معرفة أكثر المهارات المطلوبة.
-                            </p>
+                        <!-- item -->
+                        <div class="p-12 bg-white rounded-3xl flex flex-col gap-12 col-span-4">
+                            <div class="flex flex-col gap-2">
+                                <img src="assets/images/rep-7.png" width="254" height="64" alt="rep">
+                                <img src="assets/images/rep-8.png" width="254" height="64" alt="rep">
+                            </div>
+                            <div class="flex flex-col gap-4">
+                                <h3 class="text-[#333745] text-2xl leading-normal font-extrabold text-center">
+                                    صنّف المتقدمين بناءًا على مهاراتهم
+                                </h3>
+                                <p class="text-[#5B5F6D] text-base leading-normal ">
+                                    تواصل مع المتقدمين لمعرفة المزيد من المعلومات و التخصصات و جدولة المقابلات الشخصية
+                                    لكل
+                                    مرشح.
+                                </p>
+                            </div>
                         </div>
-                        <div class="basis-1/2 flex flex-col gap-4 absolute left-0 top-1/2 -translate-y-1/2">
-                            <img src="assets/images/sol4.png" width="255" height="157" alt="solutions">
-                        </div>
-                    </div>
-
-                    <div class="p-12 bg-white rounded-3xl flex flex-col gap-12 col-span-4">
-                        <div class="grid grid-cols-12 gap-2 border border-[#E9E8E8] rounded-2xl p-4">
-                            <img src="assets/images/rep-1.png" class="col-span-4" width="69" height="48" alt="rep">
-                            <img src="assets/images/rep-2.png" class="col-span-4" width="69" height="48" alt="rep">
-                            <img src="assets/images/rep-3.png" class="col-span-4" width="69" height="48" alt="rep">
-                            <img src="assets/images/rep-4.png" class="col-span-6" width="107" height="48" alt="rep">
-                            <img src="assets/images/rep-5.png" class="col-span-6" width="107" height="48" alt="rep">
-                        </div>
-                        <div class="flex flex-col gap-4">
-                            <h3 class="text-[#333745] text-2xl leading-normal font-extrabold text-center">
-                                تقارير مفصلة عن الأداء الوظيفي
-                            </h3>
-
-                            <p class="text-[#5B5F6D] text-base leading-normal ">
-                                تعطي منصة أعناب بيانات وإحصائيات عن الأداء الوظيفي بمدرستك.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="p-12 bg-white rounded-3xl flex flex-col gap-12 col-span-4">
-                        <div class="py-2.5">
-                            <img src="assets/images/rep-6.png" width="254" height="115" alt="rep">
-                        </div>
-                        <div class="flex flex-col gap-4">
-                            <h3 class="text-[#333745] text-2xl leading-normal font-extrabold text-center">
-                                اعثر على كوادر مميزة لتطوير مدرستك
-                            </h3>
-                            <p class="text-[#5B5F6D] text-base leading-normal ">
-                                يمكنك طرح المناصب الشاغرة بتفاصيلها، مما يتيح الفرصة للمعلمين على منصة أعناب بالتقدم.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="p-12 bg-white rounded-3xl flex flex-col gap-12 col-span-4">
-                        <div class="flex flex-col gap-2">
-                            <img src="assets/images/rep-7.png" width="254" height="64" alt="rep">
-                            <img src="assets/images/rep-8.png" width="254" height="64" alt="rep">
-                        </div>
-                        <div class="flex flex-col gap-4">
-                            <h3 class="text-[#333745] text-2xl leading-normal font-extrabold text-center">
-                                صنّف المتقدمين بناءًا على مهاراتهم
-                            </h3>
-                            <p class="text-[#5B5F6D] text-base leading-normal ">
-                                تواصل مع المتقدمين لمعرفة المزيد من المعلومات و التخصصات و جدولة المقابلات الشخصية لكل
-                                مرشح.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="p-12 bg-white rounded-3xl flex gap-[30px] items-center col-span-12">
-                        <div class="basis-1/2 flex flex-col gap-4">
-                            <h3 class="text-[#333745] text-2xl leading-normal font-extrabold">
-                                مكتبة متكاملة من المسارات التعليمية للمعلمين
-                            </h3>
-                            <p class="text-[#5B5F6D] text-base leading-normal ">
-                                من خلال أداة تقييم الاحتياج التدريبي الذاتي، يستطيع المعلم معرفة أكثر المهارات المطلوبة
-                                للمجال.
-                            </p>
-                        </div>
-                        <div class="basis-1/2 flex flex-col gap-4">
-                            <img src="assets/images/special.png" width="492" height="264" alt="special">
+                        <!-- item -->
+                        <div class="p-12 bg-white rounded-3xl flex gap-[30px] items-center col-span-12">
+                            <div class="basis-1/2 flex flex-col gap-4">
+                                <h3 class="text-[#333745] text-2xl leading-normal font-extrabold">
+                                    مكتبة متكاملة من المسارات التعليمية للمعلمين
+                                </h3>
+                                <p class="text-[#5B5F6D] text-base leading-normal ">
+                                    من خلال أداة تقييم الاحتياج التدريبي الذاتي، يستطيع المعلم معرفة أكثر المهارات
+                                    المطلوبة
+                                    للمجال.
+                                </p>
+                            </div>
+                            <div class="basis-1/2 flex flex-col gap-4">
+                                <img src="assets/images/special.png" width="492" height="264" alt="special">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -313,59 +364,70 @@
         <!-- ======================================= -->
 
         <!-- Start Aanaab partners section -->
-        <section class="bg-white py-16">
-            <div class="container flex flex-col gap-16">
+        <section class="bg-[#F6F5F7] sticky top-24">
+            <div class="py-16 bg-white rounded-t-[64px]">
+                <div class="container flex flex-col gap-16">
 
-                <!-- header section  -->
-                <header class="flex flex-col items-center gap-4">
-                    <h2 class="text-[#333745] text-[32px] leading-normal font-extrabold">
-                        شركاء النجاح مع أعناب
-                    </h2>
-                    <p class="text-[#5B5F6D] text-lg leading-normal">
-                        تعمل أعناب مع أكبر المؤسسات التعليمية في تطويرالمؤهلات المهنية في المدارس
-                    </p>
-                </header>
+                    <!-- header section  -->
+                    <header class="flex flex-col items-center gap-4">
+                        <h2 class="text-[#333745] text-[32px] leading-normal font-extrabold">
+                            شركاء النجاح مع أعناب
+                        </h2>
+                        <p class="text-[#5B5F6D] text-lg leading-normal">
+                            تعمل أعناب مع أكبر المؤسسات التعليمية في تطويرالمؤهلات المهنية في المدارس
+                        </p>
+                    </header>
 
-                <div class="flex flex-wrap gap-x-10 gap-y-16 justify-between items-center">
-                    <a href="#" class="">
-                        <img src="assets/images/partner-1.png" width="220" height="64" alt="Partner">
-                    </a>
-                    <a href="#" class="">
-                        <img src="assets/images/partner-2.png" width="138" height="64" alt="Partner">
-                    </a>
-                    <a href="#" class="">
-                        <img src="assets/images/partner-3.png" width="180" height="64" alt="Partner">
-                    </a>
-                    <a href="#" class="">
-                        <img src="assets/images/partner-4.png" width="180" height="64" alt="Partner">
-                    </a>
-                    <a href="#" class="">
-                        <img src="assets/images/partner-5.png" width="152" height="64" alt="Partner">
-                    </a>
-                    <a href="#" class="">
-                        <img src="assets/images/partner-4.png" width="180" height="64" alt="Partner">
-                    </a>
-                    <a href="#" class="">
-                        <img src="assets/images/partner-5.png" width="152" height="64" alt="Partner">
-                    </a>
-                    <a href="#" class="">
-                        <img src="assets/images/partner-1.png" width="220" height="64" alt="Partner">
-                    </a>
-                    <a href="#" class="">
-                        <img src="assets/images/partner-2.png" width="138" height="64" alt="Partner">
-                    </a>
-                    <a href="#" class="">
-                        <img src="assets/images/partner-3.png" width="180" height="64" alt="Partner">
-                    </a>
+                    <div class="flex flex-wrap gap-x-10 gap-y-16 justify-between items-center">
+                        <a href="#" class="">
+                            <img src="assets/images/partner-1.png" width="220" height="64" alt="Partner">
+                        </a>
+
+                        <a href="#" class="">
+                            <img src="assets/images/partner-2.png" width="138" height="64" alt="Partner">
+                        </a>
+
+                        <a href="#" class="">
+                            <img src="assets/images/partner-3.png" width="180" height="64" alt="Partner">
+                        </a>
+
+                        <a href="#" class="">
+                            <img src="assets/images/partner-4.png" width="180" height="64" alt="Partner">
+                        </a>
+
+                        <a href="#" class="">
+                            <img src="assets/images/partner-5.png" width="152" height="64" alt="Partner">
+                        </a>
+
+                        <a href="#" class="">
+                            <img src="assets/images/partner-4.png" width="180" height="64" alt="Partner">
+                        </a>
+
+                        <a href="#" class="">
+                            <img src="assets/images/partner-5.png" width="152" height="64" alt="Partner">
+                        </a>
+
+                        <a href="#" class="">
+                            <img src="assets/images/partner-1.png" width="220" height="64" alt="Partner">
+                        </a>
+
+                        <a href="#" class="">
+                            <img src="assets/images/partner-2.png" width="138" height="64" alt="Partner">
+                        </a>
+
+                        <a href="#" class="">
+                            <img src="assets/images/partner-3.png" width="180" height="64" alt="Partner">
+                        </a>
+                    </div>
+
                 </div>
-
             </div>
         </section>
         <!-- End Aanaab partners section -->
         <!-- ======================================= -->
 
         <!-- Start Aanaab partners section -->
-        <section class="bg-white pt-16">
+        <section class="bg-white pt-16 relative">
             <div class="container flex flex-col">
 
                 <!-- header section  -->
@@ -377,6 +439,8 @@
                         تعمل أعناب مع أكبر المؤسسات التعليمية في تطويرالمؤهلات المهنية في المدارس
                     </p>
                 </header>
+
+                <!-- start Testimonial  -->
                 <div class="">
                     <div class="swiper slider-testimonials">
                         <div class="swiper-wrapper py-16 items-center">
@@ -521,21 +585,25 @@
                     </div>
                 </div>
 
-
-
             </div>
         </section>
         <!-- End Aanaab partners section -->
         <!-- ======================================= -->
 
         <!-- Start Call To action section -->
-        <section class="py-16">
+        <section class="py-16 relative bg-white">
             <div
                 class="container bg-gradient-to-r from-[#8447FF] to-[#AE47FF] py-24 px-16 rounded-[32px] relative overflow-hidden">
-                <div class="absolute w-[615px] h-[560px] bg-cta-shap1 opacity-[0.12] bottom-4 left-[-320px] rounded-full"></div>
+                <!-- spae 1 -->
+                <div
+                    class="absolute w-[615px] h-[560px] bg-cta-shap1 opacity-[0.12] bottom-4 left-[-320px] rounded-full">
+                </div>
+                <!-- spae 2 -->
                 <div class="absolute w-[615px] h-[560px] bg-cta-shap2 opacity-[0.12] top-4 right-[-320px] rounded-full">
                 </div>
+                <!-- call to action  -->
                 <div class=" flex items-center gap-8 relative z-10">
+                    <!-- cta content  -->
                     <div class="flex flex-col gap-2 grow">
                         <h2 class="text-white text-[32px] leading-normal font-bold">
                             الأسئلة الشائعة
@@ -544,6 +612,8 @@
                             تعمل أعناب مع أكبر المؤسسات التعليمية في تطويرالمؤهلات المهنية في المدارس
                         </p>
                     </div>
+
+                    <!-- cta button  -->
                     <a href="#"
                         class="py-4 px-8 rounded-[32px] bg-white text-[#8447FF] hover:text-[#7841E8] active:text-[#9D6CFF] transition-all duration-300 text-base leading-6 font-bold">
                         دليل أعناب للمدارس
@@ -558,7 +628,7 @@
     <!-- End  Annab Main Content -->
 
     <!-- Start Annab Footer -->
-    <footer class="px-[30px] sm:px-9 lg:px-0 sm:border-t sm:border-t-[#D1D5DB]">
+    <footer class="px-[30px] sm:px-9 lg:px-0 sm:border-t sm:border-t-[#D1D5DB] relative">
         <section
             class="container border-b border-b-[#D1D5DB] flex flex-col lg:flex-row gap-8 sm:gap-4 lg:gap-20 pt-10 pb-8">
             <div class="flex flex-col sm:flex-row gap-8 sm:gap-4 lg:gap-20">

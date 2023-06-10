@@ -16,3 +16,19 @@ if ($(".slider-testimonials").length > 0) {
         }
     });
 }
+
+if ($(".dropdown-list").length) {
+    $(document).click(function () {
+        $(".dropdown-list-items").removeClass("active");
+    }); 
+    $(".dropdown-list").on("click", function (e) {
+        $(this).siblings(".dropdown-list-items").toggleClass("active");
+        e.stopPropagation();
+    })
+
+    $(".dropdown-list-items").on("click", function (e) {
+        e.stopPropagation();
+    })
+   
+
+}
