@@ -17,6 +17,7 @@ if ($(".slider-testimonials").length > 0) {
     });
 }
 
+// =================================================
 if ($(".dropdown-list").length) {
     $(".dropdown-list").on("click", function (e) {
         if ($(this).siblings(".dropdown-list-items").hasClass("active")) {
@@ -32,13 +33,16 @@ if ($(".dropdown-list").length) {
     })
 }
 
+// =================================================
+if ($(".hero-img").length) {
+    $(window).on("scroll", function () {
+        let pos = $(".hero-img").position().top - 300;
+        if (window.scrollY > pos) {
+            $(".hero-img").addClass("active")
+        }
+        else {
+            $(".hero-img").removeClass("active")
+        }
+    });
+}
 
-$(window).on("scroll", function () {
-    let pos = $(".hero-img").position().top - 300;
-    if (window.scrollY > pos) {
-        $(".hero-img").addClass("active")
-    }
-    else {
-        $(".hero-img").removeClass("active")
-    }
-});
