@@ -18,17 +18,16 @@ if ($(".slider-testimonials").length > 0) {
 }
 
 if ($(".dropdown-list").length) {
-    $(document).click(function () {
-        $(".dropdown-list-items").removeClass("active");
-    }); 
     $(".dropdown-list").on("click", function (e) {
-        $(this).siblings(".dropdown-list-items").toggleClass("active");
-        e.stopPropagation();
+        if ($(this).siblings(".dropdown-list-items").hasClass("active")) {
+            $(".dropdown-list-items").removeClass("active");
+        }
+        else {
+            $(".dropdown-list-items").removeClass("active");
+            $(this).siblings(".dropdown-list-items").addClass("active");
+        }
     })
-
-    $(".dropdown-list-items").on("click", function (e) {
-        e.stopPropagation();
+    $("main").on("click", function (e) {
+        $(".dropdown-list-items").removeClass("active");
     })
-   
-
 }
