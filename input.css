@@ -43,3 +43,7 @@
 .dropdown-list.colored-act.active > svg path {
   @apply fill-[#8447FF];
 }
+
+.anb-accordion.active {
+@apply border-[#8447FF]
+}

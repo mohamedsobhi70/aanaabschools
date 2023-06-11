@@ -31,6 +31,7 @@ if ($(".dropdown-list").length) {
             $(this).addClass("active")
         }
     })
+
     $("main").on("click", function (e) {
         $(".dropdown-list-items").removeClass("active");
     })
@@ -47,5 +48,14 @@ if ($(".hero-img").length) {
             $(".hero-img").removeClass("active")
         }
     });
+}
+// =================================================
+if ($(".anb-accordion").length) {
+    $(".anb-accordion").on("click", function (e) {
+        $(".anb-accordion").removeClass("active");
+        $(this).toggleClass("active");
+        $(this).find("p.hidden").slideToggle(300);
+        $(this).find(".icon img").toggleClass("active");
+    })
 }
 
