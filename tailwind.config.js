@@ -22,10 +22,10 @@ module.exports = {
       },
       boxShadow: {
         'sol-shad': '0px 0px 24px 8px rgba(0, 0, 0, 0.1)',
+        
       },
       backgroundImage: {
-        'cta-shap1': 'linear-gradient(319.28deg, #FFFFFF 13.81%, rgba(135, 146, 161, 0.16) 49.81%)',
-        'cta-shap2': 'linear-gradient(131.42deg, #FFFFFF 19.24%, #FFFFFF 42.06%, rgba(135, 146, 161, 0.16) 69.61%)'
+        'cta': 'linear-gradient(0deg, #7841E8, #7841E8), radial-gradient(74.58% 74.58% at 50% 50%, #8447FF 0%, #5E32B5 100%)',
       },
     },
   },
