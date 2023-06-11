@@ -55,7 +55,7 @@ if ($(".anb-accordion").length) {
         $(".anb-accordion").removeClass("active");
         $(this).toggleClass("active");
         $(this).find("p.hidden").slideToggle(300);
-        $(this).find(".icon img").toggleClass("active");
+        $(this).find(".icon img").toggleClass("hidden");
     })
 }
 
