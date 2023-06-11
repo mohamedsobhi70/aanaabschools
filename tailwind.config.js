@@ -22,7 +22,8 @@ module.exports = {
       },
       boxShadow: {
         'sol-shad': '0px 0px 24px 8px rgba(0, 0, 0, 0.1)',
-        
+        'pricing-shad': '0px 0px 0px 6px rgba(243, 237, 255, 0.5), 0px 0px 0px 15px rgba(243, 237, 255, 0.5)',
+
       },
       backgroundImage: {
         'cta': 'linear-gradient(0deg, #7841E8, #7841E8), radial-gradient(74.58% 74.58% at 50% 50%, #8447FF 0%, #5E32B5 100%)',
