@@ -17,191 +17,201 @@
 
 <body class="font-Almarai overflow-x-hidden">
     <!-- Start Annab Header -->
-    <header class="bg-white z-20 sticky top-0">
-        <div class="container py-6 flex items-center justify-between">
-            <!-- header first part  -->
-            <div class="flex items-center gap-4">
-                <!-- logo  -->
-                <a href="index.html" aria-label="Logo">
-                    <img src="assets/images/logo.png" width="154" height="48" alt="Aanaab Logo">
-                </a>
+    <header class="bg-white z-20 sticky top-0 px-[30px] lg:px-0">
+        <div class="container py-6 flex items-center gap-4 justify-between">
+            <!-- logo  -->
+            <a href="index.html" aria-label="Logo">
+                <img src="assets/images/logo.png" class="w-[128px] lg:w-[154px]" width="154" height="48"
+                    alt="Aanaab Logo">
+            </a>
 
-                <!-- learning  dropdown-->
-                <div
-                    class="py-2.5 px-4 rounded-[32px] border border-[#7841E8] flex items-center gap-2 dropdown-list cursor-pointer">
-                    <span class="text-[#8447FF] text-sm leading-[21px] font-extrabold">تعلم</span>
-                    <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M4.16797 5.21094L0.359375 1.42188C0.183594 1.22656 0.183594 0.933594 0.359375 0.757812L0.808594 0.308594C0.984375 0.132812 1.27734 0.132812 1.47266 0.308594L4.5 3.31641L7.50781 0.308594C7.70312 0.132812 7.99609 0.132812 8.17188 0.308594L8.62109 0.757812C8.79688 0.933594 8.79688 1.22656 8.62109 1.42188L4.8125 5.21094C4.63672 5.38672 4.34375 5.38672 4.16797 5.21094Z"
-                            fill="#8447FF" />
-                    </svg>
-                </div>
+            <button type="button" aria-label="Mobile Menu" class="lg:hidden">
+                <img src="assets/images/menu.svg" width="24" height="24" alt="menu">
+            </button>
 
-                <div class="dropdown-list-items top-28 right-0 bg-white w-screen py-12">
-                    <div class="container grid grid-cols-3 gap-x-[30px] gap-y-8">
-                        <!-- item  -->
-                        <div class="flex items-start gap-6">
-                            <img src="assets/images/book.svg" width="24" height="24" alt="book">
-                            <div class="flex flex-col gap-2">
-                                <a href="#" class="text-[#333745] text-xl leading-normal font-bold">الدورات</a>
-                                <p class="text-[#5B5F6D] text-sm leading-normal">
-                                    دورات عن بعد لتعزيز كفاءة المعلمين والتربويين
-                                </p>
-                            </div>
-                        </div>
-                        <!-- item  -->
-                        <div class="flex items-start gap-6">
-                            <img src="assets/images/award.svg" width="24" height="24" alt="book">
-                            <div class="flex flex-col gap-2">
-                                <a href="#" class="text-[#333745] text-xl leading-normal font-bold">المؤهلات</a>
-                                <p class="text-[#5B5F6D] text-sm leading-normal">
-                                    مؤهّلات مهنيّة وشهادات احترافية بالتعاون مع شركائنا لتكون معلّمًا مؤهّلًا في مختلف
-                                    المجالات.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- item  -->
-                        <div class="flex items-start gap-6">
-                            <img src="assets/images/teacher.svg" width="24" height="24" alt="book">
-                            <div class="flex flex-col gap-2">
-                                <a href="#" class="text-[#333745] text-xl leading-normal font-bold">المسارات</a>
-                                <p class="text-[#5B5F6D] text-sm leading-normal">
-                                    من خلال أداة تقييم الاحتياج التدريبي الذاتي، يستطيع المعلم معرفة أكثر المهارات
-                                    المطلوبة للمجال.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- item  -->
-                        <div class="flex items-start gap-6">
-                            <img src="assets/images/briefcase.svg" width="24" height="24" alt="book">
-                            <div class="flex flex-col gap-2">
-                                <a href="#" class="text-[#333745] text-xl leading-normal font-bold">الرخص المهنية</a>
-                                <p class="text-[#5B5F6D] text-sm leading-normal">دورات مكثفة لاجتياز اختبار الرخصة
-                                    المهنية بكل جدارة للعاملين في قطاع التعليم في السعودية.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="hidden lg:flex items-center justify-between gap-4 flex-1">
+                <!-- header first part  -->
+                <div class="flex items-center gap-4">
 
-                <!-- search  -->
-                <div class="py-2.5 px-4 rounded-full border border-[#D7D5D5] flex items-center gap-3">
-                    <a href="#" aria-label="search">
-                        <img src="assets/images/search.svg" width="16" height="16" alt="search">
-                    </a>
-                    <input type="search" name="header-search" id="header-search" placeholder="بحث"
-                        class="text-sm leading-[21px] placeholder:text-[#838795] focus:outline-none lg:w-[190px]">
-                </div>
-            </div>
-
-            <!-- header second part  -->
-            <div class="flex items-center gap-8">
-                <!-- get your job  -->
-                <div class="">
-                    <div class="dropdown-list flex items-center gap-1 cursor-pointer">
-                        <span class="text-[#333745] text-sm leading-[21px]">
-                            حصل وظيفتك
-                        </span>
-                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- learning  dropdown-->
+                    <div
+                        class="py-2.5 px-4 rounded-[32px] border border-[#7841E8] flex items-center gap-2 dropdown-list cursor-pointer">
+                        <span class="text-[#8447FF] text-sm leading-[21px] font-extrabold">تعلم</span>
+                        <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
-                                d="M4.66797 5.71094L0.859375 1.92188C0.683594 1.72656 0.683594 1.43359 0.859375 1.25781L1.30859 0.808594C1.48438 0.632812 1.77734 0.632812 1.97266 0.808594L5 3.81641L8.00781 0.808594C8.20312 0.632812 8.49609 0.632812 8.67188 0.808594L9.12109 1.25781C9.29688 1.43359 9.29688 1.72656 9.12109 1.92188L5.3125 5.71094C5.13672 5.88672 4.84375 5.88672 4.66797 5.71094Z"
-                                fill="#333745" />
+                                d="M4.16797 5.21094L0.359375 1.42188C0.183594 1.22656 0.183594 0.933594 0.359375 0.757812L0.808594 0.308594C0.984375 0.132812 1.27734 0.132812 1.47266 0.308594L4.5 3.31641L7.50781 0.308594C7.70312 0.132812 7.99609 0.132812 8.17188 0.308594L8.62109 0.757812C8.79688 0.933594 8.79688 1.22656 8.62109 1.42188L4.8125 5.21094C4.63672 5.38672 4.34375 5.38672 4.16797 5.21094Z"
+                                fill="#8447FF" />
                         </svg>
                     </div>
 
                     <div class="dropdown-list-items top-28 right-0 bg-white w-screen py-12">
-                        <div class="container grid grid-cols-2 gap-8">
+                        <div class="container grid grid-cols-3 gap-x-[30px] gap-y-8">
                             <!-- item  -->
-                            <div class="flex flex-col gap-6">
-                                <h2 class="text-[#333745] text-base leading-normal">التخصصات</h2>
-                                <div class="grid grid-cols-2 gap-4">
-                                    <a href="#" class="text-[#838795] text-sm leading-normal">لغة عربية/ كفايات
-                                        لغوية.</a>
-                                    <a href="#" class="text-[#838795] text-sm leading-normal">لغة عربية/ كفايات
-                                        لغوية.</a>
-                                    <a href="#" class="text-[#838795] text-sm leading-normal">التفكير الناقد.</a>
-                                    <a href="#" class="text-[#838795] text-sm leading-normal">التفكير الناقد.</a>
-                                    <a href="#" class="text-[#838795] text-sm leading-normal">دراسات إسلامية / قرآن وعلم
-                                        تفسير.</a>
-                                    <a href="#" class="text-[#838795] text-sm leading-normal">دراسات إسلامية / قرآن وعلم
-                                        تفسير.</a>
-                                    <a href="#" class="text-[#838795] text-sm leading-normal">علم البيئة.</a>
-                                    <a href="#" class="text-[#838795] text-sm leading-normal">علم البيئة.</a>
-                                    <a href="#" class="text-[#838795] text-sm leading-normal">لغة إنجليزية.</a>
-                                    <a href="#" class="text-[#838795] text-sm leading-normal">لغة إنجليزية.</a>
+                            <div class="flex items-start gap-6">
+                                <img src="assets/images/book.svg" width="24" height="24" alt="book">
+                                <div class="flex flex-col gap-2">
+                                    <a href="#" class="text-[#333745] text-xl leading-normal font-bold">الدورات</a>
+                                    <p class="text-[#5B5F6D] text-sm leading-normal">
+                                        دورات عن بعد لتعزيز كفاءة المعلمين والتربويين
+                                    </p>
                                 </div>
                             </div>
-
                             <!-- item  -->
-                            <div class="grid grid-cols-2 gap-[30px]">
+                            <div class="flex items-start gap-6">
+                                <img src="assets/images/award.svg" width="24" height="24" alt="book">
+                                <div class="flex flex-col gap-2">
+                                    <a href="#" class="text-[#333745] text-xl leading-normal font-bold">المؤهلات</a>
+                                    <p class="text-[#5B5F6D] text-sm leading-normal">
+                                        مؤهّلات مهنيّة وشهادات احترافية بالتعاون مع شركائنا لتكون معلّمًا مؤهّلًا في
+                                        مختلف
+                                        المجالات.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- item  -->
+                            <div class="flex items-start gap-6">
+                                <img src="assets/images/teacher.svg" width="24" height="24" alt="book">
+                                <div class="flex flex-col gap-2">
+                                    <a href="#" class="text-[#333745] text-xl leading-normal font-bold">المسارات</a>
+                                    <p class="text-[#5B5F6D] text-sm leading-normal">
+                                        من خلال أداة تقييم الاحتياج التدريبي الذاتي، يستطيع المعلم معرفة أكثر المهارات
+                                        المطلوبة للمجال.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- item  -->
+                            <div class="flex items-start gap-6">
+                                <img src="assets/images/briefcase.svg" width="24" height="24" alt="book">
+                                <div class="flex flex-col gap-2">
+                                    <a href="#" class="text-[#333745] text-xl leading-normal font-bold">الرخص
+                                        المهنية</a>
+                                    <p class="text-[#5B5F6D] text-sm leading-normal">دورات مكثفة لاجتياز اختبار الرخصة
+                                        المهنية بكل جدارة للعاملين في قطاع التعليم في السعودية.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- search  -->
+                    <div class="py-2.5 px-4 rounded-full border border-[#D7D5D5] flex items-center gap-3">
+                        <a href="#" aria-label="search">
+                            <img src="assets/images/search.svg" width="16" height="16" alt="search">
+                        </a>
+                        <input type="search" name="header-search" id="header-search" placeholder="بحث"
+                            class="text-sm leading-[21px] placeholder:text-[#838795] focus:outline-none lg:w-[190px]">
+                    </div>
+                </div>
+                <!-- header second part  -->
+                <div class="flex items-center gap-8">
+                    <!-- get your job  -->
+                    <div class="">
+                        <div class="dropdown-list flex items-center gap-1 cursor-pointer colored-act">
+                            <span class="text-[#333745] text-sm leading-[21px] font-normal transition-all duration-300">
+                                حصل وظيفتك
+                            </span>
+                            <svg class="transition-all duration-300" width="10" height="6" viewBox="0 0 10 6"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="transition-all duration-300"
+                                    d="M4.66797 5.71094L0.859375 1.92188C0.683594 1.72656 0.683594 1.43359 0.859375 1.25781L1.30859 0.808594C1.48438 0.632812 1.77734 0.632812 1.97266 0.808594L5 3.81641L8.00781 0.808594C8.20312 0.632812 8.49609 0.632812 8.67188 0.808594L9.12109 1.25781C9.29688 1.43359 9.29688 1.72656 9.12109 1.92188L5.3125 5.71094C5.13672 5.88672 4.84375 5.88672 4.66797 5.71094Z"
+                                    fill="#333745" />
+                            </svg>
+                        </div>
+
+                        <div class="dropdown-list-items top-28 right-0 bg-white w-screen py-12">
+                            <div class="container grid grid-cols-2 gap-8">
+                                <!-- item  -->
                                 <div class="flex flex-col gap-6">
-                                    <h2 class="text-[#333745] text-base leading-normal">المرحله التعليمية</h2>
-                                    <div class="flex flex-col gap-4">
+                                    <h2 class="text-[#333745] text-base leading-normal">التخصصات</h2>
+                                    <div class="grid grid-cols-2 gap-4">
                                         <a href="#" class="text-[#838795] text-sm leading-normal">لغة عربية/ كفايات
                                             لغوية.</a>
+                                        <a href="#" class="text-[#838795] text-sm leading-normal">لغة عربية/ كفايات
+                                            لغوية.</a>
+                                        <a href="#" class="text-[#838795] text-sm leading-normal">التفكير الناقد.</a>
                                         <a href="#" class="text-[#838795] text-sm leading-normal">التفكير الناقد.</a>
                                         <a href="#" class="text-[#838795] text-sm leading-normal">دراسات إسلامية / قرآن
                                             وعلم
                                             تفسير.</a>
-                                        <a href="#" class="text-[#838795] text-sm leading-normal">علم البيئة.</a>
-                                        <a href="#" class="text-[#838795] text-sm leading-normal">لغة إنجليزية.</a>
-                                    </div>
-                                </div>
-                                <div class="flex flex-col gap-6">
-                                    <h2 class="text-[#333745] text-base leading-normal">المستوي الوظيفي</h2>
-                                    <div class="flex flex-col gap-4">
-                                        <a href="#" class="text-[#838795] text-sm leading-normal">لغة عربية/ كفايات
-                                            لغوية.</a>
-                                        <a href="#" class="text-[#838795] text-sm leading-normal">التفكير الناقد.</a>
                                         <a href="#" class="text-[#838795] text-sm leading-normal">دراسات إسلامية / قرآن
                                             وعلم
                                             تفسير.</a>
                                         <a href="#" class="text-[#838795] text-sm leading-normal">علم البيئة.</a>
+                                        <a href="#" class="text-[#838795] text-sm leading-normal">علم البيئة.</a>
+                                        <a href="#" class="text-[#838795] text-sm leading-normal">لغة إنجليزية.</a>
                                         <a href="#" class="text-[#838795] text-sm leading-normal">لغة إنجليزية.</a>
                                     </div>
                                 </div>
 
+                                <!-- item  -->
+                                <div class="grid grid-cols-2 gap-[30px]">
+                                    <div class="flex flex-col gap-6">
+                                        <h2 class="text-[#333745] text-base leading-normal">المرحله التعليمية</h2>
+                                        <div class="flex flex-col gap-4">
+                                            <a href="#" class="text-[#838795] text-sm leading-normal">لغة عربية/ كفايات
+                                                لغوية.</a>
+                                            <a href="#" class="text-[#838795] text-sm leading-normal">التفكير
+                                                الناقد.</a>
+                                            <a href="#" class="text-[#838795] text-sm leading-normal">دراسات إسلامية /
+                                                قرآن
+                                                وعلم
+                                                تفسير.</a>
+                                            <a href="#" class="text-[#838795] text-sm leading-normal">علم البيئة.</a>
+                                            <a href="#" class="text-[#838795] text-sm leading-normal">لغة إنجليزية.</a>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col gap-6">
+                                        <h2 class="text-[#333745] text-base leading-normal">المستوي الوظيفي</h2>
+                                        <div class="flex flex-col gap-4">
+                                            <a href="#" class="text-[#838795] text-sm leading-normal">لغة عربية/ كفايات
+                                                لغوية.</a>
+                                            <a href="#" class="text-[#838795] text-sm leading-normal">التفكير
+                                                الناقد.</a>
+                                            <a href="#" class="text-[#838795] text-sm leading-normal">دراسات إسلامية /
+                                                قرآن
+                                                وعلم
+                                                تفسير.</a>
+                                            <a href="#" class="text-[#838795] text-sm leading-normal">علم البيئة.</a>
+                                            <a href="#" class="text-[#838795] text-sm leading-normal">لغة إنجليزية.</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
                             </div>
+                        </div>
+                    </div>
+
+
+                    <!-- For Schools  -->
+                    <div class="relative">
+                        <div class="flex items-center gap-1 cursor-pointer dropdown-list colored-act">
+                            <span class="text-[#333745] text-sm leading-[21px] font-normal transition-all duration-300">
+                                للمدارس
+                            </span>
+                            <svg class="transition-all duration-300" width="10" height="6" viewBox="0 0 10 6"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="transition-all duration-300"
+                                    d="M4.66797 5.71094L0.859375 1.92188C0.683594 1.72656 0.683594 1.43359 0.859375 1.25781L1.30859 0.808594C1.48438 0.632812 1.77734 0.632812 1.97266 0.808594L5 3.81641L8.00781 0.808594C8.20312 0.632812 8.49609 0.632812 8.67188 0.808594L9.12109 1.25781C9.29688 1.43359 9.29688 1.72656 9.12109 1.92188L5.3125 5.71094C5.13672 5.88672 4.84375 5.88672 4.66797 5.71094Z"
+                                    fill="#333745" />
+                            </svg>
+                        </div>
+                        <div
+                            class="dropdown-list-items top-28 right-0 bg-white w-[260px] py-2 border border-[#D7D5D5] rounded-2xl">
 
                         </div>
                     </div>
-                </div>
 
-
-                <!-- For Schools  -->
-                <div class="relative">
-                    <div class="flex items-center gap-1 cursor-pointer dropdown-list">
-                        <span
-                            class="text-transparent bg-clip-text from-[#8447FF] to-[#AE47FF] bg-gradient-to-r text-sm leading-[21px] font-bold">
-                            للمدارس
-                        </span>
-                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M5.3125 0.808594L9.12109 4.59766C9.29688 4.79297 9.29688 5.08594 9.12109 5.26172L8.67188 5.71094C8.49609 5.88672 8.20312 5.88672 8.00781 5.71094L5 2.70312L1.97266 5.71094C1.77734 5.88672 1.48438 5.88672 1.30859 5.71094L0.859375 5.26172C0.683594 5.08594 0.683594 4.79297 0.859375 4.59766L4.66797 0.808594C4.84375 0.632812 5.13672 0.632812 5.3125 0.808594Z"
-                                fill="url(#paint0_linear_2593_1456)" />
-                            <defs>
-                                <linearGradient id="paint0_linear_2593_1456" x1="-3" y1="3" x2="13" y2="3"
-                                    gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#8447FF" />
-                                    <stop offset="1" stop-color="#AE47FF" />
-                                </linearGradient>
-                            </defs>
-                        </svg>
+                    <!-- join aanaab  -->
+                    <div class="flex items-center gap-4">
+                        <a href="#"
+                            class="py-3 px-6 rounded-[32px] bg-[#8447FF] hover:bg-[#7841E8] active:bg-[#9D6CFF] transition-all duration-300 text-white text-base leading-6 font-bold">
+                            انضم إلى أعناب
+                        </a>
+                        <a href="#" class="text-[#333745] text-base leading-6">تسجيل الدخول</a>
                     </div>
-                    <div
-                        class="dropdown-list-items top-28 right-0 bg-white w-[260px] py-2 border border-[#D7D5D5] rounded-2xl">
-
-                    </div>
-                </div>
-
-                <!-- join aanaab  -->
-                <div class="flex items-center gap-4">
-                    <a href="#"
-                        class="py-3 px-6 rounded-[32px] bg-[#8447FF] hover:bg-[#7841E8] active:bg-[#9D6CFF] transition-all duration-300 text-white text-base leading-6 font-bold">
-                        انضم إلى أعناب
-                    </a>
-                    <a href="#" class="text-[#333745] text-base leading-6">تسجيل الدخول</a>
                 </div>
             </div>
+
         </div>
     </header>
     <!-- End  Annab Header -->
@@ -211,36 +221,36 @@
     <main class="relative">
 
         <!-- start hero setion  -->
-        <section class="py-16">
+        <section class="py-16 px-8 lg:px-0">
             <div class="container flex flex-col gap-16">
                 <!-- header section  -->
                 <header class="flex flex-col items-center gap-3">
-                    <h2 class="text-[#333745] text-[32px] leading-normal font-extrabold">
+                    <h2 class="text-[#333745] text-2xl lg:text-[32px] leading-normal font-extrabold">
                         باقات المدارس
                     </h2>
-                    <p class="text-[#5B5F6D] text-lg leading-normal">
+                    <p class="text-[#5B5F6D] text-base lg:text-lg leading-normal text-center">
                         لأن الاستثمار المهني في المعلمين هو استثمار في مستقبل المدرسة
                     </p>
                 </header>
 
                 <!-- Pricing  section  -->
-                <div class="grid grid-cols-3 gap-[30px]">
+                <div class="grid lg:grid-cols-3 gap-4 lg:gap-[30px]">
                     <!-- pricing item  -->
                     <div>
                         <!-- pricing item  header-->
                         <header class="flex flex-col gap-4 p-8 rounded-[32px] border border-[#D7D5D5]">
                             <div class="flex justify-between items-start gap-4">
-                                <h3 class="text-[#333745] text-xl leading-normal font-bold">الباقة الأساسية</h3>
-                                <span class="text-[#5B5F6D] text-base leading-normal">سنوياََ</span>
+                                <h3 class="text-[#333745] text-base lg:text-xl leading-normal font-bold">الباقة الأساسية</h3>
+                                <span class="text-[#5B5F6D] text-sm lg:text-base leading-normal">سنوياََ</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span class="text-[#333745] text-[32px] leading-normal font-extrabold">2,000</span>
-                                <span class="text-[#5B5F6D] text-base leading-normal">ريال سعودي</span>
+                                <span class="text-[#333745] text-2xl lg:text-[32px] leading-normal font-extrabold">2,000</span>
+                                <span class="text-[#5B5F6D] text-sm lg:text-base leading-normal">ريال سعودي</span>
                             </div>
                         </header>
 
                         <!-- pricing item  content-->
-                        <div class="flex flex-col gap-8 p-8">
+                        <div class="flex flex-col gap-8 py-8 lg:p-8">
                             <ul class="flex flex-col gap-4">
                                 <li class="flex items-start gap-3">
                                     <img src="assets/images/Check.svg" class="py-0.5" width="16" height="16"
@@ -304,7 +314,7 @@
 
                     <!-- pricing item  -->
                     <div class="relative">
-                        <div class="absolute top-[-60px] right-[-90px]">
+                        <div class="absolute top-[-60px] right-[-90px] hidden lg:block">
                             <span class="text-[#7841E8] text-sm leading-5 font-bold">الآكثر شهرة</span>
                             <img src="assets/images/Combined-Shape.png" class="absolute right-full" width="39"
                                 height="12" alt="Line Shape">
@@ -314,17 +324,17 @@
                         <header
                             class="flex flex-col gap-4 p-8 rounded-[32px] border border-transparent bg-[#8447FF] shadow-pricing-shad">
                             <div class="flex justify-between items-start gap-4">
-                                <h3 class="text-white text-xl leading-normal font-bold">الباقة المتقدمة</h3>
-                                <span class="text-white text-base leading-normal">سنوياََ</span>
+                                <h3 class="text-white text-base lg:text-xl leading-normal font-bold">الباقة المتقدمة</h3>
+                                <span class="text-white text-sm lg:text-base leading-normal">سنوياََ</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span class="text-white text-[32px] leading-normal font-extrabold">5,000</span>
-                                <span class="text-white text-base leading-normal">ريال سعودي</span>
+                                <span class="text-white text-2xl lg:text-[32px] leading-normal font-extrabold">5,000</span>
+                                <span class="text-white text-sm lg:text-base leading-normal">ريال سعودي</span>
                             </div>
                         </header>
 
                         <!-- pricing item  content-->
-                        <div class="flex flex-col gap-8 p-8">
+                        <div class="flex flex-col gap-8 py-8 lg:p-8">
                             <ul class="flex flex-col gap-4">
                                 <li class="flex items-start gap-3">
                                     <img src="assets/images/Check.svg" class="py-0.5" width="16" height="16"
@@ -391,17 +401,17 @@
                         <!-- pricing item  header-->
                         <header class="flex flex-col gap-4 p-8 rounded-[32px] border border-[#D7D5D5]">
                             <div class="flex justify-between items-start gap-4">
-                                <h3 class="text-[#333745] text-xl leading-normal font-bold">الباقة المميزة</h3>
-                                <span class="text-[#5B5F6D] text-base leading-normal">سنوياََ</span>
+                                <h3 class="text-[#333745] text-base lg:text-xl leading-normal font-bold">الباقة المميزة</h3>
+                                <span class="text-[#5B5F6D] text-sm lg:text-base leading-normal">سنوياََ</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span class="text-[#333745] text-[32px] leading-normal font-extrabold">10,000</span>
-                                <span class="text-[#5B5F6D] text-base leading-normal">ريال سعودي</span>
+                                <span class="text-[#333745] text-2xl lg:text-[32px] leading-normal font-extrabold">10,000</span>
+                                <span class="text-[#5B5F6D] text-sm lg:text-base leading-normal">ريال سعودي</span>
                             </div>
                         </header>
 
                         <!-- pricing item  content-->
-                        <div class="flex flex-col gap-8 p-8">
+                        <div class="flex flex-col gap-8 py-8 lg:p-8">
                             <ul class="flex flex-col gap-4">
                                 <li class="flex items-start gap-3">
                                     <img src="assets/images/Check.svg" class="py-0.5" width="16" height="16"
@@ -470,28 +480,28 @@
         <!-- ======================================= -->
 
         <!-- Start FAQs setion  -->
-        <section class="py-16">
+        <section class="py-16 px-8 lg:px-0">
             <div class="container flex flex-col gap-16">
 
                 <!-- header section  -->
                 <header class="flex flex-col items-center gap-3">
-                    <h2 class="text-[#333745] text-[32px] leading-normal font-extrabold">
+                    <h2 class="text-[#333745] text-2xl lg:text-[32px] leading-normal text-center font-extrabold">
                         الأسئلة الشائعة
                     </h2>
-                    <p class="text-[#5B5F6D] text-lg leading-normal">
+                    <p class="text-[#5B5F6D] text-base lg:text-lg leading-normal text-center">
                         لأن الاستثمار المهني في المعلمين هو استثمار في مستقبل المدرسة
                     </p>
                 </header>
 
                 <!-- FAQs section Content  -->
-                <div class="flex flex-col gap-6 w-[730px] mx-auto">
+                <div class="flex flex-col gap-6 lg:w-[730px] mx-auto">
                     <div class="flex flex-col gap-4">
 
                         <!-- Accordion Item  -->
                         <div
-                            class="anb-accordion transition-all duration-300 cursor-pointer border border-[#D7D5D5] rounded-3xl p-6 flex flex-col">
+                            class="anb-accordion transition-all duration-300 cursor-pointer border border-transparent bg-[#F6F5F7] rounded-3xl p-6 flex flex-col">
                             <div class="anb-accordion-title flex items-center justify-between gap-8">
-                                <h3 class="text-[#333745] text-base leading-normal">
+                                <h3 class="text-[#333745] text-base leading-normal flex-1">
                                     كيف سيطور برنامج مؤهلات كامبردج مهاراتي كمعلم؟
                                 </h3>
                                 <span class="icon">
@@ -510,9 +520,9 @@
 
                         <!-- Accordion Item  -->
                         <div
-                            class="anb-accordion transition-all duration-300 cursor-pointer border border-[#D7D5D5] rounded-3xl p-6 flex flex-col">
+                            class="anb-accordion transition-all duration-300 cursor-pointer border border-transparent bg-[#F6F5F7] rounded-3xl p-6 flex flex-col">
                             <div class="anb-accordion-title flex items-center justify-between gap-8">
-                                <h3 class="text-[#333745] text-base leading-normal">
+                                <h3 class="text-[#333745] text-base leading-normal flex-1">
                                     ماهي طريقة التقييم في البرنامج؟
                                 </h3>
                                 <span class="icon">
@@ -531,9 +541,9 @@
 
                         <!-- Accordion Item  -->
                         <div
-                            class="anb-accordion transition-all duration-300 cursor-pointer border border-[#D7D5D5] rounded-3xl p-6 flex flex-col">
+                            class="anb-accordion transition-all duration-300 cursor-pointer border border-transparent bg-[#F6F5F7] rounded-3xl p-6 flex flex-col">
                             <div class="anb-accordion-title flex items-center justify-between gap-8">
-                                <h3 class="text-[#333745] text-base leading-normal">
+                                <h3 class="text-[#333745] text-base leading-normal flex-1">
                                     ماهي رسوم البرنامج؟
                                 </h3>
                                 <span class="icon">
@@ -552,9 +562,9 @@
 
                         <!-- Accordion Item  -->
                         <div
-                            class="anb-accordion transition-all duration-300 cursor-pointer border border-[#D7D5D5] rounded-3xl p-6 flex flex-col">
+                            class="anb-accordion transition-all duration-300 cursor-pointer border border-transparent bg-[#F6F5F7] rounded-3xl p-6 flex flex-col">
                             <div class="anb-accordion-title flex items-center justify-between gap-8">
-                                <h3 class="text-[#333745] text-base leading-normal">
+                                <h3 class="text-[#333745] text-base leading-normal flex-1">
                                     ماهي طريقة التقييم في البرنامج؟
                                 </h3>
                                 <span class="icon">
@@ -573,9 +583,9 @@
 
                         <!-- Accordion Item  -->
                         <div
-                            class="anb-accordion transition-all duration-300 cursor-pointer border border-[#D7D5D5] rounded-3xl p-6 flex flex-col">
+                            class="anb-accordion transition-all duration-300 cursor-pointer border border-transparent bg-[#F6F5F7] rounded-3xl p-6 flex flex-col">
                             <div class="anb-accordion-title flex items-center justify-between gap-8">
-                                <h3 class="text-[#333745] text-base leading-normal">
+                                <h3 class="text-[#333745] text-base leading-normal flex-1">
                                     ماهي رسوم البرنامج؟
                                 </h3>
                                 <span class="icon">
@@ -594,9 +604,9 @@
 
                         <!-- Accordion Item  -->
                         <div
-                            class="anb-accordion transition-all duration-300 cursor-pointer border border-[#D7D5D5] rounded-3xl p-6 flex flex-col">
+                            class="anb-accordion transition-all duration-300 cursor-pointer border border-transparent bg-[#F6F5F7] rounded-3xl p-6 flex flex-col">
                             <div class="anb-accordion-title flex items-center justify-between gap-8">
-                                <h3 class="text-[#333745] text-base leading-normal">
+                                <h3 class="text-[#333745] text-base leading-normal flex-1">
                                     ماهي طريقة التقييم في البرنامج؟
                                 </h3>
                                 <span class="icon">
@@ -615,9 +625,9 @@
 
                         <!-- Accordion Item  -->
                         <div
-                            class="anb-accordion transition-all duration-300 cursor-pointer border border-[#D7D5D5] rounded-3xl p-6 flex flex-col">
+                            class="anb-accordion transition-all duration-300 cursor-pointer border border-transparent bg-[#F6F5F7] rounded-3xl p-6 flex flex-col">
                             <div class="anb-accordion-title flex items-center justify-between gap-8">
-                                <h3 class="text-[#333745] text-base leading-normal">
+                                <h3 class="text-[#333745] text-base leading-normal flex-1">
                                     ماهي رسوم البرنامج؟
                                 </h3>
                                 <span class="icon">
@@ -646,15 +656,15 @@
         <!-- End FAQs setion  -->
 
         <!-- Start Call to action setion  -->
-        <section class="py-16">
-            <div class="container p-8 flex justify-between items-center gap-8 border border-[#D7D5D5] rounded-3xl">
-                <div class="flex flex-col gap-3">
+        <section class="lg:py-16">
+            <div class="container px-8 py-12 lg:p-8 flex flex-col lg:flex-row lg:justify-between items-center gap-8 lg:border lg:border-[#D7D5D5] rounded-3xl">
+                <div class="flex flex-col items-center lg:items-start gap-3">
                     <h2 class="text-[#333745] text-2xl leading-normal font-extrabold">الأسئلة الشائعة</h2>
-                    <p class="text-[#5B5F6D] text-lg leading-normal">لأن الاستثمار المهني في المعلمين هو استثمار في
+                    <p class="text-[#5B5F6D] text-lg leading-normal text-center lg:text-right">لأن الاستثمار المهني في المعلمين هو استثمار في
                         مستقبل المدرسة</p>
                 </div>
                 <a href="#"
-                    class="py-4 px-8 rounded-[32px] bg-[#8447FF] hover:bg-[#7841E8] active:bg-[#9D6CFF] transition-all duration-300 text-white text-base leading-6 font-bold">
+                    class="py-4 px-8 w-full text-center lg:w-auto rounded-[32px] bg-[#8447FF] hover:bg-[#7841E8] active:bg-[#9D6CFF] transition-all duration-300 text-white text-base leading-6 font-bold">
                     دليل أعناب للمدارس </a>
             </div>
         </section>
@@ -777,16 +787,18 @@
         </section>
 
         <div class="container py-8 flex flex-col gap-2 lg:flex-row items-center justify-between">
-            <p class="text-[#6B7280] text-14-27">جميع الحقوق محفوظة © منصة أعناب</p>
+            <p class="text-[#6B7280] text-sm leading-normal">جميع الحقوق محفوظة © منصة أعناب</p>
             <nav class="flex leading-[8px] ">
-                <a href="#" class="text-[#6B7280]  text-13-19 lg:text-sm border-l  border-[#D1D5DB] px-4">الرئيسية</a>
-                <a href="#" class="text-[#6B7280]  text-13-19 lg:text-sm border-l  border-[#D1D5DB] px-4">تصفح
+                <a href="#"
+                    class="text-[#6B7280] text-[13px] leading-loose lg:text-sm border-l  border-[#D1D5DB] px-4">الرئيسية</a>
+                <a href="#"
+                    class="text-[#6B7280] text-[13px] leading-loose lg:text-sm border-l  border-[#D1D5DB] px-4">تصفح
                     الدورات</a>
                 <a href="#"
-                    class="text-[#6B7280]  text-13-19 lg:text-sm border-l  border-[#D1D5DB] px-4 hidden sm:block">عن
+                    class="text-[#6B7280] text-[13px] leading-loose lg:text-sm border-l  border-[#D1D5DB] px-4 hidden sm:block">عن
                     منصة
                     أعناب</a>
-                <a href="#" class="text-[#6B7280]  text-13-19 lg:text-sm px-4">سياسة الخصوصية</a>
+                <a href="#" class="text-[#6B7280] text-[13px] leading-loose lg:text-sm px-4">سياسة الخصوصية</a>
             </nav>
         </div>
     </footer>

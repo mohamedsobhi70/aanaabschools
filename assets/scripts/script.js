@@ -1,7 +1,13 @@
+// Testimonial Carousel  ==> Home Page
 if ($(".slider-testimonials").length > 0) {
     let swiper = new Swiper(".slider-testimonials", {
         centeredSlides: true,
         loop: true,
+        autoplay: true,
+        navigation: {
+            nextEl: '.tes-prev',
+            prevEl: '.tes-next',
+        },
         breakpoints: {
             0: {
                 slidesPerView: 1.2,
@@ -21,8 +27,37 @@ if ($(".slider-testimonials").length > 0) {
         }
     });
 }
-
 // =================================================
+
+// Partners Carousel 
+if ($(".slider-partners").length > 0) {
+    let swiper = new Swiper(".slider-partners", {
+        loop: true,
+        spaceBetween: 40,
+        autoplay: true,
+        breakpoints: {
+            0: {
+                slidesPerView: 2.5,
+            },
+            680: {
+                slidesPerView: 4,
+            },
+            1024: {
+                slidesPerView: 5,
+            }
+        },
+        pagination: {
+            el: '.partners-pagination',
+            clickable: true,
+            dynamicBullets: true,
+            dynamicMainBullets: 3,
+        }
+
+    });
+}
+// =================================================
+
+// Drop Down In Header 
 if ($(".dropdown-list").length) {
     $(".dropdown-list").on("click", function (e) {
         $(".colored-act").removeClass("active")
@@ -41,8 +76,9 @@ if ($(".dropdown-list").length) {
         $(".dropdown-list-items").removeClass("active");
     })
 }
-
 // =================================================
+
+// Change the shadow of Img ==> Home Page
 if ($(".hero-img").length) {
     $(window).on("scroll", function () {
         let pos = $(".hero-img").position().top - 300;
@@ -55,6 +91,8 @@ if ($(".hero-img").length) {
     });
 }
 // =================================================
+
+// Annab Accordion Component
 if ($(".anb-accordion").length) {
     $(".anb-accordion").on("click", function (e) {
         $(this).toggleClass("active");
@@ -62,4 +100,4 @@ if ($(".anb-accordion").length) {
         $(this).find(".icon img").toggleClass("hidden");
     })
 }
-
+// =================================================
