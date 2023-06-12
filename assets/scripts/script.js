@@ -81,7 +81,7 @@ if ($(".dropdown-list").length) {
 // Change the shadow of Img ==> Home Page
 if ($(".hero-img").length) {
     $(window).on("scroll", function () {
-        let pos = $(".hero-img").position().top - 300;
+        let pos = $(".hero-img").position().top + 100;
         if (window.scrollY > pos) {
             $(".hero-img").addClass("active")
         }
