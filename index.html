@@ -17,185 +17,200 @@
 
 <body class="font-Almarai overflow-x-hidden">
     <!-- Start Annab Header -->
-    <header class="bg-white z-20 sticky top-0">
-        <div class="container py-6 flex items-center justify-between">
-            <!-- header first part  -->
-            <div class="flex items-center gap-4">
-                <!-- logo  -->
-                <a href="index.html" aria-label="Logo">
-                    <img src="assets/images/logo.png" width="154" height="48" alt="Aanaab Logo">
-                </a>
+    <header class="bg-white z-20 sticky top-0 px-[30px] lg:px-0">
+        <div class="container py-6 flex items-center gap-4 justify-between">
+            <!-- logo  -->
+            <a href="index.html" aria-label="Logo">
+                <img src="assets/images/logo.png" class="w-[128px] lg:w-[154px]" width="154" height="48" alt="Aanaab Logo">
+            </a>
 
-                <!-- learning  dropdown-->
-                <div
-                    class="py-2.5 px-4 rounded-[32px] border border-[#7841E8] flex items-center gap-2 dropdown-list cursor-pointer">
-                    <span class="text-[#8447FF] text-sm leading-[21px] font-extrabold">تعلم</span>
-                    <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M4.16797 5.21094L0.359375 1.42188C0.183594 1.22656 0.183594 0.933594 0.359375 0.757812L0.808594 0.308594C0.984375 0.132812 1.27734 0.132812 1.47266 0.308594L4.5 3.31641L7.50781 0.308594C7.70312 0.132812 7.99609 0.132812 8.17188 0.308594L8.62109 0.757812C8.79688 0.933594 8.79688 1.22656 8.62109 1.42188L4.8125 5.21094C4.63672 5.38672 4.34375 5.38672 4.16797 5.21094Z"
-                            fill="#8447FF" />
-                    </svg>
-                </div>
+            <button type="button" aria-label="Mobile Menu" class="lg:hidden">
+                <img src="assets/images/menu.svg" width="24" height="24" alt="menu">
+            </button>
 
-                <div class="dropdown-list-items top-28 right-0 bg-white w-screen py-12">
-                    <div class="container grid grid-cols-3 gap-x-[30px] gap-y-8">
-                        <!-- item  -->
-                        <div class="flex items-start gap-6">
-                            <img src="assets/images/book.svg" width="24" height="24" alt="book">
-                            <div class="flex flex-col gap-2">
-                                <a href="#" class="text-[#333745] text-xl leading-normal font-bold">الدورات</a>
-                                <p class="text-[#5B5F6D] text-sm leading-normal">
-                                    دورات عن بعد لتعزيز كفاءة المعلمين والتربويين
-                                </p>
-                            </div>
-                        </div>
-                        <!-- item  -->
-                        <div class="flex items-start gap-6">
-                            <img src="assets/images/award.svg" width="24" height="24" alt="book">
-                            <div class="flex flex-col gap-2">
-                                <a href="#" class="text-[#333745] text-xl leading-normal font-bold">المؤهلات</a>
-                                <p class="text-[#5B5F6D] text-sm leading-normal">
-                                    مؤهّلات مهنيّة وشهادات احترافية بالتعاون مع شركائنا لتكون معلّمًا مؤهّلًا في مختلف
-                                    المجالات.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- item  -->
-                        <div class="flex items-start gap-6">
-                            <img src="assets/images/teacher.svg" width="24" height="24" alt="book">
-                            <div class="flex flex-col gap-2">
-                                <a href="#" class="text-[#333745] text-xl leading-normal font-bold">المسارات</a>
-                                <p class="text-[#5B5F6D] text-sm leading-normal">
-                                    من خلال أداة تقييم الاحتياج التدريبي الذاتي، يستطيع المعلم معرفة أكثر المهارات
-                                    المطلوبة للمجال.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- item  -->
-                        <div class="flex items-start gap-6">
-                            <img src="assets/images/briefcase.svg" width="24" height="24" alt="book">
-                            <div class="flex flex-col gap-2">
-                                <a href="#" class="text-[#333745] text-xl leading-normal font-bold">الرخص المهنية</a>
-                                <p class="text-[#5B5F6D] text-sm leading-normal">دورات مكثفة لاجتياز اختبار الرخصة
-                                    المهنية بكل جدارة للعاملين في قطاع التعليم في السعودية.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="hidden lg:flex items-center justify-between gap-4 flex-1">
+                <!-- header first part  -->
+                <div class="flex items-center gap-4">
 
-                <!-- search  -->
-                <div class="py-2.5 px-4 rounded-full border border-[#D7D5D5] flex items-center gap-3">
-                    <a href="#" aria-label="search">
-                        <img src="assets/images/search.svg" width="16" height="16" alt="search">
-                    </a>
-                    <input type="search" name="header-search" id="header-search" placeholder="بحث"
-                        class="text-sm leading-[21px] placeholder:text-[#838795] focus:outline-none lg:w-[190px]">
-                </div>
-            </div>
-
-            <!-- header second part  -->
-            <div class="flex items-center gap-8">
-                <!-- get your job  -->
-                <div class="">
-                    <div class="dropdown-list flex items-center gap-1 cursor-pointer colored-act">
-                        <span class="text-[#333745] text-sm leading-[21px] font-normal transition-all duration-300">
-                            حصل وظيفتك
-                        </span>
-                        <svg class="transition-all duration-300" width="10" height="6" viewBox="0 0 10 6" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path class="transition-all duration-300"
-                                d="M4.66797 5.71094L0.859375 1.92188C0.683594 1.72656 0.683594 1.43359 0.859375 1.25781L1.30859 0.808594C1.48438 0.632812 1.77734 0.632812 1.97266 0.808594L5 3.81641L8.00781 0.808594C8.20312 0.632812 8.49609 0.632812 8.67188 0.808594L9.12109 1.25781C9.29688 1.43359 9.29688 1.72656 9.12109 1.92188L5.3125 5.71094C5.13672 5.88672 4.84375 5.88672 4.66797 5.71094Z"
-                                fill="#333745" />
+                    <!-- learning  dropdown-->
+                    <div
+                        class="py-2.5 px-4 rounded-[32px] border border-[#7841E8] flex items-center gap-2 dropdown-list cursor-pointer">
+                        <span class="text-[#8447FF] text-sm leading-[21px] font-extrabold">تعلم</span>
+                        <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M4.16797 5.21094L0.359375 1.42188C0.183594 1.22656 0.183594 0.933594 0.359375 0.757812L0.808594 0.308594C0.984375 0.132812 1.27734 0.132812 1.47266 0.308594L4.5 3.31641L7.50781 0.308594C7.70312 0.132812 7.99609 0.132812 8.17188 0.308594L8.62109 0.757812C8.79688 0.933594 8.79688 1.22656 8.62109 1.42188L4.8125 5.21094C4.63672 5.38672 4.34375 5.38672 4.16797 5.21094Z"
+                                fill="#8447FF" />
                         </svg>
                     </div>
 
                     <div class="dropdown-list-items top-28 right-0 bg-white w-screen py-12">
-                        <div class="container grid grid-cols-2 gap-8">
+                        <div class="container grid grid-cols-3 gap-x-[30px] gap-y-8">
                             <!-- item  -->
-                            <div class="flex flex-col gap-6">
-                                <h2 class="text-[#333745] text-base leading-normal">التخصصات</h2>
-                                <div class="grid grid-cols-2 gap-4">
-                                    <a href="#" class="text-[#838795] text-sm leading-normal">لغة عربية/ كفايات
-                                        لغوية.</a>
-                                    <a href="#" class="text-[#838795] text-sm leading-normal">لغة عربية/ كفايات
-                                        لغوية.</a>
-                                    <a href="#" class="text-[#838795] text-sm leading-normal">التفكير الناقد.</a>
-                                    <a href="#" class="text-[#838795] text-sm leading-normal">التفكير الناقد.</a>
-                                    <a href="#" class="text-[#838795] text-sm leading-normal">دراسات إسلامية / قرآن وعلم
-                                        تفسير.</a>
-                                    <a href="#" class="text-[#838795] text-sm leading-normal">دراسات إسلامية / قرآن وعلم
-                                        تفسير.</a>
-                                    <a href="#" class="text-[#838795] text-sm leading-normal">علم البيئة.</a>
-                                    <a href="#" class="text-[#838795] text-sm leading-normal">علم البيئة.</a>
-                                    <a href="#" class="text-[#838795] text-sm leading-normal">لغة إنجليزية.</a>
-                                    <a href="#" class="text-[#838795] text-sm leading-normal">لغة إنجليزية.</a>
+                            <div class="flex items-start gap-6">
+                                <img src="assets/images/book.svg" width="24" height="24" alt="book">
+                                <div class="flex flex-col gap-2">
+                                    <a href="#" class="text-[#333745] text-xl leading-normal font-bold">الدورات</a>
+                                    <p class="text-[#5B5F6D] text-sm leading-normal">
+                                        دورات عن بعد لتعزيز كفاءة المعلمين والتربويين
+                                    </p>
                                 </div>
                             </div>
-
                             <!-- item  -->
-                            <div class="grid grid-cols-2 gap-[30px]">
+                            <div class="flex items-start gap-6">
+                                <img src="assets/images/award.svg" width="24" height="24" alt="book">
+                                <div class="flex flex-col gap-2">
+                                    <a href="#" class="text-[#333745] text-xl leading-normal font-bold">المؤهلات</a>
+                                    <p class="text-[#5B5F6D] text-sm leading-normal">
+                                        مؤهّلات مهنيّة وشهادات احترافية بالتعاون مع شركائنا لتكون معلّمًا مؤهّلًا في
+                                        مختلف
+                                        المجالات.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- item  -->
+                            <div class="flex items-start gap-6">
+                                <img src="assets/images/teacher.svg" width="24" height="24" alt="book">
+                                <div class="flex flex-col gap-2">
+                                    <a href="#" class="text-[#333745] text-xl leading-normal font-bold">المسارات</a>
+                                    <p class="text-[#5B5F6D] text-sm leading-normal">
+                                        من خلال أداة تقييم الاحتياج التدريبي الذاتي، يستطيع المعلم معرفة أكثر المهارات
+                                        المطلوبة للمجال.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- item  -->
+                            <div class="flex items-start gap-6">
+                                <img src="assets/images/briefcase.svg" width="24" height="24" alt="book">
+                                <div class="flex flex-col gap-2">
+                                    <a href="#" class="text-[#333745] text-xl leading-normal font-bold">الرخص
+                                        المهنية</a>
+                                    <p class="text-[#5B5F6D] text-sm leading-normal">دورات مكثفة لاجتياز اختبار الرخصة
+                                        المهنية بكل جدارة للعاملين في قطاع التعليم في السعودية.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- search  -->
+                    <div class="py-2.5 px-4 rounded-full border border-[#D7D5D5] flex items-center gap-3">
+                        <a href="#" aria-label="search">
+                            <img src="assets/images/search.svg" width="16" height="16" alt="search">
+                        </a>
+                        <input type="search" name="header-search" id="header-search" placeholder="بحث"
+                            class="text-sm leading-[21px] placeholder:text-[#838795] focus:outline-none lg:w-[190px]">
+                    </div>
+                </div>
+                <!-- header second part  -->
+                <div class="flex items-center gap-8">
+                    <!-- get your job  -->
+                    <div class="">
+                        <div class="dropdown-list flex items-center gap-1 cursor-pointer colored-act">
+                            <span class="text-[#333745] text-sm leading-[21px] font-normal transition-all duration-300">
+                                حصل وظيفتك
+                            </span>
+                            <svg class="transition-all duration-300" width="10" height="6" viewBox="0 0 10 6"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="transition-all duration-300"
+                                    d="M4.66797 5.71094L0.859375 1.92188C0.683594 1.72656 0.683594 1.43359 0.859375 1.25781L1.30859 0.808594C1.48438 0.632812 1.77734 0.632812 1.97266 0.808594L5 3.81641L8.00781 0.808594C8.20312 0.632812 8.49609 0.632812 8.67188 0.808594L9.12109 1.25781C9.29688 1.43359 9.29688 1.72656 9.12109 1.92188L5.3125 5.71094C5.13672 5.88672 4.84375 5.88672 4.66797 5.71094Z"
+                                    fill="#333745" />
+                            </svg>
+                        </div>
+
+                        <div class="dropdown-list-items top-28 right-0 bg-white w-screen py-12">
+                            <div class="container grid grid-cols-2 gap-8">
+                                <!-- item  -->
                                 <div class="flex flex-col gap-6">
-                                    <h2 class="text-[#333745] text-base leading-normal">المرحله التعليمية</h2>
-                                    <div class="flex flex-col gap-4">
+                                    <h2 class="text-[#333745] text-base leading-normal">التخصصات</h2>
+                                    <div class="grid grid-cols-2 gap-4">
                                         <a href="#" class="text-[#838795] text-sm leading-normal">لغة عربية/ كفايات
                                             لغوية.</a>
+                                        <a href="#" class="text-[#838795] text-sm leading-normal">لغة عربية/ كفايات
+                                            لغوية.</a>
+                                        <a href="#" class="text-[#838795] text-sm leading-normal">التفكير الناقد.</a>
                                         <a href="#" class="text-[#838795] text-sm leading-normal">التفكير الناقد.</a>
                                         <a href="#" class="text-[#838795] text-sm leading-normal">دراسات إسلامية / قرآن
                                             وعلم
                                             تفسير.</a>
-                                        <a href="#" class="text-[#838795] text-sm leading-normal">علم البيئة.</a>
-                                        <a href="#" class="text-[#838795] text-sm leading-normal">لغة إنجليزية.</a>
-                                    </div>
-                                </div>
-                                <div class="flex flex-col gap-6">
-                                    <h2 class="text-[#333745] text-base leading-normal">المستوي الوظيفي</h2>
-                                    <div class="flex flex-col gap-4">
-                                        <a href="#" class="text-[#838795] text-sm leading-normal">لغة عربية/ كفايات
-                                            لغوية.</a>
-                                        <a href="#" class="text-[#838795] text-sm leading-normal">التفكير الناقد.</a>
                                         <a href="#" class="text-[#838795] text-sm leading-normal">دراسات إسلامية / قرآن
                                             وعلم
                                             تفسير.</a>
                                         <a href="#" class="text-[#838795] text-sm leading-normal">علم البيئة.</a>
+                                        <a href="#" class="text-[#838795] text-sm leading-normal">علم البيئة.</a>
+                                        <a href="#" class="text-[#838795] text-sm leading-normal">لغة إنجليزية.</a>
                                         <a href="#" class="text-[#838795] text-sm leading-normal">لغة إنجليزية.</a>
                                     </div>
                                 </div>
 
+                                <!-- item  -->
+                                <div class="grid grid-cols-2 gap-[30px]">
+                                    <div class="flex flex-col gap-6">
+                                        <h2 class="text-[#333745] text-base leading-normal">المرحله التعليمية</h2>
+                                        <div class="flex flex-col gap-4">
+                                            <a href="#" class="text-[#838795] text-sm leading-normal">لغة عربية/ كفايات
+                                                لغوية.</a>
+                                            <a href="#" class="text-[#838795] text-sm leading-normal">التفكير
+                                                الناقد.</a>
+                                            <a href="#" class="text-[#838795] text-sm leading-normal">دراسات إسلامية /
+                                                قرآن
+                                                وعلم
+                                                تفسير.</a>
+                                            <a href="#" class="text-[#838795] text-sm leading-normal">علم البيئة.</a>
+                                            <a href="#" class="text-[#838795] text-sm leading-normal">لغة إنجليزية.</a>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col gap-6">
+                                        <h2 class="text-[#333745] text-base leading-normal">المستوي الوظيفي</h2>
+                                        <div class="flex flex-col gap-4">
+                                            <a href="#" class="text-[#838795] text-sm leading-normal">لغة عربية/ كفايات
+                                                لغوية.</a>
+                                            <a href="#" class="text-[#838795] text-sm leading-normal">التفكير
+                                                الناقد.</a>
+                                            <a href="#" class="text-[#838795] text-sm leading-normal">دراسات إسلامية /
+                                                قرآن
+                                                وعلم
+                                                تفسير.</a>
+                                            <a href="#" class="text-[#838795] text-sm leading-normal">علم البيئة.</a>
+                                            <a href="#" class="text-[#838795] text-sm leading-normal">لغة إنجليزية.</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
                             </div>
+                        </div>
+                    </div>
+
+
+                    <!-- For Schools  -->
+                    <div class="relative">
+                        <div class="flex items-center gap-1 cursor-pointer dropdown-list colored-act">
+                            <span class="text-[#333745] text-sm leading-[21px] font-normal transition-all duration-300">
+                                للمدارس
+                            </span>
+                            <svg class="transition-all duration-300" width="10" height="6" viewBox="0 0 10 6"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="transition-all duration-300"
+                                    d="M4.66797 5.71094L0.859375 1.92188C0.683594 1.72656 0.683594 1.43359 0.859375 1.25781L1.30859 0.808594C1.48438 0.632812 1.77734 0.632812 1.97266 0.808594L5 3.81641L8.00781 0.808594C8.20312 0.632812 8.49609 0.632812 8.67188 0.808594L9.12109 1.25781C9.29688 1.43359 9.29688 1.72656 9.12109 1.92188L5.3125 5.71094C5.13672 5.88672 4.84375 5.88672 4.66797 5.71094Z"
+                                    fill="#333745" />
+                            </svg>
+                        </div>
+                        <div
+                            class="dropdown-list-items top-28 right-0 bg-white w-[260px] py-2 border border-[#D7D5D5] rounded-2xl">
 
                         </div>
                     </div>
-                </div>
 
-
-                <!-- For Schools  -->
-                <div class="relative">
-                    <div class="flex items-center gap-1 cursor-pointer dropdown-list colored-act">
-                        <span class="text-[#333745] text-sm leading-[21px] font-normal transition-all duration-300">
-                            للمدارس
-                        </span>
-                        <svg class="transition-all duration-300" width="10" height="6" viewBox="0 0 10 6" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path class="transition-all duration-300"
-                                d="M4.66797 5.71094L0.859375 1.92188C0.683594 1.72656 0.683594 1.43359 0.859375 1.25781L1.30859 0.808594C1.48438 0.632812 1.77734 0.632812 1.97266 0.808594L5 3.81641L8.00781 0.808594C8.20312 0.632812 8.49609 0.632812 8.67188 0.808594L9.12109 1.25781C9.29688 1.43359 9.29688 1.72656 9.12109 1.92188L5.3125 5.71094C5.13672 5.88672 4.84375 5.88672 4.66797 5.71094Z"
-                                fill="#333745" />
-                        </svg>
+                    <!-- join aanaab  -->
+                    <div class="flex items-center gap-4">
+                        <a href="#"
+                            class="py-3 px-6 rounded-[32px] bg-[#8447FF] hover:bg-[#7841E8] active:bg-[#9D6CFF] transition-all duration-300 text-white text-base leading-6 font-bold">
+                            انضم إلى أعناب
+                        </a>
+                        <a href="#" class="text-[#333745] text-base leading-6">تسجيل الدخول</a>
                     </div>
-                    <div
-                        class="dropdown-list-items top-28 right-0 bg-white w-[260px] py-2 border border-[#D7D5D5] rounded-2xl">
-
-                    </div>
-                </div>
-
-                <!-- join aanaab  -->
-                <div class="flex items-center gap-4">
-                    <a href="#"
-                        class="py-3 px-6 rounded-[32px] bg-[#8447FF] hover:bg-[#7841E8] active:bg-[#9D6CFF] transition-all duration-300 text-white text-base leading-6 font-bold">
-                        انضم إلى أعناب
-                    </a>
-                    <a href="#" class="text-[#333745] text-base leading-6">تسجيل الدخول</a>
                 </div>
             </div>
+
         </div>
     </header>
     <!-- End  Annab Header -->
@@ -205,47 +220,48 @@
     <main class="relative">
 
         <!-- start hero section  -->
-        <section class="pb-[100px] bg-[#F6F5F7] relative z-[1]">
+        <section class="pb-16 lg:pb-[100px] bg-[#F6F5F7] relative px-8 lg:px-0">
             <!-- gradient backgrounded shape between two scetion  -->
             <div class="absolute bottom-0 left-0 w-full h-[300px] bg-gradient-to-b from-[#F6F5F700] to-[#FFFFFF]"></div>
-            <div class="container py-24 flex flex-col items-center gap-24 relative ">
+            <div class="container py-24 flex flex-col items-center gap-16 lg:gap-24 relative ">
                 <!-- hero section  -->
-                <div class="flex flex-col items-center gap-8">
+                <div class="flex flex-col items-center gap-10 lg:gap-8">
 
                     <div class="flex flex-col items-center gap-6">
                         <div class="flex flex-col items-center gap-3">
                             <h1
-                                class="flex items-center gap-4 text-[#333745] text-5xl text-center leading-normal font-bold">
+                                class="flex flex-wrap items-center justify-center gap-2 lg:gap-4 text-[#333745] text-2xl lg:text-5xl text-center leading-normal font-bold">
                                 <span>طّور مهارات</span>
-                                <span class="bg-[#D9C6FF] rounded-3xl py-2 px-4">معلمي</span>
+                                <span class="bg-[#D9C6FF] rounded-2xl lg:rounded-3xl py-2 px-4">معلمي</span>
                                 <span>مدرستك</span>
                             </h1>
-                            <p class="text-[#5B5F6D] text-xl leading-normal text-center">
+                            <p class="text-[#5B5F6D] text-sm lg:text-xl leading-normal text-center">
                                 منصة متكاملة من أجل قادة المدارس لتطوير مهارات وكفاءة المعلمين </p>
                         </div>
-                        <ul class="flex justify-center gap-12">
+                        <ul class="flex justify-center items-center flex-wrap gap-y-3 gap-x-12">
                             <li class="flex items-center gap-2">
                                 <img src="assets/images/Check.svg" width="16" height="16" alt="Check Icon">
                                 <span class="text-sm leading-[21px] text-[#333745]">لوحة متابعة مباشرة</span>
+                            </li> 
+                            <li class="flex items-center gap-2">
+                                <img src="assets/images/Check.svg" width="16" height="16" alt="Check Icon">
+                                <span class="text-sm leading-[21px] text-[#333745]">دعم فني ٢٤ ساعة</span>
                             </li>
                             <li class="flex items-center gap-2">
                                 <img src="assets/images/Check.svg" width="16" height="16" alt="Check Icon">
                                 <span class="text-sm leading-[21px] text-[#333745]">تقييم نتائج الدورات للمعلمين</span>
                             </li>
-                            <li class="flex items-center gap-2">
-                                <img src="assets/images/Check.svg" width="16" height="16" alt="Check Icon">
-                                <span class="text-sm leading-[21px] text-[#333745]">دعم فني ٢٤ ساعة</span>
-                            </li>
+                           
                         </ul>
                     </div>
 
-                    <div class="flex gap-3 justify-center">
+                    <div class="flex flex-col lg:flex-row gap-3 lg:justify-center">
                         <a href="#"
                             class="py-3 px-6 rounded-[32px] bg-[#8447FF] hover:bg-[#7841E8] active:bg-[#9D6CFF] transition-all duration-300 text-white text-base leading-6 font-bold">
                             احجز موعد لتجربة أعناب
                         </a>
                         <a href="#"
-                            class="py-3 px-6 rounded-[32px] text-base leading-6 font-bold text-[#8447FF]  transition-all duration-300 hover:text-[#7841E8] active:text-[#9D6CFF]">
+                            class="py-3 px-6 rounded-[32px] text-base text-center leading-6 font-bold text-[#8447FF]  transition-all duration-300 hover:text-[#7841E8] active:text-[#9D6CFF]">
                             اعرف المزيد
                         </a>
                     </div>
@@ -253,7 +269,8 @@
                 <!-- ======================================= -->
 
                 <!-- img section  -->
-                <div class="w-[920px] h-[518px] rounded-[32px] border-[10px] border-white overflow-hidden hero-img">
+                <div
+                    class="lg:w-[920px] lg:h-[518px] rounded-2xl lg:rounded-[32px] border-[10px] border-white overflow-hidden hero-img">
                     <img src="assets/images/hero.jpg" class="w-full h-full object-cover" width="920" height="518"
                         alt="Hero">
                 </div>
@@ -264,20 +281,21 @@
         <!-- ======================================= -->
 
         <!-- Start Platform Products section -->
-        <section class="section bg-white sticky top-0">
-            <div class="container flex items-center justify-between gap-[30px] py-32">
-                <div class="basis-1/2 flex flex-col gap-8 items-start">
+        <section class="section bg-white relative lg:sticky lg:top-0 px-8 lg:px-0">
+            <div class="container flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-[30px] py-12 lg:py-32">
+                <div class="lg:basis-1/2 flex flex-col gap-8 items-start">
                     <div class="flex flex-col gap-4">
                         <span class="text-[#8447FF] text-base leading-normal font-extrabold">منتجات المنصة</span>
-                        <h2 class="text-[#333745] text-[32px] leading-normal font-extrabold">منصة شاملة من تطوير مهارات
-                            و توظيف وادراة لكل المدارس</h2>
-                        <p class="text-[#5B5F6D] text-lg leading-normal">
+                        <h2 class="text-[#333745] text-2xl lg:text-[32px] leading-normal font-extrabold">منصة شاملة من
+                            تطوير مهارات و توظيف وادراة لكل المدارس
+                        </h2>
+                        <p class="text-[#5B5F6D] text-base lg:text-lg leading-[180%]">
                             تزيد التحديات كل يوم على مطوري النظم التعليمية لتطوير المهارات المهنية لدى المعلم
                             ودفعهم إلى استخدام الأسايب المتطورة في التعليم
                         </p>
                     </div>
                     <a href="#"
-                        class="py-3 px-6 rounded-[32px] bg-[#8447FF] hover:bg-[#7841E8] active:bg-[#9D6CFF] transition-all duration-300 text-white text-base leading-6 font-bold">
+                        class="py-3 px-6 w-full lg:w-auto text-center rounded-[32px] bg-[#8447FF] hover:bg-[#7841E8] active:bg-[#9D6CFF] transition-all duration-300 text-white text-base leading-6 font-bold">
                         حلول أعناب
                     </a>
                 </div>
@@ -292,33 +310,33 @@
 
         <!-- Start Platform solutions section -->
         <section class="bg-white">
-            <div class="py-32 bg-[#F6F5F7] rounded-t-[64px] relative">
+            <div class="py-16 lg:py-32 bg-[#F6F5F7] rounded-t-[32px] lg:rounded-t-[64px] relative px-8 lg:px-0">
                 <div class="container flex flex-col gap-16">
                     <!-- header section  -->
                     <header class="flex flex-col items-center gap-3">
                         <span class="text-[#8447FF] text-base leading-normal font-extrabold"> حلول أعناب</span>
-                        <h2 class="text-[#333745] text-[32px] leading-normal font-extrabold">
+                        <h2 class="text-[#333745] text-center text-2xl lg:text-[32px] leading-normal font-extrabold">
                             منصة شاملة لتطوير مهارات المعلمين
                         </h2>
-                        <p class="text-[#5B5F6D] text-lg leading-normal">
+                        <p class="text-[#5B5F6D] text-center text-base lg:text-lg leading-[180%]">
                             خدمات متكاملة لتدريب المعلمين وتطوير المنظومة التعليمية بالمدارس
                         </p>
                     </header>
                     <!-- ======================================= -->
 
-                    <div class="grid grid-cols-12 gap-[30px]">
+                    <div class="grid lg:grid-cols-12 gap-[30px]">
                         <!-- item -->
                         <a href="#"
-                            class="p-12 bg-white rounded-3xl transition-all duration-300 hover:shadow-sol-shad border-2 border-transparent hover:border-[#8447FF] flex gap-[30px] col-span-6 relative overflow-hidden">
-                            <div class="basis-1/2 flex flex-col gap-4">
-                                <h3 class="text-[#333745] text-2xl leading-normal font-extrabold">
+                            class="p-6 lg:p-12 bg-white rounded-3xl transition-all duration-300 hover:shadow-sol-shad border-2 border-transparent hover:border-[#8447FF] flex flex-col lg:flex-row gap-[30px] lg:col-span-6 relative overflow-hidden">
+                            <div class="lg:basis-1/2 flex items-center flex-col gap-2 lg:gap-4">
+                                <h3 class="text-[#333745] text-center lg:text-right text-base lg:text-2xl leading-normal font-extrabold">
                                     درِّب أكثر المهارات المطلوبة لتطوير الكوادر التعليمية
                                 </h3>
-                                <p class="text-[#5B5F6D] text-base leading-normal ">
+                                <p class="text-[#5B5F6D] text-center lg:text-right text-sm lg:text-base leading-[180%] ">
                                     من خلال لوحة المتابعة المباشرة، تستطيع تقييم وتدريب المهارات المطلوبة لكل معلم .
                                 </p>
                             </div>
-                            <div class="basis-1/2 flex flex-col gap-4 absolute left-0 top-1/2 -translate-y-1/2">
+                            <div class="lg:basis-1/2 flex flex-col gap-4 lg:absolute lg:left-0 lg:top-1/2 lg:-translate-y-1/2">
                                 <img src="assets/images/sol1.png" width="255" height="87" alt="solutions">
                                 <img src="assets/images/sol2.png" width="255" height="121" alt="solutions">
                                 <img src="assets/images/sol3.png" width="255" height="87" alt="solutions">
@@ -328,12 +346,12 @@
 
                         <!-- item -->
                         <a href="#"
-                            class="p-12 bg-white rounded-3xl transition-all duration-300 hover:shadow-sol-shad border-2 border-transparent hover:border-[#8447FF] flex flex-col gap-12 col-span-6 row-span-2">
-                            <div class="flex flex-col gap-4">
-                                <h3 class="text-[#333745] text-2xl leading-normal font-extrabold">
+                            class="order-first lg:order-none p-6 lg:p-12 bg-white rounded-3xl transition-all duration-300 hover:shadow-sol-shad border-2 border-transparent hover:border-[#8447FF] flex flex-col gap-8 lg:gap-12 lg:col-span-6 lg:row-span-2">
+                            <div class="flex flex-col gap-2 lg:gap-4">
+                                <h3 class="text-[#333745] text-center lg:text-right text-base lg:text-2xl leading-normal font-extrabold">
                                     أكثر ١٥٠ دورة لتعزيز مهارات الكوادر التعليمية
                                 </h3>
-                                <p class="text-[#5B5F6D] text-base leading-normal ">
+                                <p class="text-[#5B5F6D]  text-center lg:text-right text-sm lg:text-base leading-normal ">
                                     عزز مهارات معلمين مدرستك بدورات تدريبية في كافة مجالات تطوير المنظومة التعليمية.
                                 </p>
                             </div>
@@ -345,24 +363,24 @@
 
                         <!-- item -->
                         <a href="#"
-                            class="p-12 bg-white rounded-3xl transition-all duration-300 hover:shadow-sol-shad border-2 border-transparent hover:border-[#8447FF] flex gap-[30px] col-span-6 relative overflow-hidden">
-                            <div class="basis-1/2 flex flex-col gap-4">
-                                <h3 class="text-[#333745] text-2xl leading-normal font-extrabold">
+                            class="p-6 lg:p-12 bg-white rounded-3xl transition-all duration-300 hover:shadow-sol-shad border-2 border-transparent hover:border-[#8447FF] flex flex-col lg:flex-row gap-8 lg:gap-[30px] lg:col-span-6 relative overflow-hidden">
+                            <div class="lg:basis-1/2 flex flex-col gap-2 lg:gap-4">
+                                <h3 class="text-[#333745] text-center lg:text-right text-base lg:text-2xl leading-normal font-extrabold">
                                     مكتبة متكاملة من المسارات التعليمية للمعلمين
                                 </h3>
-                                <p class="text-[#5B5F6D] text-base leading-normal ">
+                                <p class="text-[#5B5F6D]  text-center lg:text-right text-sm lg:text-base leading-normal ">
                                     من خلال أداة تقييم الاحتياج التدريبي الذاتي، يستطيع المعلم معرفة أكثر المهارات
                                     المطلوبة.
                                 </p>
                             </div>
-                            <div class="basis-1/2 flex flex-col gap-4 absolute left-0 top-1/2 -translate-y-1/2">
+                            <div class="lg:basis-1/2 flex flex-col gap-4 lg:absolute lg:left-0 lg:top-1/2 lg:-translate-y-1/2">
                                 <img src="assets/images/sol4.png" width="255" height="157" alt="solutions">
                             </div>
                         </a>
 
                         <!-- item -->
                         <a href="#"
-                            class="p-12 bg-white rounded-3xl transition-all duration-300 hover:shadow-sol-shad border-2 border-transparent hover:border-[#8447FF] flex flex-col gap-12 col-span-4">
+                            class="p-6 lg:p-12 bg-white rounded-3xl transition-all duration-300 hover:shadow-sol-shad border-2 border-transparent hover:border-[#8447FF] flex flex-col gap-8 lggap-12 lg:col-span-4">
                             <div class="grid grid-cols-12 gap-2 border border-[#E9E8E8] rounded-2xl p-4">
                                 <img src="assets/images/rep-1.png" class="col-span-4" width="69" height="48" alt="rep">
                                 <img src="assets/images/rep-2.png" class="col-span-4" width="69" height="48" alt="rep">
@@ -370,8 +388,8 @@
                                 <img src="assets/images/rep-4.png" class="col-span-6" width="107" height="48" alt="rep">
                                 <img src="assets/images/rep-5.png" class="col-span-6" width="107" height="48" alt="rep">
                             </div>
-                            <div class="flex flex-col gap-4">
-                                <h3 class="text-[#333745] text-2xl leading-normal font-extrabold text-center">
+                            <div class="flex flex-col gap-2 lg:gap-4">
+                                <h3 class="text-[#333745]  text-base lg:text-2xl leading-normal font-extrabold text-center">
                                     تقارير مفصلة عن الأداء الوظيفي
                                 </h3>
 
@@ -383,12 +401,12 @@
 
                         <!-- item -->
                         <a href="#"
-                            class="p-12 bg-white rounded-3xl transition-all duration-300 hover:shadow-sol-shad border-2 border-transparent hover:border-[#8447FF] flex flex-col gap-12 col-span-4">
+                            class="p-6 lg:p-12 bg-white rounded-3xl transition-all duration-300 hover:shadow-sol-shad border-2 border-transparent hover:border-[#8447FF] flex flex-col gap-8 lg:gap-12 lg:col-span-4">
                             <div class="py-2.5">
-                                <img src="assets/images/rep-6.png" width="254" height="115" alt="rep">
+                                <img src="assets/images/rep-6.png" class="w-full" width="254" height="115" alt="rep">
                             </div>
-                            <div class="flex flex-col gap-4">
-                                <h3 class="text-[#333745] text-2xl leading-normal font-extrabold text-center">
+                            <div class="flex flex-col gap-2 lg:gap-4">
+                                <h3 class="text-[#333745] text-base lg:text-2xl leading-normal font-extrabold text-center">
                                     اعثر على كوادر مميزة لتطوير مدرستك
                                 </h3>
                                 <p class="text-[#5B5F6D] text-base leading-normal ">
@@ -400,13 +418,13 @@
 
                         <!-- item -->
                         <a href="#"
-                            class="p-12 bg-white rounded-3xl transition-all duration-300 hover:shadow-sol-shad border-2 border-transparent hover:border-[#8447FF] flex flex-col gap-12 col-span-4">
+                            class="p-6 lg:p-12 bg-white rounded-3xl transition-all duration-300 hover:shadow-sol-shad border-2 border-transparent hover:border-[#8447FF] flex flex-col gap-8 lg:gap-12 lg:col-span-4">
                             <div class="flex flex-col gap-2">
-                                <img src="assets/images/rep-7.png" width="254" height="64" alt="rep">
-                                <img src="assets/images/rep-8.png" width="254" height="64" alt="rep">
+                                <img src="assets/images/rep-7.png" class="w-full" width="254" height="64" alt="rep">
+                                <img src="assets/images/rep-8.png" class="w-full" width="254" height="64" alt="rep">
                             </div>
-                            <div class="flex flex-col gap-4">
-                                <h3 class="text-[#333745] text-2xl leading-normal font-extrabold text-center">
+                            <div class="flex flex-col gap-2 lg:gap-4">
+                                <h3 class="text-[#333745] text-base lg:text-2xl leading-normal font-extrabold text-center">
                                     صنّف المتقدمين بناءًا على مهاراتهم
                                 </h3>
                                 <p class="text-[#5B5F6D] text-base leading-normal ">
@@ -419,9 +437,9 @@
 
                         <!-- item -->
                         <a href="#"
-                            class="p-12 bg-white rounded-3xl transition-all duration-300 hover:shadow-sol-shad border-2 border-transparent hover:border-[#8447FF] flex gap-[30px] items-center col-span-12">
-                            <div class="basis-1/2 flex flex-col gap-4">
-                                <h3 class="text-[#333745] text-2xl leading-normal font-extrabold">
+                            class="p-6 lg:p-12 bg-white rounded-3xl transition-all duration-300 hover:shadow-sol-shad border-2 border-transparent hover:border-[#8447FF] flex flex-col lg:flex-row gap-8 lg:gap-[30px] items-center lg:col-span-12">
+                            <div class="basis-1/2 flex flex-col gap-2 lg:gap-4 order-last lg:order-first">
+                                <h3 class="text-[#333745] text-center lg:text-right text-base lg:text-2xl leading-normal font-extrabold ">
                                     مكتبة متكاملة من المسارات التعليمية للمعلمين
                                 </h3>
                                 <p class="text-[#5B5F6D] text-base leading-normal ">
@@ -443,7 +461,7 @@
 
         <!-- Start Aanaab partners section -->
         <section class="bg-[#F6F5F7] relative">
-            <div class="py-16 bg-white rounded-t-[64px]">
+            <div class="py-16 bg-white rounded-t-[32px] lg:rounded-t-[64px]">
                 <div class="container flex flex-col gap-16">
 
                     <!-- header section  -->
@@ -509,11 +527,11 @@
             <div class="container flex flex-col">
 
                 <!-- header section  -->
-                <header class="flex flex-col items-center gap-3">
-                    <h2 class="text-[#333745] text-[32px] leading-normal font-extrabold">
+                <header class="flex flex-col items-center gap-3 px-8 lg:px-0">
+                    <h2 class="text-[#333745] text-center text-2xl lg:text-[32px] leading-normal font-extrabold">
                         قالوا عن أعناب
                     </h2>
-                    <p class="text-[#5B5F6D] text-lg leading-normal">
+                    <p class="text-[#5B5F6D] text-base lg:text-lg leading-[180%] text-center">
                         تعمل أعناب مع أكبر المؤسسات التعليمية في تطويرالمؤهلات المهنية في المدارس
                     </p>
                 </header>
@@ -525,7 +543,7 @@
 
                             <!-- testimonial item  -->
                             <article
-                                class="swiper-slide transition-all duration-300 p-8 border rounded-3xl border-[#D7D5D5] flex flex-col items-center gap-12">
+                                class="swiper-slide transition-all duration-300 p-8 border rounded-3xl border-[#D7D5D5] flex flex-col items-center gap-8 lg:gap-12">
                                 <div class="flex items-end">
                                     <img width="16" height="16" src="assets/images/star.svg" alt="star">
                                     <img width="20" height="20" src="assets/images/star.svg" alt="star">
@@ -552,7 +570,7 @@
 
                             <!-- testimonial item  -->
                             <article
-                                class="swiper-slide transition-all duration-300 p-8 border rounded-3xl border-[#D7D5D5] flex flex-col items-center gap-12">
+                                class="swiper-slide transition-all duration-300 p-8 border rounded-3xl border-[#D7D5D5] flex flex-col items-center gap-8 lg:gap-12">
                                 <div class="flex items-end">
                                     <img width="16" height="16" src="assets/images/star.svg" alt="star">
                                     <img width="20" height="20" src="assets/images/star.svg" alt="star">
@@ -579,7 +597,7 @@
 
                             <!-- testimonial item  -->
                             <article
-                                class="swiper-slide transition-all duration-300 p-8 border rounded-3xl border-[#D7D5D5] flex flex-col items-center gap-12">
+                                class="swiper-slide transition-all duration-300 p-8 border rounded-3xl border-[#D7D5D5] flex flex-col items-center gap-8 lg:gap-12">
                                 <div class="flex items-end">
                                     <img width="16" height="16" src="assets/images/star.svg" alt="star">
                                     <img width="20" height="20" src="assets/images/star.svg" alt="star">
@@ -606,7 +624,7 @@
 
                             <!-- testimonial item  -->
                             <article
-                                class="swiper-slide transition-all duration-300 p-8 border rounded-3xl border-[#D7D5D5] flex flex-col items-center gap-12">
+                                class="swiper-slide transition-all duration-300 p-8 border rounded-3xl border-[#D7D5D5] flex flex-col items-center gap-8 lg:gap-12">
                                 <div class="flex items-end">
                                     <img width="16" height="16" src="assets/images/star.svg" alt="star">
                                     <img width="20" height="20" src="assets/images/star.svg" alt="star">
@@ -633,7 +651,7 @@
 
                             <!-- testimonial item  -->
                             <article
-                                class="swiper-slide transition-all duration-300 p-8 border rounded-3xl border-[#D7D5D5] flex flex-col items-center gap-12">
+                                class="swiper-slide transition-all duration-300 p-8 border rounded-3xl border-[#D7D5D5] flex flex-col items-center gap-8 lg:gap-12">
                                 <div class="flex items-end">
                                     <img width="16" height="16" src="assets/images/star.svg" alt="star">
                                     <img width="20" height="20" src="assets/images/star.svg" alt="star">
@@ -670,26 +688,26 @@
 
         <!-- Start Call To action section -->
         <section class="py-16 relative bg-white">
-            <div class="container bg-cta py-24 px-16 rounded-[32px] relative overflow-hidden">
+            <div class="container bg-cta py-12 lg:py-24 px-8 lg:px-16 lg:rounded-[32px] relative overflow-hidden">
                 <!-- Line pattern img -->
                 <img src="assets/images/Line-pattern.png"
-                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full" alt="Line pattern">
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full object-cover" alt="Line pattern">
 
                 <!-- call to action  -->
                 <div class=" flex flex-col items-center gap-8 relative z-10">
                     <!-- cta content  -->
-                    <div class="flex flex-col items-center gap-2 grow">
-                        <h2 class="text-white text-[32px] leading-normal font-bold text-center">
+                    <div class="flex flex-col items-center gap-3 grow">
+                        <h2 class="text-white text-2xl lg:text-[32px] leading-normal font-bold text-center">
                             ابدأ الآن المرحلة القادمة لتطوير مدرستك
                         </h2>
-                        <p class="text-white text-base leading-normal text-center">
+                        <p class="text-white text-base leading-[180%] text-center">
                             أضف مهارات جديدة للمعلمين في مدرستك و سجل طلب اجتماع الآن
                         </p>
                     </div>
 
                     <!-- cta button  -->
                     <a href="#"
-                        class="py-3 px-8 rounded-[32px] bg-white text-[#8447FF] hover:text-[#7841E8] active:text-[#9D6CFF] transition-all duration-300 text-base leading-6 font-bold">
+                        class="py-3 px-8 rounded-[32px] w-full text-center lg:w-auto bg-white text-[#8447FF] hover:text-[#7841E8] active:text-[#9D6CFF] transition-all duration-300 text-base leading-6 font-bold">
                         احجز موعد مع خبراء أعناب </a>
                 </div>
             </div>
