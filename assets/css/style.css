@@ -556,6 +556,10 @@ video {
   }
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -645,11 +649,6 @@ video {
   margin-right: auto;
 }
 
-.-ms-4 {
-  -webkit-margin-start: -1rem;
-          margin-inline-start: -1rem;
-}
-
 .mr-2 {
   margin-right: 0.5rem;
 }
@@ -694,6 +693,10 @@ video {
   width: 3rem;
 }
 
+.w-40 {
+  width: 10rem;
+}
+
 .w-\[128px\] {
   width: 128px;
 }
@@ -712,6 +715,14 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.max-w-0 {
+  max-width: 0rem;
+}
+
+.max-w-\[730px\] {
+  max-width: 730px;
 }
 
 .flex-1 {
@@ -1032,6 +1043,10 @@ video {
   --tw-gradient-to: #FFFFFF var(--tw-gradient-to-position);
 }
 
+.to-black {
+  --tw-gradient-to: #000 var(--tw-gradient-to-position);
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -1163,6 +1178,16 @@ video {
   padding-bottom: 147px;
 }
 
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.py-\[144px\] {
+  padding-top: 144px;
+  padding-bottom: 144px;
+}
+
 .pb-72 {
   padding-bottom: 18rem;
 }
@@ -1183,8 +1208,20 @@ video {
   padding-top: 1rem;
 }
 
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .font-Almarai {
@@ -1290,6 +1327,14 @@ video {
   line-height: 1.5;
 }
 
+.leading-\[normal\] {
+  line-height: normal;
+}
+
+.leading-\[180\] {
+  line-height: 180;
+}
+
 .text-\[\#333745\] {
   --tw-text-opacity: 1;
   color: rgb(51 55 69 / var(--tw-text-opacity));
@@ -1332,6 +1377,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#371E6B\] {
+  --tw-text-opacity: 1;
+  color: rgb(55 30 107 / var(--tw-text-opacity));
 }
 
 .shadow-pricing-shad {
@@ -1601,6 +1651,10 @@ video {
     order: 0;
   }
 
+  .lg\:order-last {
+    order: 9999;
+  }
+
   .lg\:col-span-12 {
     grid-column: span 12 / span 12;
   }
@@ -1784,6 +1838,14 @@ video {
   .lg\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+  }
+
+  .lg\:pt-8 {
+    padding-top: 2rem;
+  }
+
+  .lg\:pb-0 {
+    padding-bottom: 0px;
   }
 
   .lg\:text-right {
