@@ -25,7 +25,7 @@
                     alt="Aanaab Logo">
             </a>
 
-            <button type="button" aria-label="Mobile Menu" class="lg:hidden">
+            <button type="button" aria-label="Mobile Menu" class="lg:hidden mob-menu-btn">
                 <img src="assets/images/menu.svg" width="24" height="24" alt="menu">
             </button>
 
@@ -94,13 +94,13 @@
                     </div>
 
                     <!-- search  -->
-                    <div class="py-2.5 px-4 rounded-full border border-[#D7D5D5] flex items-center gap-3">
+                    <form class="py-2.5 px-4 rounded-full border border-[#D7D5D5] flex items-center gap-3">
                         <a href="#" aria-label="search">
                             <img src="assets/images/search.svg" width="16" height="16" alt="search">
                         </a>
                         <input type="search" name="header-search" id="header-search" placeholder="بحث"
                             class="text-sm leading-[21px] placeholder:text-[#838795] focus:outline-none lg:w-[190px]">
-                    </div>
+                    </form>
                 </div>
 
                 <!-- header second part  -->
@@ -265,7 +265,8 @@
 
                                 <!-- item  -->
                                 <div class="flex flex-col gap-2">
-                                    <a href="community.html" class="text-[#333745] text-xl leading-normal font-bold">المجتمعات</a>
+                                    <a href="community.html"
+                                        class="text-[#333745] text-xl leading-normal font-bold">المجتمعات</a>
                                     <p class="text-[#5B5F6D] text-sm leading-normal">
                                         مجتمع خاص بالمدارس
                                     </p>
@@ -273,7 +274,8 @@
 
                                 <!-- item  -->
                                 <div class="flex flex-col gap-2">
-                                    <a href="learning.html" class="text-[#333745] text-xl leading-normal font-bold">التعلم</a>
+                                    <a href="learning.html"
+                                        class="text-[#333745] text-xl leading-normal font-bold">التعلم</a>
                                     <p class="text-[#5B5F6D] text-sm leading-normal">
                                         عزز مهارات معلمينك
                                     </p>
@@ -281,7 +283,8 @@
 
                                 <!-- item  -->
                                 <div class="flex flex-col gap-2">
-                                    <a href="jobs.html" class="text-[#333745] text-xl leading-normal font-bold">الوظائف</a>
+                                    <a href="jobs.html"
+                                        class="text-[#333745] text-xl leading-normal font-bold">الوظائف</a>
                                     <p class="text-[#5B5F6D] text-sm leading-normal">
                                         منصة التوظيف الأولى للمعلمين في الشرق الأوسط 
                                     </p>
@@ -289,7 +292,8 @@
 
                                 <!-- item  -->
                                 <div class="flex flex-col gap-2">
-                                    <a href="live-dashboard.html" class="text-[#333745] text-xl leading-normal font-bold">لوحة المتابعة
+                                    <a href="live-dashboard.html"
+                                        class="text-[#333745] text-xl leading-normal font-bold">لوحة المتابعة
                                         المباشرة</a>
                                     <p class="text-[#5B5F6D] text-sm leading-normal">
                                         مستقبل مشرق لمدرستك من خلال أداء أفضل لمعلمينك 
@@ -298,7 +302,8 @@
 
                                 <!-- item  -->
                                 <div class="flex flex-col gap-2">
-                                    <a href="prices.html" class="text-[#333745] text-xl leading-normal font-bold">الاسعار</a>
+                                    <a href="prices.html"
+                                        class="text-[#333745] text-xl leading-normal font-bold">الاسعار</a>
                                     <p class="text-[#5B5F6D] text-sm leading-normal">
                                         لأن الاستثمار المهني في المعلمين هو استثمار في مستقبل المدرسة
                                     </p>
@@ -319,6 +324,198 @@
                 </div>
             </div>
 
+        </div>
+        <div
+            class="mob-menu  bg-white fixed top-0 left-0 w-full h-screen lg:hidden flex flex-col invisible opacity-0 transition-all duration-300">
+            <div class="flex items-center gap-4 py-6 bg-white px-[30px] border-b border-[#D7D5D5]">
+                <img src="assets/images/logo-shap.svg" width="40" height="40" alt="Logo Annab">
+                <!-- mobile search  -->
+                <form class="flex-1 py-2.5 px-4 rounded-full border border-[#D7D5D5] flex items-center gap-3 w-full">
+                    <a href="#" aria-label="search">
+                        <img src="assets/images/search.svg" width="16" height="16" alt="search">
+                    </a>
+                    <input type="search" name="mob-header-search" id="mob-header-search" placeholder="بحث"
+                        class="text-sm leading-[21px] placeholder:text-[#838795] focus:outline-none w-full">
+                </form>
+                <button class="mob-menu-closbtn" type="button" title="Close">
+                    <img src="assets/images/close.svg" width="24" height="24" alt="close">
+                </button>
+            </div>
+
+            <div class="flex-1 h-full overflow-y-scroll">
+                <div class="p-8 flex flex-col gap-6">
+                    <p class="text-[#333745] text-base leading-normal font-bold">تعلم</p>
+                    <ul class="flex flex-col gap-4">
+                        <li class="">
+                            <a href="#" class="text-[#333745] text-base leading-normal">
+                                الدورات</a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="text-[#333745] text-base leading-normal">
+                                المؤهلات
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="text-[#333745] text-base leading-normal">
+                                المسارات
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="text-[#333745] text-base leading-normal">
+                                الرخص المهنية
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="p-8 flex flex-col gap-6 border-t border-b border-[#D7D5D5]">
+                    <p
+                        class="text-[#333745] text-base leading-normal font-bold menu-dropdown flex items-center justify-between">
+                        حصل وظيفتك
+                        <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1.21094 5.83594L6.52344 0.523438C6.91406 0.171875 7.5 0.171875 7.85156 0.523438L8.75 1.42188C9.10156 1.77344 9.10156 2.39844 8.75 2.75L4.96094 6.5L8.75 10.2891C9.10156 10.6406 9.10156 11.2266 8.75 11.6172L7.85156 12.4766C7.5 12.8672 6.91406 12.8672 6.52344 12.4766L1.21094 7.16406C0.859375 6.8125 0.859375 6.22656 1.21094 5.83594Z"
+                                fill="#333745" />
+                        </svg>
+                    </p>
+                    <div class="hidden menu-dropdown-list">
+                        <div class="flex flex-col gap-4 py-4">
+                            <p class="text-[#333745] text-base leading-normal font-bold">التخصصات</p>
+                            <ul class="flex flex-col gap-4">
+                                <li class="">
+                                    <a href="#" class="text-[#333745] text-sm leading-normal">
+                                        لغة عربية/ كفايات لغوية.
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#" class="text-[#333745] text-sm leading-normal">
+                                        التفكير الناقد.
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#" class="text-[#333745] text-sm leading-normal">
+                                        دراسات إسلامية / قرآن وعلم تفسير.
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#" class="text-[#333745] text-sm leading-normal">
+                                        علم البيئة.
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#" class="text-[#333745] text-sm leading-normal">
+                                        لغة إنجليزية.
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                     
+                        <div class="flex flex-col gap-4 py-4">
+                            <p class="text-[#333745] text-base leading-normal font-bold">المرحله التعليمية</p>
+                            <ul class="flex flex-col gap-4">
+                                <li class="">
+                                    <a href="#" class="text-[#333745] text-sm leading-normal">
+                                        لغة عربية/ كفايات لغوية.
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#" class="text-[#333745] text-sm leading-normal">
+                                        التفكير الناقد.
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#" class="text-[#333745] text-sm leading-normal">
+                                        دراسات إسلامية / قرآن وعلم تفسير.
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#" class="text-[#333745] text-sm leading-normal">
+                                        علم البيئة.
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#" class="text-[#333745] text-sm leading-normal">
+                                        لغة إنجليزية.
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                     
+                        <div class="flex flex-col gap-4 py-4">
+                            <p class="text-[#333745] text-base leading-normal font-bold">المستوي الوظيفي</p>
+                            <ul class="flex flex-col gap-4">
+                                <li class="">
+                                    <a href="#" class="text-[#333745] text-sm leading-normal">
+                                        لغة عربية/ كفايات لغوية.
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#" class="text-[#333745] text-sm leading-normal">
+                                        التفكير الناقد.
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#" class="text-[#333745] text-sm leading-normal">
+                                        دراسات إسلامية / قرآن وعلم تفسير.
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#" class="text-[#333745] text-sm leading-normal">
+                                        علم البيئة.
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#" class="text-[#333745] text-sm leading-normal">
+                                        لغة إنجليزية.
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                     
+                    </div>
+                </div>
+
+                <div class="p-8 flex flex-col gap-6 ">
+                    <p class="text-[#333745] text-base leading-normal font-bold">تعلم</p>
+                    <ul class="flex flex-col gap-4">
+                        <li class="">
+                            <a href="community.html" class="text-[#333745] text-base leading-normal">
+                                المجتمعات
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="learning.html" class="text-[#333745] text-base leading-normal">
+                                التعلم
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="jobs.html" class="text-[#333745] text-base leading-normal">
+                                الوظائف
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="live-dashboard.html" class="text-[#333745] text-base leading-normal">
+                                لوحة المتابعة المباشرة
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="prices.html" class="text-[#333745] text-base leading-normal">
+                                الاسعار
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-4 p-8 border-t border-[#D7D5D5]">
+                <a href="#"
+                    class="py-3 text-center px-6 rounded-[32px] bg-[#8447FF] hover:bg-[#7841E8] active:bg-[#9D6CFF] transition-all duration-300 text-white text-base leading-6 font-bold">
+                    انضم إلى أعناب
+                </a>
+                <a href="#"
+                    class="py-3 text-center px-6 rounded-[32px] bg-[#F3EDFF] text-[#8447FF] text-base leading-6 font-bold">تسجيل
+                    الدخول</a>
+            </div>
         </div>
     </header>
     <!-- End  Annab Header -->

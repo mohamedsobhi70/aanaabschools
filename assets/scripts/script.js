@@ -1,6 +1,8 @@
 // Testimonial Carousel  ==> Home Page
 if ($(".slider-testimonials").length > 0) {
     let swiper = new Swiper(".slider-testimonials", {
+        centeredSlides: true,
+        loop: true,
         autoplay: true,
         pagination: {
             el: '.testimonials-pagination',
@@ -71,6 +73,12 @@ if ($(".dropdown-list").length) {
         $(".dropdown-list-items").removeClass("active");
     })
 }
+// mobile dropdown 
+if ($(".menu-dropdown").length) {
+    $(".menu-dropdown").on("click", function (e) {
+        $(".menu-dropdown-list").slideToggle(500);
+    })
+}
 // =================================================
 
 // Change the shadow of Img ==> Home Page
@@ -96,3 +104,13 @@ if ($(".anb-accordion").length) {
     })
 }
 // =================================================
+
+
+
+// mobile menu 
+$(".mob-menu-btn").on("click", function () {
+    $(".mob-menu").addClass("active");
+})
+$(".mob-menu-closbtn").on("click", function () {
+    $(".mob-menu").removeClass("active");
+})

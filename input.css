@@ -23,7 +23,7 @@
 }
 
 .dropdown-list-items {
-  @apply absolute opacity-0 invisible transition-all duration-300;
+  @apply lg:absolute lg:opacity-0 lg:invisible transition-all duration-300;
 }
 
 .dropdown-list-items.active {
@@ -45,7 +45,7 @@
 .anb-accordion.active {
   @apply border-[#8447FF] bg-white;
 }
-.anb-accordion.active  h3{
+.anb-accordion.active h3 {
   @apply lg:text-xl;
 }
 
@@ -56,5 +56,11 @@
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background: #8447ff;
+  @apply bg-[#8447ff];
+}
+.mob-menu.active {
+  @apply visible opacity-100;
+}
+.network-card:nth-child(odd) > img {
+  @apply lg:order-last;
 }
