@@ -1654,6 +1654,34 @@ video {
     top: 50%;
   }
 
+  .lg\:left-4 {
+    left: 1rem;
+  }
+
+  .lg\:-left-4 {
+    left: -1rem;
+  }
+
+  .lg\:-left-5 {
+    left: -1.25rem;
+  }
+
+  .lg\:-left-0 {
+    left: -0px;
+  }
+
+  .lg\:-left-10 {
+    left: -2.5rem;
+  }
+
+  .lg\:-left-16 {
+    left: -4rem;
+  }
+
+  .lg\:-left-20 {
+    left: -5rem;
+  }
+
   .lg\:order-first {
     order: -9999;
   }
