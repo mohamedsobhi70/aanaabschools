@@ -333,39 +333,38 @@
     <main class="relative">
 
         <!-- start hero section  -->
-        <section class="">
+        <section class=" sticky top-20">
             <!-- hero section  -->
-            <div class="container flex flex-col items-center gap-10 py-[144px]">
+            <div class="container flex flex-col items-center gap-10 py-16 lg:py-[144px] px-8 lg:px-0">
                 <div class="flex flex-col items-center gap-3">
-                    <h2 class="flex items-center gap-4 text-[#333745] text-5xl text-center leading-normal font-bold">
+                    <h2
+                        class="flex items-center justify-center flex-wrap gap-x-4 text-[#333745] text-2xl lg:text-5xl text-center leading-normal font-bold">
                         <span>مجتمع خاص </span>
                         <img src="assets/images/community-her.png" width="119" height="64" alt="community">
                         <span>بالمدارس</span>
                     </h2>
-                    <p class="text-[#5B5F6D] text-xl leading-[180%] text-center">
+                    <p class="text-[#5B5F6D] text-base lg:text-xl leading-[180%] text-center">
                         شبكة تواصل إجتماعي للمعلمين و الطلاب و المؤثرين في مجال التعليم بالشرق الأوسط
                     </p>
                 </div>
 
                 <a href="#"
-                    class="py-4 px-16 rounded-[32px] bg-[#8447FF] hover:bg-[#7841E8] active:bg-[#9D6CFF] transition-all duration-300 text-white text-base leading-6 font-bold">
+                    class="py-4 px-16 w-full lg:w-auto text-center rounded-[32px] bg-[#8447FF] hover:bg-[#7841E8] active:bg-[#9D6CFF] transition-all duration-300 text-white text-base leading-6 font-bold">
                     أنشأ مجتمع لمدرستك
                 </a>
                 <!-- ======================================= -->
             </div>
 
-            <div class="py-8">
+            <div class="lg:py-8">
                 <div
-                    class="container flex items-center justify-between gap-[30px] py-8 border-t border-dashed border-[#C9C5C5]">
+                    class="container flex flex-col lg:flex-row items-center justify-between gap-[30px] py-8 border-t border-dashed border-[#C9C5C5] px-8 lg:px-0">
                     <div class="flex items-center gap-6">
-                        <div class="flex">
-                            <img src="assets/images/com.jpg" width="148" height="60" alt="Person">
-                        </div>
+                        <img src="assets/images/com.jpg" class="hidden lg:block" width="148" height="60" alt="Person">
                         <div class="flex flex-col gap-2">
-                            <span class="text-black text-base leading-normal font-bold">
-                                نبذة عن <br> إنجازات أعناب
+                            <span class="text-black text-xl lg:text-base leading-normal font-bold">
+                                نبذة عن <br class="hidden lg:flex"> إنجازات أعناب
                             </span>
-                            <svg width="18" height="10" viewBox="0 0 18 10" fill="none"
+                            <svg class="hidden lg:block" width="18" height="10" viewBox="0 0 18 10" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
                                     d="M5.5 0.669922L0 5.00005L5.5 9.33017V5.75005H18V4.25005H5.5V0.669922Z"
@@ -373,7 +372,7 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="flex items-center gap-[30px]">
+                    <div class="flex items-center gap-y-8 gap-x-[30px] flex-wrap">
 
                         <div class="border-r border-[#C9C5C5] border-dashed px-8 flex flex-col gap-1 w-40">
                             <span class="text-[#333745] text-[32px] leading-normal font-bold">150K+</span>
@@ -418,7 +417,7 @@
                     <div class="flex flex-col w-full gap-8">
                         <!-- item  -->
                         <div
-                            class="bg-white lg:pt-8 lg:pb-0 lg:px-16 p-6 flex flex-col lg:flex-row items-center gap-8 rounded-3xl sticky top-60">
+                            class="bg-white lg:pt-8 lg:pb-0 lg:px-16 p-6 flex flex-col lg:flex-row items-center gap-8 rounded-3xl">
                             <img class="lg:order-last" src="assets/images/com-1.jpg" width="476" height="476"
                                 alt="community">
                             <div class="flex flex-col items-center lg:items-start gap-2">
@@ -434,7 +433,7 @@
 
                         <!-- item  -->
                         <div
-                            class="bg-white lg:pt-8 lg:pb-0 lg:px-16 p-6 flex flex-col lg:flex-row items-center gap-8 rounded-3xl sticky top-60">
+                            class="bg-white lg:pt-8 lg:pb-0 lg:px-16 p-6 flex flex-col lg:flex-row items-center gap-8 rounded-3xl">
                             <img src="assets/images/com-2.jpg" width="476" height="476" alt="community">
                             <div class="flex flex-col items-center lg:items-start gap-2">
                                 <h3 class="text-[#371E6B] text-2xl lg:text-[32px] leading-normal font-extrabold">
@@ -449,7 +448,7 @@
 
                         <!-- item  -->
                         <div
-                            class="bg-white lg:pt-8 lg:pb-0 lg:px-16 p-6 flex flex-col lg:flex-row items-center gap-8 rounded-3xl sticky top-60">
+                            class="bg-white lg:pt-8 lg:pb-0 lg:px-16 p-6 flex flex-col lg:flex-row items-center gap-8 rounded-3xl">
                             <img class="lg:order-last" src="assets/images/com-3.jpg" width="476" height="476"
                                 alt="community">
                             <div class="flex flex-col items-center lg:items-start gap-2">
@@ -464,7 +463,7 @@
 
                         <!-- item  -->
                         <div
-                            class="bg-white lg:pt-8 lg:pb-0 lg:px-16 p-6 flex flex-col lg:flex-row items-center gap-8 rounded-3xl sticky top-60">
+                            class="bg-white lg:pt-8 lg:pb-0 lg:px-16 p-6 flex flex-col lg:flex-row items-center gap-8 rounded-3xl">
                             <img src="assets/images/com-4.jpg" width="476" height="476" alt="community">
                             <div class="flex flex-col items-center lg:items-start gap-2">
                                 <h3 class="text-[#371E6B] text-2xl lg:text-[32px] leading-normal font-extrabold">
@@ -479,7 +478,7 @@
 
                         <!-- item  -->
                         <div
-                            class="bg-white lg:pt-8 lg:pb-0 lg:px-16 p-6 flex flex-col lg:flex-row items-center gap-8 rounded-3xl sticky top-60">
+                            class="bg-white lg:pt-8 lg:pb-0 lg:px-16 p-6 flex flex-col lg:flex-row items-center gap-8 rounded-3xl">
                             <img class="lg:order-last" src="assets/images/com-5.jpg" width="476" height="476"
                                 alt="community">
                             <div class="flex flex-col items-center lg:items-start gap-2">
@@ -495,7 +494,7 @@
 
                         <!-- item  -->
                         <div
-                            class="bg-white lg:pt-8 lg:pb-0 lg:px-16 p-6 flex flex-col lg:flex-row items-center gap-8 rounded-3xl sticky top-60">
+                            class="bg-white lg:pt-8 lg:pb-0 lg:px-16 p-6 flex flex-col lg:flex-row items-center gap-8 rounded-3xl">
                             <img src="assets/images/com-6.jpg" width="476" height="476" alt="community">
                             <div class="flex flex-col items-center lg:items-start gap-2">
                                 <h3 class="text-[#371E6B] text-2xl lg:text-[32px] leading-normal font-extrabold">
@@ -510,7 +509,7 @@
 
                         <!-- item  -->
                         <div
-                            class="bg-white lg:pt-8 lg:pb-0 lg:px-16 p-6 flex flex-col lg:flex-row items-center gap-8 rounded-3xl sticky top-60">
+                            class="bg-white lg:pt-8 lg:pb-0 lg:px-16 p-6 flex flex-col lg:flex-row items-center gap-8 rounded-3xl">
                             <img class="lg:order-last" src="assets/images/com-7.jpg" width="476" height="476"
                                 alt="community">
                             <div class="flex flex-col items-center lg:items-start gap-2">
@@ -528,7 +527,7 @@
 
                         <!-- item  -->
                         <div
-                            class="bg-white lg:pt-8 lg:pb-0 lg:px-16 p-6 flex flex-col lg:flex-row items-center gap-8 rounded-3xl sticky top-60">
+                            class="bg-white lg:pt-8 lg:pb-0 lg:px-16 p-6 flex flex-col lg:flex-row items-center gap-8 rounded-3xl">
                             <img src="assets/images/com-8.jpg" width="476" height="476" alt="community">
                             <div class="flex flex-col items-center lg:items-start gap-2">
                                 <h3 class="text-[#371E6B] text-2xl lg:text-[32px] leading-normal font-extrabold">
@@ -543,7 +542,7 @@
 
                         <!-- item  -->
                         <div
-                            class="bg-white lg:pt-8 lg:pb-0 lg:px-16 p-6 flex flex-col lg:flex-row items-center gap-8 rounded-3xl sticky top-60">
+                            class="bg-white lg:pt-8 lg:pb-0 lg:px-16 p-6 flex flex-col lg:flex-row items-center gap-8 rounded-3xl">
                             <img class="lg:order-last" src="assets/images/com-9.jpg" width="476" height="476"
                                 alt="community">
                             <div class="flex flex-col items-center lg:items-start gap-2">
@@ -559,7 +558,7 @@
 
                         <!-- item  -->
                         <div
-                            class="bg-white lg:pt-8 lg:pb-0 lg:px-16 p-6 flex flex-col lg:flex-row items-center gap-8 rounded-3xl sticky top-60">
+                            class="bg-white lg:pt-8 lg:pb-0 lg:px-16 p-6 flex flex-col lg:flex-row items-center gap-8 rounded-3xl">
                             <img src="assets/images/com-10.jpg" width="476" height="476" alt="community">
                             <div class="flex flex-col items-center lg:items-start gap-2">
                                 <h3 class="text-[#371E6B] text-2xl lg:text-[32px] leading-normal font-extrabold">
@@ -574,7 +573,7 @@
 
                         <!-- item  -->
                         <div
-                            class="bg-white lg:pt-8 lg:pb-0 lg:px-16 p-6 flex flex-col lg:flex-row items-center gap-8 rounded-3xl sticky top-60">
+                            class="bg-white lg:pt-8 lg:pb-0 lg:px-16 p-6 flex flex-col lg:flex-row items-center gap-8 rounded-3xl">
                             <img class="lg:order-last" src="assets/images/com-11.jpg" width="476" height="476"
                                 alt="community">
                             <div class="flex flex-col items-center lg:items-start gap-2">
@@ -591,7 +590,7 @@
 
                         <!-- item  -->
                         <div
-                            class="bg-white lg:pt-8 lg:pb-0 lg:px-16 p-6 flex flex-col lg:flex-row items-center gap-8 rounded-3xl sticky top-60">
+                            class="bg-white lg:pt-8 lg:pb-0 lg:px-16 p-6 flex flex-col lg:flex-row items-center gap-8 rounded-3xl">
                             <img src="assets/images/com-12.jpg" width="476" height="476" alt="community">
                             <div class="flex flex-col items-center lg:items-start gap-2">
                                 <h3 class="text-[#371E6B] text-2xl lg:text-[32px] leading-normal font-extrabold">
@@ -614,7 +613,7 @@
         <!-- ======================================= -->
 
         <!-- Start Education has a world now section -->
-        <section class="lg:py-16 relative bg-white">
+        <section class="py-12 lg:py-24 relative bg-white px-8 lg:px-0">
             <div class="container flex flex-col gap-12 lg:gap-16 items-center">
                 <!-- header section  -->
                 <header class="flex flex-col items-center gap-3 max-w-[730px]">
@@ -627,6 +626,38 @@
                 </header>
                 <!-- ======================================= -->
 
+                <div class="max-w-[730px]">
+                    <div class="flex items-center gap-4 lg:gap-[28px] py-6 border-b border-[#D7D5D5]">
+                        <img src="assets/images/MachineLearning.png" width="48" height="48" alt="MachineLearning">
+                        <p class="text-[#333745] text-sm lg:text-xl leading-normal flex-1">
+                            مناقشة وكتابة التعليقات مع المدربين, و مشاركة المحتوى مع المعلمين الآخرين
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4 lg:gap-[28px] py-6 border-b border-[#D7D5D5]">
+                        <img src="assets/images/HandWithPen.png" width="48" height="48" alt="HandWithPen">
+                        <p class="text-[#333745] text-sm lg:text-xl leading-normal flex-1">
+                            إنشاء محتوى خاص بالمدرسة من المقالات العلمية و المحتوى المرئي
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4 lg:gap-[28px] py-6 border-b border-[#D7D5D5]">
+                        <img src="assets/images/Bookmark.png" width="48" height="48" alt="Bookmark">
+                        <p class="text-[#333745] text-sm lg:text-xl leading-normal flex-1">
+                            مشاركة الانجازات مع المستخدمين الآخرين
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4 lg:gap-[28px] py-6 border-b border-[#D7D5D5]">
+                        <img src="assets/images/Collaboration.png" width="48" height="48" alt="Collaboration">
+                        <p class="text-[#333745] text-sm lg:text-xl leading-normal flex-1">
+                            تواصل مع المتخصصين والمدربين لمناقشة المجالات المختلفة
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4 lg:gap-[28px] py-6 border-b border-[#D7D5D5]">
+                        <img src="assets/images/DashboardLayout.png" width="48" height="48" alt="DashboardLayout">
+                        <p class="text-[#333745] text-sm lg:text-xl leading-normal flex-1">
+                            لوحة تحكم مخصصة لمنح المعلمين عرضًا سريعًا لأنشطة المجتمع الحديثة.
+                        </p>
+                    </div>
+                </div>
 
             </div>
         </section>

@@ -45,6 +45,9 @@
 .anb-accordion.active {
   @apply border-[#8447FF] bg-white;
 }
+.anb-accordion.active  h3{
+  @apply lg:text-xl;
+}
 
 .swiper-pagination-bullet {
   width: 14px;

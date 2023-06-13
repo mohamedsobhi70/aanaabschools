@@ -21,9 +21,10 @@ module.exports = {
         'Almarai': ['Almarai', 'sans-serif'],
       },
       boxShadow: {
+        'header-shad': ' 0px 2px 8px rgba(0, 0, 0, 0.08)',
         'sol-shad': '0px 0px 24px 8px rgba(0, 0, 0, 0.1)',
-        'pricing-shad': '0px 0px 0px 6px rgba(243, 237, 255, 0.5), 0px 0px 0px 15px rgba(243, 237, 255, 0.5)',
-        'nxtprv-shad': ' 0px 0px 8px 2px rgba(0, 0, 0, 0.07);',
+        'pricing-shad':'0px 0px 0px 6px rgba(243, 237, 255, 0.5), 0px 0px 0px 15px rgba(243, 237, 255, 0.5)',
+        'nxtprv-shad': '0px 0px 8px 2px rgba(0, 0, 0, 0.07)',
 
       },
       backgroundImage: {
