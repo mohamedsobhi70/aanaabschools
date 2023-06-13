@@ -1,8 +1,6 @@
 // Testimonial Carousel  ==> Home Page
 if ($(".slider-testimonials").length > 0) {
     let swiper = new Swiper(".slider-testimonials", {
-        centeredSlides: true,
-        loop: true,
         autoplay: true,
         pagination: {
             el: '.testimonials-pagination',
@@ -32,7 +30,6 @@ if ($(".slider-testimonials").length > 0) {
 // Partners Carousel 
 if ($(".slider-partners").length > 0) {
     let swiper = new Swiper(".slider-partners", {
-        loop: true,
         spaceBetween: 40,
         autoplay: true,
         breakpoints: {

@@ -17,8 +17,8 @@
     0px 0px 0px 50px rgba(132, 71, 255, 0.05);
 }
 
-.slider-testimonials .swiper-slide.swiper-slide-active {
-  @apply border-[#7841E8];
+.slider-testimonials .swiper-slide:hover {
+  @apply border-[#7841E8] cursor-grab;
   box-shadow: 0px 0px 24px 8px rgba(0, 0, 0, 0.1);
 }
 
