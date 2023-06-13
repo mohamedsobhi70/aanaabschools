@@ -4,9 +4,9 @@ if ($(".slider-testimonials").length > 0) {
         centeredSlides: true,
         loop: true,
         autoplay: true,
-        navigation: {
-            nextEl: '.tes-prev',
-            prevEl: '.tes-next',
+        pagination: {
+            el: '.testimonials-pagination',
+            clickable: true,
         },
         breakpoints: {
             0: {
@@ -49,8 +49,6 @@ if ($(".slider-partners").length > 0) {
         pagination: {
             el: '.partners-pagination',
             clickable: true,
-            dynamicBullets: true,
-            dynamicMainBullets: 3,
         }
 
     });

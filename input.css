@@ -46,10 +46,10 @@
   @apply border-[#8447FF] bg-white;
 }
 
-.partners-pagination .swiper-pagination-bullet {
+.swiper-pagination-bullet {
   width: 14px;
   height: 14px;
-  margin: 0 8px !important;
+  margin: 0 !important;
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
