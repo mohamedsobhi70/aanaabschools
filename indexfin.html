@@ -18,7 +18,7 @@
 <body class="font-Almarai overflow-x-hidden relative">
     <!-- Start Annab Header -->
     <header class="bg-white z-20 sticky top-0 px-[30px] lg:px-0">
-        <div class="container py-6 flex items-center gap-4 justify-between">
+        <div class="container py-6 flex items-center gap-4 justify-between lg:hidden">
             <!-- logo  -->
             <a href="index.html" aria-label="Logo">
                 <img src="assets/images/logo.png" class="w-[128px] lg:w-[154px]" width="154" height="48"
@@ -326,8 +326,10 @@
 
         </div>
         <div
-            class="mob-menu  bg-white fixed top-0 left-0 w-full h-screen lg:hidden flex flex-col invisible opacity-0 transition-all duration-300">
-            <div class="flex items-center gap-4 py-6 bg-white px-[30px] border-b border-[#D7D5D5]">
+            class="mob-menu container bg-white fixed lg:static top-0 left-0 w-full lg:w-auto h-screen lg:h-auto active flex lg:items-center flex-col lg:flex-row invisible opacity-0 transition-all duration-300">
+            <!-- search  -->
+            <div
+                class="flex items-center gap-4 py-6 bg-white lg:bg-transparent px-[30px] border-b lg:border-none border-[#D7D5D5]">
                 <img src="assets/images/logo-shap.svg" width="40" height="40" alt="Logo Annab">
                 <!-- mobile search  -->
                 <form class="flex-1 py-2.5 px-4 rounded-full border border-[#D7D5D5] flex items-center gap-3 w-full">
@@ -337,15 +339,17 @@
                     <input type="search" name="mob-header-search" id="mob-header-search" placeholder="بحث"
                         class="text-sm leading-[21px] placeholder:text-[#838795] focus:outline-none w-full">
                 </form>
-                <button class="mob-menu-closbtn" type="button" title="Close">
+                <button class="mob-menu-closbtn lg:hidden" type="button" title="Close">
                     <img src="assets/images/close.svg" width="24" height="24" alt="close">
                 </button>
             </div>
 
-            <div class="flex-1 h-full overflow-y-scroll">
-                <div class="p-8 flex flex-col gap-6">
+            <!-- menus  -->
+            <div
+                class="flex-1 lg:justify-end flex flex-col lg:gap-8 lg:flex-row h-full lg:h-auto overflow-y-scroll lg:overflow-visible">
+                <div class="p-8 lg:p-0 flex flex-col gap-6">
                     <p class="text-[#333745] text-base leading-normal font-bold">تعلم</p>
-                    <ul class="flex flex-col gap-4">
+                    <ul class="flex flex-col gap-4 lg:hidden">
                         <li>
                             <a href="#" class="text-[#333745] text-base leading-normal">
                                 الدورات</a>
@@ -368,17 +372,18 @@
                     </ul>
                 </div>
 
-                <div class="p-8 flex flex-col gap-6 border-t border-b border-[#D7D5D5]">
+                <div class="p-8 lg:p-0 flex flex-col gap-6 border-t border-b border-[#D7D5D5] lg:border-none">
                     <p
-                        class="text-[#333745] text-base leading-normal font-bold menu-dropdown flex items-center justify-between cursor-pointer">
+                        class="text-[#333745] text-base leading-normal font-bold menu-dropdown flex items-center gap-1 justify-between cursor-pointer">
                         حصل وظيفتك
-                        <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="rotate-90 lg:rotate-0" width="10" height="6" viewBox="0 0 10 6" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path
-                                d="M1.21094 5.83594L6.52344 0.523438C6.91406 0.171875 7.5 0.171875 7.85156 0.523438L8.75 1.42188C9.10156 1.77344 9.10156 2.39844 8.75 2.75L4.96094 6.5L8.75 10.2891C9.10156 10.6406 9.10156 11.2266 8.75 11.6172L7.85156 12.4766C7.5 12.8672 6.91406 12.8672 6.52344 12.4766L1.21094 7.16406C0.859375 6.8125 0.859375 6.22656 1.21094 5.83594Z"
+                                d="M4.66797 5.71094L0.859375 1.92188C0.683594 1.72656 0.683594 1.43359 0.859375 1.25781L1.30859 0.808594C1.48438 0.632812 1.77734 0.632812 1.97266 0.808594L5 3.81641L8.00781 0.808594C8.20312 0.632812 8.49609 0.632812 8.67188 0.808594L9.12109 1.25781C9.29688 1.43359 9.29688 1.72656 9.12109 1.92188L5.3125 5.71094C5.13672 5.88672 4.84375 5.88672 4.66797 5.71094Z"
                                 fill="#333745" />
                         </svg>
                     </p>
-                    <div class="hidden menu-dropdown-list">
+                    <div class="hidden menu-dropdown-list lg:hidden">
                         <div class="flex flex-col gap-4 py-4">
                             <p class="text-[#333745] text-base leading-normal font-bold">التخصصات</p>
                             <ul class="flex flex-col gap-4">
@@ -475,9 +480,9 @@
                     </div>
                 </div>
 
-                <div class="p-8 flex flex-col gap-6 ">
-                    <p class="text-[#333745] text-base leading-normal font-bold">تعلم</p>
-                    <ul class="flex flex-col gap-4">
+                <div class="p-8 lg:p-0 flex flex-col gap-6 ">
+                    <p class="text-[#333745] text-base leading-normal font-bold">للمدارس</p>
+                    <ul class="flex flex-col gap-4 lg:hidden">
                         <li>
                             <a href="community.html" class="text-[#333745] text-base leading-normal">
                                 المجتمعات
@@ -507,13 +512,14 @@
                 </div>
             </div>
 
-            <div class="flex flex-col gap-4 p-8 border-t border-[#D7D5D5]">
+            <!-- join aanaaband & login buttons  -->
+            <div class="flex flex-col lg:flex-row items-center gap-4 p-8 border-t border-[#D7D5D5]">
                 <a href="#"
-                    class="py-3 text-center px-6 rounded-[32px] bg-[#8447FF] hover:bg-[#7841E8] active:bg-[#9D6CFF] transition-all duration-300 text-white text-base leading-6 font-bold">
+                    class="py-3 w-full lg:w-auto text-center px-6 rounded-[32px] bg-[#8447FF] hover:bg-[#7841E8] active:bg-[#9D6CFF] transition-all duration-300 text-white text-base leading-6 font-bold">
                     انضم إلى أعناب
                 </a>
                 <a href="#"
-                    class="py-3 text-center px-6 rounded-[32px] bg-[#F3EDFF] text-[#8447FF] text-base leading-6 font-bold">تسجيل
+                    class="py-3 w-full lg:w-auto text-center px-6 lg:p-0 rounded-[32px] bg-[#F3EDFF] lg:bg-transparent text-[#8447FF] lg:text-[#333745] text-base leading-6 font-bold lg:font-normal">تسجيل
                     الدخول</a>
             </div>
         </div>
@@ -1056,48 +1062,16 @@
                     <h2 class="text-[#6B7280] text-lg leading-[22px] font-bold">دورات اعناب</h2>
                     <div class="flex gap-4 w-full lg:gap-[45px]">
                         <ul class="flex-1 text-sm leading-7 lg:text-base lg:leading-9 text-[#6B7280]">
-                            <li>
-                                <a href="#"
-                                    class="transition-all duration-300 text-[#6B7280] hover:text-[#8447FF]">تطوير ذاتى
-                                    مهنى </a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="transition-all duration-300 text-[#6B7280] hover:text-[#8447FF]">استراتيجيات
-                                    التعليم</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="transition-all duration-300 text-[#6B7280] hover:text-[#8447FF]">تقنيات
-                                    التعليم</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="transition-all duration-300 text-[#6B7280] hover:text-[#8447FF]">أدوات ومصادر
-                                    تعليميه</a>
-                            </li>
+                            <li><a href="#">تطوير ذاتى مهنى </a></li>
+                            <li><a href="#">استراتيجيات التعليم</a></li>
+                            <li><a href="#">تقنيات التعليم</a></li>
+                            <li><a href="#">أدوات ومصادر تعليميه</a></li>
                         </ul>
                         <ul class="flex-1 text-sm leading-7 lg:text-base lg:leading-9 text-[#6B7280]">
-                            <li>
-                                <a href="#"
-                                    class="transition-all duration-300 text-[#6B7280] hover:text-[#8447FF]">تطوير ذاتى
-                                    مهنى </a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="transition-all duration-300 text-[#6B7280] hover:text-[#8447FF]">استراتيجيات
-                                    التعليم</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="transition-all duration-300 text-[#6B7280] hover:text-[#8447FF]">تقنيات
-                                    التعليم</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="transition-all duration-300 text-[#6B7280] hover:text-[#8447FF]">أدوات ومصادر
-                                    تعليميه</a>
-                            </li>
+                            <li><a href="#">تطوير ذاتى مهنى </a></li>
+                            <li><a href="#">استراتيجيات التعليم</a></li>
+                            <li><a href="#">تقنيات التعليم</a></li>
+                            <li><a href="#">أدوات ومصادر تعليميه</a></li>
                         </ul>
                     </div>
                 </div>
@@ -1114,7 +1088,6 @@
                                     d="M18.6654 3.99067C18.6654 2.33867 17.3267 1 15.676 1H4.32003C2.6707 1 1.33203 2.33867 1.33203 3.99067V10.008C1.33203 11.6613 2.6707 13 4.32003 13H15.676C17.3267 13 18.6654 11.6613 18.6654 10.008V3.99067ZM7.9987 10.208V3.66667L13.7094 7L7.9987 10.208Z"
                                     stroke="#6B7280" stroke-linejoin="round"></path>
                             </svg>
-                            <span class="sr-only">Aanaab Youtube Page</span>
                         </a>
                         <a href="#" aria-label="fb"
                             class="border border-[#D1D5DB] rounded-full w-[30px] h-[30px] flex items-center justify-center transition duration-300 hover:bg-[#3b5998] hover:border-[#3b5998] group">
@@ -1124,7 +1097,6 @@
                                     d="M11.1174 6.66662H7.9987V5.30396C7.9987 4.60529 8.4627 4.44129 8.78803 4.44129C9.1147 4.44129 10.6654 4.44129 10.6654 4.44129V1.36529L7.5307 1.35596C4.4667 1.35596 3.9987 3.64796 3.9987 5.11462V6.66662H1.33203V9.33329H3.9987C3.9987 13.3986 3.9987 18.6666 3.9987 18.6666H7.9987C7.9987 18.6666 7.9987 13.3506 7.9987 9.33329H10.792L11.1174 6.66662Z"
                                     stroke="#6B7280" stroke-linejoin="round"></path>
                             </svg>
-                            <span class="sr-only">Aanaab FaceBook Page</span>
                         </a>
                         <a href="#" aria-label="Twitter"
                             class="border border-[#D1D5DB] rounded-full w-[30px] h-[30px] flex items-center justify-center transition duration-300 hover:bg-[#1da1f2] hover:border-[#1da1f2] group ">
@@ -1134,7 +1106,7 @@
                                     d="M17.6681 0.805204C17.6681 0.805204 15.8667 0.99987 15.0681 1.15987C14.4281 0.47587 13.5161 0.0505371 12.5067 0.0505371C10.5681 0.0505371 8.99606 1.62254 8.99606 3.55987C8.99606 3.8332 9.02673 4.10387 9.08673 4.35854C6.17073 4.21454 3.5854 2.81587 1.85473 0.69187C1.55206 1.21187 1.37873 1.8132 1.37873 2.4572C1.37873 3.67587 1.99873 4.74787 2.94006 5.3772C2.3654 5.35854 1.82406 5.2012 1.35073 4.9372C1.35073 4.9532 1.35073 4.9692 1.35073 4.98387C1.35073 6.68254 2.56006 8.1012 4.1654 8.42254C3.65073 8.56387 3.1094 8.58387 2.5814 8.48387C3.02806 9.8772 4.32406 10.8919 5.85873 10.9225C4.35873 12.0985 2.49606 12.5892 0.664062 12.3745C2.2174 13.3705 4.06273 13.9532 6.04406 13.9532C12.4987 13.9532 16.0281 8.60387 16.0281 3.96787C16.0281 3.81587 16.0254 3.66387 16.0174 3.51454C16.7027 3.0172 17.1974 1.5092 17.6681 0.805204Z"
                                     fill="none" stroke="#6B7280"></path>
                             </svg>
-                            <span class="sr-only">Aanaab Twitter Page</span>
+
                         </a>
                         <a href="#" aria-label="insta"
                             class="border border-[#D1D5DB] rounded-full w-[30px] h-[30px] flex items-center justify-center transition duration-300 hover:bg-[#c13584] hover:border-[#c13584] group">
@@ -1156,7 +1128,7 @@
                                 <path d="M12.668 7.33325V12.6666" stroke="#6B7280" stroke-miterlimit="10"
                                     stroke-linejoin="round"></path>
                             </svg>
-                            <span class="sr-only">Aanaab insta Page</span>
+
                         </a>
                     </div>
                     <div
@@ -1184,17 +1156,15 @@
             <p class="text-[#6B7280] text-sm leading-normal">جميع الحقوق محفوظة © منصة أعناب</p>
             <nav class="flex leading-[8px] ">
                 <a href="#"
-                    class="text-[#6B7280] transition-all duration-300 hover:text-[#8447FF] text-[13px] leading-loose lg:text-sm border-l  border-[#D1D5DB] px-4">الرئيسية</a>
+                    class="text-[#6B7280] text-[13px] leading-loose lg:text-sm border-l  border-[#D1D5DB] px-4">الرئيسية</a>
                 <a href="#"
-                    class="text-[#6B7280] transition-all duration-300 hover:text-[#8447FF] text-[13px] leading-loose lg:text-sm border-l  border-[#D1D5DB] px-4">تصفح
+                    class="text-[#6B7280] text-[13px] leading-loose lg:text-sm border-l  border-[#D1D5DB] px-4">تصفح
                     الدورات</a>
                 <a href="#"
-                    class="text-[#6B7280] transition-all duration-300 hover:text-[#8447FF] text-[13px] leading-loose lg:text-sm border-l  border-[#D1D5DB] px-4 hidden sm:block">عن
+                    class="text-[#6B7280] text-[13px] leading-loose lg:text-sm border-l  border-[#D1D5DB] px-4 hidden sm:block">عن
                     منصة
                     أعناب</a>
-                <a href="#"
-                    class="text-[#6B7280] transition-all duration-300 hover:text-[#8447FF] text-[13px] leading-loose lg:text-sm px-4">سياسة
-                    الخصوصية</a>
+                <a href="#" class="text-[#6B7280] text-[13px] leading-loose lg:text-sm px-4">سياسة الخصوصية</a>
             </nav>
         </div>
     </footer>

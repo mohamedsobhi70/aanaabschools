@@ -48,6 +48,12 @@
 .anb-accordion.active h3 {
   @apply lg:text-xl;
 }
+.anb-accordion.gry-bg.active {
+  @apply border-transparent bg-[#F6F5F7];
+}
+.anb-accordion.gry-bg.active h3{
+  @apply lg:text-lg;
+}
 
 .swiper-pagination-bullet {
   width: 14px;
@@ -58,9 +64,33 @@
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   @apply bg-[#8447ff];
 }
+
 .mob-menu.active {
   @apply visible opacity-100;
 }
+
 .network-card:nth-child(odd) > img {
   @apply lg:order-last;
+}
+
+.explore-content > div:nth-child(odd) {
+  @apply lg:flex-row;
+}
+.explore-content > div:nth-child(even) {
+  @apply lg:flex-row-reverse;
+}
+
+.explore-content > div:nth-child(odd) .explore-img-container {
+  @apply lg:left-0;
+}
+
+.explore-content > div:nth-child(even) .explore-img-container {
+  @apply lg:right-0;
+}
+
+.explore-content > div:nth-child(odd) .explore-text-content {
+  @apply lg:items-start lg:text-right;
+}
+.explore-content > div:nth-child(even) .explore-text-content {
+  @apply lg:items-end lg:text-left;
 }
