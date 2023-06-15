@@ -1692,6 +1692,14 @@ video {
   color: rgb(132 71 255 / var(--tw-text-opacity));
 }
 
+.hover\:text-\[\627\644\645\62C\62A\645\639\]:hover {
+  color: المجتمع;
+}
+
+.hover\:text-\[\]:hover {
+  color: ;
+}
+
 .hover\:shadow-sol-shad:hover {
   --tw-shadow: 0px 0px 24px 8px rgba(0, 0, 0, 0.1);
   --tw-shadow-colored: 0px 0px 24px 8px var(--tw-shadow-color);
