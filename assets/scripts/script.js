@@ -55,23 +55,24 @@ if ($(".slider-partners").length > 0) {
 // =================================================
 
 // Drop Down In Header 
+
+
+
+
 if ($(".dropdown-list").length) {
-    $(".dropdown-list").on("click", function (e) {
+    $(".dropdown-list").hover(function (e) {
         $(".colored-act").removeClass("active")
-        if ($(this).siblings(".dropdown-list-items").hasClass("active")) {
+        if ($(this).find(".dropdown-list-items").hasClass("active")) {
             $(".dropdown-list-items").removeClass("active");
             $(this).removeClass("active")
         }
         else {
             $(".dropdown-list-items").removeClass("active");
-            $(this).siblings(".dropdown-list-items").addClass("active");
+            $(this).find(".dropdown-list-items").addClass("active");
             $(this).addClass("active")
         }
     })
 
-    $("main").on("click", function (e) {
-        $(".dropdown-list-items").removeClass("active");
-    })
 }
 // mobile dropdown 
 if ($(".menu-dropdown").length) {

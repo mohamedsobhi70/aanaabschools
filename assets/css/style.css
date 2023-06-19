@@ -1100,6 +1100,16 @@ video {
   background-color: rgb(246 245 247 / var(--tw-bg-opacity));
 }
 
+.bg-blue-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(191 219 254 / var(--tw-bg-opacity));
+}
+
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
 .bg-transparent {
   background-color: transparent;
 }
@@ -1288,6 +1298,10 @@ video {
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pt-1 {
+  padding-top: 0.25rem;
 }
 
 .text-center {
@@ -1505,7 +1519,7 @@ video {
 
 .dropdown-list-items.active {
   visibility: visible;
-  top: 100%;
+  top: 55px;
   opacity: 1;
 }
 
