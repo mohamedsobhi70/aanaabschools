@@ -1857,6 +1857,14 @@ video {
     height: 100vh;
   }
 
+  .lg\:h-\[650px\] {
+    height: 650px;
+  }
+
+  .lg\:h-\[600px\] {
+    height: 600px;
+  }
+
   .lg\:w-\[100px\] {
     width: 100px;
   }
