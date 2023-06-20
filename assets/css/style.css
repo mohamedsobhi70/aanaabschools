@@ -1514,44 +1514,7 @@ video {
   background-color: rgb(132 71 255 / var(--tw-bg-opacity));
 }
 
-.mob-menu.active {
-  visibility: visible;
-  opacity: 1;
-}
-
-@media (min-width: 1024px) {
-  .network-card:nth-child(odd) > img {
-    order: 9999;
-  }
-
-  .explore-content > div:nth-child(odd) {
-    flex-direction: row;
-  }
-
-  .explore-content > div:nth-child(even) {
-    flex-direction: row-reverse;
-  }
-
-  .explore-content > div:nth-child(odd) .explore-img-container {
-    left: 0px;
-  }
-
-  .explore-content > div:nth-child(even) .explore-img-container {
-    right: 0px;
-  }
-
-  .explore-content > div:nth-child(odd) .explore-text-content {
-    align-items: flex-start;
-    text-align: right;
-  }
-
-  .explore-content > div:nth-child(even) .explore-text-content {
-    align-items: flex-end;
-    text-align: left;
-  }
-}
-
-.menu-dropdown.active .colored-act {
+menu-dropdown.active .colored-act {
   --tw-text-opacity: 1;
   color: rgb(120 65 232 / var(--tw-text-opacity));
 }
@@ -1561,7 +1524,7 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.menu-dropdown.active  .colored-act> svg path {
+.menu-dropdown.active .colored-act> svg path {
   fill: #8447FF;
 }
 
@@ -1580,6 +1543,7 @@ video {
     transition-property: all;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 300ms;
+    display: block !important;
   }
 
   .menu-dropdown-list.small-menu.left-men {
@@ -1603,9 +1567,14 @@ video {
   top: 1.75rem;
 }
 
-.mob-menu.active {
+.mob-menu.active.active {
   visibility: visible;
   opacity: 1;
+}
+
+.chevron.rotat {
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 @media (min-width: 1024px) {
@@ -2292,5 +2261,19 @@ video {
 
   .lg\:opacity-100 {
     opacity: 1;
+  }
+
+  .lg\:hover\:text-\[\#7841E8\]:hover {
+    --tw-text-opacity: 1;
+    color: rgb(120 65 232 / var(--tw-text-opacity));
+  }
+
+  .lg\:hover\:text-\[\#8447FF\]:hover {
+    --tw-text-opacity: 1;
+    color: rgb(132 71 255 / var(--tw-text-opacity));
+  }
+
+  .group:hover .lg\:group-hover\:fill-\[\#8447FF\] {
+    fill: #8447FF;
   }
 }
