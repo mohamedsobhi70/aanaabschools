@@ -1491,14 +1491,9 @@ video {
     right: 0px;
   }
 
-  .explore-content > div:nth-child(odd) .explore-text-content {
+  .explore-content > div .explore-text-content {
     align-items: flex-start;
     text-align: right;
-  }
-
-  .explore-content > div:nth-child(even) .explore-text-content {
-    align-items: flex-end;
-    text-align: left;
   }
 }
 
@@ -1716,10 +1711,6 @@ video {
 }
 
 @media (min-width: 574px) {
-  .sm\:block {
-    display: block;
-  }
-
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -1837,8 +1828,8 @@ video {
     height: 518px;
   }
 
-  .lg\:h-\[544px\] {
-    height: 544px;
+  .lg\:h-\[600px\] {
+    height: 600px;
   }
 
   .lg\:h-\[612px\] {
@@ -1855,14 +1846,6 @@ video {
 
   .lg\:h-screen {
     height: 100vh;
-  }
-
-  .lg\:h-\[650px\] {
-    height: 650px;
-  }
-
-  .lg\:h-\[600px\] {
-    height: 600px;
   }
 
   .lg\:w-\[100px\] {

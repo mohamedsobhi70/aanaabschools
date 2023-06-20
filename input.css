@@ -65,11 +65,8 @@
   @apply lg:right-0;
 }
 
-.explore-content > div:nth-child(odd) .explore-text-content {
+.explore-content > div .explore-text-content {
   @apply lg:items-start lg:text-right;
-}
-.explore-content > div:nth-child(even) .explore-text-content {
-  @apply lg:items-end lg:text-left;
 }
 
 .menu-dropdown.active .colored-act  {
