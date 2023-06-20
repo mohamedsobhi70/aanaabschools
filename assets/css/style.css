@@ -691,14 +691,6 @@ video {
   margin-left: auto;
 }
 
-.mr-2 {
-  margin-right: 0.5rem;
-}
-
-.mt-auto {
-  margin-top: auto;
-}
-
 .block {
   display: block;
 }
@@ -715,10 +707,6 @@ video {
   display: none;
 }
 
-.h-12 {
-  height: 3rem;
-}
-
 .h-\[225px\] {
   height: 225px;
 }
@@ -731,25 +719,16 @@ video {
   height: 30px;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .h-full {
   height: 100%;
 }
 
 .h-screen {
   height: 100vh;
-}
-
-.h-auto {
-  height: auto;
-}
-
-.h-max {
-  height: -moz-max-content;
-  height: max-content;
-}
-
-.w-12 {
-  width: 3rem;
 }
 
 .w-16 {
@@ -861,10 +840,6 @@ video {
 
 .items-center {
   align-items: center;
-}
-
-.items-stretch {
-  align-items: stretch;
 }
 
 .justify-center {
@@ -982,10 +957,6 @@ video {
   border-radius: 9999px;
 }
 
-.rounded-lg {
-  border-radius: 0.5rem;
-}
-
 .rounded-md {
   border-radius: 0.375rem;
 }
@@ -1069,11 +1040,6 @@ video {
   border-color: rgb(215 213 213 / var(--tw-border-opacity));
 }
 
-.border-\[\#E9E8E8\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(233 232 232 / var(--tw-border-opacity));
-}
-
 .border-transparent {
   border-color: transparent;
 }
@@ -1103,18 +1069,9 @@ video {
   background-color: rgb(243 237 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#F5F5F5\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#F6F5F7\] {
   --tw-bg-opacity: 1;
   background-color: rgb(246 245 247 / var(--tw-bg-opacity));
-}
-
-.bg-transparent {
-  background-color: transparent;
 }
 
 .bg-white {
@@ -1138,10 +1095,6 @@ video {
 
 .to-\[\#FFFFFF\] {
   --tw-gradient-to: #FFFFFF var(--tw-gradient-to-position);
-}
-
-.bg-cover {
-  background-size: cover;
 }
 
 .object-cover {
@@ -1174,11 +1127,6 @@ video {
 .px-16 {
   padding-left: 4rem;
   padding-right: 4rem;
-}
-
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
 }
 
 .px-4 {
@@ -1214,16 +1162,6 @@ video {
 .py-0\.5 {
   padding-top: 0.125rem;
   padding-bottom: 0.125rem;
-}
-
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
-.py-1\.5 {
-  padding-top: 0.375rem;
-  padding-bottom: 0.375rem;
 }
 
 .py-12 {
@@ -1375,10 +1313,6 @@ video {
 
 .leading-\[180\%\] {
   line-height: 180%;
-}
-
-.leading-\[18px\] {
-  line-height: 18px;
 }
 
 .leading-\[21px\] {
@@ -1536,7 +1470,39 @@ video {
   background-color: rgb(132 71 255 / var(--tw-bg-opacity));
 }
 
-menu-dropdown.active .colored-act {
+@media (min-width: 1024px) {
+  .network-card:nth-child(odd) > img {
+    order: 9999;
+  }
+
+  .explore-content > div:nth-child(odd) {
+    flex-direction: row;
+  }
+
+  .explore-content > div:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .explore-content > div:nth-child(odd) .explore-img-container {
+    left: 0px;
+  }
+
+  .explore-content > div:nth-child(even) .explore-img-container {
+    right: 0px;
+  }
+
+  .explore-content > div:nth-child(odd) .explore-text-content {
+    align-items: flex-start;
+    text-align: right;
+  }
+
+  .explore-content > div:nth-child(even) .explore-text-content {
+    align-items: flex-end;
+    text-align: left;
+  }
+}
+
+.menu-dropdown.active .colored-act {
   --tw-text-opacity: 1;
   color: rgb(120 65 232 / var(--tw-text-opacity));
 }
@@ -1726,11 +1692,6 @@ menu-dropdown.active .colored-act {
   outline-offset: 2px;
 }
 
-.focus-visible\:outline-none:focus-visible {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
 .active\:bg-\[\#9D6CFF\]:active {
   --tw-bg-opacity: 1;
   background-color: rgb(157 108 255 / var(--tw-bg-opacity));
@@ -1827,10 +1788,6 @@ menu-dropdown.active .colored-act {
     grid-column: span 12 / span 12;
   }
 
-  .lg\:col-span-2 {
-    grid-column: span 2 / span 2;
-  }
-
   .lg\:col-span-4 {
     grid-column: span 4 / span 4;
   }
@@ -1862,10 +1819,6 @@ menu-dropdown.active .colored-act {
 
   .lg\:flex {
     display: flex;
-  }
-
-  .lg\:grid {
-    display: grid;
   }
 
   .lg\:hidden {
@@ -1959,10 +1912,6 @@ menu-dropdown.active .colored-act {
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:flex-row {
