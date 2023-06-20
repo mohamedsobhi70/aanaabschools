@@ -1,8 +1,6 @@
 // Testimonial Carousel  ==> Home Page
 if ($(".slider-testimonials").length > 0) {
     let swiper = new Swiper(".slider-testimonials", {
-        centeredSlides: true,
-        loop: true,
         autoplay: true,
         pagination: {
             el: '.testimonials-pagination',
