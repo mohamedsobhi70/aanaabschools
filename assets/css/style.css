@@ -1938,6 +1938,10 @@ video {
     align-items: center;
   }
 
+  .lg\:justify-start {
+    justify-content: flex-start;
+  }
+
   .lg\:justify-center {
     justify-content: center;
   }
