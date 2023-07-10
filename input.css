@@ -25,6 +25,9 @@
 .anb-accordion.active {
   @apply border-[#8447FF] bg-white;
 }
+.anb-accordion.home.active {
+  @apply border-[#E9E8E8] ;
+}
 .anb-accordion.active h3 {
   @apply lg:text-xl;
 }

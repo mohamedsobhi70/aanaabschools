@@ -120,6 +120,30 @@ if ($(".slider-professional-qualifications").length > 0) {
     });
 }
 // =================================================
+// ((Home page)) professional-qualifications Carousel
+if ($(".slider-free-courses").length > 0) {
+    let swiper = new Swiper(".slider-free-courses", {
+        breakpoints: {
+            0: {
+                spaceBetween: 16,
+                slidesPerView: 1.1,
+            },
+            680: {
+                spaceBetween: 24,
+                slidesPerView: 2,
+            },
+            1024: {
+                spaceBetween: 30,
+                slidesPerView: 3,
+            },
+        },
+        pagination: {
+            el: ".free-courses-pagination",
+            clickable: true,
+        }
+    });
+}
+// =================================================
 
 // Drop Down In Header
 
@@ -213,7 +237,7 @@ if ($(".slider-training-courses").length > 0) {
         if (filt === "*") {
             $(".slider-training-courses .swiper-slide").removeClass("hidden");
             swiper = new Swiper(".slider-training-courses", {
-                        breakpoints: {
+                breakpoints: {
                     0: {
                         spaceBetween: 16,
                         slidesPerView: 1.1,
@@ -237,7 +261,7 @@ if ($(".slider-training-courses").length > 0) {
             $(".slider-training-courses .swiper-slide").removeClass("hidden");
             $(`.slider-training-courses .swiper-slide:not(${filt})`).addClass("hidden");
             swiper = new Swiper(".slider-training-courses", {
-                        breakpoints: {
+                breakpoints: {
                     0: {
                         spaceBetween: 16,
                         slidesPerView: 1.1,
