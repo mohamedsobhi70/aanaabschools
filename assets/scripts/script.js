@@ -8,7 +8,7 @@ if ($(".slider-testimonials").length > 0) {
         },
         breakpoints: {
             0: {
-                slidesPerView: 1.2,
+                slidesPerView: 1,
                 spaceBetween: 16,
             },
             680: {
@@ -228,10 +228,11 @@ if ($(".slider-training-courses").length > 0) {
         }
     });
 
-    $(".iso-nav .filter-item").on("click", function () {
+    $(".training-courses .iso-nav .filter-item").on("click", function () {
         swiper.destroy()
-        $(".iso-nav .filter-item").removeClass("active")
+        $(".training-courses .iso-nav .filter-item").removeClass("active")
         $(this).addClass("active");
+
         let filt = $(this).attr("data-filter");
 
         if (filt === "*") {
@@ -280,6 +281,25 @@ if ($(".slider-training-courses").length > 0) {
                     clickable: true,
                 }
             });
+        }
+    })
+}
+// =================================================
+
+//  Filtering slider-jobs
+
+if ($(".jobs").length > 0) {
+    $(".jobs .iso-nav .filter-item").on("click", function () {
+        $(".jobs .iso-nav .filter-item").removeClass("active");
+        $(this).addClass("active");
+        let filt = $(this).attr("data-filter");
+
+        if (filt === "*") {
+            $(".jobs .filter-card").removeClass("hidden");
+        }
+        else {
+            $(".jobs .filter-card").removeClass("hidden");
+            $(`.jobs .filter-card:not(${filt})`).addClass("hidden");
         }
     })
 }
