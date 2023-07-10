@@ -120,6 +120,7 @@ if ($(".slider-professional-qualifications").length > 0) {
     });
 }
 // =================================================
+
 // ((Home page)) professional-qualifications Carousel
 if ($(".slider-free-courses").length > 0) {
     let swiper = new Swiper(".slider-free-courses", {
@@ -139,6 +140,31 @@ if ($(".slider-free-courses").length > 0) {
         },
         pagination: {
             el: ".free-courses-pagination",
+            clickable: true,
+        }
+    });
+}
+// =================================================
+
+// ((Home page)) professional-qualifications Carousel
+if ($(".slider-society").length > 0) {
+    let swiper = new Swiper(".slider-society", {
+        breakpoints: {
+            0: {
+                spaceBetween: 16,
+                slidesPerView: 1.1,
+            },
+            680: {
+                spaceBetween: 24,
+                slidesPerView: 2,
+            },
+            1024: {
+                spaceBetween: 30,
+                slidesPerView: 3,
+            },
+        },
+        pagination: {
+            el: ".society-pagination",
             clickable: true,
         }
     });
