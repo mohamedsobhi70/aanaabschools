@@ -30,6 +30,10 @@ module.exports = {
       backgroundImage: {
         'cta': 'linear-gradient(0deg, #7841E8, #7841E8), radial-gradient(74.58% 74.58% at 50% 50%, #8447FF 0%, #5E32B5 100%)',
       },
+      rotate: {
+        '4': '4deg',
+        '5': '5deg',
+      }
     },
   },
   plugins: [],

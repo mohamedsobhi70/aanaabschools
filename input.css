@@ -31,20 +31,23 @@
 .anb-accordion.gry-bg.active {
   @apply border-transparent bg-[#F6F5F7];
 }
-.anb-accordion.gry-bg.active h3{
+.anb-accordion.gry-bg.active h3 {
   @apply lg:text-lg;
 }
 
 .swiper-pagination-bullet {
-  width: 14px;
-  height: 14px;
+  width: 12px;
+  height: 12px;
   margin: 0 !important;
+}
+.swiper-pagination {
+  @apply p-3 rounded-full;
+  width: fit-content !important;
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   @apply bg-[#8447ff];
 }
-
 
 .network-card:nth-child(odd) > img {
   @apply lg:order-last;
@@ -69,7 +72,7 @@
   @apply lg:items-start lg:text-right;
 }
 
-.menu-dropdown.active .colored-act  {
+.menu-dropdown.active .colored-act {
   @apply text-[#7841E8];
 }
 
@@ -77,33 +80,32 @@
   @apply rotate-180;
 }
 
-.menu-dropdown.active .colored-act> svg path {
+.menu-dropdown.active .colored-act > svg path {
   @apply fill-[#8447FF];
 }
 
-.menu-dropdown-list{
+.menu-dropdown-list {
   @apply w-full lg:absolute lg:opacity-0 lg:invisible lg:transition-all lg:duration-300 lg:right-0 top-20 lg:pt-10;
 }
 
-@media (min-width: 1024px){
-.menu-dropdown-list{
+@media (min-width: 1024px) {
+  .menu-dropdown-list {
     display: block !important;
+  }
 }
-
-}
-.menu-dropdown-list.small-menu.left-men{
+.menu-dropdown-list.small-menu.left-men {
   @apply lg:w-72 lg:left-0 lg:right-auto;
 }
 
-.menu-dropdown-list.small-menu.right-men{
+.menu-dropdown-list.small-menu.right-men {
   @apply lg:w-72;
 }
 
-.menu-dropdown-list.active{
-  @apply opacity-100 visible top-[55px] ;
+.menu-dropdown-list.active {
+  @apply opacity-100 visible top-[55px];
 }
 
-.menu-dropdown-list.small-menu.active{
+.menu-dropdown-list.small-menu.active {
   @apply top-7;
 }
 
@@ -111,6 +113,22 @@
   @apply visible opacity-100;
 }
 
-.chevron.rotat{
-@apply rotate-180
+.chevron.rotat {
+  @apply rotate-180;
+}
+
+.filter-item {
+  @apply rounded-full py-2 px-6 border border-[#D1D5DB] bg-white text-[13px] leading-[30px] shrink-0 font-bold cursor-pointer transition-all duration-300;
+}
+.filter-item.active,
+.filter-item:hover {
+  @apply bg-[#8447FF] border-transparent text-white;
+}
+
+.iso-nav::-webkit-scrollbar {
+  display: none;
+}
+.iso-nav {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }

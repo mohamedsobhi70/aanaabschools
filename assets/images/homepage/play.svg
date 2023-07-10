@@ -1,0 +1,14 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame 1572" filter="url(#filter0_b_3500_56547)">
+<rect width="64" height="64" rx="32" fill="black" fill-opacity="0.7"/>
+<path id="Polygon 2" d="M42.7846 30.268C44.1179 31.0378 44.1179 32.9623 42.7846 33.7321L28 42.2679C26.6667 43.0377 25 42.0755 25 40.5359L25 23.4641C25 21.9245 26.6667 20.9623 28 21.7321L42.7846 30.268Z" fill="white"/>
+</g>
+<defs>
+<filter id="filter0_b_3500_56547" x="-4" y="-4" width="72" height="72" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="2"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_3500_56547"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_3500_56547" result="shape"/>
+</filter>
+</defs>
+</svg>
