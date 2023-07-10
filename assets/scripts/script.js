@@ -332,8 +332,7 @@ if ($(".slider-training-courses").length > 0) {
                 }
             });
         }
-        console.log($(".training-courses-pagination").children().length);
-
+        
         if ($(".training-courses-pagination").children().length == 1) {
             $(".training-courses-pagination").addClass("hidden");
         } else {
