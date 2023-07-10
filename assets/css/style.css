@@ -803,6 +803,10 @@ video {
   height: 6rem;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -846,6 +850,14 @@ video {
 
 .w-24 {
   width: 6rem;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+.w-\[152px\] {
+  width: 152px;
 }
 
 .max-w-\[612px\] {
@@ -1306,6 +1318,11 @@ video {
 .bg-red-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(127 29 29 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#D9D9D9\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(217 217 217 / var(--tw-bg-opacity));
 }
 
 .bg-cta {

@@ -121,13 +121,13 @@ if ($(".slider-professional-qualifications").length > 0) {
 }
 // =================================================
 
-// ((Home page)) professional-qualifications Carousel
+// ((Home page)) Free Courses Carousel
 if ($(".slider-free-courses").length > 0) {
     let swiper = new Swiper(".slider-free-courses", {
         breakpoints: {
             0: {
                 spaceBetween: 16,
-                slidesPerView: 1.1,
+                slidesPerView: 1,
             },
             680: {
                 spaceBetween: 24,
@@ -146,13 +146,13 @@ if ($(".slider-free-courses").length > 0) {
 }
 // =================================================
 
-// ((Home page)) professional-qualifications Carousel
+// ((Home page)) society Carousel
 if ($(".slider-society").length > 0) {
     let swiper = new Swiper(".slider-society", {
         breakpoints: {
             0: {
                 spaceBetween: 16,
-                slidesPerView: 1.1,
+                slidesPerView: 1,
             },
             680: {
                 spaceBetween: 24,
@@ -171,8 +171,32 @@ if ($(".slider-society").length > 0) {
 }
 // =================================================
 
-// Drop Down In Header
+// ((Home page)) Blog Carousel
+if ($(".slider-blog").length > 0) {
+    let swiper = new Swiper(".slider-blog", {
+        breakpoints: {
+            0: {
+                spaceBetween: 16,
+                slidesPerView: 1,
+            },
+            680: {
+                spaceBetween: 24,
+                slidesPerView: 2.5,
+            },
+            1024: {
+                spaceBetween: 30,
+                slidesPerView: 4,
+            },
+        },
+        pagination: {
+            el: ".blog-pagination",
+            clickable: true,
+        }
+    });
+}
+// =================================================
 
+// Drop Down In Header
 if ($(".menu-dropdown").length) {
     $(".menu-dropdown")
         .on("mouseenter", function () {
@@ -237,7 +261,7 @@ if ($(".slider-training-courses").length > 0) {
         breakpoints: {
             0: {
                 spaceBetween: 16,
-                slidesPerView: 1.1,
+                slidesPerView: 1,
             },
             680: {
                 spaceBetween: 24,
@@ -255,7 +279,7 @@ if ($(".slider-training-courses").length > 0) {
     });
 
     $(".training-courses .iso-nav .filter-item").on("click", function () {
-        swiper.destroy()
+        swiper.destroy();
         $(".training-courses .iso-nav .filter-item").removeClass("active")
         $(this).addClass("active");
 
@@ -267,7 +291,7 @@ if ($(".slider-training-courses").length > 0) {
                 breakpoints: {
                     0: {
                         spaceBetween: 16,
-                        slidesPerView: 1.1,
+                        slidesPerView: 1,
                     },
                     680: {
                         spaceBetween: 24,
@@ -291,7 +315,7 @@ if ($(".slider-training-courses").length > 0) {
                 breakpoints: {
                     0: {
                         spaceBetween: 16,
-                        slidesPerView: 1.1,
+                        slidesPerView: 1,
                     },
                     680: {
                         spaceBetween: 24,
@@ -307,6 +331,13 @@ if ($(".slider-training-courses").length > 0) {
                     clickable: true,
                 }
             });
+        }
+        console.log($(".training-courses-pagination").children().length);
+
+        if ($(".training-courses-pagination").children().length == 1) {
+            $(".training-courses-pagination").addClass("hidden");
+        } else {
+            $(".training-courses-pagination").removeClass("hidden");
         }
     })
 }
