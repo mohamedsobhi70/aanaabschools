@@ -135,3 +135,10 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+.main-iso::-webkit-scrollbar {
+  display: none;
+}
+.main-iso {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
