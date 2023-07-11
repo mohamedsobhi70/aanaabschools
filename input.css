@@ -26,7 +26,7 @@
   @apply border-[#8447FF] bg-white;
 }
 .anb-accordion.home.active {
-  @apply border-[#E9E8E8] ;
+  @apply border-[#E9E8E8];
 }
 .anb-accordion.active h3 {
   @apply lg:text-xl;
@@ -126,6 +126,18 @@
 .filter-item.active,
 .filter-item:hover {
   @apply bg-[#8447FF] border-transparent text-white;
+}
+
+.course-conrtent-item .item {
+  @apply p-2 rounded-lg transition-all duration-300 flex items-center gap-3 odd:bg-[#F7FAFA] hover:bg-[#F3EDFF] hover:text-[#8447FF];
+}
+
+.course-conrtent-item .item svg path {
+  @apply transition-all duration-300;
+}
+
+.course-conrtent-item .item:hover svg path {
+  @apply stroke-[#8447FF];
 }
 
 .iso-nav::-webkit-scrollbar {
