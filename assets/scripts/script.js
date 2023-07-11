@@ -332,7 +332,7 @@ if ($(".slider-training-courses").length > 0) {
                 }
             });
         }
-        
+
         if ($(".training-courses-pagination").children().length == 1) {
             $(".training-courses-pagination").addClass("hidden");
         } else {
@@ -360,3 +360,15 @@ if ($(".jobs").length > 0) {
     })
 }
 // =================================================
+
+
+// paly video 
+if ($(".play-vid").length > 0) {
+    $(".play-vid").on("click", function () {
+        let vid = $(this).siblings("video");
+        $("video").trigger('pause');
+        vid.trigger('play');
+        vid.attr('controls', "true");
+        $(this).addClass("hidden");
+    })
+}

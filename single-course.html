@@ -258,10 +258,45 @@
 
                 <!-- Course Content  -->
                 <div class="grid lg:grid-cols-3 gap-[30px]">
-                    <div class="flex flex-col gap-8">
-                        <div class="video">
-                            <video src=""></video>
+                    <div class="lg:col-span-2 flex flex-col gap-8">
+
+                        <!-- video section -->
+                        <div class="rounded-2xl overflow-hidden relative">
+                            <button type="button"
+                                class="play-vid z-[1] absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
+                                <img src="assets/images/homepage/play.svg" width="64" height="64" alt="Play Video">
+                                <span class="sr-only">Play Video Icon</span>
+                            </button>
+                            <div
+                                class="absolute bottom-0 left-10 bg-white rounded-t-xl p-6 flex flex-col gap-2 items-center">
+                                <p class="text-[#8447FF] text-sm leading-normal font-extrabold">
+                                    هذه الدورة معتمدة من
+                                </p>
+                                <img src="assets/images/partner-3.png" width="180" height="64" alt="Partner">
+                            </div>
+                            <video preload="metadata" class="" width="730" height="410">
+                                <source src="assets/images/course.mp4#t=11.9" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
+
+                        <div class="flex items-center gap-6">
+                            <div class="flex items-center gap-2">
+                                <span class="text-[#ABAFBD] text-base leading-normal">نوع الدورة:</span>
+                                <span class="text-[#333745] text-base leading-normal font-bold">دورة مباشرة</span>
+                            </div>
+                            <!-- divider -->
+                            <span class="border-l border-[#E9E8E8] h-full"></span>
+                            <div class="flex items-center gap-2">
+                                <span class="text-[#ABAFBD] text-base leading-normal">نوع الدورة:</span>
+                                <span class="text-[#333745] text-base leading-normal font-bold">دورة مباشرة</span>
+                            </div>
+                        </div>
+
+                        <!-- divider -->
+                        <span class="border-t border-[#E9E8E8] w-full"></span>
+
+                        
                     </div>
                 </div>
             </div>
