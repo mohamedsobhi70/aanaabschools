@@ -129,7 +129,7 @@
 }
 
 .course-conrtent-item .item {
-  @apply p-2 rounded-lg transition-all duration-300 flex items-center gap-3 odd:bg-[#F7FAFA] hover:bg-[#F3EDFF] hover:text-[#8447FF];
+  @apply p-2 rounded-lg transition-all duration-300 flex items-center gap-2 lg:gap-3 odd:bg-[#F7FAFA] hover:bg-[#F3EDFF] hover:text-[#8447FF];
 }
 
 .course-conrtent-item .item svg path {
