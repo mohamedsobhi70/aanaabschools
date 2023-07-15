@@ -2608,6 +2608,10 @@ video {
     padding: 2rem;
   }
 
+  .lg\:p-4 {
+    padding: 1rem;
+  }
+
   .lg\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -2705,6 +2709,14 @@ video {
 
   .lg\:pt-\[200px\] {
     padding-top: 200px;
+  }
+
+  .lg\:pt-0 {
+    padding-top: 0px;
+  }
+
+  .lg\:pt-4 {
+    padding-top: 1rem;
   }
 
   .lg\:text-center {
