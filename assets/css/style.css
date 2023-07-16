@@ -728,6 +728,10 @@ video {
   z-index: 1;
 }
 
+.z-\[2\] {
+  z-index: 2;
+}
+
 .order-first {
   order: -9999;
 }
