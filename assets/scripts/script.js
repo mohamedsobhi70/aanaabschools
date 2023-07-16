@@ -1,7 +1,6 @@
 // Testimonial Carousel  ==> Home Page
 if ($(".slider-testimonials").length > 0) {
     let swiper = new Swiper(".slider-testimonials", {
-        autoplay: true,
         pagination: {
             el: ".testimonials-pagination",
             clickable: true,
@@ -230,11 +229,10 @@ if ($(".slider-qualifications-advantages").length > 0) {
     let swiper = new Swiper(".slider-qualifications-advantages", {
         breakpoints: {
             0: {
-                spaceBetween: 16,
+                spaceBetween: 24,
                 slidesPerView: 1,
             },
             680: {
-                spaceBetween: 24,
                 slidesPerView: 2,
             },
             1024: {
