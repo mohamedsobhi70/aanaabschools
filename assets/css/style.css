@@ -2214,6 +2214,10 @@ video {
   fill: #fff;
 }
 
+.group:hover .group-hover\:fill-\[\#8447FF\] {
+  fill: #8447FF;
+}
+
 .group:hover .group-hover\:stroke-none {
   stroke: none;
 }
