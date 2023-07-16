@@ -167,7 +167,18 @@
 .licence-filt-item svg path {
   @apply transition-all duration-300;
 }
-.licence-filt-item.active svg path ,
+.licence-filt-item.active svg path,
 .licence-filt-item:hover svg path {
   @apply fill-[#8447FF];
+}
+
+.selected-filter {
+  @apply text-[#8447FF] text-sm leading-[125%] font-bold; 
+}
+.selected-filter svg path {
+  @apply fill-[#8447FF];
+}
+
+.swiper-slide {
+  @apply transition-colors duration-500;
 }

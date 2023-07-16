@@ -307,7 +307,7 @@ $(".mob-menu-closbtn").on("click", function () {
 
 
 //  Filtering slider-training-courses
-// ((Home page)) slider-training-courses Carousel
+//  slider-training-courses Carousel
 if ($(".slider-training-courses").length > 0) {
     let swiper = new Swiper(".slider-training-courses", {
         breakpoints: {
@@ -393,6 +393,95 @@ if ($(".slider-training-courses").length > 0) {
     })
 }
 // =================================================
+//  Filtering slider-training-courses
+
+
+// slider-book-store Carousel
+if ($(".slider-book-store").length > 0) {
+    let swiper = new Swiper(".slider-book-store", {
+        breakpoints: {
+            0: {
+                spaceBetween: 16,
+                slidesPerView: 1,
+            },
+            680: {
+                spaceBetween: 24,
+                slidesPerView: 2,
+            },
+            1024: {
+                spaceBetween: 30,
+                slidesPerView: 3,
+            },
+        },
+        pagination: {
+            el: ".book-store-pagination",
+            clickable: true,
+        }
+    });
+
+    $(".book-store .iso-nav .filter-item").on("click", function () {
+        swiper.destroy();
+        $(".book-store .iso-nav .filter-item").removeClass("active")
+        $(this).addClass("active");
+
+        let filt = $(this).attr("data-filter");
+
+        if (filt === "*") {
+            $(".slider-book-store .swiper-slide").removeClass("hidden");
+            swiper = new Swiper(".slider-book-store", {
+                breakpoints: {
+                    0: {
+                        spaceBetween: 16,
+                        slidesPerView: 1,
+                    },
+                    680: {
+                        spaceBetween: 24,
+                        slidesPerView: 2,
+                    },
+                    1024: {
+                        spaceBetween: 30,
+                        slidesPerView: 3,
+                    },
+                },
+                pagination: {
+                    el: ".book-store-pagination",
+                    clickable: true,
+                }
+            });
+        }
+        else {
+            $(".slider-book-store .swiper-slide").removeClass("hidden");
+            $(`.slider-book-store .swiper-slide:not(${filt})`).addClass("hidden");
+            swiper = new Swiper(".slider-book-store", {
+                breakpoints: {
+                    0: {
+                        spaceBetween: 16,
+                        slidesPerView: 1,
+                    },
+                    680: {
+                        spaceBetween: 24,
+                        slidesPerView: 2,
+                    },
+                    1024: {
+                        spaceBetween: 30,
+                        slidesPerView: 3,
+                    },
+                },
+                pagination: {
+                    el: ".book-store-pagination",
+                    clickable: true,
+                }
+            });
+        }
+
+        if ($(".book-store-pagination").children().length == 1) {
+            $(".book-store-pagination").addClass("hidden");
+        } else {
+            $(".book-store-pagination").removeClass("hidden");
+        }
+    })
+}
+// =================================================
 
 //  Filtering slider-jobs
 
@@ -433,3 +522,34 @@ if ($(".read-more-btn").length > 0) {
         $(this).siblings(".collapsed-txt").toggleClass("open");
     })
 }
+
+
+
+//  Filtering professional Licenses
+
+if ($(".license-cards-container").length > 0) {
+    $(".mob-cards-filter-container").html($(".cards-filter-container").clone())
+    $(".selected-filter").html($(".license-cards-container .licence-filt-item.active").html())
+
+    $(".selected-filter-container").on("click", function () {
+        $(this).find(".mob-cards-filter-container").slideToggle(300)
+    });
+
+
+    $(".license-cards-container .licence-filt-item").on("click", function () {
+        $(".license-cards-container .licence-filt-item").removeClass("active");
+        $(this).addClass("active");
+        $(".selected-filter").html($(this).html())
+        let filt = $(this).attr("data-filter");
+
+        if (filt === "*") {
+            $(".license-cards-container .professional-licence-card").removeClass("hidden");
+        }
+        else {
+            $(".license-cards-container .professional-licence-card").removeClass("hidden");
+            $(`.license-cards-container .professional-licence-card:not(${filt})`).addClass("hidden");
+        }
+    })
+}
+
+// =================================================
