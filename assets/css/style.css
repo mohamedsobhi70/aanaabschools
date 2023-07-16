@@ -771,11 +771,22 @@ video {
   margin-left: auto;
 }
 
+.-mt-4 {
+  margin-top: -1rem;
+}
+
 .line-clamp-4 {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
+}
+
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 
 .block {
@@ -1093,6 +1104,10 @@ video {
   gap: 5px;
 }
 
+.gap-2\.5 {
+  gap: 0.625rem;
+}
+
 .gap-x-2 {
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
@@ -1184,6 +1199,10 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
 }
 
 .rounded-b-\[64px\] {
@@ -1359,6 +1378,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#F8F4FF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 244 255 / var(--tw-bg-opacity));
+}
+
 .bg-cta {
   background-image: linear-gradient(0deg, #7841E8, #7841E8), radial-gradient(74.58% 74.58% at 50% 50%, #8447FF 0%, #5E32B5 100%);
 }
@@ -1433,6 +1457,10 @@ video {
 
 .p-8 {
   padding: 2rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
 }
 
 .px-1 {
@@ -1596,6 +1624,14 @@ video {
   padding-top: 72px;
 }
 
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
+.pt-0 {
+  padding-top: 0px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1706,6 +1742,10 @@ video {
   line-height: 1.5;
 }
 
+.leading-\[30px\] {
+  line-height: 30px;
+}
+
 .text-\[\#333745\] {
   --tw-text-opacity: 1;
   color: rgb(51 55 69 / var(--tw-text-opacity));
@@ -1800,6 +1840,13 @@ video {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
+}
+
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 
 .hero-img {
@@ -2079,6 +2126,9 @@ video {
   padding-bottom: 0.75rem;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  line-height: 1.25;
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
   transition-property: all;
@@ -2111,7 +2161,8 @@ video {
   transition-duration: 300ms;
 }
 
-.licence-filt-item.active svg path {
+.licence-filt-item.active svg path ,
+.licence-filt-item:hover svg path {
   fill: #8447FF;
 }
 
@@ -2831,6 +2882,10 @@ video {
 
   .lg\:pt-\[200px\] {
     padding-top: 200px;
+  }
+
+  .lg\:pl-\[30px\] {
+    padding-left: 30px;
   }
 
   .lg\:text-center {

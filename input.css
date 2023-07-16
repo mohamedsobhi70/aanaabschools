@@ -158,7 +158,7 @@
 }
 
 .licence-filt-item {
-  @apply py-3 px-5 cursor-pointer bg-white flex items-center gap-3 transition-all duration-300 border-b border-[#E9E8E8] last-of-type:border-none hover:bg-[#F8F4FF] text-[#6B7280] hover:text-[#8447FF];
+  @apply py-3 px-5 cursor-pointer bg-white flex items-center text-sm leading-tight gap-3 transition-all duration-300 border-b border-[#E9E8E8] last-of-type:border-none hover:bg-[#F8F4FF] text-[#6B7280] hover:text-[#8447FF];
 }
 .licence-filt-item.active {
   @apply bg-[#F8F4FF] text-[#8447FF] font-bold;
@@ -167,6 +167,7 @@
 .licence-filt-item svg path {
   @apply transition-all duration-300;
 }
-.licence-filt-item.active svg path {
+.licence-filt-item.active svg path ,
+.licence-filt-item:hover svg path {
   @apply fill-[#8447FF];
 }
