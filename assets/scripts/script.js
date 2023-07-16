@@ -287,10 +287,10 @@ if ($(".hero-img").length) {
 
 // Annab Accordion Component
 if ($(".anb-accordion").length) {
-    $(".anb-accordion").on("click", function (e) {
-        $(this).toggleClass("active");
-        $(this).find(".anb-accordion-content").slideToggle(300);
-        $(this).find(".icon img").toggleClass("hidden");
+    $(".anb-accordion .anb-accordion-title").on("click", function (e) {
+        $(this).parent().toggleClass("active");
+        $(this).parent().find(".anb-accordion-content").slideToggle(300);
+        $(this).parent().find(".icon img").toggleClass("hidden");
     });
 }
 // =================================================
@@ -422,5 +422,14 @@ if ($(".play-vid").length > 0) {
         vid.trigger('play');
         vid.attr('controls', "true");
         $(this).addClass("hidden");
+    })
+}
+
+
+// read more button 
+
+if ($(".read-more-btn").length > 0) {
+    $(".read-more-btn").on("click", function () {
+        $(this).siblings(".collapsed-txt").toggleClass("open");
     })
 }

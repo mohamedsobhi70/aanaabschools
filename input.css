@@ -139,7 +139,9 @@
 .course-conrtent-item .item:hover svg path {
   @apply stroke-[#8447FF];
 }
-
+.collapsed-txt.open{
+  @apply line-clamp-none
+}
 .iso-nav::-webkit-scrollbar {
   display: none;
 }
