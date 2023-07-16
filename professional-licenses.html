@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Description">
+    <title>منصة أعناب</title>
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <!-- styles -->
+    <link rel="stylesheet" href="assets/css/swiper.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="font-Almarai overflow-x-hidden relative">
+    <!-- Start Annab Header -->
+    <header class="bg-[#F7FAFA] z-50 lg:sticky top-0 px-[30px] lg:px-0">
+        <div class="container py-6 flex items-center gap-4 justify-between">
+            <!-- logo  -->
+            <a href="index.html" aria-label="Logo" class="shrink-0">
+                <img src="assets/images/logo.png" class="w-[128px] lg:w-[154px]" width="154" height="48"
+                    alt="Aanaab Logo">
+            </a>
+
+            <button type="button" aria-label="Mobile Menu" class="lg:hidden mob-menu-btn">
+                <img src="assets/images/menu.svg" width="24" height="24" alt="menu">
+            </button>
+
+            <div
+                class="mob-menu z-30 bg-white lg:bg-[#F7FAFA] fixed lg:static top-0 left-0 w-full h-screen lg:h-auto flex flex-col lg:flex-row lg:gap-8 lg:items-center invisible lg:visible opacity-0 lg:opacity-100 transition-all duration-300">
+                <div class="flex lg:hidden items-center gap-4 py-6 bg-white px-[30px] border-b border-[#D7D5D5]">
+                    <img src="assets/images/logo-shap.svg" width="40" height="40" alt="Logo Annab">
+                    <!-- mobile search  -->
+                    <form
+                        class="flex-1 py-2.5 px-4 rounded-full border border-[#D7D5D5] flex items-center gap-3 w-full bg-white">
+                        <button type="button" aria-label="search">
+                            <img src="assets/images/search.svg" width="16" height="16" alt="search">
+                        </button>
+                        <input type="search" name="mob-header-search" id="mob-header-search" placeholder="بحث"
+                            class="text-sm leading-[21px] placeholder:text-[#838795] focus:outline-none w-full">
+                    </form>
+                    <button class="mob-menu-closbtn" type="button" title="Close">
+                        <img src="assets/images/close.svg" width="24" height="24" alt="close">
+                    </button>
+                </div>
+
+                <div
+                    class="flex-1 h-full overflow-y-scroll lg:h-full lg:overflow-y-visible flex flex-col lg:flex-row lg:items-center lg:gap-8">
+                    <!-- learn  -->
+                    <div class="p-8 lg:p-0 flex flex-col gap-6 border-b border-[#D7D5D5] menu-dropdown lg:border-none">
+                        <p
+                            class="group lg:hover:text-[#7841E8] text-[#333745] text-base lg:text-sm leading-normal font-bold flex items-center justify-between cursor-pointer gap-2 lg:py-2.5 lg:px-4 lg:rounded-full lg:border lg:border-[#7841E8] lg:text-[#7841E8]">
+                            تعلم
+                            <svg class="chevron transition-all duration-300" width="10" height="6" viewBox="0 0 10 6"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="lg:fill-[#7841E8]"
+                                    d="M4.66797 5.71094L0.859375 1.92188C0.683594 1.72656 0.683594 1.43359 0.859375 1.25781L1.30859 0.808594C1.48438 0.632812 1.77734 0.632812 1.97266 0.808594L5 3.81641L8.00781 0.808594C8.20312 0.632812 8.49609 0.632812 8.67188 0.808594L9.12109 1.25781C9.29688 1.43359 9.29688 1.72656 9.12109 1.92188L5.3125 5.71094C5.13672 5.88672 4.84375 5.88672 4.66797 5.71094Z"
+                                    fill="#333745" />
+                            </svg>
+                        </p>
+                        <div class="hidden lg:block menu-dropdown-list">
+                            <div class="bg-white">
+                                <ul class="grid lg:grid-cols-2 gap-4 lg:gap-12 lg:py-12 lg:container">
+                                    <li class="lg:flex lg:items-start lg:gap-6">
+                                        <img src="assets/images/book.svg" class="hidden lg:block" width="24" height="24"
+                                            alt="book">
+                                        <div class="flex flex-col gap-2">
+                                            <a href="https://aanaab.com/courses"
+                                                class="text-[#333745] text-base lg:text-xl leading-normal lg:font-bold">الدورات</a>
+                                            <p class="hidden lg:block text-[#5B5F6D] text-sm leading-normal">
+                                                دورات عن بعد لتعزيز كفاءة المعلمين والتربويين
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="lg:flex lg:items-start lg:gap-6">
+                                        <img src="assets/images/award.svg" class="hidden lg:block" width="24"
+                                            height="24" alt="book">
+                                        <div class="flex flex-col gap-2">
+                                            <a href="qualifications.html"
+                                                class="text-[#333745] text-base lg:text-xl leading-normal lg:font-bold">المؤهلات</a>
+                                            <p class="hidden lg:block text-[#5B5F6D] text-sm leading-normal">
+                                                مؤهّلات مهنيّة وشهادات احترافية بالتعاون مع شركائنا
+                                                لتكون معلّمًا مؤهّلًا في مختلف المجالات
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="lg:flex lg:items-start lg:gap-6">
+                                        <img src="assets/images/briefcase.svg" class="hidden lg:block" width="24"
+                                            height="24" alt="book">
+                                        <div class="flex flex-col gap-2">
+                                            <a href="https://aanaab.com/ProfessionalLicenses/"
+                                                class="text-[#333745] text-base lg:text-xl leading-normal lg:font-bold">الرخص
+                                                المهنية</a>
+                                            <p class="hidden lg:block text-[#5B5F6D] text-sm leading-normal">
+                                                دورات مكثفة لاجتياز اختبار الرخصة المهنية بكل جدارة
+                                                للعاملين في قطاع التعليم في السعودية
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="lg:flex lg:items-start lg:gap-6">
+                                        <img src="assets/images/bookstore.svg" class="hidden lg:block" width="24"
+                                            height="24" alt="book">
+                                        <div class="flex flex-col gap-2">
+                                            <a href="https://shop.aanaab.com/"
+                                                class="text-[#333745] text-base lg:text-xl leading-normal lg:font-bold">
+                                                متجر الكتب
+                                            </a>
+                                            <p class="hidden lg:block text-[#5B5F6D] text-sm leading-normal">
+                                                دورات مكثفة متجر لبيع الكتب الخاصة بالرخص المهنية
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- search  -->
+                    <form
+                        class="hidden lg:flex items-center gap-3 py-2.5 px-4 rounded-full border border-[#D7D5D5] -mr-4 ml-auto bg-white">
+                        <button type="button" aria-label="search">
+                            <img src="assets/images/search.svg" width="16" height="16" alt="search">
+                        </button>
+                        <input type="search" name="header-search" id="header-search" placeholder="بحث"
+                            class="text-sm leading-[21px] placeholder:text-[#838795] focus:outline-none lg:w-[140px]">
+                    </form>
+
+                    <!-- get your job  -->
+                    <div class="p-8 lg:p-0 flex flex-col gap-6 border-b border-[#D7D5D5] lg:border-none">
+                        <a href="#"
+                            class="text-[#333745] hover:text-[#7841E8] text-base lg:text-sm leading-normal font-bold lg:font-normal flex items-center justify-between cursor-pointer gap-1 transition-all duration-300">
+                            حصل وظيفتك
+                        </a>
+                    </div>
+
+                    <!-- community  -->
+                    <div class="p-8 lg:p-0 flex flex-col gap-6 border-b border-[#D7D5D5] lg:border-none">
+                        <a href="community.html"
+                            class="text-[#333745] hover:text-[#7841E8] text-base lg:text-sm leading-normal font-bold lg:font-normal flex items-center justify-between cursor-pointer gap-1 transition-all duration-300">
+                            المجتمع
+                        </a>
+                    </div>
+
+                    <!-- for schools  -->
+                    <div class="p-8 lg:p-0 flex flex-col gap-6 border-b border-[#D7D5D5] lg:border-none menu-dropdown">
+                        <div
+                            class="group lg:hover:text-[#8447FF] text-[#333745] text-base lg:text-sm leading-normal font-bold lg:font-normal flex items-center justify-between cursor-pointer gap-1 colored-act transition-all duration-300">
+                            <a href="schools.html">
+                                للمدارس
+                            </a>
+
+                            <svg class="chevron transition-all duration-300" width="10" height="6" viewBox="0 0 10 6"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="lg:group-hover:fill-[#8447FF] transition-all duration-300"
+                                    d="M4.66797 5.71094L0.859375 1.92188C0.683594 1.72656 0.683594 1.43359 0.859375 1.25781L1.30859 0.808594C1.48438 0.632812 1.77734 0.632812 1.97266 0.808594L5 3.81641L8.00781 0.808594C8.20312 0.632812 8.49609 0.632812 8.67188 0.808594L9.12109 1.25781C9.29688 1.43359 9.29688 1.72656 9.12109 1.92188L5.3125 5.71094C5.13672 5.88672 4.84375 5.88672 4.66797 5.71094Z"
+                                    fill="#333745" />
+                            </svg>
+                        </div>
+                        <div class="hidden lg:block menu-dropdown-list">
+                            <div class="bg-white">
+                                <ul class="grid lg:grid-cols-3 gap-4 lg:gap-12 lg:py-12 lg:container">
+                                    <li class="lg:flex lg:flex-col lg:gap-2">
+                                        <a href="community.html"
+                                            class="text-[#333745] text-base lg:text-xl leading-normal lg:font-bold">المجتمعات</a>
+                                        <p class="hidden lg:block text-[#5B5F6D] text-sm leading-normal">
+                                            مجتمع خاص بالمدارس
+                                        </p>
+                                    </li>
+                                    <li class="lg:flex lg:flex-col lg:gap-2">
+                                        <a href="learning.html"
+                                            class="text-[#333745] text-base lg:text-xl leading-normal lg:font-bold">التعلم</a>
+                                        <p class="hidden lg:block text-[#5B5F6D] text-sm leading-normal">
+                                            عزز مهارات معلمينك
+                                        </p>
+                                    </li>
+                                    <li class="lg:flex lg:flex-col lg:gap-2">
+                                        <a href="jobs.html"
+                                            class="text-[#333745] text-base lg:text-xl leading-normal lg:font-bold">الوظائف</a>
+                                        <p class="hidden lg:block text-[#5B5F6D] text-sm leading-normal">
+                                            منصة التوظيف الأولى للمعلمين في الشرق الأوسط 
+                                        </p>
+                                    </li>
+                                    <li class="lg:flex lg:flex-col lg:gap-2">
+                                        <a href="live-dashboard.html"
+                                            class="text-[#333745] text-base lg:text-xl leading-normal lg:font-bold">لوحة
+                                            المتابعة المباشرة</a>
+                                        <p class="hidden lg:block text-[#5B5F6D] text-sm leading-normal">
+                                            مستقبل مشرق لمدرستك من خلال أداء أفضل لمعلميك
+                                        </p>
+                                    </li>
+                                    <li class="lg:flex lg:flex-col lg:gap-2">
+                                        <a href="prices.html"
+                                            class="text-[#333745] text-base lg:text-xl leading-normal lg:font-bold">الأسعار
+                                        </a>
+                                        <p class="hidden lg:block text-[#5B5F6D] text-sm leading-normal">
+                                            لأن الاستثمار المهني في المعلمين هو استثمار في مستقبل
+                                            المدرسة
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-col lg:flex-row lg:items-center gap-4 p-8 lg:p-0 border-t border-[#D7D5D5] lg:border-none">
+                    <a href="https://aanaab.com/auth/register"
+                        class="py-3 text-center px-6 rounded-[32px] bg-[#8447FF] hover:bg-[#7841E8] active:bg-[#9D6CFF] transition-all duration-300 text-white text-base leading-6 font-bold">
+                        انضم إلى أعناب
+                    </a>
+                    <a href="https://dashboard.aanaab.com/login/aanaab "
+                        class="py-3 text-center px-6 lg:p-0 rounded-[32px] bg-[#F3EDFF] lg:bg-transparent text-[#8447FF] lg:text-[#333745] text-base leading-6 font-bold lg:font-normal">تسجيل
+                        الدخول</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End  Annab Header -->
+    <!-- ======================================= -->
+
+    <!-- Start Annab  Main Content  -->
+    <main>
+
+        <section class="pt-12 pb-16 bg-[#F7FAFA]">
+            <div class="container flex flex-col gap-12">
+                <div class="flex flex-col items-center gap-5 lg:gap-3 flex-1 px-[30px] lg:px-0">
+                    <div class="flex items-center gap-4">
+                        <a href="index.html">
+                            <img src="assets/images/home-icon.svg" width="20" height="20" alt="Home">
+                            <span class="sr-only">Aanaab Home Page Icon</span>
+                        </a>
+                        <img src="assets/images/breadcrumb.svg" width="12" height="12" alt="breadcrumb">
+                        <a href="#" class="text-[#838795] text-sm leading-normal font-bold">
+                            الرخص المهنية
+                        </a>
+                    </div>
+                    <h2 class="text-[#333745] text-[32px] lg:text-4xl leading-normal font-extrabold text-center">
+                        دورات الرخص المهنية
+                    </h2>
+                    <p class="text-[#838795] text-lg lg:text-xl leading-[180%] lg:leading-[180%] text-center">
+                        دورات مكثفة لاجتياز اختبار الرخصة المهنية بكل جدارة للعاملين في قطاع التعليم في السعودية.
+                    </p>
+                </div>
+
+
+                <div class="rounded-xl overflow-hidden order-first lg:order-none">
+                    <img src="assets/images/ad.jpg" class="w-full" width="1106" height="117" alt="ad">
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
+
+                    <!-- Filters  -->
+                    <div class="col-span-1 pl-[30px]">
+                        <div class="flex flex-col border border-[#E9E8E8] rounded-2xl overflow-hidden">
+                            <!-- filter item  -->
+                            <div class="licence-filt-item group active">
+                                <svg width="14" height="15" viewBox="0 0 14 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="group-hover:fill-[#8447FF]"
+                                        d="M13.0703 9.18359L9.1875 7.02344L13.0703 4.89062C13.3984 4.72656 13.5078 4.31641 13.3164 3.98828L12.7695 3.08594C12.6055 2.75781 12.1953 2.64844 11.8672 2.83984L8.09375 5.13672L8.17578 0.707031C8.17578 0.351562 7.875 0.0234375 7.51953 0.0234375H6.45312C6.09766 0.0234375 5.79688 0.351562 5.79688 0.707031L5.90625 5.13672L2.10547 2.83984C1.77734 2.64844 1.36719 2.75781 1.20312 3.08594L0.65625 3.98828C0.464844 4.31641 0.574219 4.72656 0.902344 4.89062L4.8125 7.02344L0.902344 9.18359C0.574219 9.34766 0.464844 9.75781 0.65625 10.0859L1.20312 10.9883C1.36719 11.3164 1.77734 11.4258 2.10547 11.2344L5.90625 8.9375L5.79688 13.3672C5.79688 13.7227 6.09766 14.0234 6.45312 14.0234H7.51953C7.875 14.0234 8.17578 13.7227 8.17578 13.3672L8.09375 8.9375L11.8672 11.2344C12.1953 11.4258 12.6055 11.3164 12.7695 10.9883L13.3164 10.0859C13.5078 9.75781 13.3984 9.34766 13.0703 9.18359Z"
+                                        fill="#6B7280" />
+                                </svg>
+                                الكل
+                            </div>
+                            <!-- filter item  -->
+                            <div class="licence-filt-item group">
+                                <svg width="12" height="16" viewBox="0 0 12 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="group-hover:fill-[#8447FF]"
+                                        d="M3.40234 10.9492C3.15625 10.7031 3.26562 10.7852 2.71875 10.6211C2.44531 10.5664 2.22656 10.4297 2.00781 10.2656L0.777344 13.3008C0.640625 13.6016 0.886719 13.9297 1.1875 13.9023L2.63672 13.8477L3.62109 14.8867C3.83984 15.1328 4.22266 15.0508 4.33203 14.7773L5.78125 11.2773C5.48047 11.4414 5.15234 11.5234 4.79688 11.5234C4.27734 11.5234 3.75781 11.332 3.40234 10.9492ZM11.1953 13.3008L9.96484 10.2656C9.74609 10.4297 9.52734 10.5664 9.28125 10.6211C8.67969 10.7852 8.81641 10.7031 8.57031 10.9492C8.21484 11.332 7.69531 11.5234 7.17578 11.5234C6.82031 11.5234 6.49219 11.4414 6.19141 11.2773L7.64062 14.7773C7.75 15.0508 8.13281 15.1328 8.35156 14.8867L9.33594 13.8477L10.7852 13.9023C11.0859 13.9297 11.332 13.6016 11.1953 13.3008ZM7.94141 10.3203C8.35156 9.91016 8.40625 9.9375 8.98047 9.77344C9.36328 9.69141 9.66406 9.39062 9.77344 8.98047C9.96484 8.21484 9.91016 8.29688 10.4844 7.75C10.7578 7.44922 10.8672 7.03906 10.7578 6.65625C10.5664 5.89062 10.5664 6 10.7578 5.20703C10.8672 4.82422 10.7578 4.41406 10.4844 4.14062C9.91016 3.56641 9.96484 3.64844 9.77344 2.88281C9.66406 2.5 9.36328 2.19922 8.98047 2.08984C8.21484 1.87109 8.32422 1.92578 7.75 1.35156C7.47656 1.07812 7.06641 0.96875 6.68359 1.07812C5.94531 1.26953 6.02734 1.26953 5.28906 1.07812C4.90625 0.96875 4.49609 1.07812 4.22266 1.35156C3.64844 1.92578 3.75781 1.87109 2.99219 2.08984C2.60938 2.19922 2.30859 2.5 2.19922 2.88281C2.00781 3.64844 2.0625 3.56641 1.48828 4.14062C1.21484 4.41406 1.10547 4.82422 1.21484 5.20703C1.40625 6 1.40625 5.89062 1.21484 6.65625C1.10547 7.03906 1.21484 7.44922 1.48828 7.75C2.0625 8.29688 2.00781 8.21484 2.19922 8.98047C2.30859 9.39062 2.60938 9.69141 2.99219 9.77344C3.59375 9.9375 3.64844 9.91016 4.05859 10.3203C4.41406 10.7031 4.96094 10.7578 5.39844 10.4844C5.5625 10.375 5.78125 10.3203 5.97266 10.3203C6.19141 10.3203 6.41016 10.375 6.57422 10.4844C7.01172 10.7578 7.55859 10.7031 7.94141 10.3203ZM3.40234 5.83594C3.40234 4.38672 4.55078 3.21094 6 3.21094C7.42188 3.21094 8.57031 4.38672 8.57031 5.83594C8.57031 7.28516 7.42188 8.46094 6 8.46094C4.55078 8.46094 3.40234 7.28516 3.40234 5.83594Z"
+                                        fill="#6B7280" />
+                                </svg>
+                                الرخصة المهنية التربوية العامة
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Licenses  -->
+                    <div class="col-span-1 lg:col-span-2">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================= -->
+
+        <!-- Start FAQs setion  -->
+        <section class="py-16 px-8 lg:px-0 bg-white">
+            <div class="container flex flex-col gap-12">
+
+                <!-- header section  -->
+                <header class="flex flex-col items-center gap-3">
+                    <h2 class="text-[#333745] text-2xl lg:text-[32px] leading-normal text-center font-extrabold">
+                        الأسئلة الشائعة
+                    </h2>
+                    <p class="text-[#5B5F6D] text-base lg:text-lg leading-normal text-center">
+                        لأن الاستثمار المهني في المعلمين هو استثمار في مستقبل المدرسة
+                    </p>
+                </header>
+
+                <!-- FAQs section Content  -->
+                <div class="flex flex-col gap-6 lg:w-[730px] mx-auto">
+                    <div class="flex flex-col gap-3">
+
+                        <!-- Accordion Item  -->
+                        <div
+                            class="anb-accordion transition-all duration-300 border border-[#E9E8E8] rounded-3xl p-6 flex flex-col bg-[#F7FAFA]">
+                            <div
+                                class="anb-accordion-title flex items-center justify-between gap-1 lg:gap-8 cursor-pointer">
+                                <h3 class="text-[#333745] text-base leading-normal flex-1 transition-all duration-300">
+                                    إلى متى يمكنني الوصول لمحتويات الدورة؟
+                                </h3>
+                                <span class="icon">
+                                    <img src="assets/images/plus.svg" width="24" height="24" alt="plus">
+                                    <img src="assets/images/minus.svg" class="hidden" width="24" height="24"
+                                        alt="minus">
+                                </span>
+                            </div>
+                            <p
+                                class="anb-accordion-content hidden text-[#5B5F6D] text-xs lg:text-sm leading-[180%] pt-4">
+                                ستتاح لك إمكانية الوصول لجميع محتويات الدورة على حسابك في منصة أعناب من تاريخ الإطلاق
+                                وإلى ما بعد انعقاد اختبار الرخص المهنية من قبل هيئة تقويم التعليم والتدريب بشهر كامل
+                            </p>
+                        </div>
+
+                        <!-- Accordion Item  -->
+                        <div
+                            class="anb-accordion transition-all duration-300 border border-[#E9E8E8] rounded-3xl p-6 flex flex-col bg-[#F7FAFA]">
+                            <div
+                                class="anb-accordion-title flex items-center justify-between gap-1 lg:gap-8 cursor-pointer">
+                                <h3 class="text-[#333745] text-base leading-normal flex-1 transition-all duration-300">
+                                    ما الفرق بين الاختبار العام والاختبار التخصصي وماذا تعني مستويات اختبار التخصص 1
+                                    والتخصص 2؟
+                                </h3>
+                                <span class="icon">
+                                    <img src="assets/images/plus.svg" width="24" height="24" alt="plus">
+                                    <img src="assets/images/minus.svg" class="hidden" width="24" height="24"
+                                        alt="minus">
+                                </span>
+                            </div>
+                            <p
+                                class="anb-accordion-content hidden text-[#5B5F6D] text-xs lg:text-sm leading-[180%] pt-4">
+                                المعلمين والقيادات التعليمية المهتمين بجعل المدارس والعملية التعليمية متمحورة حول الطالب
+                            </p>
+                        </div>
+
+                        <!-- Accordion Item  -->
+                        <div
+                            class="anb-accordion transition-all duration-300 border border-[#E9E8E8] rounded-3xl p-6 flex flex-col bg-[#F7FAFA]">
+                            <div
+                                class="anb-accordion-title flex items-center justify-between gap-1 lg:gap-8 cursor-pointer">
+                                <h3 class="text-[#333745] text-base leading-normal flex-1 transition-all duration-300">
+                                    لماذا اختار منصة أعناب للتدريب على اختبارات الرخص المهنية للوظائف التعليمية في
+                                    السعودية؟
+                                </h3>
+                                <span class="icon">
+                                    <img src="assets/images/plus.svg" width="24" height="24" alt="plus">
+                                    <img src="assets/images/minus.svg" class="hidden" width="24" height="24"
+                                        alt="minus">
+                                </span>
+                            </div>
+                            <p
+                                class="anb-accordion-content hidden text-[#5B5F6D] text-xs lg:text-sm leading-[180%] pt-4">
+                                المعلمين والقيادات التعليمية المهتمين بجعل المدارس والعملية التعليمية متمحورة حول الطالب
+                            </p>
+                        </div>
+
+                        <!-- Accordion Item  -->
+                        <div
+                            class="anb-accordion transition-all duration-300 border border-[#E9E8E8] rounded-3xl p-6 flex flex-col bg-[#F7FAFA]">
+                            <div
+                                class="anb-accordion-title flex items-center justify-between gap-1 lg:gap-8 cursor-pointer">
+                                <h3 class="text-[#333745] text-base leading-normal flex-1 transition-all duration-300">
+                                    من هي الفئة المستهدفة؟
+                                </h3>
+                                <span class="icon">
+                                    <img src="assets/images/plus.svg" width="24" height="24" alt="plus">
+                                    <img src="assets/images/minus.svg" class="hidden" width="24" height="24"
+                                        alt="minus">
+                                </span>
+                            </div>
+                            <p
+                                class="anb-accordion-content hidden text-[#5B5F6D] text-xs lg:text-sm leading-[180%] pt-4">
+                                المعلمين والقيادات التعليمية المهتمين بجعل المدارس والعملية التعليمية متمحورة حول الطالب
+                            </p>
+                        </div>
+
+                        <!-- Accordion Item  -->
+                        <div
+                            class="anb-accordion transition-all duration-300 border border-[#E9E8E8] rounded-3xl p-6 flex flex-col bg-[#F7FAFA]">
+                            <div
+                                class="anb-accordion-title flex items-center justify-between gap-1 lg:gap-8 cursor-pointer">
+                                <h3 class="text-[#333745] text-base leading-normal flex-1 transition-all duration-300">
+                                    إذا كان لدي استفسارات أخرى تخص الرخص ماذا أفعل؟
+                                </h3>
+                                <span class="icon">
+                                    <img src="assets/images/plus.svg" width="24" height="24" alt="plus">
+                                    <img src="assets/images/minus.svg" class="hidden" width="24" height="24"
+                                        alt="minus">
+                                </span>
+                            </div>
+                            <p
+                                class="anb-accordion-content hidden text-[#5B5F6D] text-xs lg:text-sm leading-[180%] pt-4">
+                                المعلمين والقيادات التعليمية المهتمين بجعل المدارس والعملية التعليمية متمحورة حول الطالب
+                            </p>
+                        </div>
+
+                        <!-- Accordion Item  -->
+                        <div
+                            class="anb-accordion transition-all duration-300 border border-[#E9E8E8] rounded-3xl p-6 flex flex-col bg-[#F7FAFA]">
+                            <div
+                                class="anb-accordion-title flex items-center justify-between gap-1 lg:gap-8 cursor-pointer">
+                                <h3 class="text-[#333745] text-base leading-normal flex-1 transition-all duration-300">
+                                    متى تعقد الاختبارات الرخص المهنية للوظائف التعليمية في السعودية؟
+                                </h3>
+                                <span class="icon">
+                                    <img src="assets/images/plus.svg" width="24" height="24" alt="plus">
+                                    <img src="assets/images/minus.svg" class="hidden" width="24" height="24"
+                                        alt="minus">
+                                </span>
+                            </div>
+                            <p
+                                class="anb-accordion-content hidden text-[#5B5F6D] text-xs lg:text-sm leading-[180%] pt-4">
+                                المعلمين والقيادات التعليمية المهتمين بجعل المدارس والعملية التعليمية متمحورة حول الطالب
+                            </p>
+                        </div>
+
+                        <!-- Accordion Item  -->
+                        <div
+                            class="anb-accordion transition-all duration-300 border border-[#E9E8E8] rounded-3xl p-6 flex flex-col bg-[#F7FAFA]">
+                            <div
+                                class="anb-accordion-title flex items-center justify-between gap-1 lg:gap-8 cursor-pointer">
+                                <h3 class="text-[#333745] text-base leading-normal flex-1 transition-all duration-300">
+                                    كيف يمكنني الاستعلام عن نتائج الاختبار؟
+                                </h3>
+                                <span class="icon">
+                                    <img src="assets/images/plus.svg" width="24" height="24" alt="plus">
+                                    <img src="assets/images/minus.svg" class="hidden" width="24" height="24"
+                                        alt="minus">
+                                </span>
+                            </div>
+                            <p
+                                class="anb-accordion-content hidden text-[#5B5F6D] text-xs lg:text-sm leading-[180%] pt-4">
+                                المعلمين والقيادات التعليمية المهتمين بجعل المدارس والعملية التعليمية متمحورة حول الطالب
+                            </p>
+                        </div>
+
+                        <!-- Accordion Item  -->
+                        <div
+                            class="anb-accordion transition-all duration-300 border border-[#E9E8E8] rounded-3xl p-6 flex flex-col bg-[#F7FAFA]">
+                            <div
+                                class="anb-accordion-title flex items-center justify-between gap-1 lg:gap-8 cursor-pointer">
+                                <h3 class="text-[#333745] text-base leading-normal flex-1 transition-all duration-300">
+                                    هل يمكن استرجاع المبلغ بعد التسجيل في الدورة؟
+                                </h3>
+                                <span class="icon">
+                                    <img src="assets/images/plus.svg" width="24" height="24" alt="plus">
+                                    <img src="assets/images/minus.svg" class="hidden" width="24" height="24"
+                                        alt="minus">
+                                </span>
+                            </div>
+                            <p
+                                class="anb-accordion-content hidden text-[#5B5F6D] text-xs lg:text-sm leading-[180%] pt-4">
+                                المعلمين والقيادات التعليمية المهتمين بجعل المدارس والعملية التعليمية متمحورة حول الطالب
+                            </p>
+                        </div>
+
+                        <!-- Accordion Item  -->
+                        <div
+                            class="anb-accordion transition-all duration-300 border border-[#E9E8E8] rounded-3xl p-6 flex flex-col bg-[#F7FAFA]">
+                            <div
+                                class="anb-accordion-title flex items-center justify-between gap-1 lg:gap-8 cursor-pointer">
+                                <h3 class="text-[#333745] text-base leading-normal flex-1 transition-all duration-300">
+                                    متى سيكون موعد اختبارت الرخصة المهنية؟
+                                </h3>
+                                <span class="icon">
+                                    <img src="assets/images/plus.svg" width="24" height="24" alt="plus">
+                                    <img src="assets/images/minus.svg" class="hidden" width="24" height="24"
+                                        alt="minus">
+                                </span>
+                            </div>
+                            <p
+                                class="anb-accordion-content hidden text-[#5B5F6D] text-xs lg:text-sm leading-[180%] pt-4">
+                                المعلمين والقيادات التعليمية المهتمين بجعل المدارس والعملية التعليمية متمحورة حول الطالب
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End FAQs setion  -->
+
+        <!-- ======================================= -->
+
+        <!-- Start Aanaab Testimonials section -->
+        <section class="py-8 lg:py-16">
+            <div class="container flex flex-col items-center gap-8 lg:gap-10">
+                <!-- header section  -->
+                <header class="flex flex-col items-center gap-3 px-[30px] lg:px-0">
+                    <h2 class="text-[#333745] text-center text-2xl lg:text-[32px] leading-normal font-extrabold">
+                        آراء بعض الأعضاء السابقين
+                    </h2>
+                    <p class="text-[#5B5F6D] text-base lg:text-lg leading-[180%] text-center">
+                        قادة المدارس وخبراء التعليم يشاركون تجربتهم مع منصة أعناب
+                    </p>
+                </header>
+
+                <!-- start Testimonial  -->
+                <div class="w-full">
+                    <div class="swiper slider-testimonials px-[30px] lg:px-0">
+                        <div class="swiper-wrapper py-6">
+                            <!-- testimonial item  -->
+                            <div
+                                class="swiper-slide h-auto transition-all duration-300 p-8 border rounded-3xl border-[#D7D5D5] flex flex-col items-center gap-8 lg:gap-12">
+                                <div class="flex items-end">
+                                    <img width="16" height="16" src="assets/images/star.svg" alt="star">
+                                    <img width="20" height="20" src="assets/images/star.svg" alt="star">
+                                    <img width="24" height="24" src="assets/images/star.svg" alt="star">
+                                    <img width="20" height="20" src="assets/images/star.svg" alt="star">
+                                    <img width="16" height="16" src="assets/images/star.svg" alt="star">
+                                </div>
+                                <p class="text-center text-base leading-normal text-black my-auto">
+                                    منصة جميلة وسهلة الاستخدام لا تقيدنا بوقت محدد، واستفدنا من
+                                    دوراتها، وقد انعكست على التحضير والحصص. الدورات المتاحة فيها
+                                    مناسبة لنا ومفيدة. ووجود الاختبارات جعلنا أكثر إلتزامًا"
+                                </p>
+                                <div class="flex flex-col gap-2 items-center">
+                                    <div class="w-12 h-12 rounded-full overflow-hidden">
+                                        <img src="assets/images/homepage/course-trainer.jpg" width="48" height="48"
+                                            alt="person">
+                                    </div>
+                                    <h3 class="text-base leading-normal text-[#333745]">
+                                        شهد الشريف
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <!-- testimonial item  -->
+                            <div
+                                class="swiper-slide h-auto transition-all duration-300 p-8 border rounded-3xl border-[#D7D5D5] flex flex-col items-center gap-8 lg:gap-12">
+                                <div class="flex items-end">
+                                    <img width="16" height="16" src="assets/images/star.svg" alt="star">
+                                    <img width="20" height="20" src="assets/images/star.svg" alt="star">
+                                    <img width="24" height="24" src="assets/images/star.svg" alt="star">
+                                    <img width="20" height="20" src="assets/images/star.svg" alt="star">
+                                    <img width="16" height="16" src="assets/images/star.svg" alt="star">
+                                </div>
+                                <p class="text-center text-base leading-normal text-black my-auto">
+                                    المنصة ضرورة لجميع المعلمين والمشرفين للاطلاع على كل ماهو
+                                    جديد في مجال التعليم. نتطلع إلى مزيد من الدورات كما عهدناكم"
+                                </p>
+                                <div class="flex flex-col gap-2 items-center">
+                                    <div class="w-12 h-12 rounded-full overflow-hidden">
+                                        <img src="assets/images/homepage/course-trainer.jpg" width="48" height="48"
+                                            alt="person">
+                                    </div>
+                                    <h3 class="text-base leading-normal text-[#333745]">
+                                        شهد الشريف
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <!-- testimonial item  -->
+                            <div
+                                class="swiper-slide h-auto transition-all duration-300 p-8 border rounded-3xl border-[#D7D5D5] flex flex-col items-center gap-8 lg:gap-12">
+                                <div class="flex items-end">
+                                    <img width="16" height="16" src="assets/images/star.svg" alt="star">
+                                    <img width="20" height="20" src="assets/images/star.svg" alt="star">
+                                    <img width="24" height="24" src="assets/images/star.svg" alt="star">
+                                    <img width="20" height="20" src="assets/images/star.svg" alt="star">
+                                    <img width="16" height="16" src="assets/images/star.svg" alt="star">
+                                </div>
+                                <p class="text-center text-base leading-normal text-black my-auto">
+                                    لشكر الجزيل للقائمين على منصة أعناب، التي أتاحت لنا فرصة
+                                    تدريب معلمات مدرسة نخبة الخبر. حيث اتسمت ورش العمل التوضيحية
+                                    بالمرونة والوضوح. وتنوع مواضيع الدورات المقدمة وجودة محتواها
+                                    وسهولة استخدام المنصة. الشكر لك استاذة نوف على اهتمامك بكل
+                                    التفاصيل  ومساعدتك
+                                </p>
+                                <div class="flex flex-col gap-2 items-center">
+                                    <div class="w-12 h-12 rounded-full overflow-hidden">
+                                        <img src="assets/images/homepage/course-trainer.jpg" width="48" height="48"
+                                            alt="person">
+                                    </div>
+                                    <h3 class="text-base leading-normal text-[#333745]">
+                                        شهد الشريف
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <!-- testimonial item  -->
+                            <div
+                                class="swiper-slide h-auto transition-all duration-300 p-8 border rounded-3xl border-[#D7D5D5] flex flex-col items-center gap-8 lg:gap-12">
+                                <div class="flex items-end">
+                                    <img width="16" height="16" src="assets/images/star.svg" alt="star">
+                                    <img width="20" height="20" src="assets/images/star.svg" alt="star">
+                                    <img width="24" height="24" src="assets/images/star.svg" alt="star">
+                                    <img width="20" height="20" src="assets/images/star.svg" alt="star">
+                                    <img width="16" height="16" src="assets/images/star.svg" alt="star">
+                                </div>
+                                <p class="text-center text-base leading-normal text-black my-auto">
+                                    المنصة ضرورة لجميع المعلمين والمشرفين للاطلاع على كل ماهو
+                                    جديد في مجال التعليم. نتطلع إلى مزيد من الدورات كما عهدناكم"
+                                </p>
+                                <div class="flex flex-col gap-2 items-center">
+                                    <div class="w-12 h-12 rounded-full overflow-hidden">
+                                        <img src="assets/images/homepage/course-trainer.jpg" width="48" height="48"
+                                            alt="person">
+                                    </div>
+                                    <h3 class="text-base leading-normal text-[#333745]">
+                                        شهد الشريف
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- start Testimonial pagination -->
+                <div class="swiper-pagination testimonials-pagination static flex justify-center gap-4"></div>
+            </div>
+        </section>
+        <!-- End Aanaab Testimonials section -->
+
+        <!-- ======================================= -->
+
+        <!-- Start Call To action section -->
+        <section class="container py-8 lg:py-16">
+            <div class="bg-cta py-12 lg:py-16 px-8 lg:px-16 lg:rounded-[32px] relative overflow-hidden">
+                <!-- Line pattern img -->
+                <img src="assets/images/Line-pattern.png"
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full object-cover"
+                    alt="Line pattern">
+                <!-- call to action  -->
+                <div class="flex items-center flex-col lg:flex-row gap-12 relative z-10">
+                    <!-- cta content  -->
+                    <div class="flex flex-col items-center lg:items-start gap-3 grow">
+                        <h2
+                            class="text-white text-2xl lg:text-[32px] leading-normal font-extrabold text-center lg:text-right">
+                            دورات تدريبية للمعلمين على بعد نقرة واحدة
+                        </h2>
+                        <p
+                            class="text-white text-base lg:text-xl leading-[180%] lg:leading-[180%] font-bold text-center lg:text-right">
+                            مستعد لرحلة جديدة في مسارك المهني؟ ابدأ الآن وسجّل في أعناب
+                        </p>
+                    </div>
+
+                    <!-- cta button  -->
+                    <a href="#"
+                        class="py-3 px-8 rounded-[32px] w-full text-center lg:w-auto bg-white text-[#8447FF] hover:text-[#7841E8] active:text-[#9D6CFF] transition-all duration-300 text-base leading-6 font-bold">
+                        سجّل في أعناب
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- End Call To action section -->
+
+    </main>
+    <!-- ======================================= -->
+    <!-- End  Annab Main Content -->
+
+    <!-- Start Annab Footer -->
+    <footer class="px-[30px] sm:px-9 lg:px-0 sm:border-t sm:border-t-[#D1D5DB] relative">
+        <section
+            class="container border-b border-b-[#D1D5DB] flex flex-col lg:flex-row gap-8 sm:gap-4 lg:gap-20 pt-10 pb-8">
+            <div class="flex flex-col sm:flex-row gap-8 sm:gap-4 lg:gap-20">
+                <div class="basis-6/12 flex flex-col gap-6 items-start">
+                    <img src="assets/images/logo.png" width="128" height="38" alt="aanab logo">
+                    <p class="text-sm leading-6 text-[#6B7280]">
+                        منصة تعليمية إلكترونية تهتم بتقديم دورات تدريبية متخصصة في مجال
+                        التطوير المهني للمعلمين والتربويين، يقدمها أكاديميون ومعلمون
+                        متميزون من مختلف أرجاء العالم العربي، ومتحمسون لتوسيع دائرة
+                        المستفيدين من مخزونهم العلمي والمعرفي المتخصص في مجال التدريس؛ حيث
+                        يسعون لإيصاله لمن هم خارج محيطهم المباشر.
+                    </p>
+                </div>
+                <div class="basis-6/12 flex flex-col gap-6 items-start">
+                    <h2 class="text-[#6B7280] text-lg leading-[22px] font-bold">
+                        دورات اعناب
+                    </h2>
+                    <div class="flex gap-4 w-full lg:gap-[45px]">
+                        <ul class="flex-1 text-sm leading-7 lg:text-base lg:leading-9 text-[#6B7280]">
+                            <li>
+                                <a href="#"
+                                    class="transition-all duration-300 text-[#6B7280] hover:text-[#8447FF]">تطوير ذاتى
+                                    مهنى
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="transition-all duration-300 text-[#6B7280] hover:text-[#8447FF]">استراتيجيات
+                                    التعليم</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="transition-all duration-300 text-[#6B7280] hover:text-[#8447FF]">تقنيات
+                                    التعليم</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="transition-all duration-300 text-[#6B7280] hover:text-[#8447FF]">أدوات ومصادر
+                                    تعليميه</a>
+                            </li>
+                        </ul>
+                        <ul class="flex-1 text-sm leading-7 lg:text-base lg:leading-9 text-[#6B7280]">
+                            <li>
+                                <a href="#"
+                                    class="transition-all duration-300 text-[#6B7280] hover:text-[#8447FF]">تطوير ذاتى
+                                    مهنى
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="transition-all duration-300 text-[#6B7280] hover:text-[#8447FF]">استراتيجيات
+                                    التعليم</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="transition-all duration-300 text-[#6B7280] hover:text-[#8447FF]">تقنيات
+                                    التعليم</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="transition-all duration-300 text-[#6B7280] hover:text-[#8447FF]">أدوات ومصادر
+                                    تعليميه</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-12 sm:basis-12/12 lg:basis-4/12 flex flex-col gap-[31px] items-start">
+                <h2 class="text-[#6B7280] text-lg leading-[22px] font-bold">
+                    لنكن على تواصل
+                </h2>
+                <div class="flex flex-col gap-6">
+                    <div class="flex gap-4">
+                        <a href="https://www.youtube.com/channel/UCvu0ccFN2m7yI6s5VEfeLQA" aria-label="youtube"
+                            class="border border-[#D1D5DB] rounded-full w-[30px] h-[30px] flex items-center justify-center transition duration-300 hover:bg-[#c4302b] hover:border-[#c4302b] group">
+                            <svg class="group-hover:fill-[#fff]" width="20" height="14" viewBox="0 0 20 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="group-hover:stroke-none transition duration-300"
+                                    d="M18.6654 3.99067C18.6654 2.33867 17.3267 1 15.676 1H4.32003C2.6707 1 1.33203 2.33867 1.33203 3.99067V10.008C1.33203 11.6613 2.6707 13 4.32003 13H15.676C17.3267 13 18.6654 11.6613 18.6654 10.008V3.99067ZM7.9987 10.208V3.66667L13.7094 7L7.9987 10.208Z"
+                                    stroke="#6B7280" stroke-linejoin="round"></path>
+                            </svg>
+                            <span class="sr-only">Aanaab Youtube Page</span>
+                        </a>
+                        <a href="https://www.facebook.com/aanaabcom" aria-label="fb"
+                            class="border border-[#D1D5DB] rounded-full w-[30px] h-[30px] flex items-center justify-center transition duration-300 hover:bg-[#3b5998] hover:border-[#3b5998] group">
+                            <svg class="group-hover:fill-[#fff]" width="12" height="20" viewBox="0 0 12 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="group-hover:stroke-none transition duration-300"
+                                    d="M11.1174 6.66662H7.9987V5.30396C7.9987 4.60529 8.4627 4.44129 8.78803 4.44129C9.1147 4.44129 10.6654 4.44129 10.6654 4.44129V1.36529L7.5307 1.35596C4.4667 1.35596 3.9987 3.64796 3.9987 5.11462V6.66662H1.33203V9.33329H3.9987C3.9987 13.3986 3.9987 18.6666 3.9987 18.6666H7.9987C7.9987 18.6666 7.9987 13.3506 7.9987 9.33329H10.792L11.1174 6.66662Z"
+                                    stroke="#6B7280" stroke-linejoin="round"></path>
+                            </svg>
+                            <span class="sr-only">Aanaab FaceBook Page</span>
+                        </a>
+                        <a href="https://twitter.com/aanaabcom" aria-label="Twitter"
+                            class="border border-[#D1D5DB] rounded-full w-[30px] h-[30px] flex items-center justify-center transition duration-300 hover:bg-[#1da1f2] hover:border-[#1da1f2] group">
+                            <svg class="group-hover:fill-[#fff]" width="18" height="14" viewBox="0 0 18 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="group-hover:stroke-none transition duration-300 group-hover:fill-[#fff]"
+                                    d="M17.6681 0.805204C17.6681 0.805204 15.8667 0.99987 15.0681 1.15987C14.4281 0.47587 13.5161 0.0505371 12.5067 0.0505371C10.5681 0.0505371 8.99606 1.62254 8.99606 3.55987C8.99606 3.8332 9.02673 4.10387 9.08673 4.35854C6.17073 4.21454 3.5854 2.81587 1.85473 0.69187C1.55206 1.21187 1.37873 1.8132 1.37873 2.4572C1.37873 3.67587 1.99873 4.74787 2.94006 5.3772C2.3654 5.35854 1.82406 5.2012 1.35073 4.9372C1.35073 4.9532 1.35073 4.9692 1.35073 4.98387C1.35073 6.68254 2.56006 8.1012 4.1654 8.42254C3.65073 8.56387 3.1094 8.58387 2.5814 8.48387C3.02806 9.8772 4.32406 10.8919 5.85873 10.9225C4.35873 12.0985 2.49606 12.5892 0.664062 12.3745C2.2174 13.3705 4.06273 13.9532 6.04406 13.9532C12.4987 13.9532 16.0281 8.60387 16.0281 3.96787C16.0281 3.81587 16.0254 3.66387 16.0174 3.51454C16.7027 3.0172 17.1974 1.5092 17.6681 0.805204Z"
+                                    fill="none" stroke="#6B7280"></path>
+                            </svg>
+                            <span class="sr-only">Aanaab Twitter Page</span>
+                        </a>
+                        <a href="https://www.instagram.com/aanaabcom/" aria-label="insta"
+                            class="border border-[#D1D5DB] rounded-full w-[30px] h-[30px] flex items-center justify-center transition duration-300 hover:bg-[#c13584] hover:border-[#c13584] group">
+                            <svg class="group-hover:fill-[#fff]" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M24.6693 21.5543C24.6693 23.273 23.2759 24.6663 21.5586 24.6663H10.4466C8.72927 24.6663 7.33594 23.273 7.33594 21.5543V10.4423C7.33594 8.72501 8.72927 7.33301 10.4466 7.33301H21.5586C23.2759 7.33301 24.6693 8.72501 24.6693 10.4423V21.5543Z"
+                                    stroke="#6B7280" stroke-miterlimit="10" stroke-linejoin="round"></path>
+                                <path d="M7.33594 12.6665H13.0239" stroke="#6B7280" stroke-miterlimit="10"
+                                    stroke-linejoin="round"></path>
+                                <path d="M18.9805 12.6665H24.6685" stroke="#6B7280" stroke-miterlimit="10"
+                                    stroke-linejoin="round"></path>
+                                <path
+                                    d="M16 19.333C18.2091 19.333 20 17.5421 20 15.333C20 13.1239 18.2091 11.333 16 11.333C13.7909 11.333 12 13.1239 12 15.333C12 17.5421 13.7909 19.333 16 19.333Z"
+                                    stroke="#6B7280" stroke-miterlimit="10" stroke-linejoin="round"></path>
+                                <path d="M22.6693 9.33301H21.3359V10.6663H22.6693V9.33301Z" fill="#6B7280"></path>
+                                <path d="M10 7.33301V12.6663" stroke="#6B7280" stroke-miterlimit="10"
+                                    stroke-linejoin="round"></path>
+                                <path d="M12.668 7.33325V12.6666" stroke="#6B7280" stroke-miterlimit="10"
+                                    stroke-linejoin="round"></path>
+                            </svg>
+                            <span class="sr-only">Aanaab insta Page</span>
+                        </a>
+                    </div>
+                    <a href="mailto:info@aanaab.com"
+                        class="hidden lg:flex items-center gap-3 px-[18px] py-[10px] rounded-[48px] border bordder-[#D1D5DB]">
+                        <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22 13.3261C22 14.0821 21.3864 14.6957 20.6304 14.6957H2.36957C1.61357 14.6957 1 14.0821 1 13.3261V2.36957C1 1.61265 1.61357 1 2.36957 1H20.6304C21.3864 1 22 1.61265 22 2.36957V13.3261Z"
+                                stroke="#6B7280" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M19.261 4.6521L11.5001 9.67384L3.73926 4.6521" stroke="#6B7280"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M3.73926 11.4999L6.93491 9.67383" stroke="#6B7280" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            <path d="M19.2621 11.4999L16.0664 9.67383" stroke="#6B7280" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+                        <span class="text-[#6B7280] text-xs leading-4 w-full">
+                            او تواصل عبر البريد
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="container py-8 flex flex-col gap-2 lg:flex-row items-center justify-between">
+            <p class="text-[#6B7280] text-sm leading-normal">
+                جميع الحقوق محفوظة © منصة أعناب
+            </p>
+            <nav class="flex leading-[8px] flex-wrap justify-center lg:justify-start">
+                <a href="https://aanaab.com"
+                    class="text-[#6B7280] transition-all duration-300 hover:text-[#8447FF] text-[13px] leading-loose lg:text-sm border-l border-[#D1D5DB] px-4">
+                    الرئيسية
+                </a>
+                <a href="https://aanaab.com/about"
+                    class="text-[#6B7280] transition-all duration-300 hover:text-[#8447FF] text-[13px] leading-loose lg:text-sm border-l border-[#D1D5DB] px-4">
+                    عن أعناب
+                </a>
+                <a href="https://aanaab.com/courses"
+                    class="text-[#6B7280] transition-all duration-300 hover:text-[#8447FF] text-[13px] leading-loose lg:text-sm border-l border-[#D1D5DB] px-4">
+                    تصفح الدورات
+                </a>
+                <a href="https://aanaab.com/privacy"
+                    class="text-[#6B7280] transition-all duration-300 hover:text-[#8447FF] text-[13px] leading-loose lg:text-sm px-4">
+                    سياسة الخصوصية
+                </a>
+            </nav>
+        </div>
+    </footer>
+    <!-- End  Annab header -->
+    <!-- scripts -->
+    <script src="assets/scripts/jquiry.js"></script>
+    <script src="assets/scripts/swiper.js"></script>
+    <script src="assets/scripts/script.js"></script>
+</body>
+
+</html>
