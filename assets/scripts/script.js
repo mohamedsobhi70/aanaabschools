@@ -196,6 +196,60 @@ if ($(".slider-blog").length > 0) {
 }
 // =================================================
 
+// ((Qualifications page)) qualifications partenrs Carousel
+if ($(".slider-qualifications-partenrs").length > 0) {
+    let swiper = new Swiper(".slider-qualifications-partenrs", {
+        spaceBetween: 16,
+        breakpoints: {
+            0: {
+                centeredSlides: true,
+                loop: true,
+                slidesPerView: 1,
+            },
+            680: {
+                slidesPerView: 3,
+                centeredSlides: false,
+                loop: false,
+            },
+            1024: {
+                slidesPerView: 4,
+                centeredSlides: false,
+                loop: false,
+            },
+        },
+        pagination: {
+            el: ".qualifications-partenrs-pagination",
+            clickable: true,
+        }
+    });
+}
+// =================================================
+
+// ((Qualifications page)) qualifications advantages Carousel
+if ($(".slider-qualifications-advantages").length > 0) {
+    let swiper = new Swiper(".slider-qualifications-advantages", {
+        breakpoints: {
+            0: {
+                spaceBetween: 16,
+                slidesPerView: 1,
+            },
+            680: {
+                spaceBetween: 24,
+                slidesPerView: 2,
+            },
+            1024: {
+                spaceBetween: 30,
+                slidesPerView: 3,
+            },
+        },
+        pagination: {
+            el: ".qualifications-advantages-pagination",
+            clickable: true,
+        }
+    });
+}
+// =================================================
+
 // Drop Down In Header
 if ($(".menu-dropdown").length) {
     $(".menu-dropdown")
