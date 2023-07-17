@@ -19,7 +19,6 @@
 
 .slider-testimonials .swiper-slide:hover {
   @apply border-[#7841E8] cursor-grab;
-  box-shadow: 0px 0px 24px 8px rgba(0, 0, 0, 0.1);
 }
 
 .anb-accordion.active {

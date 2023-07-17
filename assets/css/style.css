@@ -1531,6 +1531,11 @@ video {
   padding-bottom: 0.125rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -1648,6 +1653,11 @@ video {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-\[11px\] {
@@ -1875,7 +1885,6 @@ video {
   cursor: grab;
   --tw-border-opacity: 1;
   border-color: rgb(120 65 232 / var(--tw-border-opacity));
-  box-shadow: 0px 0px 24px 8px rgba(0, 0, 0, 0.1);
 }
 
 .anb-accordion.active {
@@ -2432,10 +2441,6 @@ video {
 
   .lg\:top-1\/2 {
     top: 50%;
-  }
-
-  .lg\:top-24 {
-    top: 6rem;
   }
 
   .lg\:order-first {
