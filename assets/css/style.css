@@ -1590,6 +1590,11 @@ video {
   padding-bottom: 10px;
 }
 
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -1816,6 +1821,10 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
 }
 
 .line-through {
@@ -2283,6 +2292,10 @@ video {
 .hover\:border-\[\#c4302b\]:hover {
   --tw-border-opacity: 1;
   border-color: rgb(196 48 43 / var(--tw-border-opacity));
+}
+
+.hover\:border-\[\]:hover {
+  border-color: ;
 }
 
 .hover\:bg-\[\#1da1f2\]:hover {
