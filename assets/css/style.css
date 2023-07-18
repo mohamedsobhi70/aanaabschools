@@ -878,6 +878,18 @@ video {
   height: 100vh;
 }
 
+.h-44 {
+  height: 11rem;
+}
+
+.h-96 {
+  height: 24rem;
+}
+
+.max-h-96 {
+  max-height: 24rem;
+}
+
 .w-12 {
   width: 3rem;
 }
@@ -1151,6 +1163,10 @@ video {
   overflow: hidden;
 }
 
+.overflow-scroll {
+  overflow: scroll;
+}
+
 .overflow-x-auto {
   overflow-x: auto;
 }
@@ -1215,6 +1231,10 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
 }
 
 .rounded-b-\[64px\] {
