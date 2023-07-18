@@ -841,6 +841,10 @@ video {
   height: 1.5rem;
 }
 
+.h-72 {
+  height: 18rem;
+}
+
 .h-\[225px\] {
   height: 225px;
 }
@@ -1586,11 +1590,6 @@ video {
   padding-bottom: 10px;
 }
 
-.px-\[\] {
-  padding-left: ;
-  padding-right: ;
-}
-
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -2202,6 +2201,12 @@ video {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 500ms;
+}
+
+.events .swiper-pagination {
+  position: absolute;
+  left: 1.25rem;
+  bottom: 1.25rem;
 }
 
 @media (min-width: 1024px) {
@@ -2902,6 +2907,10 @@ video {
     padding-bottom: 0px;
   }
 
+  .lg\:pb-10 {
+    padding-bottom: 2.5rem;
+  }
+
   .lg\:pb-16 {
     padding-bottom: 4rem;
   }
@@ -2916,6 +2925,10 @@ video {
 
   .lg\:pt-12 {
     padding-top: 3rem;
+  }
+
+  .lg\:pt-16 {
+    padding-top: 4rem;
   }
 
   .lg\:pt-24 {

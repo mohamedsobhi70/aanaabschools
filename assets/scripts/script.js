@@ -247,6 +247,17 @@ if ($(".slider-qualifications-advantages").length > 0) {
     });
 }
 // =================================================
+// ((Events page))  Events Slider
+if ($(".slider-events").length > 0) {
+    let swiper = new Swiper(".slider-events", {
+        slidesPerView: 1,
+        pagination: {
+            el: ".events-pagination",
+            clickable: true,
+        }
+    });
+}
+// =================================================
 
 // Drop Down In Header
 if ($(".menu-dropdown").length) {

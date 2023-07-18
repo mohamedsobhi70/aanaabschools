@@ -181,3 +181,7 @@
 .swiper-slide {
   @apply transition-colors duration-500;
 }
+.events .swiper-pagination{
+  @apply absolute left-5 bottom-5;
+
+}
