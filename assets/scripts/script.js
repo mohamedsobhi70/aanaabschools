@@ -51,8 +51,12 @@ if ($(".slider-partners").length > 0) {
 if ($(".slider-certificate").length > 0) {
     let swiper = new Swiper(".slider-certificate", {
         autoplay: true,
+        speed: 7000,
+        autoplay: {
+            delay: 1000,  
+            disableOnInteraction: true,
+        },
         centeredSlides: true,
-        loop: true,
         slidesPerView: "auto",
         breakpoints: {
             0: {

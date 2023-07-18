@@ -172,7 +172,7 @@
 }
 
 .selected-filter {
-  @apply text-[#8447FF] text-sm leading-[125%] font-bold; 
+  @apply text-[#8447FF] text-sm leading-[125%] font-bold;
 }
 .selected-filter svg path {
   @apply fill-[#8447FF];
@@ -181,7 +181,26 @@
 .swiper-slide {
   @apply transition-colors duration-500;
 }
-.events .swiper-pagination{
+.events .swiper-pagination {
   @apply absolute left-5 bottom-5;
+}
 
+/* slider in home page hero section  */
+.slider-certificate .swiper-slide:nth-child(6n+1) > a {
+  @apply -rotate-4 bg-[#FFE0E0];
+}
+.slider-certificate .swiper-slide:nth-child(6n+2) > a {
+  @apply rotate-4 bg-[#EBE0FF];
+}
+.slider-certificate .swiper-slide:nth-child(6n+3) > a {
+  @apply rotate-2 bg-[#E5FFE0];
+}
+.slider-certificate .swiper-slide:nth-child(6n+4) > a {
+  @apply -rotate-3 bg-[#FFF3E0];
+}
+.slider-certificate .swiper-slide:nth-child(6n+5) > a {
+  @apply -rotate-5 bg-[#FFE2E0];
+}
+.slider-certificate .swiper-slide:nth-child(6n+6) > a {
+  @apply rotate-4 bg-[#FFE0F8];
 }
