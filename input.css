@@ -166,6 +166,7 @@
 .licence-filt-item svg path {
   @apply transition-all duration-300;
 }
+
 .licence-filt-item.active svg path,
 .licence-filt-item:hover svg path {
   @apply fill-[#8447FF];
@@ -174,6 +175,7 @@
 .selected-filter {
   @apply text-[#8447FF] text-sm leading-[125%] font-bold;
 }
+
 .selected-filter svg path {
   @apply fill-[#8447FF];
 }
@@ -203,4 +205,8 @@
 }
 .slider-certificate .swiper-slide:nth-child(6n+6) > a {
   @apply rotate-4 bg-[#FFE0F8];
+}
+
+.swiper-pagination.events-pagination{
+  @apply left-8 bottom-3
 }
