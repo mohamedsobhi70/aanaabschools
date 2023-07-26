@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .blog-item {
+    @apply flex flex-col gap-6 lg:col-span-2;
+  }
+  .blog-item:first-of-type,
+  .blog-item:nth-of-type(2) {
+    @apply lg:col-span-3;
+  }
+
+  .pagin-item {
+    @apply text-[#6B7280] text-lg leading-normal h-10 w-10 rounded-full border border-[#DADBDD] flex items-center justify-center transition-all duration-300 hover:border-transparent hover:bg-[#8447FF] hover:text-white;
+  }
+  .pagin-item.active {
+    @apply border-transparent bg-[#8447FF] text-white font-bold;
+  }
+}
+
 .hero-img {
   box-shadow: 0px 0px 0px 2px rgba(132, 71, 255, 0.5);
   @apply transition-all duration-1000;
@@ -122,6 +139,9 @@
 .filter-item {
   @apply rounded-full py-2 px-6 border border-[#D1D5DB] bg-white text-[13px] leading-[30px] shrink-0 font-bold cursor-pointer transition-all duration-300;
 }
+.filter-tw {
+  @apply border-none bg-transparent text-[#6B7280] text-[13px];
+}
 .filter-item.active,
 .filter-item:hover {
   @apply bg-[#8447FF] border-transparent text-white;
@@ -188,25 +208,25 @@
 }
 
 /* slider in home page hero section  */
-.slider-certificate .swiper-slide:nth-child(6n+1) > a {
+.slider-certificate .swiper-slide:nth-child(6n + 1) > a {
   @apply -rotate-4 bg-[#FFE0E0];
 }
-.slider-certificate .swiper-slide:nth-child(6n+2) > a {
+.slider-certificate .swiper-slide:nth-child(6n + 2) > a {
   @apply rotate-4 bg-[#EBE0FF];
 }
-.slider-certificate .swiper-slide:nth-child(6n+3) > a {
+.slider-certificate .swiper-slide:nth-child(6n + 3) > a {
   @apply rotate-2 bg-[#E5FFE0];
 }
-.slider-certificate .swiper-slide:nth-child(6n+4) > a {
+.slider-certificate .swiper-slide:nth-child(6n + 4) > a {
   @apply -rotate-3 bg-[#FFF3E0];
 }
-.slider-certificate .swiper-slide:nth-child(6n+5) > a {
+.slider-certificate .swiper-slide:nth-child(6n + 5) > a {
   @apply -rotate-5 bg-[#FFE2E0];
 }
-.slider-certificate .swiper-slide:nth-child(6n+6) > a {
+.slider-certificate .swiper-slide:nth-child(6n + 6) > a {
   @apply rotate-4 bg-[#FFE0F8];
 }
 
-.swiper-pagination.events-pagination{
-  @apply left-8 bottom-3
+.swiper-pagination.events-pagination {
+  @apply left-8 bottom-3;
 }

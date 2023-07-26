@@ -53,7 +53,7 @@ if ($(".slider-certificate").length > 0) {
         autoplay: true,
         speed: 7000,
         autoplay: {
-            delay: 1000,  
+            delay: 1000,
             disableOnInteraction: true,
         },
         centeredSlides: true,
@@ -499,7 +499,6 @@ if ($(".slider-book-store").length > 0) {
 // =================================================
 
 //  Filtering slider-jobs
-
 if ($(".jobs").length > 0) {
     $(".jobs .iso-nav .filter-item").on("click", function () {
         $(".jobs .iso-nav .filter-item").removeClass("active");
@@ -515,6 +514,24 @@ if ($(".jobs").length > 0) {
         }
     })
 }
+//  Filtering slider-jobs
+if ($(".blog-container").length > 0) {
+    $(".blog-filter .filter-tw").on("click", function () {
+        $(".blog-filter .filter-tw").removeClass("active");
+        $(this).addClass("active");
+        let filt = $(this).attr("data-filter");
+        console.log($(`.blog-container .blog-item:not(${filt})`));
+
+        if (filt === "*") {
+            $(".blog-container .blog-item").removeClass("hidden");
+        }
+        else {
+            $(".blog-container .blog-item").removeClass("hidden");
+            $(`.blog-container .blog-item:not(${filt})`).addClass("hidden");
+        }
+    })
+}
+
 // =================================================
 
 
