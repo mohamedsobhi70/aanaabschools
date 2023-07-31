@@ -845,6 +845,13 @@ video {
   margin-top: 0.25rem;
 }
 
+.line-clamp-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
@@ -857,13 +864,6 @@ video {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
-}
-
-.line-clamp-1 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
 }
 
 .block {
@@ -959,10 +959,6 @@ video {
   max-height: 24rem;
 }
 
-.max-h-full {
-  max-height: 100%;
-}
-
 .w-10 {
   width: 2.5rem;
 }
@@ -1026,14 +1022,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-\[2\] {
-  width: 2;
-}
-
-.w-\[270px\] {
-  width: 270px;
 }
 
 .max-w-\[612px\] {
@@ -1432,6 +1420,11 @@ video {
   background-color: rgb(217 198 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#E9E8E8\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(233 232 232 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#F0F6F6\] {
   --tw-bg-opacity: 1;
   background-color: rgb(240 246 246 / var(--tw-bg-opacity));
@@ -1736,6 +1729,10 @@ video {
   padding-top: 72px;
 }
 
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1957,6 +1954,13 @@ video {
   transition-duration: 300ms;
 }
 
+.line-clamp-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
@@ -1969,13 +1973,6 @@ video {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
-}
-
-.line-clamp-1 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
 }
 
 .hero-img {
@@ -2168,6 +2165,38 @@ video {
   font-size: 13px;
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.filter-srch {
+  flex-shrink: 0;
+  cursor: pointer;
+  border-bottom-width: 1px;
+  border-bottom-color: transparent;
+  padding: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  line-height: 1.5;
+  --tw-text-opacity: 1;
+  color: rgb(131 135 149 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+@media (min-width: 1024px) {
+  .filter-srch {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    line-height: 1.5;
+  }
+}
+
+.filter-srch.active {
+  border-color: transparent;
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(6 4 4 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(51 55 69 / var(--tw-text-opacity));
 }
 
 .filter-item.active,

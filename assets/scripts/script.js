@@ -531,6 +531,22 @@ if ($(".filt-items-container").length > 0) {
     })
 }
 
+if ($(".search-res-filters").length > 0) {
+    $(".filter-srch").on("click", function () {
+        $(".iso-nav .filter-srch").removeClass("active");
+        $(this).addClass("active");
+        let filt = $(this).attr("data-filter");
+
+        if (filt === "*") {
+            $(".search-res-filters .srch-filter-card").removeClass("hidden");
+        }
+        else {
+            $(".search-res-filters .srch-filter-card").removeClass("hidden");
+            $(`.search-res-filters .srch-filter-card:not(${filt})`).addClass("hidden");
+        }
+    })
+}
+
 
 //  Filtering slider-jobs
 if ($(".blog-container").length > 0) {
