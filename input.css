@@ -12,10 +12,10 @@
   }
 
   .pagin-item {
-    @apply text-[#6B7280] text-lg leading-normal h-10 w-10 rounded-full border border-[#DADBDD] flex items-center justify-center transition-all duration-300 hover:border-transparent hover:bg-[#8447FF] hover:text-white;
+    @apply text-[#6B7280] text-lg leading-normal h-8 w-8 rounded-full border border-[#DADBDD] flex items-center justify-center transition-all duration-300 hover:border-transparent hover:bg-[#8447FF] hover:text-white hover:h-10 hover:w-10 ;
   }
   .pagin-item.active {
-    @apply border-transparent bg-[#8447FF] text-white font-bold;
+    @apply border-transparent bg-[#8447FF] text-white font-bold h-10 w-10;
   }
 }
 
@@ -229,4 +229,17 @@
 
 .swiper-pagination.events-pagination {
   @apply left-8 bottom-3;
+}
+/* scroll bar  */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8447ff;
+  border-radius: 20px;
 }

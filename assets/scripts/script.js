@@ -514,6 +514,24 @@ if ($(".jobs").length > 0) {
         }
     })
 }
+
+if ($(".filt-items-container").length > 0) {
+    $(".iso-nav .filter-item").on("click", function () {
+        $(".iso-nav .filter-item").removeClass("active");
+        $(this).addClass("active");
+        let filt = $(this).attr("data-filter");
+
+        if (filt === "*") {
+            $(".filt-items-container .filter-card").removeClass("hidden");
+        }
+        else {
+            $(".filt-items-container .filter-card").removeClass("hidden");
+            $(`.filt-items-container .filter-card:not(${filt})`).addClass("hidden");
+        }
+    })
+}
+
+
 //  Filtering slider-jobs
 if ($(".blog-container").length > 0) {
     $(".blog-filter .filter-tw").on("click", function () {
