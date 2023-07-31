@@ -603,3 +603,17 @@ if ($(".license-cards-container").length > 0) {
 }
 
 // =================================================
+
+
+//  Search Results
+
+if ($(".search-result-container").length > 0) {
+    $(".close-search-res").on("click", function () {
+        $(".search-result-container").removeClass("active")
+    })
+    $(".show-search-res").on("click", function () {
+        $(".search-result-container").addClass("active")
+    })
+}
+
+// =================================================

@@ -226,6 +226,12 @@
 .slider-certificate .swiper-slide:nth-child(6n + 6) > a {
   @apply rotate-4 bg-[#FFE0F8];
 }
+.search-result-container{
+  @apply  fixed transition-all duration-300 top-0 left-0 w-full h-full bg-[#aaaeb299] backdrop-blur-lg z-50 flex items-center justify-center py-12 px-[30px] lg:py-40 invisible opacity-0 
+}
+.search-result-container.active{
+  @apply visible opacity-100
+}
 
 .swiper-pagination.events-pagination {
   @apply left-8 bottom-3;
@@ -233,6 +239,7 @@
 /* scroll bar  */
 ::-webkit-scrollbar {
   width: 5px;
+  height: 0px;
 }
 
 ::-webkit-scrollbar-track {
@@ -240,6 +247,6 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #8447ff;
+  background: #838795;
   border-radius: 20px;
 }
