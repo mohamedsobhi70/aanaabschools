@@ -260,3 +260,7 @@
   background: #838795;
   border-radius: 20px;
 }
+
+.form-radio {
+  @apply appearance-none rounded-full border border-[#B9C0D4] cursor-pointer checked:border-[#8447FF] checked:bg-[url(../images/radio.svg)] bg-contain bg-center bg-no-repeat outline-none w-6 h-6 focus:ring-transparent;
+}
