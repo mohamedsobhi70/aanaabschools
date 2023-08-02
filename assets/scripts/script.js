@@ -635,12 +635,24 @@ if ($(".search-result-container").length > 0) {
 // =================================================
 
 // payment accordion
+if ($(".payment-item").length > 0) {
+    $('.payment-item input[type="radio"]').change(function () {
+        $('.payment-item .payment-content').slideUp(400);
+        $(".payment-item").removeClass("border-[#8447FF]").addClass("border-[#E9E8E8]")
 
-$('.payment-item input[type="radio"]').change(function () {
-    $('.payment-item .payment-content').slideUp(400);
-    $(".payment-item").removeClass("border-[#8447FF]").addClass("border-[#E9E8E8]")
+
+        $(this).closest(".payment-item").find(".payment-content").slideDown(400);
+        $(this).closest(".payment-item").addClass("border-[#8447FF]").removeClass("border-[#E9E8E8]")
+    });
+}
 
 
-    $(this).closest(".payment-item").find(".payment-content").slideDown(400);
-    $(this).closest(".payment-item").addClass("border-[#8447FF]").removeClass("border-[#E9E8E8]")
-});
+// filter in course listing 
+if ($(".filter-courses-listing").length > 0) {
+    $('.show-filter-btn').on("click", function () {
+        $('.course-container').toggleClass("active");
+    });
+    $('.close-filter-courses-listing').on("click", function () {
+        $('.course-container').removeClass("active");
+    });
+}

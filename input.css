@@ -242,6 +242,33 @@
 .search-result-container.active {
   @apply visible opacity-100;
 }
+.course-container .courses-items {
+  @apply flex flex-col gap-6 lg:col-span-3;
+}
+.course-container .filt-items-container {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] lg:gap-y-12;
+}
+.course-container.active .course-list-heding {
+  @apply invisible;
+}
+.course-container.active .courses-items {
+  @apply lg:col-span-2;
+}
+.course-container.active .courses-items .filt-items-container {
+  @apply lg:grid-cols-2;
+}
+.course-container .filter-courses-listing {
+  @apply invisible opacity-0 w-0 h-0  transition-all duration-300;
+}
+.course-container.active .filter-courses-listing {
+  @apply visible opacity-100 w-auto h-auto;
+}
+.all-filts {
+  @apply fixed lg:static -bottom-20 left-0 h-screen w-full z-50 invisible opacity-0 transition-all duration-300;
+}
+.course-container.active .all-filts {
+  @apply visible opacity-100 bottom-0;
+}
 
 .swiper-pagination.events-pagination {
   @apply left-8 bottom-3;
@@ -263,4 +290,8 @@
 
 .form-radio {
   @apply appearance-none rounded-full border border-[#B9C0D4] cursor-pointer checked:border-[#8447FF] checked:bg-[url(../images/radio.svg)] bg-contain bg-center bg-no-repeat outline-none w-6 h-6 focus:ring-transparent;
+}
+
+.form-checkbox {
+  @apply cursor-pointer appearance-none  rounded border border-[#E2E2E9] checked:border-transparent checked:bg-[url(../images/Checkboxes.svg)] bg-cover bg-center bg-no-repeat outline-none w-5 h-5 focus:ring-transparent;
 }

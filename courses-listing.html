@@ -256,7 +256,8 @@
                                         class="w-full focus:outline-none lg:text-lg leading-normal shrink"
                                         name="search-courses" placeholder="بحث" id="search-courses">
                                 </div>
-                                <button class="flex items-center gap-2 pr-4 border-r text-[#838795] leading-normal">
+                                <button
+                                    class="show-filter-btn flex items-center gap-2 pr-4 border-r text-[#838795] leading-normal">
                                     <img src="assets/images/filter.svg" width="20" height="20" alt="search">
                                     فلتر
                                 </button>
@@ -286,10 +287,267 @@
         <!-- Start Cource Listing Items Section  -->
         <section class="pb-8 lg:pb-16 px-[30px] lg:px-0 bg-[#F7FAFA]">
             <div class="container">
-                <div class="flex flex-col gap-8 lg:gap-12">
-                    <div class="flex flex-col gap-6">
+                <div class="grid lg:grid-cols-3 gap-[30px] course-container">
+                    <div class="filter-courses-listing">
+
+                        <div class="all-filts flex flex-col border bordr-[#E9E8E8] rounded-2xl overflow-hidden bg-white">
+                            <!-- title -->
+                            <div
+                                class="flex justify-between items-center gap-2 px-[30px] py-6 lg:p-6 border-b bordr-[#E9E8E8]">
+                                <h2 class="text-[#333745] text-xl leading-normal font-bold">
+                                    فلتر
+                                </h2>
+                                <button class="close-filter-courses-listing">
+                                    <img src="assets/images/close.svg" width="20" height="20" alt="Clse Icon">
+                                    <span class="sr-only">Close Button</span>
+                                </button>
+                            </div>
+                            <div class="flex flex-col flex-1 overflow-y-scroll lg:overflow-visible">
+                                <!-- filter item  -->
+                                <div class="flex flex-col gap-6 px-[30px] py-6 lg:p-6 border-b bordr-[#E9E8E8]">
+                                    <h2 class="text-[#333745] text-base leading-normal font-bold">
+                                        الموضوع
+                                    </h2>
+    
+                                    <div class="flex flex-col gap-3">
+    
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" name="chec-1" id="chec-1" class="peer form-checkbox">
+                                            <label for="chec-1"
+                                                class="flex-1 cursor-pointer text-[#838795] text-sm leading-normal transition-all duration-300 peer-checked:text-[#333745]">
+                                                الكل
+                                            </label>
+                                            <span
+                                                class="py-0.5 px-2 rounded-full bg-[#F4F4F5] text-[#ABAFBD] text-sm leading-normal transition-all duration-300 peer-checked:text-[#333745] peer-checked:bg-[#F3EDFF]">
+                                                428
+                                            </span>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" name="chec-2" id="chec-2" class="peer form-checkbox">
+                                            <label for="chec-2"
+                                                class="flex-1 cursor-pointer text-[#838795] text-sm leading-normal transition-all duration-300 peer-checked:text-[#333745]">
+                                                تقنيات التعليم
+                                            </label>
+                                            <span
+                                                class="py-0.5 px-2 rounded-full bg-[#F4F4F5] text-[#ABAFBD] text-sm leading-normal transition-all duration-300 peer-checked:text-[#333745] peer-checked:bg-[#F3EDFF]">
+                                                428
+                                            </span>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" name="chec-3" id="chec-3" class="peer form-checkbox">
+                                            <label for="chec-3"
+                                                class="flex-1 cursor-pointer text-[#838795] text-sm leading-normal transition-all duration-300 peer-checked:text-[#333745]">
+                                                تقنيات التعليم
+                                            </label>
+                                            <span
+                                                class="py-0.5 px-2 rounded-full bg-[#F4F4F5] text-[#ABAFBD] text-sm leading-normal transition-all duration-300 peer-checked:text-[#333745] peer-checked:bg-[#F3EDFF]">
+                                                428
+                                            </span>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" name="chec-4" id="chec-4" class="peer form-checkbox">
+                                            <label for="chec-4"
+                                                class="flex-1 cursor-pointer text-[#838795] text-sm leading-normal transition-all duration-300 peer-checked:text-[#333745]">
+                                                أدوات ومصادر تعليمية
+                                            </label>
+                                            <span
+                                                class="py-0.5 px-2 rounded-full bg-[#F4F4F5] text-[#ABAFBD] text-sm leading-normal transition-all duration-300 peer-checked:text-[#333745] peer-checked:bg-[#F3EDFF]">
+                                                428
+                                            </span>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" name="chec-5" id="chec-5" class="peer form-checkbox">
+                                            <label for="chec-5"
+                                                class="flex-1 cursor-pointer text-[#838795] text-sm leading-normal transition-all duration-300 peer-checked:text-[#333745]">
+                                                تطوير ذاتي مهني
+                                            </label>
+                                            <span
+                                                class="py-0.5 px-2 rounded-full bg-[#F4F4F5] text-[#ABAFBD] text-sm leading-normal transition-all duration-300 peer-checked:text-[#333745] peer-checked:bg-[#F3EDFF]">
+                                                428
+                                            </span>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" name="chec-6" id="chec-6" class="peer form-checkbox">
+                                            <label for="chec-6"
+                                                class="flex-1 cursor-pointer text-[#838795] text-sm leading-normal transition-all duration-300 peer-checked:text-[#333745]">
+                                                الرخص المهنية
+                                            </label>
+                                            <span
+                                                class="py-0.5 px-2 rounded-full bg-[#F4F4F5] text-[#ABAFBD] text-sm leading-normal transition-all duration-300 peer-checked:text-[#333745] peer-checked:bg-[#F3EDFF]">
+                                                428
+                                            </span>
+                                        </div>
+    
+                                    </div>
+                                </div>
+    
+                                <!-- filter item  -->
+                                <div class="flex flex-col gap-6 px-[30px] py-6 lg:p-6 border-b bordr-[#E9E8E8]">
+                                    <h2 class="text-[#333745] text-base leading-normal font-bold">
+                                        مقدم الدورة
+                                    </h2>
+    
+                                    <div class="flex flex-col gap-3">
+    
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" name="chec-7" id="chec-7" class="peer form-checkbox">
+                                            <label for="chec-7"
+                                                class="flex-1 cursor-pointer text-[#838795] text-sm leading-normal transition-all duration-300 peer-checked:text-[#333745]">
+                                                الكل
+                                            </label>
+                                            <span
+                                                class="py-0.5 px-2 rounded-full bg-[#F4F4F5] text-[#ABAFBD] text-sm leading-normal transition-all duration-300 peer-checked:text-[#333745] peer-checked:bg-[#F3EDFF]">
+                                                428
+                                            </span>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" name="chec-8" id="chec-8" class="peer form-checkbox">
+                                            <label for="chec-8"
+                                                class="flex-1 cursor-pointer text-[#838795] text-sm leading-normal transition-all duration-300 peer-checked:text-[#333745]">
+                                                دوام كامل
+                                            </label>
+                                            <span
+                                                class="py-0.5 px-2 rounded-full bg-[#F4F4F5] text-[#ABAFBD] text-sm leading-normal transition-all duration-300 peer-checked:text-[#333745] peer-checked:bg-[#F3EDFF]">
+                                                428
+                                            </span>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" name="chec-9" id="chec-9" class="peer form-checkbox">
+                                            <label for="chec-9"
+                                                class="flex-1 cursor-pointer text-[#838795] text-sm leading-normal transition-all duration-300 peer-checked:text-[#333745]">
+                                                دوام جزئي
+                                            </label>
+                                            <span
+                                                class="py-0.5 px-2 rounded-full bg-[#F4F4F5] text-[#ABAFBD] text-sm leading-normal transition-all duration-300 peer-checked:text-[#333745] peer-checked:bg-[#F3EDFF]">
+                                                428
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <!-- filter item  -->
+                                <div class="flex flex-col gap-6 px-[30px] py-6 lg:p-6 border-b bordr-[#E9E8E8]">
+                                    <h2 class="text-[#333745] text-base leading-normal font-bold">
+                                        موعد الدورة
+                                    </h2>
+    
+                                    <div class="flex flex-col gap-3">
+    
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" name="chec-10" id="chec-10" class="peer form-checkbox">
+                                            <label for="chec-10"
+                                                class="flex-1 cursor-pointer text-[#838795] text-sm leading-normal transition-all duration-300 peer-checked:text-[#333745]">
+                                                الكل
+                                            </label>
+                                            <span
+                                                class="py-0.5 px-2 rounded-full bg-[#F4F4F5] text-[#ABAFBD] text-sm leading-normal transition-all duration-300 peer-checked:text-[#333745] peer-checked:bg-[#F3EDFF]">
+                                                428
+                                            </span>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" name="chec-11" id="chec-11" class="peer form-checkbox">
+                                            <label for="chec-11"
+                                                class="flex-1 cursor-pointer text-[#838795] text-sm leading-normal transition-all duration-300 peer-checked:text-[#333745]">
+                                                الحالية
+                                            </label>
+                                            <span
+                                                class="py-0.5 px-2 rounded-full bg-[#F4F4F5] text-[#ABAFBD] text-sm leading-normal transition-all duration-300 peer-checked:text-[#333745] peer-checked:bg-[#F3EDFF]">
+                                                428
+                                            </span>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" name="chec-12" id="chec-12" class="peer form-checkbox">
+                                            <label for="chec-12"
+                                                class="flex-1 cursor-pointer text-[#838795] text-sm leading-normal transition-all duration-300 peer-checked:text-[#333745]">
+                                                المرتقبة
+                                            </label>
+                                            <span
+                                                class="py-0.5 px-2 rounded-full bg-[#F4F4F5] text-[#ABAFBD] text-sm leading-normal transition-all duration-300 peer-checked:text-[#333745] peer-checked:bg-[#F3EDFF]">
+                                                428
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <!-- filter item  -->
+                                <div class="flex flex-col gap-6 px-[30px] py-6 lg:p-6 border-b bordr-[#E9E8E8]">
+                                    <h2 class="text-[#333745] text-base leading-normal font-bold">
+                                        المستوى
+                                    </h2>
+    
+                                    <div class="flex flex-col gap-3">
+    
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" name="chec-13" id="chec-13" class="peer form-checkbox">
+                                            <label for="chec-13"
+                                                class="flex-1 cursor-pointer text-[#838795] text-sm leading-normal transition-all duration-300 peer-checked:text-[#333745]">
+                                                الكل
+                                            </label>
+                                            <span
+                                                class="py-0.5 px-2 rounded-full bg-[#F4F4F5] text-[#ABAFBD] text-sm leading-normal transition-all duration-300 peer-checked:text-[#333745] peer-checked:bg-[#F3EDFF]">
+                                                428
+                                            </span>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" name="chec-14" id="chec-14" class="peer form-checkbox">
+                                            <label for="chec-14"
+                                                class="flex-1 cursor-pointer text-[#838795] text-sm leading-normal transition-all duration-300 peer-checked:text-[#333745]">
+                                                مبتدئ
+                                            </label>
+                                            <span
+                                                class="py-0.5 px-2 rounded-full bg-[#F4F4F5] text-[#ABAFBD] text-sm leading-normal transition-all duration-300 peer-checked:text-[#333745] peer-checked:bg-[#F3EDFF]">
+                                                428
+                                            </span>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" name="chec-15" id="chec-15" class="peer form-checkbox">
+                                            <label for="chec-15"
+                                                class="flex-1 cursor-pointer text-[#838795] text-sm leading-normal transition-all duration-300 peer-checked:text-[#333745]">
+                                                متوسط
+                                            </label>
+                                            <span
+                                                class="py-0.5 px-2 rounded-full bg-[#F4F4F5] text-[#ABAFBD] text-sm leading-normal transition-all duration-300 peer-checked:text-[#333745] peer-checked:bg-[#F3EDFF]">
+                                                428
+                                            </span>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <input type="checkbox" name="chec-16" id="chec-16" class="peer form-checkbox">
+                                            <label for="chec-16"
+                                                class="flex-1 cursor-pointer text-[#838795] text-sm leading-normal transition-all duration-300 peer-checked:text-[#333745]">
+                                                متقدم
+                                            </label>
+                                            <span
+                                                class="py-0.5 px-2 rounded-full bg-[#F4F4F5] text-[#ABAFBD] text-sm leading-normal transition-all duration-300 peer-checked:text-[#333745] peer-checked:bg-[#F3EDFF]">
+                                                428
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between gap-3 py-6 px-[30px] lg:p-6">
+                                    <h2 class="text-[#333745] text-base leading-normal font-bold">
+                                        دورة معتمدة
+                                    </h2>
+                                    <div class="flex items-center bg-[#E9E8E8] rounded-full">
+                                        <div class="">
+                                            <input type="radio" name="chec-17" id="chec-17" class="peer hidden" checked>
+                                            <label for="chec-17"
+                                                class="block py-1.5 px-4 rounded-full border border-transparent text-[#838795] text-xs leading-normal peer-checked:border-[#8447FF] peer-checked:bg-[white] peer-checked:text-[#8447FF] transition-all duration-300 cursor-pointer">نعم</label>
+                                        </div>
+                                        <div class="">
+                                            <input type="radio" name="chec-17" id="chec-18" class="peer hidden">
+                                            <label for="chec-18"
+                                                class="block py-1.5 px-4 rounded-full border border-transparent text-[#838795] text-xs leading-normal peer-checked:border-[#8447FF] peer-checked:bg-[white] peer-checked:text-[#8447FF] transition-all duration-300 cursor-pointer">لا</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="courses-items">
                         <div class="w-full flex items-center justify-between gap-4">
-                            <h2 class="text-[#333745] text-xl lg:text-2xl leading-normal font-bold">
+                            <h2 class="text-[#333745] text-xl lg:text-2xl leading-normal font-bold course-list-heding">
                                 تصفح كل الدورات
                             </h2>
 
@@ -320,427 +578,429 @@
                             </label>
 
                         </div>
-                        <div
-                            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] lg:gap-y-12 filt-items-container">
-                            <!-- item  -->
-                            <div
-                                class="group filt-2 filt-4 border border-[#E9E8E8] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#8447FF] filter-card">
-                                <div class="h-56 relative">
-                                    <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
-                                        <img src="assets/images/homepage/training-courses-badge.png" width="64"
-                                            height="64" alt="badge" class="h-full w-full object-cover">
-                                    </div>
+                        <div class="flex flex-col gap-8 lg:gap-12">
+                            <div class="filt-items-container">
+                                <!-- item  -->
+                                <div
+                                    class="group filt-2 filt-4 border border-[#E9E8E8] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#8447FF] filter-card">
+                                    <div class="h-56 relative">
+                                        <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                            <img src="assets/images/homepage/training-courses-badge.png" width="64"
+                                                height="64" alt="badge" class="h-full w-full object-cover">
+                                        </div>
 
-                                    <img src="assets/images/homepage/training-courses-2.jpg"
-                                        class="w-full h-full object-cover" width="350" height="224"
-                                        alt="training-courses-1">
-                                </div>
-                                <div class="p-6 flex flex-col gap-6 bg-white">
-                                    <div class="flex flex-col gap-2">
-                                        <h3 class="text-[#333745] text-base leading-normal font-extrabold">
-                                            <a href="single-course.html"> إشراك أولياء الأمور في التعلم عن بعد </a>
-                                        </h3>
-                                        <p class="flex items-center gap-1.5 text-[#838795] text-sm leading-normal">
-                                            <img src="assets/images/homepage/calender.png" width="12" height="14"
-                                                alt="calender">
-                                            تبدا في ١٨ ابريل وتنتهي في ٢٠ مايو (٤ اسابيع)
-                                        </p>
+                                        <img src="assets/images/homepage/training-courses-2.jpg"
+                                            class="w-full h-full object-cover" width="350" height="224"
+                                            alt="training-courses-1">
                                     </div>
+                                    <div class="p-6 flex flex-col gap-6 bg-white">
+                                        <div class="flex flex-col gap-2">
+                                            <h3 class="text-[#333745] text-base leading-normal font-extrabold">
+                                                <a href="single-course.html"> إشراك أولياء الأمور في التعلم عن بعد </a>
+                                            </h3>
+                                            <p class="flex items-center gap-1.5 text-[#838795] text-sm leading-normal">
+                                                <img src="assets/images/homepage/calender.png" width="12" height="14"
+                                                    alt="calender">
+                                                تبدا في ١٨ ابريل وتنتهي في ٢٠ مايو (٤ اسابيع)
+                                            </p>
+                                        </div>
 
-                                    <div class="flex items-center gap-3 justify-between">
-                                        <div class="flex items-center gap-3">
-                                            <div class="w-10 h-10 rounded-full overflow-hidden">
-                                                <img src="assets/images/homepage/course-trainer.jpg" width="40"
-                                                    height="40" alt="course-trainer">
+                                        <div class="flex items-center gap-3 justify-between">
+                                            <div class="flex items-center gap-3">
+                                                <div class="w-10 h-10 rounded-full overflow-hidden">
+                                                    <img src="assets/images/homepage/course-trainer.jpg" width="40"
+                                                        height="40" alt="course-trainer">
+                                                </div>
+                                                <div class="flex flex-col gap-0.5">
+                                                    <h4 class="text-[#333745] text-sm leading-normal font-bold">
+                                                        هالة كمال
+                                                    </h4>
+                                                    <p class="text-[#838795] text-sm leading-normal">
+                                                        مدير مشاريع تعليمية ومستشار
+                                                    </p>
+                                                </div>
                                             </div>
-                                            <div class="flex flex-col gap-0.5">
-                                                <h4 class="text-[#333745] text-sm leading-normal font-bold">
-                                                    هالة كمال
-                                                </h4>
-                                                <p class="text-[#838795] text-sm leading-normal">
-                                                    مدير مشاريع تعليمية ومستشار
-                                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- item  -->
+                                <div
+                                    class="group filt-1 filt-3 border border-[#E9E8E8] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#8447FF] filter-card">
+                                    <div class="h-56 relative">
+                                        <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                            <img src="assets/images/homepage/training-courses-badge.png" width="64"
+                                                height="64" alt="badge" class="h-full w-full object-cover">
+                                        </div>
+
+                                        <img src="assets/images/homepage/training-courses-2.jpg"
+                                            class="w-full h-full object-cover" width="350" height="224"
+                                            alt="training-courses-1">
+                                    </div>
+                                    <div class="p-6 flex flex-col gap-6 bg-white">
+                                        <div class="flex flex-col gap-2">
+                                            <h3 class="text-[#333745] text-base leading-normal font-extrabold">
+                                                <a href="single-course.html"> إشراك أولياء الأمور في التعلم عن بعد </a>
+                                            </h3>
+                                            <p class="flex items-center gap-1.5 text-[#838795] text-sm leading-normal">
+                                                <img src="assets/images/homepage/calender.png" width="12" height="14"
+                                                    alt="calender">
+                                                تبدا في ١٨ ابريل وتنتهي في ٢٠ مايو (٤ اسابيع)
+                                            </p>
+                                        </div>
+
+                                        <div class="flex items-center gap-3 justify-between">
+                                            <div class="flex items-center gap-3">
+                                                <div class="w-10 h-10 rounded-full overflow-hidden">
+                                                    <img src="assets/images/homepage/course-trainer.jpg" width="40"
+                                                        height="40" alt="course-trainer">
+                                                </div>
+                                                <div class="flex flex-col gap-0.5">
+                                                    <h4 class="text-[#333745] text-sm leading-normal font-bold">
+                                                        هالة كمال
+                                                    </h4>
+                                                    <p class="text-[#838795] text-sm leading-normal">
+                                                        مدير مشاريع تعليمية ومستشار
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- item  -->
+                                <div
+                                    class="group filt-5 filt-2 border border-[#E9E8E8] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#8447FF] filter-card">
+                                    <div class="h-56 relative">
+                                        <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                            <img src="assets/images/homepage/training-courses-badge.png" width="64"
+                                                height="64" alt="badge" class="h-full w-full object-cover">
+                                        </div>
+
+                                        <img src="assets/images/homepage/training-courses-2.jpg"
+                                            class="w-full h-full object-cover" width="350" height="224"
+                                            alt="training-courses-1">
+                                    </div>
+                                    <div class="p-6 flex flex-col gap-6 bg-white">
+                                        <div class="flex flex-col gap-2">
+                                            <h3 class="text-[#333745] text-base leading-normal font-extrabold">
+                                                <a href="single-course.html"> إشراك أولياء الأمور في التعلم عن بعد </a>
+                                            </h3>
+                                            <p class="flex items-center gap-1.5 text-[#838795] text-sm leading-normal">
+                                                <img src="assets/images/homepage/calender.png" width="12" height="14"
+                                                    alt="calender">
+                                                تبدا في ١٨ ابريل وتنتهي في ٢٠ مايو (٤ اسابيع)
+                                            </p>
+                                        </div>
+
+                                        <div class="flex items-center gap-3 justify-between">
+                                            <div class="flex items-center gap-3">
+                                                <div class="w-10 h-10 rounded-full overflow-hidden">
+                                                    <img src="assets/images/homepage/course-trainer.jpg" width="40"
+                                                        height="40" alt="course-trainer">
+                                                </div>
+                                                <div class="flex flex-col gap-0.5">
+                                                    <h4 class="text-[#333745] text-sm leading-normal font-bold">
+                                                        هالة كمال
+                                                    </h4>
+                                                    <p class="text-[#838795] text-sm leading-normal">
+                                                        مدير مشاريع تعليمية ومستشار
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- item  -->
+                                <div
+                                    class="group filt-2 filt-3 border border-[#E9E8E8] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#8447FF] filter-card">
+                                    <div class="h-56 relative">
+                                        <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                            <img src="assets/images/homepage/training-courses-badge.png" width="64"
+                                                height="64" alt="badge" class="h-full w-full object-cover">
+                                        </div>
+
+                                        <img src="assets/images/homepage/training-courses-2.jpg"
+                                            class="w-full h-full object-cover" width="350" height="224"
+                                            alt="training-courses-1">
+                                    </div>
+                                    <div class="p-6 flex flex-col gap-6 bg-white">
+                                        <div class="flex flex-col gap-2">
+                                            <h3 class="text-[#333745] text-base leading-normal font-extrabold">
+                                                <a href="single-course.html"> إشراك أولياء الأمور في التعلم عن بعد </a>
+                                            </h3>
+                                            <p class="flex items-center gap-1.5 text-[#838795] text-sm leading-normal">
+                                                <img src="assets/images/homepage/calender.png" width="12" height="14"
+                                                    alt="calender">
+                                                تبدا في ١٨ ابريل وتنتهي في ٢٠ مايو (٤ اسابيع)
+                                            </p>
+                                        </div>
+
+                                        <div class="flex items-center gap-3 justify-between">
+                                            <div class="flex items-center gap-3">
+                                                <div class="w-10 h-10 rounded-full overflow-hidden">
+                                                    <img src="assets/images/homepage/course-trainer.jpg" width="40"
+                                                        height="40" alt="course-trainer">
+                                                </div>
+                                                <div class="flex flex-col gap-0.5">
+                                                    <h4 class="text-[#333745] text-sm leading-normal font-bold">
+                                                        هالة كمال
+                                                    </h4>
+                                                    <p class="text-[#838795] text-sm leading-normal">
+                                                        مدير مشاريع تعليمية ومستشار
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- item  -->
+                                <div
+                                    class="group filt-1 filt-2 border border-[#E9E8E8] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#8447FF] filter-card">
+                                    <div class="h-56 relative">
+                                        <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                            <img src="assets/images/homepage/training-courses-badge.png" width="64"
+                                                height="64" alt="badge" class="h-full w-full object-cover">
+                                        </div>
+
+                                        <img src="assets/images/homepage/training-courses-2.jpg"
+                                            class="w-full h-full object-cover" width="350" height="224"
+                                            alt="training-courses-1">
+                                    </div>
+                                    <div class="p-6 flex flex-col gap-6 bg-white">
+                                        <div class="flex flex-col gap-2">
+                                            <h3 class="text-[#333745] text-base leading-normal font-extrabold">
+                                                <a href="single-course.html"> إشراك أولياء الأمور في التعلم عن بعد </a>
+                                            </h3>
+                                            <p class="flex items-center gap-1.5 text-[#838795] text-sm leading-normal">
+                                                <img src="assets/images/homepage/calender.png" width="12" height="14"
+                                                    alt="calender">
+                                                تبدا في ١٨ ابريل وتنتهي في ٢٠ مايو (٤ اسابيع)
+                                            </p>
+                                        </div>
+
+                                        <div class="flex items-center gap-3 justify-between">
+                                            <div class="flex items-center gap-3">
+                                                <div class="w-10 h-10 rounded-full overflow-hidden">
+                                                    <img src="assets/images/homepage/course-trainer.jpg" width="40"
+                                                        height="40" alt="course-trainer">
+                                                </div>
+                                                <div class="flex flex-col gap-0.5">
+                                                    <h4 class="text-[#333745] text-sm leading-normal font-bold">
+                                                        هالة كمال
+                                                    </h4>
+                                                    <p class="text-[#838795] text-sm leading-normal">
+                                                        مدير مشاريع تعليمية ومستشار
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- item  -->
+                                <div
+                                    class="group filt-1 filt-5 border border-[#E9E8E8] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#8447FF] filter-card">
+                                    <div class="h-56 relative">
+                                        <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                            <img src="assets/images/homepage/training-courses-badge.png" width="64"
+                                                height="64" alt="badge" class="h-full w-full object-cover">
+                                        </div>
+
+                                        <img src="assets/images/homepage/training-courses-2.jpg"
+                                            class="w-full h-full object-cover" width="350" height="224"
+                                            alt="training-courses-1">
+                                    </div>
+                                    <div class="p-6 flex flex-col gap-6 bg-white">
+                                        <div class="flex flex-col gap-2">
+                                            <h3 class="text-[#333745] text-base leading-normal font-extrabold">
+                                                <a href="single-course.html"> إشراك أولياء الأمور في التعلم عن بعد </a>
+                                            </h3>
+                                            <p class="flex items-center gap-1.5 text-[#838795] text-sm leading-normal">
+                                                <img src="assets/images/homepage/calender.png" width="12" height="14"
+                                                    alt="calender">
+                                                تبدا في ١٨ ابريل وتنتهي في ٢٠ مايو (٤ اسابيع)
+                                            </p>
+                                        </div>
+
+                                        <div class="flex items-center gap-3 justify-between">
+                                            <div class="flex items-center gap-3">
+                                                <div class="w-10 h-10 rounded-full overflow-hidden">
+                                                    <img src="assets/images/homepage/course-trainer.jpg" width="40"
+                                                        height="40" alt="course-trainer">
+                                                </div>
+                                                <div class="flex flex-col gap-0.5">
+                                                    <h4 class="text-[#333745] text-sm leading-normal font-bold">
+                                                        هالة كمال
+                                                    </h4>
+                                                    <p class="text-[#838795] text-sm leading-normal">
+                                                        مدير مشاريع تعليمية ومستشار
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- item  -->
+                                <div
+                                    class="group filt-2 filt-3 border border-[#E9E8E8] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#8447FF] filter-card">
+                                    <div class="h-56 relative">
+                                        <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                            <img src="assets/images/homepage/training-courses-badge.png" width="64"
+                                                height="64" alt="badge" class="h-full w-full object-cover">
+                                        </div>
+
+                                        <img src="assets/images/homepage/training-courses-2.jpg"
+                                            class="w-full h-full object-cover" width="350" height="224"
+                                            alt="training-courses-1">
+                                    </div>
+                                    <div class="p-6 flex flex-col gap-6 bg-white">
+                                        <div class="flex flex-col gap-2">
+                                            <h3 class="text-[#333745] text-base leading-normal font-extrabold">
+                                                <a href="single-course.html"> إشراك أولياء الأمور في التعلم عن بعد </a>
+                                            </h3>
+                                            <p class="flex items-center gap-1.5 text-[#838795] text-sm leading-normal">
+                                                <img src="assets/images/homepage/calender.png" width="12" height="14"
+                                                    alt="calender">
+                                                تبدا في ١٨ ابريل وتنتهي في ٢٠ مايو (٤ اسابيع)
+                                            </p>
+                                        </div>
+
+                                        <div class="flex items-center gap-3 justify-between">
+                                            <div class="flex items-center gap-3">
+                                                <div class="w-10 h-10 rounded-full overflow-hidden">
+                                                    <img src="assets/images/homepage/course-trainer.jpg" width="40"
+                                                        height="40" alt="course-trainer">
+                                                </div>
+                                                <div class="flex flex-col gap-0.5">
+                                                    <h4 class="text-[#333745] text-sm leading-normal font-bold">
+                                                        هالة كمال
+                                                    </h4>
+                                                    <p class="text-[#838795] text-sm leading-normal">
+                                                        مدير مشاريع تعليمية ومستشار
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- item  -->
+                                <div
+                                    class="group filt-1 filt-4 border border-[#E9E8E8] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#8447FF] filter-card">
+                                    <div class="h-56 relative">
+                                        <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                            <img src="assets/images/homepage/training-courses-badge.png" width="64"
+                                                height="64" alt="badge" class="h-full w-full object-cover">
+                                        </div>
+
+                                        <img src="assets/images/homepage/training-courses-2.jpg"
+                                            class="w-full h-full object-cover" width="350" height="224"
+                                            alt="training-courses-1">
+                                    </div>
+                                    <div class="p-6 flex flex-col gap-6 bg-white">
+                                        <div class="flex flex-col gap-2">
+                                            <h3 class="text-[#333745] text-base leading-normal font-extrabold">
+                                                <a href="single-course.html"> إشراك أولياء الأمور في التعلم عن بعد </a>
+                                            </h3>
+                                            <p class="flex items-center gap-1.5 text-[#838795] text-sm leading-normal">
+                                                <img src="assets/images/homepage/calender.png" width="12" height="14"
+                                                    alt="calender">
+                                                تبدا في ١٨ ابريل وتنتهي في ٢٠ مايو (٤ اسابيع)
+                                            </p>
+                                        </div>
+
+                                        <div class="flex items-center gap-3 justify-between">
+                                            <div class="flex items-center gap-3">
+                                                <div class="w-10 h-10 rounded-full overflow-hidden">
+                                                    <img src="assets/images/homepage/course-trainer.jpg" width="40"
+                                                        height="40" alt="course-trainer">
+                                                </div>
+                                                <div class="flex flex-col gap-0.5">
+                                                    <h4 class="text-[#333745] text-sm leading-normal font-bold">
+                                                        هالة كمال
+                                                    </h4>
+                                                    <p class="text-[#838795] text-sm leading-normal">
+                                                        مدير مشاريع تعليمية ومستشار
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- item  -->
+                                <div
+                                    class="group filt-1 filt-4 border border-[#E9E8E8] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#8447FF] filter-card">
+                                    <div class="h-56 relative">
+                                        <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                            <img src="assets/images/homepage/training-courses-badge.png" width="64"
+                                                height="64" alt="badge" class="h-full w-full object-cover">
+                                        </div>
+
+                                        <img src="assets/images/homepage/training-courses-2.jpg"
+                                            class="w-full h-full object-cover" width="350" height="224"
+                                            alt="training-courses-1">
+                                    </div>
+                                    <div class="p-6 flex flex-col gap-6 bg-white">
+                                        <div class="flex flex-col gap-2">
+                                            <h3 class="text-[#333745] text-base leading-normal font-extrabold">
+                                                <a href="single-course.html"> إشراك أولياء الأمور في التعلم عن بعد </a>
+                                            </h3>
+                                            <p class="flex items-center gap-1.5 text-[#838795] text-sm leading-normal">
+                                                <img src="assets/images/homepage/calender.png" width="12" height="14"
+                                                    alt="calender">
+                                                تبدا في ١٨ ابريل وتنتهي في ٢٠ مايو (٤ اسابيع)
+                                            </p>
+                                        </div>
+
+                                        <div class="flex items-center gap-3 justify-between">
+                                            <div class="flex items-center gap-3">
+                                                <div class="w-10 h-10 rounded-full overflow-hidden">
+                                                    <img src="assets/images/homepage/course-trainer.jpg" width="40"
+                                                        height="40" alt="course-trainer">
+                                                </div>
+                                                <div class="flex flex-col gap-0.5">
+                                                    <h4 class="text-[#333745] text-sm leading-normal font-bold">
+                                                        هالة كمال
+                                                    </h4>
+                                                    <p class="text-[#838795] text-sm leading-normal">
+                                                        مدير مشاريع تعليمية ومستشار
+                                                    </p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- item  -->
-                            <div
-                                class="group filt-1 filt-3 border border-[#E9E8E8] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#8447FF] filter-card">
-                                <div class="h-56 relative">
-                                    <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
-                                        <img src="assets/images/homepage/training-courses-badge.png" width="64"
-                                            height="64" alt="badge" class="h-full w-full object-cover">
-                                    </div>
-
-                                    <img src="assets/images/homepage/training-courses-2.jpg"
-                                        class="w-full h-full object-cover" width="350" height="224"
-                                        alt="training-courses-1">
-                                </div>
-                                <div class="p-6 flex flex-col gap-6 bg-white">
-                                    <div class="flex flex-col gap-2">
-                                        <h3 class="text-[#333745] text-base leading-normal font-extrabold">
-                                            <a href="single-course.html"> إشراك أولياء الأمور في التعلم عن بعد </a>
-                                        </h3>
-                                        <p class="flex items-center gap-1.5 text-[#838795] text-sm leading-normal">
-                                            <img src="assets/images/homepage/calender.png" width="12" height="14"
-                                                alt="calender">
-                                            تبدا في ١٨ ابريل وتنتهي في ٢٠ مايو (٤ اسابيع)
-                                        </p>
-                                    </div>
-
-                                    <div class="flex items-center gap-3 justify-between">
-                                        <div class="flex items-center gap-3">
-                                            <div class="w-10 h-10 rounded-full overflow-hidden">
-                                                <img src="assets/images/homepage/course-trainer.jpg" width="40"
-                                                    height="40" alt="course-trainer">
-                                            </div>
-                                            <div class="flex flex-col gap-0.5">
-                                                <h4 class="text-[#333745] text-sm leading-normal font-bold">
-                                                    هالة كمال
-                                                </h4>
-                                                <p class="text-[#838795] text-sm leading-normal">
-                                                    مدير مشاريع تعليمية ومستشار
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- item  -->
-                            <div
-                                class="group filt-5 filt-2 border border-[#E9E8E8] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#8447FF] filter-card">
-                                <div class="h-56 relative">
-                                    <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
-                                        <img src="assets/images/homepage/training-courses-badge.png" width="64"
-                                            height="64" alt="badge" class="h-full w-full object-cover">
-                                    </div>
-
-                                    <img src="assets/images/homepage/training-courses-2.jpg"
-                                        class="w-full h-full object-cover" width="350" height="224"
-                                        alt="training-courses-1">
-                                </div>
-                                <div class="p-6 flex flex-col gap-6 bg-white">
-                                    <div class="flex flex-col gap-2">
-                                        <h3 class="text-[#333745] text-base leading-normal font-extrabold">
-                                            <a href="single-course.html"> إشراك أولياء الأمور في التعلم عن بعد </a>
-                                        </h3>
-                                        <p class="flex items-center gap-1.5 text-[#838795] text-sm leading-normal">
-                                            <img src="assets/images/homepage/calender.png" width="12" height="14"
-                                                alt="calender">
-                                            تبدا في ١٨ ابريل وتنتهي في ٢٠ مايو (٤ اسابيع)
-                                        </p>
-                                    </div>
-
-                                    <div class="flex items-center gap-3 justify-between">
-                                        <div class="flex items-center gap-3">
-                                            <div class="w-10 h-10 rounded-full overflow-hidden">
-                                                <img src="assets/images/homepage/course-trainer.jpg" width="40"
-                                                    height="40" alt="course-trainer">
-                                            </div>
-                                            <div class="flex flex-col gap-0.5">
-                                                <h4 class="text-[#333745] text-sm leading-normal font-bold">
-                                                    هالة كمال
-                                                </h4>
-                                                <p class="text-[#838795] text-sm leading-normal">
-                                                    مدير مشاريع تعليمية ومستشار
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- item  -->
-                            <div
-                                class="group filt-2 filt-3 border border-[#E9E8E8] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#8447FF] filter-card">
-                                <div class="h-56 relative">
-                                    <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
-                                        <img src="assets/images/homepage/training-courses-badge.png" width="64"
-                                            height="64" alt="badge" class="h-full w-full object-cover">
-                                    </div>
-
-                                    <img src="assets/images/homepage/training-courses-2.jpg"
-                                        class="w-full h-full object-cover" width="350" height="224"
-                                        alt="training-courses-1">
-                                </div>
-                                <div class="p-6 flex flex-col gap-6 bg-white">
-                                    <div class="flex flex-col gap-2">
-                                        <h3 class="text-[#333745] text-base leading-normal font-extrabold">
-                                            <a href="single-course.html"> إشراك أولياء الأمور في التعلم عن بعد </a>
-                                        </h3>
-                                        <p class="flex items-center gap-1.5 text-[#838795] text-sm leading-normal">
-                                            <img src="assets/images/homepage/calender.png" width="12" height="14"
-                                                alt="calender">
-                                            تبدا في ١٨ ابريل وتنتهي في ٢٠ مايو (٤ اسابيع)
-                                        </p>
-                                    </div>
-
-                                    <div class="flex items-center gap-3 justify-between">
-                                        <div class="flex items-center gap-3">
-                                            <div class="w-10 h-10 rounded-full overflow-hidden">
-                                                <img src="assets/images/homepage/course-trainer.jpg" width="40"
-                                                    height="40" alt="course-trainer">
-                                            </div>
-                                            <div class="flex flex-col gap-0.5">
-                                                <h4 class="text-[#333745] text-sm leading-normal font-bold">
-                                                    هالة كمال
-                                                </h4>
-                                                <p class="text-[#838795] text-sm leading-normal">
-                                                    مدير مشاريع تعليمية ومستشار
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- item  -->
-                            <div
-                                class="group filt-1 filt-2 border border-[#E9E8E8] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#8447FF] filter-card">
-                                <div class="h-56 relative">
-                                    <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
-                                        <img src="assets/images/homepage/training-courses-badge.png" width="64"
-                                            height="64" alt="badge" class="h-full w-full object-cover">
-                                    </div>
-
-                                    <img src="assets/images/homepage/training-courses-2.jpg"
-                                        class="w-full h-full object-cover" width="350" height="224"
-                                        alt="training-courses-1">
-                                </div>
-                                <div class="p-6 flex flex-col gap-6 bg-white">
-                                    <div class="flex flex-col gap-2">
-                                        <h3 class="text-[#333745] text-base leading-normal font-extrabold">
-                                            <a href="single-course.html"> إشراك أولياء الأمور في التعلم عن بعد </a>
-                                        </h3>
-                                        <p class="flex items-center gap-1.5 text-[#838795] text-sm leading-normal">
-                                            <img src="assets/images/homepage/calender.png" width="12" height="14"
-                                                alt="calender">
-                                            تبدا في ١٨ ابريل وتنتهي في ٢٠ مايو (٤ اسابيع)
-                                        </p>
-                                    </div>
-
-                                    <div class="flex items-center gap-3 justify-between">
-                                        <div class="flex items-center gap-3">
-                                            <div class="w-10 h-10 rounded-full overflow-hidden">
-                                                <img src="assets/images/homepage/course-trainer.jpg" width="40"
-                                                    height="40" alt="course-trainer">
-                                            </div>
-                                            <div class="flex flex-col gap-0.5">
-                                                <h4 class="text-[#333745] text-sm leading-normal font-bold">
-                                                    هالة كمال
-                                                </h4>
-                                                <p class="text-[#838795] text-sm leading-normal">
-                                                    مدير مشاريع تعليمية ومستشار
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- item  -->
-                            <div
-                                class="group filt-1 filt-5 border border-[#E9E8E8] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#8447FF] filter-card">
-                                <div class="h-56 relative">
-                                    <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
-                                        <img src="assets/images/homepage/training-courses-badge.png" width="64"
-                                            height="64" alt="badge" class="h-full w-full object-cover">
-                                    </div>
-
-                                    <img src="assets/images/homepage/training-courses-2.jpg"
-                                        class="w-full h-full object-cover" width="350" height="224"
-                                        alt="training-courses-1">
-                                </div>
-                                <div class="p-6 flex flex-col gap-6 bg-white">
-                                    <div class="flex flex-col gap-2">
-                                        <h3 class="text-[#333745] text-base leading-normal font-extrabold">
-                                            <a href="single-course.html"> إشراك أولياء الأمور في التعلم عن بعد </a>
-                                        </h3>
-                                        <p class="flex items-center gap-1.5 text-[#838795] text-sm leading-normal">
-                                            <img src="assets/images/homepage/calender.png" width="12" height="14"
-                                                alt="calender">
-                                            تبدا في ١٨ ابريل وتنتهي في ٢٠ مايو (٤ اسابيع)
-                                        </p>
-                                    </div>
-
-                                    <div class="flex items-center gap-3 justify-between">
-                                        <div class="flex items-center gap-3">
-                                            <div class="w-10 h-10 rounded-full overflow-hidden">
-                                                <img src="assets/images/homepage/course-trainer.jpg" width="40"
-                                                    height="40" alt="course-trainer">
-                                            </div>
-                                            <div class="flex flex-col gap-0.5">
-                                                <h4 class="text-[#333745] text-sm leading-normal font-bold">
-                                                    هالة كمال
-                                                </h4>
-                                                <p class="text-[#838795] text-sm leading-normal">
-                                                    مدير مشاريع تعليمية ومستشار
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- item  -->
-                            <div
-                                class="group filt-2 filt-3 border border-[#E9E8E8] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#8447FF] filter-card">
-                                <div class="h-56 relative">
-                                    <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
-                                        <img src="assets/images/homepage/training-courses-badge.png" width="64"
-                                            height="64" alt="badge" class="h-full w-full object-cover">
-                                    </div>
-
-                                    <img src="assets/images/homepage/training-courses-2.jpg"
-                                        class="w-full h-full object-cover" width="350" height="224"
-                                        alt="training-courses-1">
-                                </div>
-                                <div class="p-6 flex flex-col gap-6 bg-white">
-                                    <div class="flex flex-col gap-2">
-                                        <h3 class="text-[#333745] text-base leading-normal font-extrabold">
-                                            <a href="single-course.html"> إشراك أولياء الأمور في التعلم عن بعد </a>
-                                        </h3>
-                                        <p class="flex items-center gap-1.5 text-[#838795] text-sm leading-normal">
-                                            <img src="assets/images/homepage/calender.png" width="12" height="14"
-                                                alt="calender">
-                                            تبدا في ١٨ ابريل وتنتهي في ٢٠ مايو (٤ اسابيع)
-                                        </p>
-                                    </div>
-
-                                    <div class="flex items-center gap-3 justify-between">
-                                        <div class="flex items-center gap-3">
-                                            <div class="w-10 h-10 rounded-full overflow-hidden">
-                                                <img src="assets/images/homepage/course-trainer.jpg" width="40"
-                                                    height="40" alt="course-trainer">
-                                            </div>
-                                            <div class="flex flex-col gap-0.5">
-                                                <h4 class="text-[#333745] text-sm leading-normal font-bold">
-                                                    هالة كمال
-                                                </h4>
-                                                <p class="text-[#838795] text-sm leading-normal">
-                                                    مدير مشاريع تعليمية ومستشار
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- item  -->
-                            <div
-                                class="group filt-1 filt-4 border border-[#E9E8E8] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#8447FF] filter-card">
-                                <div class="h-56 relative">
-                                    <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
-                                        <img src="assets/images/homepage/training-courses-badge.png" width="64"
-                                            height="64" alt="badge" class="h-full w-full object-cover">
-                                    </div>
-
-                                    <img src="assets/images/homepage/training-courses-2.jpg"
-                                        class="w-full h-full object-cover" width="350" height="224"
-                                        alt="training-courses-1">
-                                </div>
-                                <div class="p-6 flex flex-col gap-6 bg-white">
-                                    <div class="flex flex-col gap-2">
-                                        <h3 class="text-[#333745] text-base leading-normal font-extrabold">
-                                            <a href="single-course.html"> إشراك أولياء الأمور في التعلم عن بعد </a>
-                                        </h3>
-                                        <p class="flex items-center gap-1.5 text-[#838795] text-sm leading-normal">
-                                            <img src="assets/images/homepage/calender.png" width="12" height="14"
-                                                alt="calender">
-                                            تبدا في ١٨ ابريل وتنتهي في ٢٠ مايو (٤ اسابيع)
-                                        </p>
-                                    </div>
-
-                                    <div class="flex items-center gap-3 justify-between">
-                                        <div class="flex items-center gap-3">
-                                            <div class="w-10 h-10 rounded-full overflow-hidden">
-                                                <img src="assets/images/homepage/course-trainer.jpg" width="40"
-                                                    height="40" alt="course-trainer">
-                                            </div>
-                                            <div class="flex flex-col gap-0.5">
-                                                <h4 class="text-[#333745] text-sm leading-normal font-bold">
-                                                    هالة كمال
-                                                </h4>
-                                                <p class="text-[#838795] text-sm leading-normal">
-                                                    مدير مشاريع تعليمية ومستشار
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- item  -->
-                            <div
-                                class="group filt-1 filt-4 border border-[#E9E8E8] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#8447FF] filter-card">
-                                <div class="h-56 relative">
-                                    <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
-                                        <img src="assets/images/homepage/training-courses-badge.png" width="64"
-                                            height="64" alt="badge" class="h-full w-full object-cover">
-                                    </div>
-
-                                    <img src="assets/images/homepage/training-courses-2.jpg"
-                                        class="w-full h-full object-cover" width="350" height="224"
-                                        alt="training-courses-1">
-                                </div>
-                                <div class="p-6 flex flex-col gap-6 bg-white">
-                                    <div class="flex flex-col gap-2">
-                                        <h3 class="text-[#333745] text-base leading-normal font-extrabold">
-                                            <a href="single-course.html"> إشراك أولياء الأمور في التعلم عن بعد </a>
-                                        </h3>
-                                        <p class="flex items-center gap-1.5 text-[#838795] text-sm leading-normal">
-                                            <img src="assets/images/homepage/calender.png" width="12" height="14"
-                                                alt="calender">
-                                            تبدا في ١٨ ابريل وتنتهي في ٢٠ مايو (٤ اسابيع)
-                                        </p>
-                                    </div>
-
-                                    <div class="flex items-center gap-3 justify-between">
-                                        <div class="flex items-center gap-3">
-                                            <div class="w-10 h-10 rounded-full overflow-hidden">
-                                                <img src="assets/images/homepage/course-trainer.jpg" width="40"
-                                                    height="40" alt="course-trainer">
-                                            </div>
-                                            <div class="flex flex-col gap-0.5">
-                                                <h4 class="text-[#333745] text-sm leading-normal font-bold">
-                                                    هالة كمال
-                                                </h4>
-                                                <p class="text-[#838795] text-sm leading-normal">
-                                                    مدير مشاريع تعليمية ومستشار
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="flex items-center justify-center gap-2">
+                                <a href="#" class="pagin-item active">
+                                    ١
+                                </a>
+                                <a href="#" class="pagin-item">
+                                    ٢
+                                </a>
+                                <a href="#" class="pagin-item">
+                                    ٣
+                                </a>
+                                <a href="#" class="pagin-item">
+                                    ٤
+                                </a>
+                                <a href="#" class="pagin-item">
+                                    ٥
+                                </a>
+                                <span class="flex items-center justify-center text-[#DADBDD] text-sm leading-normal">
+                                    ••••
+                                </span>
+                                <a href="#" class="pagin-item">
+                                    ٢٢
+                                </a>
                             </div>
                         </div>
-                    </div>
-                    <div class="flex items-center justify-center gap-2">
-                        <a href="#" class="pagin-item active">
-                            ١
-                        </a>
-                        <a href="#" class="pagin-item">
-                            ٢
-                        </a>
-                        <a href="#" class="pagin-item">
-                            ٣
-                        </a>
-                        <a href="#" class="pagin-item">
-                            ٤
-                        </a>
-                        <a href="#" class="pagin-item">
-                            ٥
-                        </a>
-                        <span class="flex items-center justify-center text-[#DADBDD] text-sm leading-normal">
-                            ••••
-                        </span>
-                        <a href="#" class="pagin-item">
-                            ٢٢
-                        </a>
                     </div>
                 </div>
             </div>
