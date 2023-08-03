@@ -27,8 +27,21 @@ module.exports = {
         'nxtprv-shad': '0px 0px 8px 2px rgba(0, 0, 0, 0.07)',
 
       },
+      backgroundSize: {
+        'progrees-size': "35px 35px"
+      },
       backgroundImage: {
         'cta': 'linear-gradient(0deg, #7841E8, #7841E8), radial-gradient(74.58% 74.58% at 50% 50%, #8447FF 0%, #5E32B5 100%)',
+        'progrees-bar': "linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent)"
+      },
+      animation: {
+        "progress-anmi": "animateStripe 2s linear infinite"
+      },
+      keyframes: {
+        "animateStripe": {
+          '0%': { transform: 'translate(0, 0)' },
+          '100%': { transform: 'translate(25%, 0)'},
+        }
       },
       rotate: {
         '4': '4deg',

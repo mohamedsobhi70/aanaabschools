@@ -295,3 +295,7 @@
 .form-checkbox {
   @apply cursor-pointer appearance-none  rounded border border-[#E2E2E9] checked:border-transparent checked:bg-[url(../images/Checkboxes.svg)] bg-cover bg-center bg-no-repeat outline-none w-5 h-5 focus:ring-transparent;
 }
+
+.progress-fill-line {
+  @apply absolute w-3/4 h-full right-0 top-0 rounded-full bg-[#8447FF] overflow-hidden after:content-[''] after:absolute after:w-[142%] after:h-full after:bg-progrees-bar after:bg-progrees-size after:animate-progress-anmi;
+}
