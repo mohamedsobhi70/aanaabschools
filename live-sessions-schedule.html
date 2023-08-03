@@ -250,14 +250,14 @@
                 </div>
 
 
-                <div class="pt-8 border-t border-[#E9E8E8] flex flex-col gap-8">
+                <div class="pt-8 border-t border-[#E9E8E8] flex flex-col gap-8 px-[30px] lg:px-0">
                     <div class="flex flex-col gap-5">
-                        <div class="flex items-end justify-between">
-                            <div class="flex flex-col gap-2 basis-1/2">
+                        <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-3">
+                            <div class="flex flex-col gap-2 lg:basis-1/2">
                                 <h3 class="text-[#5E32B5] text-2xl leading-normal font-bold">
                                     مسار اللغة العربية
                                 </h3>
-                                <p class="line-clamp-1 text-[#838795] text-base leading-[180%]">
+                                <p class="line-clamp-2 lg:line-clamp-1 text-[#838795] text-base leading-[180%]">
                                     أعناب هي أحد الجهات المعتمدة من المركز الوطني للتعليم الإلكتروني المقدمة للتدريب على
                                     الشهادة
                                     الاحترافية OTT. هذه الدورة هي احد متطلبات الحصول على الشهادة الاحترافية التي يتم
@@ -266,7 +266,6 @@
                                     قبل المركز الوطني.
                                 </p>
                             </div>
-
                             <div class="py-4 flex items-center gap-6">
                                 <span class="text-[#ABAFBD] text-sm leading-normal font-bold">
                                     التقدم
@@ -282,7 +281,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid lg:grid-cols-3 gap-[30px]">
+                        <div class="grid lg:grid-cols-3 gap-3 lg:gap-[30px]">
                             <div
                                 class="rounded-2xl border border-[#E9E8E8] bg-white p-6 flex justify-between items-center gap-6">
                                 <div class="flex items-center gap-2 text-[#333745] text-sm leading-normal font-bold">
@@ -290,7 +289,7 @@
                                         alt="calender">
                                     عدد ايام المسار
                                 </div>
-                                <span class="text-[#5E32B5] text-xl leading-normal font-bold">
+                                <span class="text-[#5E32B5] text-xl leading-normal font-bold shrink-0">
                                     15 يوم
                                 </span>
                             </div>
@@ -301,7 +300,7 @@
                                         alt="calender">
                                     عدد ساعات الدورات
                                 </div>
-                                <span class="text-[#5E32B5] text-xl leading-normal font-bold">
+                                <span class="text-[#5E32B5] text-xl leading-normal font-bold shrink-0">
                                     120 ساعة
                                 </span>
                             </div>
@@ -312,14 +311,14 @@
                                         alt="calender">
                                     عدد ساعات التي يجب حضورها
                                 </div>
-                                <span class="text-[#5E32B5] text-xl leading-normal font-bold">
+                                <span class="text-[#5E32B5] text-xl leading-normal font-bold shrink-0">
                                     15 يوم
                                 </span>
                             </div>
                         </div>
                     </div>
                     <div class="flex flex-col gap-4">
-                        <div class="flex items-center justify-between gap-4">
+                        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-2">
                             <div class="flex items-center justify-between gap-3">
                                 <h3 class="text-[#333745] text-xl leading-normal font-bold">
                                     محاضرة الان
@@ -377,9 +376,10 @@
                             </a>
                         </div>
                     </div>
-
-                    <div class="px-8 py-6 rounded-2xl border border-[#FDB022] bg-[#FFFCF5] flex items-center justify-center gap-4">
-                        <svg class="shrink-0" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <div
+                        class="px-8 py-6 rounded-2xl border border-[#FDB022] bg-[#FFFCF5] flex items-start lg:items-center justify-center gap-4">
+                        <svg class="shrink-0" width="25" height="25" viewBox="0 0 25 25" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M12.5 22.5C18 22.5 22.5 18 22.5 12.5C22.5 7 18 2.5 12.5 2.5C7 2.5 2.5 7 2.5 12.5C2.5 18 7 22.5 12.5 22.5Z"
                                 stroke="#DC6803" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -393,6 +393,211 @@
                             تراها مناسبة لك .
                         </h2>
                     </div>
+
+                    <div class="flex flex-col gap-4">
+                        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-2">
+                            <div class="flex items-center justify-between gap-3">
+                                <h3 class="text-[#333745] text-xl leading-normal font-bold">
+                                    التقويم من اجل التعلم
+                                </h3>
+                                <span
+                                    class="text-[#5E32B5] text-xs leading-normal font-bold rounded-full bg-white border border-[#D7D5D5] py-2 px-4">
+                                    دورة الزامية
+                                </span>
+                            </div>
+                            <p class="flex items-center gap-1.5 text-[#838795] text-sm leading-normal">
+                                <img src="assets/images/homepage/calender.png" width="12" height="14" alt="calender">
+                                تبدا في ١٨ ابريل وتنتهي في ٢٠ مايو
+                            </p>
+                        </div>
+
+                        <div
+                            class="flex flex-col gap-4 lg:gap-0 lg:border border-[#E9E8E8] lg:rounded-2xl lg:overflow-hidden">
+                            <div class=" bg-white hidden lg:grid lg:grid-cols-5 items-center border-b border-[#E9E8E8]">
+                                <span class="py-4 px-6 text-[#333745] text-sm leading-normal font-black">
+                                    المحاضرات
+                                </span>
+                                <span class="py-4 px-6 text-[#333745] text-sm leading-normal font-black">
+                                    التاريخ
+                                </span>
+                                <span class="py-4 px-6 text-[#333745] text-sm leading-normal font-black">
+                                    الساعة
+                                </span>
+                                <span class="py-4 px-6 text-[#333745] text-sm leading-normal font-black">
+                                    المدة
+                                </span>
+                                <span class="py-4 px-6 text-[#333745] text-sm leading-normal font-black">
+
+                                </span>
+                            </div>
+                            <div
+                                class="rounded-2xl lg:rounded-none  bg-white p-6 lg:p-0 grid grid-cols-2 gap-x-4 gap-y-6 lg:gap-0 lg:grid-cols-5 items-center border-b border-[#E9E8E8]">
+                                <span class="lg:py-4 lg:px-6 flex flex-col gap-1">
+                                    <span class="text-[#333745] text-sm leading-normal font-bold lg:hidden">
+                                        المحاضرات
+                                    </span>
+                                    <span class="text-[#5B5F6D] leading-normal">
+                                        المحاضره الاولي
+                                    </span>
+                                </span>
+                                <span class="lg:py-4 lg:px-6 flex flex-col gap-1 text-[#5B5F6D] leading-normal">
+                                    <span class="text-[#333745] text-sm leading-normal font-bold lg:hidden">
+                                        التاريخ
+                                    </span>
+                                    <span class="text-[#5B5F6D] leading-normal">
+                                        الاحد ٢ يوليو
+                                    </span>
+                                </span>
+                                <span class="lg:py-4 lg:px-6 flex flex-col gap-1 text-[#5B5F6D] leading-normal">
+                                    <span class="text-[#333745] text-sm leading-normal font-bold lg:hidden">
+                                        الساعة
+                                    </span>
+                                    <span class="text-[#5B5F6D] leading-normal">
+                                        2:30 مساءا
+                                    </span>
+                                </span>
+                                <span class="lg:py-4 lg:px-6 flex flex-col gap-1 text-[#5B5F6D] leading-normal">
+                                    <span class="text-[#333745] text-sm leading-normal font-bold lg:hidden">
+                                        المدة
+                                    </span>
+                                    <span class="text-[#5B5F6D] leading-normal">
+                                        ساعتين
+                                    </span>
+                                </span>
+                                <span class="lg:py-4 lg:px-6 flex flex-col gap-1 col-span-2 lg:col-span-1">
+                                    <a href="#"
+                                        class="rounded-full py-4 px-8 bg-[#F3EDFF] flex items-center justify-center text-[#8447FF] text-xs leading-normal font-extrabold transition-all duration-300 hover:bg-[#D9C6FF] active:bg-[#F3EDFF] hover:text-[#7841E8]">
+                                        شاهد التسجيل
+                                    </a>
+                                </span>
+                            </div>
+                            <div
+                                class="rounded-2xl lg:rounded-none  bg-white p-6 lg:p-0 grid grid-cols-2 gap-x-4 gap-y-6 lg:gap-0 lg:grid-cols-5 items-center border-b border-[#E9E8E8]">
+                                <span class="lg:py-4 lg:px-6 flex flex-col gap-1">
+                                    <span class="text-[#333745] text-sm leading-normal font-bold lg:hidden">
+                                        المحاضرات
+                                    </span>
+                                    <span class="text-[#5B5F6D] leading-normal">
+                                        المحاضره الاولي
+                                    </span>
+                                </span>
+                                <span class="lg:py-4 lg:px-6 flex flex-col gap-1 text-[#5B5F6D] leading-normal">
+                                    <span class="text-[#333745] text-sm leading-normal font-bold lg:hidden">
+                                        التاريخ
+                                    </span>
+                                    <span class="text-[#5B5F6D] leading-normal">
+                                        الاحد ٢ يوليو
+                                    </span>
+                                </span>
+                                <span class="lg:py-4 lg:px-6 flex flex-col gap-1 text-[#5B5F6D] leading-normal">
+                                    <span class="text-[#333745] text-sm leading-normal font-bold lg:hidden">
+                                        الساعة
+                                    </span>
+                                    <span class="text-[#5B5F6D] leading-normal">
+                                        2:30 مساءا
+                                    </span>
+                                </span>
+                                <span class="lg:py-4 lg:px-6 flex flex-col gap-1 text-[#5B5F6D] leading-normal">
+                                    <span class="text-[#333745] text-sm leading-normal font-bold lg:hidden">
+                                        المدة
+                                    </span>
+                                    <span class="text-[#5B5F6D] leading-normal">
+                                        ساعتين
+                                    </span>
+                                </span>
+                                <span class="lg:py-4 lg:px-6 flex flex-col gap-1 col-span-2 lg:col-span-1">
+                                    <a href="#"
+                                        class="rounded-full py-4 px-8 bg-[#F3EDFF] flex items-center justify-center text-[#8447FF] text-xs leading-normal font-extrabold transition-all duration-300 hover:bg-[#D9C6FF] active:bg-[#F3EDFF] hover:text-[#7841E8]">
+                                        شاهد التسجيل
+                                    </a>
+                                </span>
+                            </div>
+                            <div
+                                class="rounded-2xl lg:rounded-none  bg-white p-6 lg:p-0 grid grid-cols-2 gap-x-4 gap-y-6 lg:gap-0 lg:grid-cols-5 items-center border-b border-[#E9E8E8]">
+                                <span class="lg:py-4 lg:px-6 flex flex-col gap-1">
+                                    <span class="text-[#333745] text-sm leading-normal font-bold lg:hidden">
+                                        المحاضرات
+                                    </span>
+                                    <span class="text-[#5B5F6D] leading-normal">
+                                        المحاضره الاولي
+                                    </span>
+                                </span>
+                                <span class="lg:py-4 lg:px-6 flex flex-col gap-1 text-[#5B5F6D] leading-normal">
+                                    <span class="text-[#333745] text-sm leading-normal font-bold lg:hidden">
+                                        التاريخ
+                                    </span>
+                                    <span class="text-[#5B5F6D] leading-normal">
+                                        الاحد ٢ يوليو
+                                    </span>
+                                </span>
+                                <span class="lg:py-4 lg:px-6 flex flex-col gap-1 text-[#5B5F6D] leading-normal">
+                                    <span class="text-[#333745] text-sm leading-normal font-bold lg:hidden">
+                                        الساعة
+                                    </span>
+                                    <span class="text-[#5B5F6D] leading-normal">
+                                        2:30 مساءا
+                                    </span>
+                                </span>
+                                <span class="lg:py-4 lg:px-6 flex flex-col gap-1 text-[#5B5F6D] leading-normal">
+                                    <span class="text-[#333745] text-sm leading-normal font-bold lg:hidden">
+                                        المدة
+                                    </span>
+                                    <span class="text-[#5B5F6D] leading-normal">
+                                        ساعتين
+                                    </span>
+                                </span>
+                                <span class="lg:py-4 lg:px-6 flex flex-col gap-1 col-span-2 lg:col-span-1">
+                                    <a href="#"
+                                        class="py-4 px-8 text-center rounded-full bg-[#8447FF] hover:bg-[#7841E8] active:bg-[#9D6CFF] transition-all duration-300 text-white text-xs leading-normal font-extrabold">
+                                        انضم للمحاضرة الان
+                                    </a>
+                                </span>
+                            </div>
+                            <div
+                                class="rounded-2xl lg:rounded-none  bg-white p-6 lg:p-0 grid grid-cols-2 gap-x-4 gap-y-6 lg:gap-0 lg:grid-cols-5 items-center border-b border-[#E9E8E8]">
+                                <span class="lg:py-4 lg:px-6 flex flex-col gap-1">
+                                    <span class="text-[#333745] text-sm leading-normal font-bold lg:hidden">
+                                        المحاضرات
+                                    </span>
+                                    <span class="text-[#5B5F6D] leading-normal">
+                                        المحاضره الاولي
+                                    </span>
+                                </span>
+                                <span class="lg:py-4 lg:px-6 flex flex-col gap-1 text-[#5B5F6D] leading-normal">
+                                    <span class="text-[#333745] text-sm leading-normal font-bold lg:hidden">
+                                        التاريخ
+                                    </span>
+                                    <span class="text-[#5B5F6D] leading-normal">
+                                        الاحد ٢ يوليو
+                                    </span>
+                                </span>
+                                <span class="lg:py-4 lg:px-6 flex flex-col gap-1 text-[#5B5F6D] leading-normal">
+                                    <span class="text-[#333745] text-sm leading-normal font-bold lg:hidden">
+                                        الساعة
+                                    </span>
+                                    <span class="text-[#5B5F6D] leading-normal">
+                                        2:30 مساءا
+                                    </span>
+                                </span>
+                                <span class="lg:py-4 lg:px-6 flex flex-col gap-1 text-[#5B5F6D] leading-normal">
+                                    <span class="text-[#333745] text-sm leading-normal font-bold lg:hidden">
+                                        المدة
+                                    </span>
+                                    <span class="text-[#5B5F6D] leading-normal">
+                                        ساعتين
+                                    </span>
+                                </span>
+                                <span class="lg:py-4 lg:px-6 flex flex-col gap-1 col-span-2 lg:col-span-1">
+                                    <span
+                                        class="rounded-full py-4 px-8 bg-white border border-[#C9C5C5] flex items-center justify-center text-[#5B5F6D] text-xs leading-normal font-extrabold">
+                                        مرتقبة
+                                    </span>
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
