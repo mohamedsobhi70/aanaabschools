@@ -1,0 +1,42 @@
+home 
+https://mohamedsobhi70.github.io/aanaabschools/index.html
+
+qualifications
+https://mohamedsobhi70.github.io/aanaabschools/qualifications.html
+
+professional-licenses
+https://mohamedsobhi70.github.io/aanaabschools/professional-licenses.html
+
+courses listing
+https://mohamedsobhi70.github.io/aanaabschools/courses-listing.html
+
+events 
+https://mohamedsobhi70.github.io/aanaabschools/events.html
+
+single-track
+https://mohamedsobhi70.github.io/aanaabschools/single-track.html
+
+single course 
+https://mohamedsobhi70.github.io/aanaabschools/single-course.html
+
+single event
+https://mohamedsobhi70.github.io/aanaabschools/single-event.html
+
+tracks listing
+https://mohamedsobhi70.github.io/aanaabschools/tracks-listing.html 
+
+Blog
+https://mohamedsobhi70.github.io/aanaabschools/blog.html
+
+Blog-item
+https://mohamedsobhi70.github.io/aanaabschools/blog-item.html
+
+checkout
+https://mohamedsobhi70.github.io/aanaabschools/checkout.html
+https://mohamedsobhi70.github.io/aanaabschools/checkout-payment.html
+
+Live Sessions Scheduale
+https://mohamedsobhi70.github.io/aanaabschools/live-sessions-schedule.html
+
+program
+https://mohamedsobhi70.github.io/aanaabschools/program.html
