@@ -138,6 +138,68 @@ if ($(".slider-professional-qualifications").length > 0) {
             clickable: true,
         }
     });
+
+    $(".professional-qualifications .iso-nav .filter-item").on("click", function () {
+        swiper.destroy();
+        $(".professional-qualifications .iso-nav .filter-item").removeClass("active")
+        $(this).addClass("active");
+
+        let filt = $(this).attr("data-filter");
+
+        if (filt === "*") {
+            $(".slider-professional-qualifications .swiper-slide").removeClass("hidden");
+            swiper = new Swiper(".slider-professional-qualifications", {
+                breakpoints: {
+                    0: {
+                        spaceBetween: 16,
+                        slidesPerView: 1,
+                    },
+                    680: {
+                        spaceBetween: 24,
+                        slidesPerView: 1.5,
+                    },
+                    1024: {
+                        spaceBetween: 30,
+                        slidesPerView: 2,
+                    },
+                },
+                pagination: {
+                    el: ".professional-qualifications-pagination",
+                    clickable: true,
+                }
+            });
+        }
+        else {
+            $(".slider-professional-qualifications .swiper-slide").removeClass("hidden");
+            $(`.slider-professional-qualifications .swiper-slide:not(${filt})`).addClass("hidden");
+            swiper = new Swiper(".slider-professional-qualifications", {
+                breakpoints: {
+                    0: {
+                        spaceBetween: 16,
+                        slidesPerView: 1,
+                    },
+                    680: {
+                        spaceBetween: 24,
+                        slidesPerView: 1.5,
+                    },
+                    1024: {
+                        spaceBetween: 30,
+                        slidesPerView: 2,
+                    },
+                },
+                pagination: {
+                    el: ".professional-qualifications-pagination",
+                    clickable: true,
+                }
+            });
+        }
+
+        if ($(".professional-qualifications-pagination").children().length == 1) {
+            $(".professional-qualifications-pagination").addClass("hidden");
+        } else {
+            $(".professional-qualifications-pagination").removeClass("hidden");
+        }
+    })
 }
 // =================================================
 
@@ -424,6 +486,7 @@ if ($(".slider-training-courses").length > 0) {
         }
     })
 }
+
 // =================================================
 //  Filtering slider-training-courses
 
