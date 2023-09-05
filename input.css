@@ -47,6 +47,9 @@
 .anb-accordion.active h3 {
   @apply lg:text-xl;
 }
+.anb-accordion.active .coll-head {
+  @apply line-clamp-none;
+}
 .anb-accordion.gry-bg.active {
   @apply border-transparent bg-[#F6F5F7];
 }

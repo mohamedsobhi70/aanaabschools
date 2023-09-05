@@ -770,6 +770,22 @@ video {
   top: 104%;
 }
 
+.start-0 {
+  inset-inline-start: 0px;
+}
+
+.end-0 {
+  inset-inline-end: 0px;
+}
+
+.start-full {
+  inset-inline-start: 100%;
+}
+
+.end-\[15\%\] {
+  inset-inline-end: 15%;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -851,6 +867,11 @@ video {
 
 .mt-1 {
   margin-top: 0.25rem;
+}
+
+.ms-auto {
+  -webkit-margin-start: auto;
+          margin-inline-start: auto;
 }
 
 .line-clamp-1 {
@@ -971,6 +992,10 @@ video {
   height: 100vh;
 }
 
+.h-5 {
+  height: 1.25rem;
+}
+
 .max-h-96 {
   max-height: 24rem;
 }
@@ -1046,6 +1071,18 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-1 {
+  width: 0.25rem;
+}
+
+.w-1\/4 {
+  width: 25%;
+}
+
+.w-\[61\%\] {
+  width: 61%;
 }
 
 .max-w-\[612px\] {
@@ -1130,6 +1167,14 @@ video {
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -1226,6 +1271,10 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-\[10px\] {
+  gap: 10px;
 }
 
 .gap-\[30px\] {
@@ -1484,6 +1533,10 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.border-\[\] {
+  border-color: ;
+}
+
 .border-b-\[\#D1D5DB\] {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(209 213 219 / var(--tw-border-opacity));
@@ -1564,6 +1617,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#D1D5DB\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
 .bg-cta {
   background-image: linear-gradient(0deg, #7841E8, #7841E8), radial-gradient(74.58% 74.58% at 50% 50%, #8447FF 0%, #5E32B5 100%);
 }
@@ -1588,12 +1646,26 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-\[\#10B981\] {
+  --tw-gradient-from: #10B981 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(16 185 129 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .to-\[\#AE47FF\] {
   --tw-gradient-to: #AE47FF var(--tw-gradient-to-position);
 }
 
 .to-\[\#FFFFFF\] {
   --tw-gradient-to: #FFFFFF var(--tw-gradient-to-position);
+}
+
+.to-\[\] {
+  --tw-gradient-to:  var(--tw-gradient-to-position);
+}
+
+.to-\[\#5FC1B4\] {
+  --tw-gradient-to: #5FC1B4 var(--tw-gradient-to-position);
 }
 
 .bg-clip-text {
@@ -1818,6 +1890,11 @@ video {
   padding-right: 1rem;
 }
 
+.ps-3 {
+  -webkit-padding-start: 0.75rem;
+          padding-inline-start: 0.75rem;
+}
+
 .ps-4 {
   -webkit-padding-start: 1rem;
           padding-inline-start: 1rem;
@@ -1857,11 +1934,6 @@ video {
 
 .pt-\[72px\] {
   padding-top: 72px;
-}
-
-.ps-3 {
-  -webkit-padding-start: 0.75rem;
-          padding-inline-start: 0.75rem;
 }
 
 .text-center {
@@ -2009,8 +2081,8 @@ video {
   line-height: 1.5;
 }
 
-.leading-\[1180\%\] {
-  line-height: 1180%;
+.leading-\[160\%\] {
+  line-height: 160%;
 }
 
 .text-\[\#039855\] {
@@ -2099,6 +2171,15 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
+}
+
+.text-\[\#DC2626\] {
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -2210,6 +2291,14 @@ video {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+}
+
+.anb-accordion.active .coll-head {
+  overflow: visible;
+  display: block;
+  -webkit-box-orient: horizontal;
+  -webkit-line-clamp: none;
+  -webkit-line-clamp: unset;
 }
 
 .anb-accordion.gry-bg.active {
@@ -2891,6 +2980,11 @@ video {
   color: rgb(131 135 149 / var(--tw-text-opacity));
 }
 
+.after\:hidden::after {
+  content: var(--tw-content);
+  display: none;
+}
+
 .hover\:border-\[\#1da1f2\]:hover {
   --tw-border-opacity: 1;
   border-color: rgb(29 161 242 / var(--tw-border-opacity));
@@ -3360,16 +3454,8 @@ video {
     width: fit-content;
   }
 
-  .lg\:w-3\/4 {
-    width: 75%;
-  }
-
   .lg\:basis-1\/2 {
     flex-basis: 50%;
-  }
-
-  .lg\:basis-3\/4 {
-    flex-basis: 75%;
   }
 
   .lg\:basis-4\/12 {

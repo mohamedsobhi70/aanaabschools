@@ -1,0 +1,1485 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Description">
+    <title>منصة أعناب</title>
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <!-- styles -->
+    <link rel="stylesheet" href="assets/css/swiper.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="font-Almarai overflow-x-hidden relative">
+    <!-- Start Annab Header -->
+    <header class="bg-[#F7FAFA] z-50 lg:sticky top-0 px-[30px] lg:px-0">
+        <div class="container py-6 flex items-center gap-4 justify-between">
+            <!-- logo  -->
+            <a href="index.html" aria-label="Logo" class="shrink-0">
+                <img src="assets/images/logo.png" class="w-[128px] lg:w-[154px]" width="154" height="48"
+                    alt="Aanaab Logo">
+                <span class="sr-only">Aanaab Logo</span>
+            </a>
+
+            <button type="button" aria-label="Mobile Menu" class="lg:hidden mob-menu-btn">
+                <img src="assets/images/menu.svg" width="24" height="24" alt="menu">
+                <span class="sr-only">Mobile Menu Btn</span>
+            </button>
+
+            <div
+                class="mob-menu z-30 bg-white lg:bg-[#F7FAFA] fixed lg:static top-0 left-0 w-full h-screen lg:h-auto flex flex-col lg:flex-row lg:gap-8 lg:items-center invisible lg:visible opacity-0 lg:opacity-100 transition-all duration-300">
+                <div class="flex lg:hidden items-center gap-4 py-6 bg-white px-[30px] border-b border-[#D7D5D5]">
+                    <img src="assets/images/logo-shap.svg" width="40" height="40" alt="Logo Annab">
+                    <!-- mobile search  -->
+                    <form
+                        class="flex-1 py-2.5 px-4 rounded-full border border-[#D7D5D5] flex items-center gap-3 w-full bg-white">
+                        <button type="button" aria-label="search">
+                            <img src="assets/images/search.svg" width="16" height="16" alt="search">
+                        </button>
+                        <input type="search" name="mob-header-search" id="mob-header-search" placeholder="بحث"
+                            class="text-sm leading-[21px] placeholder:text-[#838795] focus:outline-none w-full">
+                    </form>
+                    <button class="mob-menu-closbtn" type="button" title="Close">
+                        <img src="assets/images/close.svg" width="24" height="24" alt="close">
+                    </button>
+                </div>
+
+                <div
+                    class="flex-1 h-full overflow-y-scroll lg:h-full lg:overflow-y-visible flex flex-col lg:flex-row lg:items-center lg:gap-8">
+                    <!-- learn  -->
+                    <div class="p-8 lg:p-0 flex flex-col gap-6 border-b border-[#D7D5D5] menu-dropdown lg:border-none">
+                        <p
+                            class="group lg:hover:text-[#7841E8] text-[#333745] text-base lg:text-sm leading-normal font-bold flex items-center justify-between cursor-pointer gap-2 lg:py-2.5 lg:px-4 lg:rounded-full lg:border lg:border-[#7841E8] lg:text-[#7841E8]">
+                            تعلم
+                            <svg class="chevron transition-all duration-300" width="10" height="6" viewBox="0 0 10 6"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="lg:fill-[#7841E8]"
+                                    d="M4.66797 5.71094L0.859375 1.92188C0.683594 1.72656 0.683594 1.43359 0.859375 1.25781L1.30859 0.808594C1.48438 0.632812 1.77734 0.632812 1.97266 0.808594L5 3.81641L8.00781 0.808594C8.20312 0.632812 8.49609 0.632812 8.67188 0.808594L9.12109 1.25781C9.29688 1.43359 9.29688 1.72656 9.12109 1.92188L5.3125 5.71094C5.13672 5.88672 4.84375 5.88672 4.66797 5.71094Z"
+                                    fill="#333745" />
+                            </svg>
+                        </p>
+                        <div class="hidden lg:block menu-dropdown-list">
+                            <div class="bg-white">
+                                <ul class="grid lg:grid-cols-2 gap-4 lg:gap-12 lg:py-12 lg:container">
+                                    <li class="lg:flex lg:items-start lg:gap-6">
+                                        <img src="assets/images/book.svg" class="hidden lg:block" width="24" height="24"
+                                            alt="book">
+                                        <div class="flex flex-col gap-2">
+                                            <a href="courses-listing.html"
+                                                class="text-[#333745] text-base lg:text-xl leading-normal lg:font-bold">الدورات</a>
+                                            <p class="hidden lg:block text-[#5B5F6D] text-sm leading-normal">
+                                                دورات عن بعد لتعزيز كفاءة المعلمين والتربويين
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="lg:flex lg:items-start lg:gap-6">
+                                        <img src="assets/images/award.svg" class="hidden lg:block" width="24"
+                                            height="24" alt="book">
+                                        <div class="flex flex-col gap-2">
+                                            <a href="qualifications.html"
+                                                class="text-[#333745] text-base lg:text-xl leading-normal lg:font-bold">المؤهلات</a>
+                                            <p class="hidden lg:block text-[#5B5F6D] text-sm leading-normal">
+                                                مؤهّلات مهنيّة وشهادات احترافية بالتعاون مع شركائنا
+                                                لتكون معلّمًا مؤهّلًا في مختلف المجالات
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="lg:flex lg:items-start lg:gap-6">
+                                        <img src="assets/images/briefcase.svg" class="hidden lg:block" width="24"
+                                            height="24" alt="book">
+                                        <div class="flex flex-col gap-2">
+                                            <a href="professional-licenses.html"
+                                                class="text-[#333745] text-base lg:text-xl leading-normal lg:font-bold">الرخص
+                                                المهنية</a>
+                                            <p class="hidden lg:block text-[#5B5F6D] text-sm leading-normal">
+                                                دورات مكثفة لاجتياز اختبار الرخصة المهنية بكل جدارة
+                                                للعاملين في قطاع التعليم في السعودية
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="lg:flex lg:items-start lg:gap-6">
+                                        <img src="assets/images/bookstore.svg" class="hidden lg:block" width="24"
+                                            height="24" alt="book">
+                                        <div class="flex flex-col gap-2">
+                                            <a href="https://shop.aanaab.com/"
+                                                class="text-[#333745] text-base lg:text-xl leading-normal lg:font-bold">
+                                                متجر الكتب
+                                            </a>
+                                            <p class="hidden lg:block text-[#5B5F6D] text-sm leading-normal">
+                                                دورات مكثفة متجر لبيع الكتب الخاصة بالرخص المهنية
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- search  -->
+                    <form
+                        class="hidden lg:flex items-center gap-3 py-2.5 px-4 rounded-full border border-[#D7D5D5] -mr-4 ml-auto bg-white">
+                        <button type="button" aria-label="search">
+                            <img src="assets/images/search.svg" width="16" height="16" alt="search">
+                        </button>
+                        <input type="search" name="header-search" id="header-search" readonly placeholder="بحث"
+                            class="text-sm leading-[21px] placeholder:text-[#838795] focus:outline-none lg:w-[140px]">
+                    </form>
+
+                    <!-- get your job  -->
+                    <div class="p-8 lg:p-0 flex flex-col gap-6 border-b border-[#D7D5D5] lg:border-none">
+                        <a href="#"
+                            class="text-[#333745] hover:text-[#7841E8] text-base lg:text-sm leading-normal font-bold lg:font-normal flex items-center justify-between cursor-pointer gap-1 transition-all duration-300">
+                            حصل وظيفتك
+                        </a>
+                    </div>
+
+                    <!-- community  -->
+                    <div class="p-8 lg:p-0 flex flex-col gap-6 border-b border-[#D7D5D5] lg:border-none">
+                        <a href="community.html"
+                            class="text-[#333745] hover:text-[#7841E8] text-base lg:text-sm leading-normal font-bold lg:font-normal flex items-center justify-between cursor-pointer gap-1 transition-all duration-300">
+                            المجتمع
+                        </a>
+                    </div>
+
+                    <!-- for schools  -->
+                    <div class="p-8 lg:p-0 flex flex-col gap-6 border-b border-[#D7D5D5] lg:border-none menu-dropdown">
+                        <div
+                            class="group lg:hover:text-[#8447FF] text-[#333745] text-base lg:text-sm leading-normal font-bold lg:font-normal flex items-center justify-between cursor-pointer gap-1 colored-act transition-all duration-300">
+                            <a href="schools.html">
+                                للمدارس
+                            </a>
+
+                            <svg class="chevron transition-all duration-300" width="10" height="6" viewBox="0 0 10 6"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="lg:group-hover:fill-[#8447FF] transition-all duration-300"
+                                    d="M4.66797 5.71094L0.859375 1.92188C0.683594 1.72656 0.683594 1.43359 0.859375 1.25781L1.30859 0.808594C1.48438 0.632812 1.77734 0.632812 1.97266 0.808594L5 3.81641L8.00781 0.808594C8.20312 0.632812 8.49609 0.632812 8.67188 0.808594L9.12109 1.25781C9.29688 1.43359 9.29688 1.72656 9.12109 1.92188L5.3125 5.71094C5.13672 5.88672 4.84375 5.88672 4.66797 5.71094Z"
+                                    fill="#333745" />
+                            </svg>
+                        </div>
+                        <div class="hidden lg:block menu-dropdown-list">
+                            <div class="bg-white">
+                                <ul class="grid lg:grid-cols-3 gap-4 lg:gap-12 lg:py-12 lg:container">
+                                    <li class="lg:flex lg:flex-col lg:gap-2">
+                                        <a href="community.html"
+                                            class="text-[#333745] text-base lg:text-xl leading-normal lg:font-bold">المجتمعات</a>
+                                        <p class="hidden lg:block text-[#5B5F6D] text-sm leading-normal">
+                                            مجتمع خاص بالمدارس
+                                        </p>
+                                    </li>
+                                    <li class="lg:flex lg:flex-col lg:gap-2">
+                                        <a href="learning.html"
+                                            class="text-[#333745] text-base lg:text-xl leading-normal lg:font-bold">التعلم</a>
+                                        <p class="hidden lg:block text-[#5B5F6D] text-sm leading-normal">
+                                            عزز مهارات معلمينك
+                                        </p>
+                                    </li>
+                                    <li class="lg:flex lg:flex-col lg:gap-2">
+                                        <a href="jobs.html"
+                                            class="text-[#333745] text-base lg:text-xl leading-normal lg:font-bold">الوظائف</a>
+                                        <p class="hidden lg:block text-[#5B5F6D] text-sm leading-normal">
+                                            منصة التوظيف الأولى للمعلمين في الشرق الأوسط 
+                                        </p>
+                                    </li>
+                                    <li class="lg:flex lg:flex-col lg:gap-2">
+                                        <a href="live-dashboard.html"
+                                            class="text-[#333745] text-base lg:text-xl leading-normal lg:font-bold">لوحة
+                                            المتابعة المباشرة</a>
+                                        <p class="hidden lg:block text-[#5B5F6D] text-sm leading-normal">
+                                            مستقبل مشرق لمدرستك من خلال أداء أفضل لمعلميك
+                                        </p>
+                                    </li>
+                                    <li class="lg:flex lg:flex-col lg:gap-2">
+                                        <a href="prices.html"
+                                            class="text-[#333745] text-base lg:text-xl leading-normal lg:font-bold">الأسعار
+                                        </a>
+                                        <p class="hidden lg:block text-[#5B5F6D] text-sm leading-normal">
+                                            لأن الاستثمار المهني في المعلمين هو استثمار في مستقبل
+                                            المدرسة
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-col lg:flex-row lg:items-center gap-4 p-8 lg:p-0 border-t border-[#D7D5D5] lg:border-none">
+                    <a href="https://aanaab.com/auth/register"
+                        class="py-3 text-center px-6 rounded-[32px] bg-[#8447FF] hover:bg-[#7841E8] active:bg-[#9D6CFF] transition-all duration-300 text-white text-base leading-6 font-bold">
+                        انضم إلى أعناب
+                    </a>
+                    <a href="https://dashboard.aanaab.com/login/aanaab "
+                        class="py-3 text-center px-6 lg:p-0 rounded-[32px] bg-[#F3EDFF] lg:bg-transparent text-[#8447FF] lg:text-[#333745] text-base leading-6 font-bold lg:font-normal">تسجيل
+                        الدخول
+                    </a>
+                </div>
+            </div>
+
+            <div class="search-result-container">
+                <div
+                    class="w-full lg:w-[920px] h-full bg-white rounded-2xl overflow-hidden border border-[#D7D5D5] flex flex-col">
+                    <div class="flex items-center gap-2 p-6 lg:px-8 border-b border-[#E9E8E8]">
+                        <button type="button">
+                            <img src="assets/images/search.svg" width="24" height="24" alt="Search Icon">
+                            <span class="sr-only">
+                                Search Icon
+                            </span>
+                        </button>
+                        <input type="search" name="search-2" id="search-2"
+                            placeholder="بحث عن دورات - مؤهلات - رخص مهنية"
+                            class="placeholder:text-[#5B5F6D] text-base leading-normal flex-1 focus:outline-none">
+                        <button type="button" class="close-search-res">
+                            <img src="assets/images/close.svg" width="24" height="24" alt="Search Icon">
+                            <span class="sr-only">
+                                Close Icon
+                            </span>
+                        </button>
+                    </div>
+
+                    <!-- Filters  -->
+                    <div class="lg:px-8 border-b border-[#E9E8E8]">
+                        <ul
+                            class="iso-nav flex items-center overflow-x-auto lg:overflow-visible max-w-full px-[30px] lg:px-0">
+                            <li data-filter="*" class="filter-srch flex items-center gap-2 active">
+                                الكل
+                            </li>
+                            <li data-filter=".courses" class="filter-srch flex items-center gap-2">
+                                دورات
+                                <span
+                                    class="bg-[#E9E8E8] rounded-full py-0.5 px-2 text-[#838795] text-xs leading-normal">5</span>
+                            </li>
+                            <li data-filter=".qualifications" class="filter-srch flex items-center gap-2">
+                                مؤهلات
+                                <span
+                                    class="bg-[#E9E8E8] rounded-full py-0.5 px-2 text-[#838795] text-xs leading-normal">5</span>
+                            </li>
+                            <li data-filter=".pro-qualifications" class="filter-srch flex items-center gap-2">
+                                المؤهلات الاحترافية
+                                <span
+                                    class="bg-[#E9E8E8] rounded-full py-0.5 px-2 text-[#838795] text-xs leading-normal">5</span>
+                            </li>
+                            <li data-filter=".pro-licence" class="filter-srch flex items-center gap-2">
+                                رخص مهنية
+                                <span
+                                    class="bg-[#E9E8E8] rounded-full py-0.5 px-2 text-[#838795] text-xs leading-normal">5</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Saerch Results -->
+                    <div class="search-res-filters overflow-y-scroll">
+                        <div class="lg:p-8 flex flex-col lg:gap-4 border-b border-[#E9E8E8] srch-filter-card courses">
+                            <h2 class="text-[#333745] text-sm leading-normal font-bold p-6 lg:p-0">
+                                دورات
+                            </h2>
+                            <div
+                                class="flex lg:grid lg:grid-cols-3 gap-5 overflow-x-scroll lg:overflow-x-visible px-6 pb-6 lg:p-0">
+                                <div
+                                    class="w-[272px] shrink-0 lg:w-auto group filt-1 filt-2 filt-5 border border-[#E9E8E8] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#8447FF]">
+                                    <div class="h-[150px] relative">
+                                        <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                            <img src="assets/images/homepage/training-courses-badge.png" width="64"
+                                                height="64" alt="badge" class="h-full w-full object-cover">
+                                        </div>
+                                        <img src="assets/images/homepage/training-courses-1.jpg"
+                                            class="w-full h-full object-cover" width="350" height="224"
+                                            alt="training-courses-1">
+                                    </div>
+                                    <div class="p-4 flex flex-col gap-2 bg-white">
+                                        <div class="flex flex-col gap-2">
+                                            <h2 class="text-[#333745] text-sm leading-normal font-extrabold">
+                                                <a href="single-course.html"> إشراك أولياء الأمور في التعلم عن بعد </a>
+                                            </h2>
+                                            <p class="flex items-start gap-1.5 text-[#838795] text-sm leading-normal">
+                                                <img src="assets/images/homepage/calender.png" class="mt-1" width="12"
+                                                    height="14" alt="calender">
+                                                <span class="flex-1">
+                                                    تبدا في ١٨ ابريل وتنتهي في ٢٠ مايو (٤ اسابيع)
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="w-[272px] shrink-0 lg:w-auto group filt-1 filt-2 filt-5 border border-[#E9E8E8] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#8447FF]">
+                                    <div class="h-[150px] relative">
+                                        <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                            <img src="assets/images/homepage/training-courses-badge.png" width="64"
+                                                height="64" alt="badge" class="h-full w-full object-cover">
+                                        </div>
+                                        <img src="assets/images/homepage/training-courses-1.jpg"
+                                            class="w-full h-full object-cover" width="350" height="224"
+                                            alt="training-courses-1">
+                                    </div>
+                                    <div class="p-4 flex flex-col gap-2 bg-white">
+                                        <div class="flex flex-col gap-2">
+                                            <h2 class="text-[#333745] text-sm leading-normal font-extrabold">
+                                                <a href="single-course.html"> إشراك أولياء الأمور في التعلم عن بعد </a>
+                                            </h2>
+                                            <p class="flex items-start gap-1.5 text-[#838795] text-sm leading-normal">
+                                                <img src="assets/images/homepage/calender.png" class="mt-1" width="12"
+                                                    height="14" alt="calender">
+                                                <span class="flex-1">
+                                                    تبدا في ١٨ ابريل وتنتهي في ٢٠ مايو (٤ اسابيع)
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="w-[272px] shrink-0 lg:w-auto group filt-1 filt-2 filt-5 border border-[#E9E8E8] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#8447FF]">
+                                    <div class="h-[150px] relative">
+                                        <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                            <img src="assets/images/homepage/training-courses-badge.png" width="64"
+                                                height="64" alt="badge" class="h-full w-full object-cover">
+                                        </div>
+                                        <img src="assets/images/homepage/training-courses-1.jpg"
+                                            class="w-full h-full object-cover" width="350" height="224"
+                                            alt="training-courses-1">
+                                    </div>
+                                    <div class="p-4 flex flex-col gap-2 bg-white">
+                                        <div class="flex flex-col gap-2">
+                                            <h2 class="text-[#333745] text-sm leading-normal font-extrabold">
+                                                <a href="single-course.html"> إشراك أولياء الأمور في التعلم عن بعد </a>
+                                            </h2>
+                                            <p class="flex items-start gap-1.5 text-[#838795] text-sm leading-normal">
+                                                <img src="assets/images/homepage/calender.png" class="mt-1" width="12"
+                                                    height="14" alt="calender">
+                                                <span class="flex-1">
+                                                    تبدا في ١٨ ابريل وتنتهي في ٢٠ مايو (٤ اسابيع)
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="w-[272px] shrink-0 lg:w-auto group filt-1 filt-2 filt-5 border border-[#E9E8E8] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#8447FF]">
+                                    <div class="h-[150px] relative">
+                                        <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                            <img src="assets/images/homepage/training-courses-badge.png" width="64"
+                                                height="64" alt="badge" class="h-full w-full object-cover">
+                                        </div>
+                                        <img src="assets/images/homepage/training-courses-1.jpg"
+                                            class="w-full h-full object-cover" width="350" height="224"
+                                            alt="training-courses-1">
+                                    </div>
+                                    <div class="p-4 flex flex-col gap-2 bg-white">
+                                        <div class="flex flex-col gap-2">
+                                            <h2 class="text-[#333745] text-sm leading-normal font-extrabold">
+                                                <a href="single-course.html"> إشراك أولياء الأمور في التعلم عن بعد </a>
+                                            </h2>
+                                            <p class="flex items-start gap-1.5 text-[#838795] text-sm leading-normal">
+                                                <img src="assets/images/homepage/calender.png" class="mt-1" width="12"
+                                                    height="14" alt="calender">
+                                                <span class="flex-1">
+                                                    تبدا في ١٨ ابريل وتنتهي في ٢٠ مايو (٤ اسابيع)
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="w-[272px] shrink-0 lg:w-auto group filt-1 filt-2 filt-5 border border-[#E9E8E8] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#8447FF]">
+                                    <div class="h-[150px] relative">
+                                        <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                            <img src="assets/images/homepage/training-courses-badge.png" width="64"
+                                                height="64" alt="badge" class="h-full w-full object-cover">
+                                        </div>
+                                        <img src="assets/images/homepage/training-courses-1.jpg"
+                                            class="w-full h-full object-cover" width="350" height="224"
+                                            alt="training-courses-1">
+                                    </div>
+                                    <div class="p-4 flex flex-col gap-2 bg-white">
+                                        <div class="flex flex-col gap-2">
+                                            <h2 class="text-[#333745] text-sm leading-normal font-extrabold">
+                                                <a href="single-course.html"> إشراك أولياء الأمور في التعلم عن بعد </a>
+                                            </h2>
+                                            <p class="flex items-start gap-1.5 text-[#838795] text-sm leading-normal">
+                                                <img src="assets/images/homepage/calender.png" class="mt-1" width="12"
+                                                    height="14" alt="calender">
+                                                <span class="flex-1">
+                                                    تبدا في ١٨ ابريل وتنتهي في ٢٠ مايو (٤ اسابيع)
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- ======================================= -->
+
+                        <div
+                            class="lg:p-8 flex flex-col lg:gap-4 border-b border-[#E9E8E8] srch-filter-card qualifications">
+                            <h2 class="text-[#333745] text-sm leading-normal font-bold p-6 lg:p-0">
+                                مؤهلات
+                            </h2>
+                            <div
+                                class="lg:pt-0 p-6 lg:p-0 flex lg:grid lg:grid-cols-2 gap-5 overflow-x-scroll lg:overflow-x-visible">
+                                <div
+                                    class="shrink-0 w-full lg:w-auto border bg-white border-[#E9E8E8] transition-all duration-300 hover:border-[#8447FF] rounded-2xl lg:overflow-hidden flex flex-col lg:flex-row">
+                                    <div class="lg:w-[148px] p-6 pb-0 lg:p-0 overflow-hidden -mt-12">
+                                        <img src="assets/images/qual-1.png"
+                                            class="h-56 rounded-2xl lg:rounded-none w-full lg:h-full object-cover"
+                                            width="750" height="500" alt="licence-1">
+                                    </div>
+                                    <div class="p-6 flex flex-col gap-6 flex-1">
+                                        <div class="flex flex-col gap-4">
+                                            <div class="flex flex-col gap-2">
+                                                <h2
+                                                    class="text-[#333745] text-sm leading-normal font-extrabold line-clamp-2">
+                                                    <a href="#">
+                                                        الدورة التدريبية على الشهادة الاحترافية في ضبط جودة التعلي٫٫
+                                                    </a>
+                                                </h2>
+                                                <div class="flex items-center gap-2">
+                                                    <div
+                                                        class="flex items-center gap-1.5 text-[#838795] text-xs leading-normal">
+                                                        <img src="assets/images/homepage/calender.png" width="12"
+                                                            height="14" alt="calender">
+                                                        1 شهر
+                                                    </div>
+                                                    <div
+                                                        class="flex items-center gap-1.5 text-[#838795] text-xs leading-normal">
+                                                        <img src="assets/images/clock-alt.png" width="14" height="13"
+                                                            alt="clock">
+                                                        30 ساعة
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="text-[#838795] text-xs leading-[180%] line-clamp-2">
+                                                معهد أعناب هو أحد الجهات المعتمدة من المركز الوطني للتعليم الإلكتروني
+                                                المقدمة للتدريب
+                                                على الشهادة الاحترافية في ضبط ...
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="shrink-0 w-full lg:w-auto border bg-white border-[#E9E8E8] transition-all duration-300 hover:border-[#8447FF] rounded-2xl lg:overflow-hidden flex flex-col lg:flex-row">
+                                    <div class="lg:w-[148px] p-6 pb-0 lg:p-0 overflow-hidden -mt-12">
+                                        <img src="assets/images/qual-1.png"
+                                            class="h-56 rounded-2xl lg:rounded-none w-full lg:h-full object-cover"
+                                            width="750" height="500" alt="licence-1">
+                                    </div>
+                                    <div class="p-6 flex flex-col gap-6 flex-1">
+                                        <div class="flex flex-col gap-4">
+                                            <div class="flex flex-col gap-2">
+                                                <h2
+                                                    class="text-[#333745] text-sm leading-normal font-extrabold line-clamp-2">
+                                                    <a href="#">
+                                                        الدورة التدريبية على الشهادة الاحترافية في ضبط جودة التعلي٫٫
+                                                    </a>
+                                                </h2>
+                                                <div class="flex items-center gap-2">
+                                                    <div
+                                                        class="flex items-center gap-1.5 text-[#838795] text-xs leading-normal">
+                                                        <img src="assets/images/homepage/calender.png" width="12"
+                                                            height="14" alt="calender">
+                                                        1 شهر
+                                                    </div>
+                                                    <div
+                                                        class="flex items-center gap-1.5 text-[#838795] text-xs leading-normal">
+                                                        <img src="assets/images/clock-alt.png" width="14" height="13"
+                                                            alt="clock">
+                                                        30 ساعة
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="text-[#838795] text-xs leading-[180%] line-clamp-2">
+                                                معهد أعناب هو أحد الجهات المعتمدة من المركز الوطني للتعليم الإلكتروني
+                                                المقدمة للتدريب
+                                                على الشهادة الاحترافية في ضبط ...
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ======================================= -->
+
+                        <div
+                            class="lg:p-8 flex flex-col lg:gap-4 border-b border-[#E9E8E8] srch-filter-card pro-qualifications">
+                            <h2 class="text-[#333745] text-sm leading-normal font-bold p-6 lg:p-0">
+                                المؤهلات الاحترافية
+                            </h2>
+                            <div
+                                class="lg:pt-0 p-6 lg:p-0 flex lg:grid lg:grid-cols-2 gap-5 overflow-x-scroll lg:overflow-x-visible">
+                                <div
+                                    class="shrink-0 w-full lg:w-auto border bg-white border-[#E9E8E8] transition-all duration-300 hover:border-[#8447FF] rounded-2xl lg:overflow-hidden flex flex-col lg:flex-row">
+                                    <div class="lg:w-[148px] p-6 pb-0 lg:p-0 overflow-hidden -mt-12">
+                                        <img src="assets/images/qual-1.png"
+                                            class="h-56 rounded-2xl lg:rounded-none w-full lg:h-full object-cover"
+                                            width="750" height="500" alt="licence-1">
+                                    </div>
+                                    <div class="p-6 flex flex-col gap-6 flex-1">
+                                        <div class="flex flex-col gap-4">
+                                            <div class="flex flex-col gap-2">
+                                                <h2
+                                                    class="text-[#333745] text-sm leading-normal font-extrabold line-clamp-1">
+                                                    <a href="#">
+                                                        إشراك أولياء الأمور في التعلم عن بعد
+                                                    </a>
+                                                </h2>
+                                                <p
+                                                    class="flex items-start gap-1.5 text-[#838795] text-xs leading-normal">
+                                                    <img src="assets/images/homepage/calender.png" class="mt-1"
+                                                        width="12" height="14" alt="calender">
+                                                    <span class="flex-1">
+                                                        تبدا في ١٨ ابريل وتنتهي في ٢٠ مايو (٤ اسابيع)
+                                                    </span>
+                                                </p>
+                                            </div>
+                                            <div class="flex items-center gap-2">
+                                                <div
+                                                    class="flex-1 flex items-center gap-2 text-[#333745] text-xs leading-normal">
+                                                    <img src="assets/images/homepage/lic-icon-1.png" width="14"
+                                                        height="16" alt="icon">
+                                                    6 دورات
+                                                </div>
+                                                <div
+                                                    class="flex-1 flex items-center gap-2 text-[#333745] text-xs leading-normal">
+                                                    <img src="assets/images/homepage/lic-icon-1.png" width="13"
+                                                        height="16" alt="icon">
+                                                    13 يوم
+                                                </div>
+                                                <div
+                                                    class="flex-1 flex items-center gap-2 text-[#333745] text-xs leading-normal">
+                                                    <img src="assets/images/homepage/lic-icon-1.png" width="14"
+                                                        height="16" alt="icon">
+                                                    52 ساعة
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="shrink-0 w-full lg:w-auto border bg-white border-[#E9E8E8] transition-all duration-300 hover:border-[#8447FF] rounded-2xl lg:overflow-hidden flex flex-col lg:flex-row">
+                                    <div class="lg:w-[148px] p-6 pb-0 lg:p-0 overflow-hidden -mt-12">
+                                        <img src="assets/images/qual-1.png"
+                                            class="h-56 rounded-2xl lg:rounded-none w-full lg:h-full object-cover"
+                                            width="750" height="500" alt="licence-1">
+                                    </div>
+                                    <div class="p-6 flex flex-col gap-6 flex-1">
+                                        <div class="flex flex-col gap-4">
+                                            <div class="flex flex-col gap-2">
+                                                <h2
+                                                    class="text-[#333745] text-sm leading-normal font-extrabold line-clamp-1">
+                                                    <a href="#">
+                                                        إشراك أولياء الأمور في التعلم عن بعد
+                                                    </a>
+                                                </h2>
+                                                <p
+                                                    class="flex items-start gap-1.5 text-[#838795] text-xs leading-normal">
+                                                    <img src="assets/images/homepage/calender.png" class="mt-1"
+                                                        width="12" height="14" alt="calender">
+                                                    <span class="flex-1">
+                                                        تبدا في ١٨ ابريل وتنتهي في ٢٠ مايو (٤ اسابيع)
+                                                    </span>
+                                                </p>
+                                            </div>
+                                            <div class="flex items-center gap-2">
+                                                <div
+                                                    class="flex-1 flex items-center gap-2 text-[#333745] text-xs leading-normal">
+                                                    <img src="assets/images/homepage/lic-icon-1.png" width="14"
+                                                        height="16" alt="icon">
+                                                    6 دورات
+                                                </div>
+                                                <div
+                                                    class="flex-1 flex items-center gap-2 text-[#333745] text-xs leading-normal">
+                                                    <img src="assets/images/homepage/lic-icon-1.png" width="13"
+                                                        height="16" alt="icon">
+                                                    13 يوم
+                                                </div>
+                                                <div
+                                                    class="flex-1 flex items-center gap-2 text-[#333745] text-xs leading-normal">
+                                                    <img src="assets/images/homepage/lic-icon-1.png" width="14"
+                                                        height="16" alt="icon">
+                                                    52 ساعة
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- ======================================= -->
+
+                        <div class="lg:p-8 flex flex-col lg:gap-4 srch-filter-card pro-licence">
+                            <h2 class="text-[#333745] text-sm leading-normal font-bold p-6 lg:p-0">
+                                الرخص المهنية
+                            </h2>
+                            <div
+                                class="flex lg:grid lg:grid-cols-3 gap-5 overflow-x-scroll lg:overflow-x-visible px-6 pb-6 lg:p-0">
+                                <div
+                                    class="shrink-0 w-[272px] lg:w-auto rounded-2xl overflow-hidden border border-[#E9E8E8] bg-white hover:border-[#8447FF] transition-all duration-300">
+                                    <div class="h-[150px] relative">
+                                        <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                            <img src="assets/images/homepage/training-courses-badge.png" width="64"
+                                                height="64" alt="badge" class="h-full w-full object-cover">
+                                        </div>
+                                        <img src="assets/images/license-card.jpg" class="w-full h-full object-cover"
+                                            width="348" height="224" alt="Card">
+                                    </div>
+                                    <div class="flex flex-col gap-5 p-5 pt-0 -mt-4 relative">
+                                        <div class="flex flex-col gap-2 items-start">
+                                            <span
+                                                class="flex items-center gap-2.5 bg-[#F8F4FF] border-2 border-white rounded-full px-4 text-[#6B7280] text-[13px] leading-[30px] font-bold">
+                                                <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2.8125 2.52344V11.4609H1.1875V1.91406C1.1875 1.35547 1.61914 0.898438 2.20312 0.898438H14.7969C15.3555 0.898438 15.8125 1.35547 15.8125 1.91406V11.4609H14.1875V2.52344H2.8125ZM16.2188 12.2734C16.4219 12.2734 16.625 12.4766 16.625 12.6797V13.4922C16.625 13.7207 16.4219 13.8984 16.2188 13.8984H0.78125C0.552734 13.8984 0.375 13.7207 0.375 13.4922V12.6797C0.375 12.4766 0.552734 12.2734 0.78125 12.2734H7.6875V10.6484H12.5625V12.2734H16.2188Z"
+                                                        fill="#6B7280"></path>
+                                                </svg>
+                                                دورة قصيرة
+                                            </span>
+
+                                            <h3 class="text-black text-sm leading-normal font-bold">
+                                                <a href="#">
+                                                    الرخصة المهنية للاختبار التربوي العام (المسجلة)
+                                                </a>
+                                            </h3>
+
+                                            <div
+                                                class="flex items-center gap-1.5 text-[#838795] text-xs leading-normal">
+                                                <img src="assets/images/homepage/calender.png" width="12" height="14"
+                                                    alt="calender">
+                                                <span class="flex-1">
+                                                    المدة: ٤ اسابيع (تبدأ ١٨ ابريل حتى ٢٠ مايو)
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="shrink-0 w-[272px] lg:w-auto rounded-2xl overflow-hidden border border-[#E9E8E8] bg-white hover:border-[#8447FF] transition-all duration-300">
+                                    <div class="h-[150px] relative">
+                                        <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                            <img src="assets/images/homepage/training-courses-badge.png" width="64"
+                                                height="64" alt="badge" class="h-full w-full object-cover">
+                                        </div>
+                                        <img src="assets/images/license-card.jpg" class="w-full h-full object-cover"
+                                            width="348" height="224" alt="Card">
+                                    </div>
+                                    <div class="flex flex-col gap-5 p-5 pt-0 -mt-4 relative">
+                                        <div class="flex flex-col gap-2 items-start">
+                                            <span
+                                                class="flex items-center gap-2.5 bg-[#F8F4FF] border-2 border-white rounded-full px-4 text-[#6B7280] text-[13px] leading-[30px] font-bold">
+                                                <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2.8125 2.52344V11.4609H1.1875V1.91406C1.1875 1.35547 1.61914 0.898438 2.20312 0.898438H14.7969C15.3555 0.898438 15.8125 1.35547 15.8125 1.91406V11.4609H14.1875V2.52344H2.8125ZM16.2188 12.2734C16.4219 12.2734 16.625 12.4766 16.625 12.6797V13.4922C16.625 13.7207 16.4219 13.8984 16.2188 13.8984H0.78125C0.552734 13.8984 0.375 13.7207 0.375 13.4922V12.6797C0.375 12.4766 0.552734 12.2734 0.78125 12.2734H7.6875V10.6484H12.5625V12.2734H16.2188Z"
+                                                        fill="#6B7280"></path>
+                                                </svg>
+                                                دورة قصيرة
+                                            </span>
+
+                                            <h3 class="text-black text-sm leading-normal font-bold">
+                                                <a href="#">
+                                                    الرخصة المهنية للاختبار التربوي العام (المسجلة)
+                                                </a>
+                                            </h3>
+
+                                            <div
+                                                class="flex items-center gap-1.5 text-[#838795] text-xs leading-normal">
+                                                <img src="assets/images/homepage/calender.png" width="12" height="14"
+                                                    alt="calender">
+                                                <span class="flex-1">
+                                                    المدة: ٤ اسابيع (تبدأ ١٨ ابريل حتى ٢٠ مايو)
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="shrink-0 w-[272px] lg:w-auto rounded-2xl overflow-hidden border border-[#E9E8E8] bg-white hover:border-[#8447FF] transition-all duration-300">
+                                    <div class="h-[150px] relative">
+                                        <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                            <img src="assets/images/homepage/training-courses-badge.png" width="64"
+                                                height="64" alt="badge" class="h-full w-full object-cover">
+                                        </div>
+                                        <img src="assets/images/license-card.jpg" class="w-full h-full object-cover"
+                                            width="348" height="224" alt="Card">
+                                    </div>
+                                    <div class="flex flex-col gap-5 p-5 pt-0 -mt-4 relative">
+                                        <div class="flex flex-col gap-2 items-start">
+                                            <span
+                                                class="flex items-center gap-2.5 bg-[#F8F4FF] border-2 border-white rounded-full px-4 text-[#6B7280] text-[13px] leading-[30px] font-bold">
+                                                <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2.8125 2.52344V11.4609H1.1875V1.91406C1.1875 1.35547 1.61914 0.898438 2.20312 0.898438H14.7969C15.3555 0.898438 15.8125 1.35547 15.8125 1.91406V11.4609H14.1875V2.52344H2.8125ZM16.2188 12.2734C16.4219 12.2734 16.625 12.4766 16.625 12.6797V13.4922C16.625 13.7207 16.4219 13.8984 16.2188 13.8984H0.78125C0.552734 13.8984 0.375 13.7207 0.375 13.4922V12.6797C0.375 12.4766 0.552734 12.2734 0.78125 12.2734H7.6875V10.6484H12.5625V12.2734H16.2188Z"
+                                                        fill="#6B7280"></path>
+                                                </svg>
+                                                دورة قصيرة
+                                            </span>
+
+                                            <h3 class="text-black text-sm leading-normal font-bold">
+                                                <a href="#">
+                                                    الرخصة المهنية للاختبار التربوي العام (المسجلة)
+                                                </a>
+                                            </h3>
+
+                                            <div
+                                                class="flex items-center gap-1.5 text-[#838795] text-xs leading-normal">
+                                                <img src="assets/images/homepage/calender.png" width="12" height="14"
+                                                    alt="calender">
+                                                <span class="flex-1">
+                                                    المدة: ٤ اسابيع (تبدأ ١٨ ابريل حتى ٢٠ مايو)
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End  Annab Header -->
+    <!-- ======================================= -->
+
+    <!-- Start Annab  Main Content  -->
+    <main>
+        <section class="py-16 bg-[#F7FAFA] px-[30px] lg:px-0">
+            <div class="container flex flex-col gap-8">
+                <div class="flex flex-col lg:flex-row justify-between gap-3 pb-8 border-b border-[#E9E8E8]">
+                    <div class="flex items-center gap-4">
+                        <a href="index.html">
+                            <img src="assets/images/home-icon.svg" width="20" height="20" alt="Home">
+                            <span class="sr-only">Aanaab Home Page Icon</span>
+                        </a>
+                        <img src="assets/images/breadcrumb.svg" width="12" height="12" alt="breadcrumb">
+                        <a href="#"
+                            class="text-[#838795] text-xs lg:text-sm leading-normal lg:leading-normal font-bold">
+                            الدورات
+                        </a>
+                        <img src="assets/images/breadcrumb.svg" width="12" height="12" alt="breadcrumb">
+                        <a href="#"
+                            class="text-[#838795] text-xs lg:text-sm leading-normal lg:leading-normal font-bold">
+                            تحليل البيانات
+                        </a>
+                        <img src="assets/images/breadcrumb.svg" width="12" height="12" alt="breadcrumb">
+                        <a href="#"
+                            class="text-[333745] text-xs lg:text-sm leading-normal lg:leading-normal font-bold truncate">
+                            تقدمك في الدورة
+                        </a>
+                    </div>
+                    <p class="flex items-center gap-2 text-[13px] text-[#6B7280] font-bold">
+                        <img src="assets/images/clock-alt.png" width="14" height="14" alt="clock">
+                        باقي ٢٠ يوم و ١٦ ساعه علي موعد انتهاء الدورة
+                    </p>
+                </div>
+
+                <div class="flex flex-col gap-[30px]">
+
+                    <div class="flex flex-col gap-4">
+                        <h2 class="text-[#333745] text-xl lg:text-2xl leading-normal lg:leading-normal font-bold">
+                            تقدمك في دورة تحليل البيانات
+                        </h2>
+                        <p class="text-[#6B7280] text-sm leading-[160%]">
+                            نحن نسعى لمساعدتك في تحقيق نجاحك في دورة تحليل البيانات بأقصى إمكان. لهذا السبب، نريد أن
+                            نشاركك متطلبات الاجتياز لتكون على علم بما يلزم للوصول إلى الهدف.
+                            سوف تجد أدناه المعايير الثلاثة التي تحتاج إلى تحقيقها لاجتياز الدورة بنجاح.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col gap-4">
+                        <h2 class="text-[#333745] text-lg lg:text-xl leading-normal lg:leading-normal font-bold">
+                            متطلبات الاجتياز:
+                        </h2>
+                        <div class="grid grid-cols-1 lg:grid-cols-3 gap-[30px]">
+                            <div class="flex flex-col gap-2">
+                                <h3 class="flex items-center gap-2 text-base text-[#333745] font-bold">
+                                    <img src="assets/images/progress-1.svg" width="24" height="22" alt="progress-1">
+                                    المحتويات الغير متزامنة
+                                </h3>
+                                <p class="text-[#6B7280] text-xs leading-[160%]">
+                                    يجب عليك إكمال 100٪ من العناصر الإلزامية على الأقل لتتمكن من اجتياز الدورة. اجتهد في
+                                    استيعاب المحتوى والمشاركة بنشاط لضمان تحقيق هذه النسبة.
+                                </p>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <h3 class="flex items-center gap-2 text-base text-[#333745] font-bold">
+                                    <img src="assets/images/progress-2.svg" width="24" height="26" alt="progress-2">
+                                    اللقائات المباشرة
+                                </h3>
+                                <p class="text-[#6B7280] text-xs leading-[160%]">
+                                    لتكتمل إجمالي النجاح، يجب أن تحضر الجلسات المباشرة بنسبة 85% على الأقل. الجلسات
+                                    المباشرة توفر لك فرصة للتفاعل مع المحاضر وتوسيع معرفتك وفهمك.
+                                </p>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <h3 class="flex items-center gap-2 text-base text-[#333745] font-bold">
+                                    <img src="assets/images/progress-3.svg" width="24" height="24" alt="progress-3">
+                                    الاختبارات
+                                </h3>
+                                <p class="text-[#6B7280] text-xs leading-[160%]">
+                                    لضمان تحقيق أقصى استفادة من الدورة، يجب أن تجتاز كل الاختبارات بنسبة 70% على الأقل.
+                                    هذه الاختبارات تساهم في تقييم تقدمك وفهمك للمواد.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="flex flex-col gap-4">
+                        <h2 class="text-[#333745] text-lg lg:text-xl leading-normal lg:leading-normal font-bold">
+                            ملخص الانشطة
+                        </h2>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+
+                            <div class="py-5 px-6 rounded-2xl bg-white border border-[#E9E8E8] flex flex-col gap-6">
+                                <h3 class="flex items-center gap-2 text-base text-[#333745] font-bold">
+                                    المحتويات الغير متزامنة
+                                </h3>
+                                <div class="flex flex-col gap-2">
+                                    <div class="flex justify-between ">
+                                        <span class="teext-[#6B7280] text-xs leading-[160%]"> ٪0</span>
+                                        <span class="teext-[#6B7280] text-xs leading-[160%]"> ٪100</span>
+                                    </div>
+                                    <div class="h-5 bg-[#D1D5DB] rounded-full relative">
+                                        <div
+                                            class="absolute end-0 bottom-0 flex items-start gap-2 text-[#DC2626] text-[10px] leading-[180%]">
+                                            أقل نسبة إجتياز 100 ٪ من المحتويات الالزامية
+                                            <img src="assets/images/progressflag.svg" width="" height="" alt="flag">
+                                        </div>
+                                        <div
+                                            class="absolute start-0 top-1/2 -translate-y-1/2 h-full rounded-full bg-gradient-to-r from-[#10B981] to-[#5FC1B4] w-1/4 after:hidden">
+                                            <span
+                                                class="absolute top-1/2 -translate-y-1/2 left-3 text-xs text-[#333745] leading-normal font-extrabold">
+                                                25%
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <p class="text-[#6B7280] text-[13px] leading-[180%]">
+                                        اتممت 14 درس بنجاح من اصل 56 درس، 🏃 واصل التقدم 📚
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="py-5 px-6 rounded-2xl bg-white border border-[#E9E8E8] flex flex-col gap-6">
+                                <h3 class="flex items-center gap-2 text-base text-[#333745] font-bold">
+                                    اللقائات المباشرة
+                                </h3>
+                                <div class="flex flex-col gap-2">
+                                    <div class="flex justify-between ">
+                                        <span class="teext-[#6B7280] text-xs leading-[160%]"> ٪0</span>
+                                        <span class="teext-[#6B7280] text-xs leading-[160%]"> ٪100</span>
+                                    </div>
+                                    <div class="h-5 bg-[#D1D5DB] rounded-full relative">
+                                        <div
+                                            class="absolute end-[15%] bottom-0 flex items-start gap-2 text-[#DC2626] text-[10px] leading-[180%]">
+                                            أقل نسبة إجتياز 85 ٪
+                                            <img src="assets/images/progressflag.svg" width="" height="" alt="flag">
+                                        </div>
+                                        <div
+                                            class="absolute start-0 top-1/2 -translate-y-1/2 h-full rounded-full bg-gradient-to-r from-[#10B981] to-[#5FC1B4] w-[61%] after:hidden">
+                                            <span
+                                                class="absolute top-1/2 -translate-y-1/2 left-3 text-xs text-[#333745] leading-normal font-extrabold">
+                                                61%
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <p class="text-[#6B7280] text-[13px] leading-[180%]">
+                                        تم إكمال 8 ساعات و 10 دقائق من أصل 13 ساعة و 23 دقيقة ، 🏃 واصل التقدم 📚
+                                    </p>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="flex flex-col gap-4">
+
+                        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-2">
+                            <h2 class="text-[#333745] text-lg lg:text-xl leading-normal lg:leading-normal font-bold">
+                                اللقائات المباشرة
+                            </h2>
+                            <a href="#" class="flex items-center gap-1 text-[#7841E8] text-sm leading-normal font-bold">
+                                مزامنة مواعيد اللقائات مع التقويم
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.5 6.66797H2.5M13.3333 1.66797V4.16797M6.66667 1.66797V4.16797M10 15.0013V10.0013M7.5 12.5013H12.5M6.5 18.3346H13.5C14.9001 18.3346 15.6002 18.3346 16.135 18.0622C16.6054 17.8225 16.9878 17.44 17.2275 16.9696C17.5 16.4348 17.5 15.7348 17.5 14.3346V7.33464C17.5 5.9345 17.5 5.23444 17.2275 4.69966C16.9878 4.22925 16.6054 3.8468 16.135 3.60712C15.6002 3.33464 14.9001 3.33464 13.5 3.33464H6.5C5.09987 3.33464 4.3998 3.33464 3.86502 3.60712C3.39462 3.8468 3.01217 4.22925 2.77248 4.69966C2.5 5.23444 2.5 5.9345 2.5 7.33464V14.3346C2.5 15.7348 2.5 16.4348 2.77248 16.9696C3.01217 17.44 3.39462 17.8225 3.86502 18.0622C4.3998 18.3346 5.09987 18.3346 6.5 18.3346Z"
+                                        stroke="#7841E8" stroke-width="1.25" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div
+                            class="flex flex-col gap-4 lg:gap-0 lg:border border-[#E9E8E8] lg:rounded-2xl lg:overflow-hidden">
+                            <div class=" bg-white hidden lg:grid lg:grid-cols-5 items-center border-b border-[#E9E8E8]">
+                                <span
+                                    class="py-4 px-6 text-[#333745] text-sm leading-normal font-black lg:col-span-2 flex items-center gap-3">
+                                    <img src="assets/images/dotpoints-01.svg" width="24" height="24" alt="dotpoints">
+                                    اسم اللقاء
+                                </span>
+                                <span class="py-4 px-6 text-[#333745] text-sm leading-normal font-black lg:col-span-2">
+                                    موعد اللقاء
+                                </span>
+                                <span class="py-4 px-6 text-[#333745] text-sm leading-normal font-black lg:col-span-1">
+                                    الحضور
+                                </span>
+                            </div>
+                            <div
+                                class="rounded-2xl lg:rounded-none  bg-white p-6 lg:p-0 grid grid-cols-1 gap-x-4 gap-y-6 lg:gap-0 lg:grid-cols-5 items-center border-b border-[#E9E8E8]">
+                                <span class="lg:py-4 lg:px-6 flex flex-col gap-1 lg:col-span-2">
+                                    <span class="text-[#333745] text-sm leading-normal font-bold lg:hidden">
+                                        اسم اللقاء
+                                    </span>
+                                    <a href="#" class="text-[#7841E8] underline leading-normal">
+                                        استعراض الأساسيات في تحليل البيانات
+                                    </a>
+                                </span>
+                                <span
+                                    class="lg:py-4 lg:px-6 flex flex-col gap-1 text-[#5B5F6D] leading-normal lg:col-span-2">
+                                    <span class="text-[#333745] text-sm leading-normal font-bold lg:hidden">
+                                        موعد اللقاء
+                                    </span>
+                                    <span class="text-[#5B5F6D] leading-normal">
+                                        الاحد 12 يوليو 2023 - 02:33
+                                    </span>
+                                </span>
+                                <span
+                                    class="lg:py-4 lg:px-6 flex flex-col gap-1 text-[#5B5F6D] leading-normal lg:col-span-1">
+                                    <span class="text-[#333745] text-sm leading-normal font-bold lg:hidden">
+                                        الحضور
+                                    </span>
+                                    <img src="assets/images/check-circleg.svg" width="20" height="20"
+                                        alt="check circle">
+                                </span>
+
+                            </div>
+                            <div
+                                class="rounded-2xl lg:rounded-none  bg-white p-6 lg:p-0 grid grid-cols-1 gap-x-4 gap-y-6 lg:gap-0 lg:grid-cols-5 items-center border-b border-[#E9E8E8]">
+                                <span class="lg:py-4 lg:px-6 flex flex-col gap-1 lg:col-span-2">
+                                    <span
+                                        class="text-[#333745] text-sm leading-normal font-bold lg:hidden flex items-center gap-3">
+                                        <img src="assets/images/dotpoints-01.svg" width="24" height="24"
+                                            alt="dotpoints">
+                                        اسم اللقاء
+                                    </span>
+                                    <a href="#" class="text-[#7841E8] underline leading-normal">
+                                        استراتيجيات تحليل البيانات الفعّالة
+                                    </a>
+                                </span>
+                                <span
+                                    class="lg:py-4 lg:px-6 flex flex-col gap-1 text-[#5B5F6D] leading-normal lg:col-span-2">
+                                    <span class="text-[#333745] text-sm leading-normal font-bold lg:hidden">
+                                        موعد اللقاء
+                                    </span>
+                                    <span class="text-[#5B5F6D] leading-normal">
+                                        الاحد 12 يوليو 2023 - 02:33
+                                    </span>
+                                </span>
+                                <span
+                                    class="lg:py-4 lg:px-6 flex flex-col gap-1 text-[#5B5F6D] leading-normal lg:col-span-1">
+                                    <span class="text-[#333745] text-sm leading-normal font-bold lg:hidden">
+                                        الحضور
+                                    </span>
+                                    <img src="assets/images/check-circleg.svg" width="20" height="20"
+                                        alt="check circle">
+                                </span>
+
+                            </div>
+                            <div
+                                class="rounded-2xl lg:rounded-none  bg-white p-6 lg:p-0 grid grid-cols-1 gap-x-4 gap-y-6 lg:gap-0 lg:grid-cols-5 items-center border-b border-[#E9E8E8]">
+                                <span class="lg:py-4 lg:px-6 flex flex-col gap-1 lg:col-span-2">
+                                    <span class="text-[#333745] text-sm leading-normal font-bold lg:hidden">
+                                        اسم اللقاء
+                                    </span>
+                                    <a href="#" class="text-[#7841E8] underline leading-normal">
+                                        تطبيقات تحليل البيانات في المشاريع العملية
+                                    </a>
+                                </span>
+                                <span
+                                    class="lg:py-4 lg:px-6 flex flex-col gap-1 text-[#5B5F6D] leading-normal lg:col-span-2">
+                                    <span class="text-[#333745] text-sm leading-normal font-bold lg:hidden">
+                                        موعد اللقاء
+                                    </span>
+                                    <span class="text-[#5B5F6D] leading-normal">
+                                        الاحد 28 يوليو 2023
+                                    </span>
+                                </span>
+                                <span
+                                    class="lg:py-4 lg:px-6 flex flex-col gap-1 text-[#5B5F6D] leading-normal lg:col-span-1">
+                                    <span class="text-[#333745] text-sm leading-normal font-bold lg:hidden">
+                                        الحضور
+                                    </span>
+                                    <span class="text-[#5B5F6D] leading-normal">
+                                        لم يحن موعد اللقاء
+                                    </span>
+                                </span>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col gap-4">
+
+                        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-2">
+                            <h2 class="text-[#333745] text-lg lg:text-xl leading-normal lg:leading-normal font-bold">
+                                الاختبارات
+                            </h2>
+                            <a href="#" class="flex items-center gap-1 text-[#7841E8] text-sm leading-normal font-bold">
+                                مزامنة مواعيد اللقائات مع التقويم
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.5 6.66797H2.5M13.3333 1.66797V4.16797M6.66667 1.66797V4.16797M10 15.0013V10.0013M7.5 12.5013H12.5M6.5 18.3346H13.5C14.9001 18.3346 15.6002 18.3346 16.135 18.0622C16.6054 17.8225 16.9878 17.44 17.2275 16.9696C17.5 16.4348 17.5 15.7348 17.5 14.3346V7.33464C17.5 5.9345 17.5 5.23444 17.2275 4.69966C16.9878 4.22925 16.6054 3.8468 16.135 3.60712C15.6002 3.33464 14.9001 3.33464 13.5 3.33464H6.5C5.09987 3.33464 4.3998 3.33464 3.86502 3.60712C3.39462 3.8468 3.01217 4.22925 2.77248 4.69966C2.5 5.23444 2.5 5.9345 2.5 7.33464V14.3346C2.5 15.7348 2.5 16.4348 2.77248 16.9696C3.01217 17.44 3.39462 17.8225 3.86502 18.0622C4.3998 18.3346 5.09987 18.3346 6.5 18.3346Z"
+                                        stroke="#7841E8" stroke-width="1.25" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div
+                            class="flex flex-col gap-4 lg:gap-0 lg:border border-[#E9E8E8] lg:rounded-2xl lg:overflow-hidden">
+                            <div class=" bg-white hidden lg:grid lg:grid-cols-5 items-center border-b border-[#E9E8E8]">
+                                <span
+                                    class="py-4 px-6 text-[#333745] text-sm leading-normal font-black lg:col-span-2 flex items-center gap-3">
+                                    <img src="assets/images/dotpoints-01.svg" width="24" height="24" alt="dotpoints">
+                                    اسم الاختبار
+                                </span>
+                                <span class="py-4 px-6 text-[#333745] text-sm leading-normal font-black lg:col-span-2">
+                                    الحالة
+                                </span>
+                                <span class="py-4 px-6 text-[#333745] text-sm leading-normal font-black lg:col-span-1">
+                                    الدرجة
+                                </span>
+                            </div>
+                            <div
+                                class="rounded-2xl lg:rounded-none  bg-white p-6 lg:p-0 grid grid-cols-1 gap-x-4 gap-y-6 lg:gap-0 lg:grid-cols-5 items-center border-b border-[#E9E8E8]">
+                                <span class="lg:py-4 lg:px-6 flex flex-col gap-1 lg:col-span-2">
+                                    <span class="text-[#333745] text-sm leading-normal font-bold lg:hidden">
+                                        اسم الاختبار
+                                    </span>
+                                    <a href="#" class="text-[#7841E8] underline leading-normal">
+                                        التقييم القبلي
+                                    </a>
+                                </span>
+                                <span
+                                    class="lg:py-4 lg:px-6 flex flex-col gap-1 text-[#5B5F6D] leading-normal lg:col-span-2">
+                                    <span class="text-[#333745] text-sm leading-normal font-bold lg:hidden">
+                                        الحالة
+                                    </span>
+                                    <span class="text-[#5B5F6D] leading-normal">
+                                        تم التسليم الاحد 12 يوليو 2023 - 02:33
+                                    </span>
+                                </span>
+                                <span
+                                    class="lg:py-4 lg:px-6 flex flex-col gap-1 text-[#5B5F6D] leading-normal lg:col-span-1">
+                                    <span class="text-[#333745] text-sm leading-normal font-bold lg:hidden">
+                                        الدرجة
+                                    </span>
+                                    <img src="assets/images/check-circleg.svg" width="20" height="20"
+                                        alt="check circle">
+                                </span>
+
+                            </div>
+                            <div
+                                class="rounded-2xl lg:rounded-none  bg-white p-6 lg:p-0 grid grid-cols-1 gap-x-4 gap-y-6 lg:gap-0 lg:grid-cols-5 items-center border-b border-[#E9E8E8]">
+                                <span class="lg:py-4 lg:px-6 flex flex-col gap-1 lg:col-span-2">
+                                    <span
+                                        class="text-[#333745] text-sm leading-normal font-bold lg:hidden flex items-center gap-3">
+                                        <img src="assets/images/dotpoints-01.svg" width="24" height="24"
+                                            alt="dotpoints">
+                                        اسم الاختبار
+                                    </span>
+                                    <a href="#" class="text-[#7841E8] underline leading-normal">
+                                        اسم الاختبار
+                                    </a>
+                                </span>
+                                <span
+                                    class="lg:py-4 lg:px-6 flex flex-col gap-1 text-[#5B5F6D] leading-normal lg:col-span-2">
+                                    <span class="text-[#333745] text-sm leading-normal font-bold lg:hidden">
+                                        الحالة
+                                    </span>
+                                    <span class="text-[#5B5F6D] leading-normal">
+                                        تم التسليم الاحد 12 يوليو 2023 - 04:55
+                                    </span>
+                                </span>
+                                <span
+                                    class="lg:py-4 lg:px-6 flex flex-col gap-1 text-[#5B5F6D] leading-normal lg:col-span-1">
+                                    <span class="text-[#333745] text-sm leading-normal font-bold lg:hidden">
+                                        الدرجة
+                                    </span>
+                                    <img src="assets/images/check-circleg.svg" width="20" height="20"
+                                        alt="check circle">
+                                </span>
+
+                            </div>
+                            <div
+                                class="rounded-2xl lg:rounded-none  bg-white p-6 lg:p-0 grid grid-cols-1 gap-x-4 gap-y-6 lg:gap-0 lg:grid-cols-5 items-center border-b border-[#E9E8E8]">
+                                <span class="lg:py-4 lg:px-6 flex flex-col gap-1 lg:col-span-2">
+                                    <span class="text-[#333745] text-sm leading-normal font-bold lg:hidden">
+                                        اسم الاختبار
+                                    </span>
+                                    <a href="#" class="text-[#7841E8] underline leading-normal">
+                                        الاختبار التقييمي النهائي للمادة
+                                    </a>
+                                </span>
+                                <span
+                                    class="lg:py-4 lg:px-6 flex flex-col gap-1 text-[#5B5F6D] leading-normal lg:col-span-2">
+                                    <span class="text-[#333745] text-sm leading-normal font-bold lg:hidden">
+                                        الحالة
+                                    </span>
+                                    <span class="text-[#5B5F6D] leading-normal">
+                                        لم يتم التسليم
+                                    </span>
+                                </span>
+                                <span
+                                    class="lg:py-4 lg:px-6 flex flex-col gap-1 text-[#5B5F6D] leading-normal lg:col-span-1">
+                                    <span class="text-[#333745] text-sm leading-normal font-bold lg:hidden">
+                                        الدرجة
+                                    </span>
+                                    <span class="text-[#5B5F6D] leading-normal">
+                                        ------
+                                    </span>
+                                </span>
+
+                            </div>
+                            <div
+                                class="rounded-2xl lg:rounded-none  bg-white p-6 lg:p-0 grid grid-cols-3 lg:grid-cols-5 items-center gap-x-4 gap-y-6 lg:gap-0 border-b border-[#E9E8E8]">
+                                <span
+                                    class="lg:py-4 lg:px-6 flex flex-col gap-1 text-[#333745] text-sm leading-normal font-bold lg:col-span-2">
+                                    الإجمالي
+                                </span>
+                                <span class="lg:col-span-2"></span>
+                                <span
+                                    class="lg:py-4 lg:px-6 flex flex-col gap-1 text-[#5B5F6D] leading-normal font-bold lg:col-span-1">
+                                    95%
+                                </span>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col gap-4">
+
+                        <h2 class="text-[#333745] text-lg lg:text-xl leading-normal lg:leading-normal font-bold">
+                            محتويات تمت اكمالها
+                        </h2>
+
+                        <div
+                            class="flex flex-col gap-4 lg:gap-0 lg:border border-[#E9E8E8] lg:rounded-2xl lg:overflow-hidden">
+                            <div class=" bg-white hidden lg:grid lg:grid-cols-2 items-center border-b border-[#E9E8E8]">
+                                <span
+                                    class="py-4 px-6 text-[#333745] text-sm leading-normal font-black flex items-center gap-3">
+                                    اسم المحتوي
+                                </span>
+                                <span class="py-4 px-6 text-[#333745] text-sm leading-normal font-black">
+                                    التاريخ
+                                </span>
+                            </div>
+                            <div
+                                class="rounded-2xl lg:rounded-none  bg-white p-6 lg:p-0 grid grid-cols-1 gap-x-4 gap-y-6 lg:gap-0 lg:grid-cols-2 items-center border-b border-[#E9E8E8]">
+                                <span class="lg:py-4 lg:px-6 flex flex-col gap-1">
+                                    <span class="text-[#333745] text-sm leading-normal font-bold lg:hidden">
+                                        اسم المحتوي
+                                    </span>
+                                    <a href="#" class="text-[#7841E8] underline leading-normal">
+                                        محاضرة - التدريب في أعناب
+                                    </a>
+                                </span>
+                                <span class="lg:py-4 lg:px-6 flex flex-col gap-1 text-[#5B5F6D] leading-normal">
+                                    <span class="text-[#333745] text-sm leading-normal font-bold lg:hidden">
+                                        التاريخ
+                                    </span>
+                                    <span class="text-[#5B5F6D] leading-normal">
+                                        الاحد 12 يوليو 2023
+                                    </span>
+                                </span>
+                            </div>
+                            <div
+                                class="rounded-2xl lg:rounded-none  bg-white p-6 lg:p-0 grid grid-cols-1 gap-x-4 gap-y-6 lg:gap-0 lg:grid-cols-2 items-center border-b border-[#E9E8E8]">
+                                <span class="lg:py-4 lg:px-6 flex flex-col gap-1">
+                                    <span class="text-[#333745] text-sm leading-normal font-bold lg:hidden">
+                                        اسم المحتوي
+                                    </span>
+                                    <a href="#" class="text-[#7841E8] underline leading-normal">
+                                        محاضرة - الخطة الزمنية لدورة تحليل البيانات
+                                    </a>
+                                </span>
+                                <span class="lg:py-4 lg:px-6 flex flex-col gap-1 text-[#5B5F6D] leading-normal">
+                                    <span class="text-[#333745] text-sm leading-normal font-bold lg:hidden">
+                                        التاريخ
+                                    </span>
+                                    <span class="text-[#5B5F6D] leading-normal">
+                                        الاحد 12 يوليو 2023
+                                    </span>
+                                </span>
+                            </div>
+                            <div
+                                class="rounded-2xl lg:rounded-none  bg-white p-6 lg:p-0 grid grid-cols-1 gap-x-4 gap-y-6 lg:gap-0 lg:grid-cols-2 items-center border-b border-[#E9E8E8]">
+                                <span class="lg:py-4 lg:px-6 flex flex-col gap-1">
+                                    <span class="text-[#333745] text-sm leading-normal font-bold lg:hidden">
+                                        اسم المحتوي
+                                    </span>
+                                    <a href="#" class="text-[#7841E8] underline leading-normal">
+                                        نقاش - عرفنا بنفسك
+                                    </a>
+                                </span>
+                                <span class="lg:py-4 lg:px-6 flex flex-col gap-1 text-[#5B5F6D] leading-normal">
+                                    <span class="text-[#333745] text-sm leading-normal font-bold lg:hidden">
+                                        التاريخ
+                                    </span>
+                                    <span class="text-[#5B5F6D] leading-normal">
+                                        الاحد 12 يوليو 2023
+                                    </span>
+                                </span>
+                            </div>
+                            <div
+                                class="rounded-2xl lg:rounded-none  bg-white p-6 lg:p-0 grid grid-cols-1 gap-x-4 gap-y-6 lg:gap-0 lg:grid-cols-2 items-center border-b border-[#E9E8E8]">
+                                <span class="lg:py-4 lg:px-6 flex flex-col gap-1">
+                                    <span class="text-[#333745] text-sm leading-normal font-bold lg:hidden">
+                                        اسم المحتوي
+                                    </span>
+                                    <a href="#" class="text-[#7841E8] underline leading-normal">
+                                        محاضرة - التدريب في أعناب
+                                    </a>
+                                </span>
+                                <span class="lg:py-4 lg:px-6 flex flex-col gap-1 text-[#5B5F6D] leading-normal">
+                                    <span class="text-[#333745] text-sm leading-normal font-bold lg:hidden">
+                                        التاريخ
+                                    </span>
+                                    <span class="text-[#5B5F6D] leading-normal">
+                                        الاحد 12 يوليو 2023
+                                    </span>
+                                </span>
+                            </div>
+                            <div
+                                class="rounded-2xl lg:rounded-none  bg-white p-6 lg:p-0 grid grid-cols-1 gap-x-4 gap-y-6 lg:gap-0 lg:grid-cols-2 items-center border-b border-[#E9E8E8]">
+                                <span class="lg:py-4 lg:px-6 flex flex-col gap-1">
+                                    <span class="text-[#333745] text-sm leading-normal font-bold lg:hidden">
+                                        اسم المحتوي
+                                    </span>
+                                    <a href="#" class="text-[#7841E8] underline leading-normal">
+                                        محاضرة -الخطة الزمنية لدورة تحليل البيانات
+                                    </a>
+                                </span>
+                                <span class="lg:py-4 lg:px-6 flex flex-col gap-1 text-[#5B5F6D] leading-normal">
+                                    <span class="text-[#333745] text-sm leading-normal font-bold lg:hidden">
+                                        التاريخ
+                                    </span>
+                                    <span class="text-[#5B5F6D] leading-normal">
+                                        الاحد 12 يوليو 2023
+                                    </span>
+                                </span>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    <!-- ======================================= -->
+    <!-- End  Annab Main Content -->
+
+    <!-- Start Annab Footer -->
+    <footer class="px-[30px] sm:px-9 lg:px-0 relative">
+        <section
+            class="container border-b border-b-[#D1D5DB] flex flex-col lg:flex-row gap-8 sm:gap-4 lg:gap-20 pt-10 pb-8">
+            <div class="flex flex-col sm:flex-row gap-8 sm:gap-4 lg:gap-20">
+                <div class="basis-6/12 flex flex-col gap-6 items-start">
+                    <img src="assets/images/logo.png" width="128" height="38" alt="aanab logo">
+                    <p class="text-sm leading-6 text-[#6B7280]">
+                        منصة تعليمية إلكترونية تهتم بتقديم دورات تدريبية متخصصة في مجال
+                        التطوير المهني للمعلمين والتربويين، يقدمها أكاديميون ومعلمون
+                        متميزون من مختلف أرجاء العالم العربي، ومتحمسون لتوسيع دائرة
+                        المستفيدين من مخزونهم العلمي والمعرفي المتخصص في مجال التدريس؛ حيث
+                        يسعون لإيصاله لمن هم خارج محيطهم المباشر.
+                    </p>
+                </div>
+                <div class="basis-6/12 flex flex-col gap-6 items-start">
+                    <h2 class="text-[#6B7280] text-lg leading-[22px] font-bold">
+                        دورات اعناب
+                    </h2>
+                    <div class="flex gap-4 w-full lg:gap-[45px]">
+                        <ul class="flex-1 text-sm leading-7 lg:text-base lg:leading-9 text-[#6B7280]">
+                            <li>
+                                <a href="#"
+                                    class="transition-all duration-300 text-[#6B7280] hover:text-[#8447FF]">تطوير ذاتى
+                                    مهنى
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="transition-all duration-300 text-[#6B7280] hover:text-[#8447FF]">استراتيجيات
+                                    التعليم</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="transition-all duration-300 text-[#6B7280] hover:text-[#8447FF]">تقنيات
+                                    التعليم</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="transition-all duration-300 text-[#6B7280] hover:text-[#8447FF]">أدوات ومصادر
+                                    تعليميه</a>
+                            </li>
+                        </ul>
+                        <ul class="flex-1 text-sm leading-7 lg:text-base lg:leading-9 text-[#6B7280]">
+                            <li>
+                                <a href="#"
+                                    class="transition-all duration-300 text-[#6B7280] hover:text-[#8447FF]">تطوير ذاتى
+                                    مهنى
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="transition-all duration-300 text-[#6B7280] hover:text-[#8447FF]">استراتيجيات
+                                    التعليم</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="transition-all duration-300 text-[#6B7280] hover:text-[#8447FF]">تقنيات
+                                    التعليم</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="transition-all duration-300 text-[#6B7280] hover:text-[#8447FF]">أدوات ومصادر
+                                    تعليميه</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-12 sm:basis-12/12 lg:basis-4/12 flex flex-col gap-[31px] items-start">
+                <h2 class="text-[#6B7280] text-lg leading-[22px] font-bold">
+                    لنكن على تواصل
+                </h2>
+                <div class="flex flex-col gap-6">
+                    <div class="flex gap-4">
+                        <a href="https://www.youtube.com/channel/UCvu0ccFN2m7yI6s5VEfeLQA" aria-label="youtube"
+                            class="border border-[#D1D5DB] rounded-full w-[30px] h-[30px] flex items-center justify-center transition duration-300 hover:bg-[#c4302b] hover:border-[#c4302b] group">
+                            <svg class="group-hover:fill-[#fff]" width="20" height="14" viewBox="0 0 20 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="group-hover:stroke-none transition duration-300"
+                                    d="M18.6654 3.99067C18.6654 2.33867 17.3267 1 15.676 1H4.32003C2.6707 1 1.33203 2.33867 1.33203 3.99067V10.008C1.33203 11.6613 2.6707 13 4.32003 13H15.676C17.3267 13 18.6654 11.6613 18.6654 10.008V3.99067ZM7.9987 10.208V3.66667L13.7094 7L7.9987 10.208Z"
+                                    stroke="#6B7280" stroke-linejoin="round"></path>
+                            </svg>
+                            <span class="sr-only">Aanaab Youtube Page</span>
+                        </a>
+                        <a href="https://www.facebook.com/aanaabcom" aria-label="fb"
+                            class="border border-[#D1D5DB] rounded-full w-[30px] h-[30px] flex items-center justify-center transition duration-300 hover:bg-[#3b5998] hover:border-[#3b5998] group">
+                            <svg class="group-hover:fill-[#fff]" width="12" height="20" viewBox="0 0 12 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="group-hover:stroke-none transition duration-300"
+                                    d="M11.1174 6.66662H7.9987V5.30396C7.9987 4.60529 8.4627 4.44129 8.78803 4.44129C9.1147 4.44129 10.6654 4.44129 10.6654 4.44129V1.36529L7.5307 1.35596C4.4667 1.35596 3.9987 3.64796 3.9987 5.11462V6.66662H1.33203V9.33329H3.9987C3.9987 13.3986 3.9987 18.6666 3.9987 18.6666H7.9987C7.9987 18.6666 7.9987 13.3506 7.9987 9.33329H10.792L11.1174 6.66662Z"
+                                    stroke="#6B7280" stroke-linejoin="round"></path>
+                            </svg>
+                            <span class="sr-only">Aanaab FaceBook Page</span>
+                        </a>
+                        <a href="https://twitter.com/aanaabcom" aria-label="Twitter"
+                            class="border border-[#D1D5DB] rounded-full w-[30px] h-[30px] flex items-center justify-center transition duration-300 hover:bg-[#1da1f2] hover:border-[#1da1f2] group">
+                            <svg class="group-hover:fill-[#fff]" width="18" height="14" viewBox="0 0 18 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="group-hover:stroke-none transition duration-300 group-hover:fill-[#fff]"
+                                    d="M17.6681 0.805204C17.6681 0.805204 15.8667 0.99987 15.0681 1.15987C14.4281 0.47587 13.5161 0.0505371 12.5067 0.0505371C10.5681 0.0505371 8.99606 1.62254 8.99606 3.55987C8.99606 3.8332 9.02673 4.10387 9.08673 4.35854C6.17073 4.21454 3.5854 2.81587 1.85473 0.69187C1.55206 1.21187 1.37873 1.8132 1.37873 2.4572C1.37873 3.67587 1.99873 4.74787 2.94006 5.3772C2.3654 5.35854 1.82406 5.2012 1.35073 4.9372C1.35073 4.9532 1.35073 4.9692 1.35073 4.98387C1.35073 6.68254 2.56006 8.1012 4.1654 8.42254C3.65073 8.56387 3.1094 8.58387 2.5814 8.48387C3.02806 9.8772 4.32406 10.8919 5.85873 10.9225C4.35873 12.0985 2.49606 12.5892 0.664062 12.3745C2.2174 13.3705 4.06273 13.9532 6.04406 13.9532C12.4987 13.9532 16.0281 8.60387 16.0281 3.96787C16.0281 3.81587 16.0254 3.66387 16.0174 3.51454C16.7027 3.0172 17.1974 1.5092 17.6681 0.805204Z"
+                                    fill="none" stroke="#6B7280"></path>
+                            </svg>
+                            <span class="sr-only">Aanaab Twitter Page</span>
+                        </a>
+                        <a href="https://www.instagram.com/aanaabcom/" aria-label="insta"
+                            class="border border-[#D1D5DB] rounded-full w-[30px] h-[30px] flex items-center justify-center transition duration-300 hover:bg-[#c13584] hover:border-[#c13584] group">
+                            <svg class="group-hover:fill-[#fff]" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M24.6693 21.5543C24.6693 23.273 23.2759 24.6663 21.5586 24.6663H10.4466C8.72927 24.6663 7.33594 23.273 7.33594 21.5543V10.4423C7.33594 8.72501 8.72927 7.33301 10.4466 7.33301H21.5586C23.2759 7.33301 24.6693 8.72501 24.6693 10.4423V21.5543Z"
+                                    stroke="#6B7280" stroke-miterlimit="10" stroke-linejoin="round"></path>
+                                <path d="M7.33594 12.6665H13.0239" stroke="#6B7280" stroke-miterlimit="10"
+                                    stroke-linejoin="round"></path>
+                                <path d="M18.9805 12.6665H24.6685" stroke="#6B7280" stroke-miterlimit="10"
+                                    stroke-linejoin="round"></path>
+                                <path
+                                    d="M16 19.333C18.2091 19.333 20 17.5421 20 15.333C20 13.1239 18.2091 11.333 16 11.333C13.7909 11.333 12 13.1239 12 15.333C12 17.5421 13.7909 19.333 16 19.333Z"
+                                    stroke="#6B7280" stroke-miterlimit="10" stroke-linejoin="round"></path>
+                                <path d="M22.6693 9.33301H21.3359V10.6663H22.6693V9.33301Z" fill="#6B7280"></path>
+                                <path d="M10 7.33301V12.6663" stroke="#6B7280" stroke-miterlimit="10"
+                                    stroke-linejoin="round"></path>
+                                <path d="M12.668 7.33325V12.6666" stroke="#6B7280" stroke-miterlimit="10"
+                                    stroke-linejoin="round"></path>
+                            </svg>
+                            <span class="sr-only">Aanaab insta Page</span>
+                        </a>
+                    </div>
+                    <a href="mailto:info@aanaab.com"
+                        class="hidden lg:flex items-center gap-3 px-[18px] py-[10px] rounded-[48px] border bordder-[#D1D5DB]">
+                        <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22 13.3261C22 14.0821 21.3864 14.6957 20.6304 14.6957H2.36957C1.61357 14.6957 1 14.0821 1 13.3261V2.36957C1 1.61265 1.61357 1 2.36957 1H20.6304C21.3864 1 22 1.61265 22 2.36957V13.3261Z"
+                                stroke="#6B7280" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M19.261 4.6521L11.5001 9.67384L3.73926 4.6521" stroke="#6B7280"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M3.73926 11.4999L6.93491 9.67383" stroke="#6B7280" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            <path d="M19.2621 11.4999L16.0664 9.67383" stroke="#6B7280" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+                        <span class="text-[#6B7280] text-xs leading-4 w-full">
+                            او تواصل عبر البريد
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="container py-8 flex flex-col gap-2 lg:flex-row items-center justify-between">
+            <p class="text-[#6B7280] text-sm leading-normal">
+                جميع الحقوق محفوظة © منصة أعناب
+            </p>
+            <nav class="flex leading-[8px] flex-wrap justify-center lg:justify-start">
+                <a href="https://aanaab.com"
+                    class="text-[#6B7280] transition-all duration-300 hover:text-[#8447FF] text-[13px] leading-loose lg:text-sm border-l border-[#D1D5DB] px-4">
+                    الرئيسية
+                </a>
+                <a href="https://aanaab.com/about"
+                    class="text-[#6B7280] transition-all duration-300 hover:text-[#8447FF] text-[13px] leading-loose lg:text-sm border-l border-[#D1D5DB] px-4">
+                    عن أعناب
+                </a>
+                <a href="https://aanaab.com/courses"
+                    class="text-[#6B7280] transition-all duration-300 hover:text-[#8447FF] text-[13px] leading-loose lg:text-sm border-l border-[#D1D5DB] px-4">
+                    تصفح الدورات
+                </a>
+                <a href="https://aanaab.com/privacy"
+                    class="text-[#6B7280] transition-all duration-300 hover:text-[#8447FF] text-[13px] leading-loose lg:text-sm px-4">
+                    سياسة الخصوصية
+                </a>
+            </nav>
+        </div>
+    </footer>
+    <!-- End  Annab header -->
+    <!-- scripts -->
+    <script src="assets/scripts/jquiry.js"></script>
+    <script src="assets/scripts/swiper.js"></script>
+    <script src="assets/scripts/script.js"></script>
+</body>
+
+</html>
