@@ -890,13 +890,13 @@ if ($("#youtube-video").length > 0) {
 if ($(".sticky-prog-head").length > 0) {
     $(".sticky-prog-head").css("top", $("body > header").innerHeight())
 
-    let pos = $("#intro").position().top -200;
+    let pos = $("#intro").position().top - 200;
 
     $(window).on("scroll", function () {
-        
+
         let scrollPos = $(document).scrollTop() + $("body > header").innerHeight();
         let sections = $('.naved-sec');
-      
+
         sections.each(function () {
             let top = $(this).offset().top - 100;
             let bottom = top + $(this).outerHeight();
@@ -909,8 +909,8 @@ if ($(".sticky-prog-head").length > 0) {
                 $('.tab-sec-item[href="#' + id + '"]').removeClass('active');
             }
         });
-
-        if ($(window).scrollTop() > pos) {
+        // objectives
+        if ($(window).scrollTop() > pos && $(window).scrollTop() < $("#objectives").innerHeight() + $("#objectives").position().top - 200) {
             $(".sticky-prog-head").addClass("show");
         }
         else {
