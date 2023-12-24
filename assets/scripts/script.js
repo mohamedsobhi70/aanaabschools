@@ -114,6 +114,60 @@ if ($(".slider-professional-licence").length > 0) {
         }
     });
 }
+
+// ((single qualification page)) professional-licence Carousel
+if ($(".slider-why-joinq").length > 0) {
+    let swiper = new Swiper(".slider-why-joinq", {
+        centeredSlides: true,
+        loop: true,
+        autoplay: true,
+        breakpoints: {
+            0: {
+                spaceBetween: 16,
+                slidesPerView: 1,
+            },
+            680: {
+                spaceBetween: 24,
+                slidesPerView: 2,
+            },
+            1024: {
+                spaceBetween: 30,
+                slidesPerView: 3,
+            },
+        },
+        pagination: {
+            el: ".why-joinq-pagination",
+            clickable: true,
+        }
+    });
+}
+
+// ((single qualification page)) course-content Carousel
+if ($(".slider-course-content").length > 0) {
+    let swiper = new Swiper(".slider-course-content", {
+        loop: true,
+        autoplay: true,
+        breakpoints: {
+            0: {
+                spaceBetween: 16,
+                slidesPerView: 1,
+            },
+            680: {
+                spaceBetween: 24,
+                slidesPerView: 2,
+            },
+            1024: {
+                spaceBetween: 30,
+                slidesPerView: 3,
+            },
+        },
+        pagination: {
+            el: ".course-content-pagination",
+            clickable: true,
+        }
+    });
+}
+
 // =================================================
 
 // ((Home page)) professional-qualifications Carousel
@@ -380,8 +434,22 @@ if ($(".hero-img").length) {
 // =================================================
 
 // Annab Accordion Component
+// if ($(".anb-accordion").length) {
+//     $(".anb-accordion .anb-accordion-title").on("click", function (e) {
+//         $(this).parent().toggleClass("active");
+//         $(this).parent().find(".anb-accordion-content").slideToggle(300);
+//         $(this).parent().find(".icon img").toggleClass("hidden");
+//     });
+// }
 if ($(".anb-accordion").length) {
     $(".anb-accordion .anb-accordion-title").on("click", function (e) {
+        // close siblings 
+        $(this).parent().siblings(".anb-accordion").removeClass("active");
+        $(this).parent().siblings(".anb-accordion").find(".anb-accordion-content").slideUp(300);
+        $(this).parent().siblings(".anb-accordion").find(".icon img:first-child").removeClass("hidden");
+        $(this).parent().siblings(".anb-accordion").find(".icon img:last-child").addClass("hidden");
+
+
         $(this).parent().toggleClass("active");
         $(this).parent().find(".anb-accordion-content").slideToggle(300);
         $(this).parent().find(".icon img").toggleClass("hidden");
@@ -761,5 +829,91 @@ if ($("#countdown").length > 0) {
             document.getElementById("countdown").innerHTML = "EXPIRED";
         }
     }, 1000);
+
+}
+
+
+if ($(".swiper-pagination").length > 0) {
+    $(".swiper-pagination").each(
+        function () {
+            let th = $(this);
+            if (th.children().length == 1) {
+                th.addClass("hidden")
+                // console.log("0");
+            }
+            else {
+                th.removeClass("hidden")
+                // console.log("0");
+            }
+
+        }
+    )
+
+}
+
+
+if ($(".professional-licence-card .part-lnk").length > 0) {
+    $(".professional-licence-card").each(
+        function () {
+            let th = $(this);
+            if (th.find(".part-lnk").length > 0) {
+                th.find(".part-lnk").on("click", function (event) {
+                    let lnk = $(this).attr("data-part-lnk");
+                    event.preventDefault();
+                    window.location.href = lnk;
+                })
+            }
+        }
+    )
+}
+
+if ($("#youtube-video").length > 0) {
+    let url = $("#youtube-video").attr("data-link");
+    const videoContainer = document.getElementById('youtube-video');
+    const playButton = document.getElementById('play-button');
+
+    playButton.addEventListener('click', function () {
+        const iframeHTML = `
+                <iframe
+                    src="https://www.youtube.com/embed/${url}?autoplay=1"
+                    allow="autoplay"
+                    frameborder="0">
+                </iframe>
+            `;
+        videoContainer.innerHTML = iframeHTML;
+    });
+}
+
+
+
+// single programm prog-sticky-section
+if ($(".sticky-prog-head").length > 0) {
+    $(".sticky-prog-head").css("top", $("body > header").innerHeight())
+
+    let pos = $("#intro").position().top -200;
+
+    $(window).on("scroll", function () {
+        let scrollPos = $(document).scrollTop() + $("body > header").innerHeight();
+        let sections = $('.naved-sec');
+        sections.each(function () {
+            let top = $(this).offset().top - 100;
+            let bottom = top + $(this).outerHeight();
+
+            if (scrollPos >= top && scrollPos <= bottom) {
+                let id = $(this).attr('id');
+                $('.tab-sec-item[href="#' + id + '"]').addClass('active');
+            } else {
+                let id = $(this).attr('id');
+                $('.tab-sec-item[href="#' + id + '"]').removeClass('active');
+            }
+        });
+
+        if ($(window).scrollTop() > pos) {
+            $(".sticky-prog-head").addClass("show");
+        }
+        else {
+            $(".sticky-prog-head").removeClass("show");
+        }
+    });
 
 }

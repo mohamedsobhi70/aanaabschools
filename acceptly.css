@@ -1,0 +1,50 @@
+.tally-block-multiple-choice-option {
+  display: inline-block;
+  width: 33.33%;
+  position: relative;
+}
+
+.dgIvUN {
+  font-size: 18px;
+}
+
+.gGzoiF,
+.dnquoN {
+  display: block;
+  margin-left: 16px;
+  padding: 20px 16px;
+}
+
+.bmvFtP > div {
+  width: 100%;
+}
+
+.dyKoRM {
+  width: 100%;
+}
+.krCFKN {
+  padding-bottom: 15px;
+}
+
+.jVidKK + .tally-validation-error {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+}
+
+.dnquoN label,
+.gGzoiF label {
+  line-height: 24px;
+}
+
+@media (max-width: 1024px) {
+  .tally-block-multiple-choice-option {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .tally-block-multiple-choice-option {
+    width: 100%;
+  }
+}

@@ -300,5 +300,17 @@
 }
 
 .progress-fill-line {
-  @apply absolute w-3/4 h-full right-0 top-0 rounded-full bg-[#8447FF] overflow-hidden after:content-[''] after:absolute after:w-[142%] after:h-full after:bg-progrees-bar after:bg-progrees-size after:animate-progress-anmi;
+  @apply absolute w-3/4 h-full right-0 top-0 rounded-full bg-[#8447FF] overflow-hidden;
+}
+
+.tab-sec-item {
+  @apply relative text-[#667085] font-medium flex items-center justify-center text-sm leading-normal transition-all duration-300;
+}
+
+.tab-sec-item.active,
+.tab-sec-item:hover {
+  @apply text-[#8447FF] font-bold;
+}
+.sticky-prog-head.show {
+  @apply translate-y-0 opacity-100;
 }
